@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <style>
+        body { font-family: -apple-system, sans-serif; background: #0f172a; color: white; text-align: center; padding: 15px; }
+        .card { background: #1e293b; padding: 20px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.4); max-width: 400px; margin: auto; }
+        .bank-box { display: flex; justify-content: space-around; margin-bottom: 20px; }
+        .stat-label { font-size: 0.8rem; color: #94a3b8; text-transform: uppercase; }
+        .stat-val { font-size: 1.4rem; font-weight: bold; display: block; }
+        .sequence-box { background: #0f172a; padding: 15px; border-radius: 12px; margin: 20px 0; border: 1px solid #334155; }
+        .sequence-text { font-size: 1.8rem; letter-spacing: 4px; color: #38bdf8; font-weight: bold; }
+        .bet-display { background: #065f46; padding: 15px; border-radius: 12px; margin-bottom: 20px; }
+        .bet-val { font-size: 2.2rem; font-weight: 900; color: #34d399; }
+        input { width: 100%; padding: 15px; box-sizing: border-box; border-radius: 10px; border: none; margin-bottom: 10px; font-size: 1.1rem; background: #334155; color: white; }
+        button { width: 100%; padding: 15px; border-radius: 10px; border: none; font-weight: bold; font-size: 1.1rem; cursor: pointer; transition: 0.2s; }
+        .btn-process { background: #38bdf8; color: #0f172a; }
+        .btn-zero { background: #ef4444; color: white; margin-top: 5px; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="bank-box">
+        <div><span class="stat-label">Current Bank</span><span class="stat-val">£<span id="curBank">0.00</span></span></div>
+        <div><span class="stat-label">Peak Bank</span><span class="stat-val" style="color: #fbbf24;">£<span id="maxBank">0.00</span></span></div>
+    </div>
+
+    <div class="bet-display">
+        <span class="stat-label" style="color: #a7f3d0;">Next Stake</span>
+        <div class="bet-val">£<span id="nextBet">0.00</span></div>
+    </div>
+
+    <div class="sequence-box">
+        <span class="stat-label">Active Sequence</span>
+        <div class="sequence-text" id="seqDisplay">1-2-2</div>
+    </div>
+
+    <input type="number" id="cashReturn" placeholder="Enter Cash Returned" step="0.01">
+    <button class="btn-process" onclick="processRace()">Process Result</button>
+    <button class="btn-zero" onclick="document.getElementById('cashReturn').value=0; processRace();">Lost (£0 Return)</button>
+</div>
+
+<script>
+    let sequence = [1, 2, 2];
+    let currentBank = 10.00;
+    let maxBank = 10.00;
+    const unit = 0.10;
+
+    function updateUI() {
+        document.getElementById('seqDisplay').innerText = sequence.join('-');
+        let betUnits = sequence.length > 1 ? sequence[0] + sequence[sequence.length - 1] : sequence[0];
+        document.getElementById('nextBet').innerText = (betUnits * unit).toFixed(2);
+        document.getElementById('curBank').innerText = currentBank.toFixed(2);
+        document.getElementById('maxBank').innerText = maxBank.toFixed(2);
+    }
+
+    function processRace() {
+        let inputField = document.getElementById('cashReturn');
+        
+        // 1. PROTECTION: If box is empty, don't do anything
+        if (inputField.value.trim() === "") return;
+
+        let cashReturned = parseFloat(inputField.value);
+        let betUnits = sequence.length > 1 ? sequence[0] + sequence[sequence.length - 1] : sequence[0];
+        let stakeAmount = betUnits * unit;
+
+        currentBank = (currentBank - stakeAmount) + cashReturned;
+
+        // 2. LOGIC:
+        if (currentBank > (maxBank + 0.001)) {
+            // New High: Full Reset
+            maxBank = currentBank;
+            sequence = [1, 2, 2]; 
+        } 
+        else if (cashReturned > (stakeAmount + 0.001)) {
+            // Win but no new high: Shrink sequence
+            if (sequence.length <= 2) {
+                sequence = [1, 2, 2];
+            } else {
+                sequence.shift();
+                sequence.pop();
+            }
+        }
+        else {
+            // Loss: Add stake to end
+            sequence.push(betUnits); 
+        }
+
+        inputField.value = '';
+        updateUI();
+    }
+
+    updateUI();
+</script>
+</body>
+</html>
