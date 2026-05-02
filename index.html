@@ -12,8 +12,14 @@
         .sequence-text { font-size: 1.8rem; letter-spacing: 4px; color: #38bdf8; font-weight: bold; }
         .bet-display { background: #065f46; padding: 15px; border-radius: 12px; margin-bottom: 20px; }
         .bet-val { font-size: 2.2rem; font-weight: 900; color: #34d399; }
+        
+        /* Unit Selector Styling */
+        .unit-selector { display: flex; background: #334155; border-radius: 10px; margin-bottom: 15px; padding: 4px; }
+        .unit-btn { flex: 1; padding: 10px; border-radius: 8px; border: none; background: transparent; color: #94a3b8; cursor: pointer; font-weight: bold; transition: 0.3s; }
+        .unit-btn.active { background: #38bdf8; color: #0f172a; }
+
         input { width: 100%; padding: 15px; box-sizing: border-box; border-radius: 10px; border: none; margin-bottom: 10px; font-size: 1.1rem; background: #334155; color: white; }
-        button { width: 100%; padding: 15px; border-radius: 10px; border: none; font-weight: bold; font-size: 1.1rem; cursor: pointer; transition: 0.2s; }
+        button.action-btn { width: 100%; padding: 15px; border-radius: 10px; border: none; font-weight: bold; font-size: 1.1rem; cursor: pointer; transition: 0.2s; }
         .btn-process { background: #38bdf8; color: #0f172a; }
         .btn-zero { background: #ef4444; color: white; margin-top: 5px; }
     </style>
@@ -21,6 +27,11 @@
 <body>
 
 <div class="card">
+    <div class="unit-selector">
+        <button id="u5" class="unit-btn active" onclick="setUnit(0.05, 'u5')">5p Units</button>
+        <button id="u10" class="unit-btn" onclick="setUnit(0.10, 'u10')">10p Units</button>
+    </div>
+
     <div class="bank-box">
         <div><span class="stat-label">Current Bank</span><span class="stat-val">£<span id="curBank">0.00</span></span></div>
         <div><span class="stat-label">Peak Bank</span><span class="stat-val" style="color: #fbbf24;">£<span id="maxBank">0.00</span></span></div>
@@ -37,15 +48,23 @@
     </div>
 
     <input type="number" id="cashReturn" placeholder="Enter Cash Returned" step="0.01">
-    <button class="btn-process" onclick="processRace()">Process Result</button>
-    <button class="btn-zero" onclick="document.getElementById('cashReturn').value=0; processRace();">Lost (£0 Return)</button>
+    <button class="action-btn btn-process" onclick="processRace()">Process Result</button>
+    <button class="action-btn btn-zero" onclick="document.getElementById('cashReturn').value=0; processRace();">Lost (£0 Return)</button>
 </div>
 
 <script>
     let sequence = [1, 2, 2];
     let currentBank = 10.00;
     let maxBank = 10.00;
-    const unit = 0.10;
+    let unit = 0.05; // Defaulted to 5p
+
+    function setUnit(val, btnId) {
+        unit = val;
+        // Update UI buttons
+        document.querySelectorAll('.unit-btn').forEach(btn => btn.classList.remove('active'));
+        document.getElementById(btnId).classList.add('active');
+        updateUI();
+    }
 
     function updateUI() {
         document.getElementById('seqDisplay').innerText = sequence.join('-');
@@ -57,8 +76,6 @@
 
     function processRace() {
         let inputField = document.getElementById('cashReturn');
-        
-        // 1. PROTECTION: If box is empty, don't do anything
         if (inputField.value.trim() === "") return;
 
         let cashReturned = parseFloat(inputField.value);
@@ -67,14 +84,11 @@
 
         currentBank = (currentBank - stakeAmount) + cashReturned;
 
-        // 2. LOGIC:
         if (currentBank > (maxBank + 0.001)) {
-            // New High: Full Reset
             maxBank = currentBank;
             sequence = [1, 2, 2]; 
         } 
         else if (cashReturned > (stakeAmount + 0.001)) {
-            // Win but no new high: Shrink sequence
             if (sequence.length <= 2) {
                 sequence = [1, 2, 2];
             } else {
@@ -83,7 +97,6 @@
             }
         }
         else {
-            // Loss: Add stake to end
             sequence.push(betUnits); 
         }
 
