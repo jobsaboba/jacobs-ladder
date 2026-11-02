@@ -1,0 +1,11 @@
+name = "jacobs-ladder-push"
+main = "worker.js"
+compatibility_date = "2024-09-01"
+
+[triggers]
+crons = ["*/5 * * * *"]
+
+# After `npx wrangler kv namespace create DB`, paste the id below.
+[[kv_namespaces]]
+binding = "DB"
+id = "9c5fa7b634ea428f9be01d2940944a5c"
