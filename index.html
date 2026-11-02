@@ -1,110 +1,471 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-    <style>
-        body { font-family: -apple-system, sans-serif; background: #0f172a; color: white; text-align: center; padding: 15px; }
-        .card { background: #1e293b; padding: 20px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.4); max-width: 400px; margin: auto; }
-        .bank-box { display: flex; justify-content: space-around; margin-bottom: 20px; }
-        .stat-label { font-size: 0.8rem; color: #94a3b8; text-transform: uppercase; }
-        .stat-val { font-size: 1.4rem; font-weight: bold; display: block; }
-        .sequence-box { background: #0f172a; padding: 15px; border-radius: 12px; margin: 20px 0; border: 1px solid #334155; }
-        .sequence-text { font-size: 1.8rem; letter-spacing: 4px; color: #38bdf8; font-weight: bold; }
-        .bet-display { background: #065f46; padding: 15px; border-radius: 12px; margin-bottom: 20px; }
-        .bet-val { font-size: 2.2rem; font-weight: 900; color: #34d399; }
-        
-        /* Unit Selector Styling */
-        .unit-selector { display: flex; background: #334155; border-radius: 10px; margin-bottom: 15px; padding: 4px; }
-        .unit-btn { flex: 1; padding: 10px; border-radius: 8px; border: none; background: transparent; color: #94a3b8; cursor: pointer; font-weight: bold; transition: 0.3s; }
-        .unit-btn.active { background: #38bdf8; color: #0f172a; }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no">
+<meta name="theme-color" content="#0b1220">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Ladder">
+<title>Jacob's Ladder Racing</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<style>
+  :root{
+    --bg:#0b1220; --panel:#131c2e; --panel2:#0f172a; --line:#22304a;
+    --ink:#e7eef9; --dim:#8fa3bf; --sky:#38bdf8; --emerald:#10b981; --em:#34d399;
+    --amber:#fbbf24; --red:#ef4444;
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
+  html,body{margin:0; padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    background:var(--bg); color:var(--ink); padding:12px 12px 90px; max-width:440px; margin:0 auto;
+  }
+  header{display:flex; justify-content:space-between; align-items:center; padding:6px 2px 12px}
+  .brand{font-weight:900; font-size:1.05rem; letter-spacing:.3px}
+  .brand span{color:var(--emerald)}
+  .datechip{font-size:.72rem; color:var(--dim); text-transform:uppercase; letter-spacing:1px}
 
-        input { width: 100%; padding: 15px; box-sizing: border-box; border-radius: 10px; border: none; margin-bottom: 10px; font-size: 1.1rem; background: #334155; color: white; }
-        button.action-btn { width: 100%; padding: 15px; border-radius: 10px; border: none; font-weight: bold; font-size: 1.1rem; cursor: pointer; transition: 0.2s; }
-        .btn-process { background: #38bdf8; color: #0f172a; }
-        .btn-zero { background: #ef4444; color: white; margin-top: 5px; }
-    </style>
+  .banner{display:none; background:#271e08; border:1px solid #7c6412; color:#fde68a;
+    border-radius:12px; padding:10px 12px; font-size:.8rem; margin-bottom:10px}
+  .banner.show{display:block}
+  .banner.good{background:#0b2e21; border-color:#14532d; color:#a7f3d0}
+
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:18px;
+    padding:16px; margin-bottom:12px; box-shadow:0 8px 22px rgba(0,0,0,.35)}
+  .label{font-size:.65rem; color:var(--dim); text-transform:uppercase; letter-spacing:1.5px; margin-bottom:6px}
+  .row{display:flex; justify-content:space-between; align-items:center; gap:8px}
+
+  /* hero */
+  #hero .course-line{font-size:.8rem; color:var(--sky); font-weight:700; letter-spacing:.5px}
+  #hero h2{margin:2px 0 4px; font-size:1.5rem; line-height:1.15}
+  .meta{font-size:.78rem; color:var(--dim); display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+  .stars{color:var(--amber); letter-spacing:2px; font-size:.8rem}
+  .chip{background:#1c2a44; border:1px solid var(--line); border-radius:999px; padding:2px 8px; font-size:.68rem; color:var(--dim)}
+  .chip.hot{background:#052e1c; border-color:#10653f; color:var(--em); font-weight:700}
+  .chip.watch{background:#2d2410; border-color:#6b5312; color:#fcd34d}
+  .stakebox{background:linear-gradient(135deg,#06412c,#065f46); border:1px solid #0a6e45;
+    border-radius:14px; text-align:center; padding:12px; margin:12px 0}
+  .stakebox .big{font-size:2.3rem; font-weight:900; color:var(--em); line-height:1}
+  .countdown{font-variant-numeric:tabular-nums; font-size:1.5rem; font-weight:800; color:var(--sky)}
+  .countdown.off{color:var(--red)}
+  input.ret{width:100%; padding:13px; border-radius:12px; border:1px solid var(--line);
+    background:var(--panel2); color:var(--ink); font-size:1.05rem; margin-bottom:8px}
+  .btn{border:none; border-radius:12px; padding:13px; font-weight:800; font-size:.95rem; cursor:pointer; width:100%}
+  .btn.green{background:var(--emerald); color:#032015}
+  .btn.red{background:var(--red); color:#fff}
+  .btn.ghost{background:var(--panel2); color:var(--dim); border:1px solid var(--line); font-weight:600}
+  .btn.ghost:disabled{opacity:.35}
+  .btnrow{display:flex; gap:8px}
+  .btnrow .btn{flex:1}
+  .btn.small{padding:8px 10px; font-size:.75rem; width:auto; border-radius:10px}
+
+  /* ladder strip */
+  .stats{display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-bottom:10px}
+  .stat{background:var(--panel2); border:1px solid var(--line); border-radius:12px; padding:8px 10px}
+  .stat .v{font-weight:800; font-size:1.02rem; margin-top:2px}
+  .stat .v.gold{color:var(--amber)} .stat .v.pos{color:var(--em)} .stat .v.neg{color:var(--red)}
+  .seq{display:flex; gap:6px; flex-wrap:wrap; align-items:center; margin-top:4px}
+  .seq .n{background:var(--sky); color:#06202f; font-weight:900; border-radius:8px; padding:5px 10px; font-size:.9rem}
+  .seq .arrow{color:var(--dim); font-size:.85rem}
+  .seq .next{background:#0a2740; border:1px dashed var(--sky); color:var(--sky)}
+
+  /* timeline */
+  .race{display:flex; gap:10px; align-items:flex-start; background:var(--panel2);
+    border:1px solid var(--line); border-radius:14px; padding:10px 12px; margin-bottom:8px}
+  .race .t{font-weight:900; font-size:.95rem; color:var(--sky); min-width:44px}
+  .race .t small{display:block; color:var(--dim); font-weight:600; font-size:.6rem}
+  .race .mid{flex:1; min-width:0}
+  .race .mid .h{font-weight:700; font-size:.92rem}
+  .race .mid .r{font-size:.68rem; color:var(--dim); overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+  .race.done{opacity:.55}
+  .race.now{border-color:var(--emerald); box-shadow:0 0 0 1px var(--emerald)}
+  .badge{font-size:.62rem; font-weight:900; border-radius:8px; padding:3px 7px; white-space:nowrap; align-self:center}
+  .badge.won{background:#0b2e21; color:var(--em)} .badge.lost{background:#331111; color:#fca5a5}
+  .badge.skip{background:#1c2a44; color:var(--dim)} .badge.pending{background:#2d2410; color:#fcd34d}
+
+  /* ledger */
+  #ledgerList{font-size:.78rem}
+  .lrow{display:flex; justify-content:space-between; padding:6px 2px; border-bottom:1px dashed var(--line)}
+  .lrow .pos{color:var(--em)} .lrow .neg{color:#fca5a5}
+
+  footer.actions{position:fixed; bottom:0; left:0; right:0; background:linear-gradient(transparent,var(--bg) 30%);
+    padding:18px 12px 20px; max-width:440px; margin:0 auto}
+  footer.actions .grid{display:grid; grid-template-columns:1fr 1fr; gap:8px}
+  footer .btn.primary{grid-column:1 / -1; background:var(--sky); color:#06202f}
+  .hint{font-size:.68rem; color:var(--dim); text-align:center; margin-top:8px; line-height:1.5}
+  .topbtns{display:flex; gap:6px}
+  .iconbtn{background:var(--panel); border:1px solid var(--line); color:var(--dim); border-radius:10px; padding:7px 9px; font-size:.9rem; cursor:pointer}
+  .iconbtn.on{border-color:var(--emerald); color:var(--em)}
+  .unit{display:flex; background:var(--panel2); border:1px solid var(--line); border-radius:10px; padding:3px}
+  .unit button{border:none; background:transparent; color:var(--dim); font-weight:800; font-size:.78rem; padding:6px 9px; border-radius:8px; cursor:pointer}
+  .unit button.active{background:var(--sky); color:#06202f}
+  .toast{position:fixed; left:50%; transform:translateX(-50%); bottom:150px; background:#123; color:var(--ink);
+    border:1px solid var(--line); padding:10px 16px; border-radius:999px; font-size:.82rem; z-index:50; opacity:0; transition:opacity .25s}
+  .toast.show{opacity:1}
+.pmark{position:absolute; right:14px; top:14px; writing-mode:vertical-rl; opacity:.25; font-size:.6rem; letter-spacing:3px; color:#6ee7b7; pointer-events:none}
+  body{position:relative}
+  h3.sec{font-size:.68rem; text-transform:uppercase; letter-spacing:1.5px; color:var(--dim); margin:18px 2px 8px}
+</style>
 </head>
 <body>
-
-<div class="card">
-    <div class="unit-selector">
-        <button id="u5" class="unit-btn active" onclick="setUnit(0.05, 'u5')">5p Units</button>
-        <button id="u10" class="unit-btn" onclick="setUnit(0.10, 'u10')">10p Units</button>
+<header>
+  <div>
+    <div class="brand">Jacob's <span>Ladder</span></div>
+    <div class="datechip" id="dateChip"></div>
+  </div>
+  <div class="topbtns">
+    <div class="unit">
+      <button id="u5" class="active" onclick="setUnit(0.05)">5p</button>
+      <button id="u10" onclick="setUnit(0.10)">10p</button>
     </div>
+    <button class="iconbtn" id="bellBtn" onclick="askBell()" title="Race alerts">🔔</button>
+    <button class="iconbtn" id="instBtn" style="display:none" onclick="doInstall()" title="Install app">⤓</button>
+  </div>
+</header>
 
-    <div class="bank-box">
-        <div><span class="stat-label">Current Bank</span><span class="stat-val">£<span id="curBank">0.00</span></span></div>
-        <div><span class="stat-label">Peak Bank</span><span class="stat-val" style="color: #fbbf24;">£<span id="maxBank">0.00</span></span></div>
-    </div>
+<div class="banner" id="banner"></div>
 
-    <div class="bet-display">
-        <span class="stat-label" style="color: #a7f3d0;">Next Stake</span>
-        <div class="bet-val">£<span id="nextBet">0.00</span></div>
-    </div>
-
-    <div class="sequence-box">
-        <span class="stat-label">Active Sequence</span>
-        <div class="sequence-text" id="seqDisplay">1-2-2</div>
-    </div>
-
-    <input type="number" id="cashReturn" placeholder="Enter Cash Returned" step="0.01">
-    <button class="action-btn btn-process" onclick="processRace()">Process Result</button>
-    <button class="action-btn btn-zero" onclick="document.getElementById('cashReturn').value=0; processRace();">Lost (£0 Return)</button>
+<!-- HERO : next race + stake -->
+<div class="card" id="hero">
+  <div class="row">
+    <div class="label" id="heroLabel">Next race</div>
+    <div class="countdown" id="countdown">--:--</div>
+  </div>
+  <div id="heroBody"></div>
+  <div id="heroActions"></div>
 </div>
 
+<!-- LADDER STATE -->
+<div class="card">
+  <div class="label">Ladder &amp; bank
+    <button class="btn ghost small" style="float:right" onclick="editBank()">✎ Bank</button>
+    <button class="btn ghost small" style="float:right; margin-right:6px" onclick="undo()" id="undoBtn">↩ Undo</button>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="label">Bank</div><div class="v" id="bankV"></div></div>
+    <div class="stat"><div class="label">Peak</div><div class="v gold" id="peakV"></div></div>
+    <div class="stat"><div class="label">Day P/L</div><div class="v" id="plV"></div></div>
+  </div>
+  <div class="seq" id="seqV"></div>
+</div>
+
+<h3 class="sec">Today's selections</h3>
+<div id="timeline"></div>
+
+<h3 class="sec">Day ledger <button class="btn ghost small" style="float:right" onclick="copySummary()">⧉ Copy</button></h3>
+<div class="card"><div id="ledgerList"></div></div>
+
+<footer class="actions">
+  <div class="grid">
+    <button class="btn primary" id="fetchBtn" onclick="fetchData()">⟳ Fetch day's selections</button>
+    <button class="btn ghost" onclick="importJson()">⬆ Import JSON file</button>
+    <button class="btn ghost" onclick="resetDay()">✕ Reset day</button>
+  </div>
+  <div class="hint">Stake = first + last of the ladder &times; unit · any new bank peak resets the ladder to 1-2-2.<br>
+  Alerts fire while the app is open in the background. Data is private to this phone.</div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<input type="file" id="fileIn" accept=".json,application/json" style="display:none">
+
 <script>
-    let sequence = [1, 2, 2];
-    let currentBank = 10.00;
-    let maxBank = 10.00;
-    let unit = 0.05; // Defaulted to 5p
+/* ================= state ================= */
+const LS = "jlapp_v2";
 
-    function setUnit(val, btnId) {
-        unit = val;
-        // Update UI buttons
-        document.querySelectorAll('.unit-btn').forEach(btn => btn.classList.remove('active'));
-        document.getElementById(btnId).classList.add('active');
-        updateUI();
+/* ---- push/alerts config ----
+   WORKER_URL: the Cloudflare worker URL, e.g. "https://jacobs-ladder-push.yourname.workers.dev".
+   Fill it in after `npx wrangler deploy` (see README-APP.md) and re-upload index.html.
+   VAPID_PUBLIC: the app's public push key (pairs with the private key secret on the worker). */
+const WORKER_URL = "https://jacobs-ladder-push.jobsaboba.workers.dev";
+const VAPID_PUBLIC = "BBZGIRt21ZpXzpjhHFfimhaDYai4IhohqO8qHdYIiC3gxMp7sTXzblRCFRacSpHPzAS3WQf87qyPntuoWNUKwQg";
+let S = load();
+let timers = [], deferredPrompt = null, heroTimer = null, bannerTimer = null, cur = null;
+
+function blank(){ return { unit:0.05, bank:10.00, peak:10.00, seq:[1,2,2], startBank:10.00, day:null, log:[], history:[] }; }
+function load(){ try{ const j=JSON.parse(localStorage.getItem(LS)); if(j&&j.seq) return j; }catch(e){} return blank(); }
+function save(){ localStorage.setItem(LS, JSON.stringify(S)); mirrorState(); }
+
+/* mirror of the ladder for the service worker (IndexedDB survives app close) */
+function mirrorState(){
+  try{
+    const open = indexedDB.open("jlapp", 1);
+    open.onupgradeneeded = () => open.result.createObjectStore("state");
+    open.onsuccess = () => {
+      const tx = open.result.transaction("state", "readwrite");
+      tx.objectStore("state").put({ seq: [...S.seq], unit: S.unit, next: fmt(stakeAmount()) }, "ladder");
+    };
+  }catch(e){ /* mirror is best-effort */ }
+}
+function urlB64ToUint8(b64){
+  const pad = b64.length % 4 === 0 ? "" : "=".repeat(4 - (b64.length % 4));
+  const raw = atob(b64.replace(/-/g, "+").replace(/_/g, "/") + pad);
+  const out = new Uint8Array(raw.length);
+  for (let i = 0; i < raw.length; i++) out[i] = raw.charCodeAt(i);
+  return out;
+}
+
+function r2(n){ return Math.round(n*100)/100; }
+function fmt(n){ return "£" + r2(n).toFixed(2); }
+function todayStr(){ const d=new Date(); return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
+function stakeUnits(seq){ return seq.length>1 ? seq[0]+seq[seq.length-1] : seq[0]; }
+function stakeAmount(){ return stakeUnits(S.seq)*S.unit; }
+function epoch(date, t){ return new Date(`${date}T${t}:00`).getTime(); }
+
+function toast(msg){ const t=document.getElementById("toast"); t.textContent=msg; t.classList.add("show");
+  clearTimeout(bannerTimer); bannerTimer=setTimeout(()=>t.classList.remove("show"),2600); }
+
+function banner(msg, good){ const b=document.getElementById("banner");
+  b.textContent=msg; b.className="banner show"+(good?" good":"");
+  if(!good){ setTimeout(()=>{ if(b.textContent===msg) b.className="banner"; }, 6000); } }
+
+/* ================= selection day ================= */
+function adoptDay(j){
+  if(!j || !Array.isArray(j.finals) || !j.finals.length){ toast("That file has no selections."); return; }
+  S.day = {
+    date: j.date, stamp: j.racemetrics_stamp || "", startBank: S.bank,
+    races: j.finals.map(f => ({
+      time:f.time, course:f.course, horse:f.horse, trainer:f.trainer, jockey:f.jockey||"",
+      stars:f.stars||0, odds:f.odds||"", race:f.race||"", section:f.section||"main",
+      dt:f.time, status:"pending", stake:null, ret:null
+    })).sort((a,b)=> epoch(j.date, a.time)-epoch(j.date, b.time))
+  };
+  S.day.races.forEach(r=> r.dtISO = `${j.date}T${r.time}:00`);
+  save(); schedule(); render();
+  const stale = j.date < todayStr();
+  banner(stale ? `⚠️ Loaded ${j.date} selections — that file is stale, import or fetch a fresh one.` :
+                 `✅ ${S.day.races.length} selections loaded for ${j.date} (RaceMetrics ${j.racemetrics_stamp||""})`, !stale);
+}
+
+function fetchData(){
+  const btn=document.getElementById("fetchBtn"); btn.textContent="⟳ Fetching…";
+  fetch("data/latest.json?ts="+Date.now(), {cache:"no-store"})
+    .then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
+    .then(j=>{ adoptDay(j); })
+    .catch(()=>{ banner("Could not fetch selections (offline or none published yet). You can import the JSON file instead."); })
+    .finally(()=>{ btn.textContent="⟳ Fetch day's selections"; });
+}
+
+function importJson(){ document.getElementById("fileIn").click(); }
+
+/* ================= ladder engine (original rules) ================= */
+function snapshot(){
+  S.history.push({
+    seq:[...S.seq], bank:S.bank, peak:S.peak, startBank:S.startBank,
+    log:JSON.parse(JSON.stringify(S.log)),
+    races:S.day ? S.day.races.map(r=>({status:r.status, stake:r.stake, ret:r.ret})) : null
+  });
+  if(S.history.length>60) S.history.shift();
+}
+function restore(s){
+  S.seq=s.seq; S.bank=s.bank; S.peak=s.peak; S.startBank=s.startBank; S.log=s.log;
+  if(s.races && S.day) s.races.forEach((x,i)=> Object.assign(S.day.races[i], x));
+}
+function processRace(race, ret){
+  ret = Math.max(0, +ret || 0);
+  const units = stakeUnits(S.seq); const stake = units*S.unit;
+  snapshot();
+  race.stake = stake; race.ret = ret;
+  S.bank = r2(S.bank - stake + ret);
+  race.status = ret > stake + 0.001 ? "won" : "lost";
+  let settled=false;
+  if(S.bank > S.peak + 0.001){ S.peak=S.bank; S.seq=[1,2,2]; settled=true; }
+  else if(ret > stake + 0.001){ S.seq = S.seq.length<=2 ? [1,2,2] : S.seq.slice(1,-1); }
+  else { S.seq.push(units); }
+  S.log.push({time:race.time, course:race.course, horse:race.horse, stake, ret, bank:S.bank});
+  save(); schedule(); render();
+  if(settled) banner(`🎉 New bank peak ${fmt(S.peak)} — ladder settled back to 1-2-2`, true);
+  else if(race.status==="won") banner(`✅ ${race.horse} returned ${fmt(ret)} — ends scratched off`, true);
+}
+
+/* ================= notifications ================= */
+function askBell(){
+  if(!("Notification" in window)){ toast("Notifications not supported here"); return; }
+  Notification.requestPermission().then(async p=>{
+    updateBell(); if(p==="granted"){ toast("Race alerts on"); schedule(); } else { toast("Alerts blocked in phone settings"); return; }
+    // true background push (fires even when the app is fully closed)
+    try{
+      if(!WORKER_URL){ banner("Local alerts on. For alerts while the app is closed, set WORKER_URL in index.html after deploying the push worker (README-APP.md)."); return; }
+      if(!("pushManager" in window)) { toast("Background push not supported"); return; }
+      const reg = await navigator.serviceWorker.ready;
+      let sub = await reg.pushManager.getSubscription();
+      if(!sub) sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: urlB64ToUint8(VAPID_PUBLIC) });
+      const res = await fetch(WORKER_URL + "/subscribe", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ sub: sub.toJSON() })
+      });
+      if(!res.ok) throw new Error("server " + res.status);
+      S.pushSub = true; save();
+      banner("🔔 Race alerts enabled — including when the app is fully closed.", true);
+    }catch(err){
+      banner("Background push setup failed: " + err.message + " — local (app-open) alerts stay active.");
     }
+  });
+}
+function updateBell(){ const b=document.getElementById("bellBtn");
+  b.classList.toggle("on", "Notification" in window && Notification.permission==="granted"); }
+function clearTimers(){ timers.forEach(clearTimeout); timers=[]; }
+function schedule(){
+  clearTimers();
+  if(!S.day || !("Notification" in window) || Notification.permission!=="granted") return;
+  const now=Date.now();
+  S.day.races.forEach(r=>{
+    if(r.status!=="pending") return;
+    const at = epoch(S.day.date, r.time) - 10*60*1000;
+    if(at <= now) return;
+    timers.push(setTimeout(()=>{
+      const next = S.day.races.find(x=>x.status==="pending" && x.time===r.time && x.course===r.course);
+      const stake = next ? stakeAmount() : null;
+      new Notification(`${r.course} ${r.time} — ${r.horse}`, {
+        body:`Stake ${fmt(stake||stakeAmount())} · ${r.trainer} · ${r.odds} · ${"★".repeat(r.stars)}`,
+        tag:`${r.course}-${r.time}`, badge:"icons/icon-192.png"
+      });
+    }, at-now));
+  });
+}
 
-    function updateUI() {
-        document.getElementById('seqDisplay').innerText = sequence.join('-');
-        let betUnits = sequence.length > 1 ? sequence[0] + sequence[sequence.length - 1] : sequence[0];
-        document.getElementById('nextBet').innerText = (betUnits * unit).toFixed(2);
-        document.getElementById('curBank').innerText = currentBank.toFixed(2);
-        document.getElementById('maxBank').innerText = maxBank.toFixed(2);
-    }
+/* ================= install ================= */
+window.addEventListener("beforeinstallprompt", e=>{
+  e.preventDefault(); deferredPrompt=e; document.getElementById("instBtn").style.display="";
+});
+function doInstall(){ if(deferredPrompt){ deferredPrompt.prompt(); deferredPrompt=null; document.getElementById("instBtn").style.display="none"; } }
 
-    function processRace() {
-        let inputField = document.getElementById('cashReturn');
-        if (inputField.value.trim() === "") return;
+/* ================= UI ================= */
+function setUnit(v){ S.unit=v; document.getElementById("u5").classList.toggle("active",v===0.05);
+  document.getElementById("u10").classList.toggle("active",v===0.10); save(); render(); }
 
-        let cashReturned = parseFloat(inputField.value);
-        let betUnits = sequence.length > 1 ? sequence[0] + sequence[sequence.length - 1] : sequence[0];
-        let stakeAmount = betUnits * unit;
+function editBank(){
+  const v = prompt("Adjust current bank (£):", S.bank.toFixed(2));
+  if(v===null) return; const n = +v; if(isNaN(n)) { toast("Not a number"); return; }
+  snapshot(); S.bank=r2(n); if(S.bank>S.peak){ S.peak=S.bank; S.seq=[1,2,2]; }
+  save(); render(); toast("Bank updated");
+}
+function undo(){
+  if(!S.history.length){ toast("Nothing to undo"); return; }
+  restore(S.history.pop()); save(); schedule(); render(); toast("Undone");
+}
+function skipRace(race){ snapshot(); race.status="skip"; race.stake=0; race.ret=0;
+  save(); schedule(); render(); toast(`${race.horse} skipped — ladder unchanged`); }
+function resetDay(){
+  if(!S.day){ toast("No day loaded"); return; }
+  if(!confirm("Reset the whole race day? Ladder goes back to 1-2-2 and every result is cleared.")) return;
+  snapshot(); const bank = S.bank; // keep bank continuity
+  S.day.races.forEach(r=>{ r.status="pending"; r.stake=null; r.ret=null; });
+  S.seq=[1,2,2]; S.log=[]; S.startBank=bank; save(); schedule(); render(); toast("Day reset");
+}
+function copySummary(){
+  if(!S.day){ toast("No day loaded"); return; }
+  const lines=[`Jacob's Ladder ${S.day.date} — in-form trainers`];
+  let staked=0, returned=0;
+  S.log.forEach(l=>{ staked+=l.stake; returned+=l.ret;
+    lines.push(`${l.time} ${l.course} ${l.horse}: stake £${l.stake.toFixed(2)} → returned £${l.ret.toFixed(2)}`); });
+  lines.push(`Day P/L: ${fmt(S.bank-S.startBank)} (staked £${r2(staked).toFixed(2)}, returned £${r2(returned).toFixed(2)})`);
+  lines.push(`Bank now ${fmt(S.bank)} · peak ${fmt(S.peak)} · ladder ${S.seq.join("-")}`);
+  navigator.clipboard?.writeText(lines.join("\n")).then(()=>toast("Day summary copied")).catch(()=>toast("Copy failed"));
+}
 
-        currentBank = (currentBank - stakeAmount) + cashReturned;
+function nextRace(){ return S.day ? S.day.races.find(r=>r.status==="pending") : null; }
 
-        if (currentBank > (maxBank + 0.001)) {
-            maxBank = currentBank;
-            sequence = [1, 2, 2]; 
-        } 
-        else if (cashReturned > (stakeAmount + 0.001)) {
-            if (sequence.length <= 2) {
-                sequence = [1, 2, 2];
-            } else {
-                sequence.shift();
-                sequence.pop();
-            }
-        }
-        else {
-            sequence.push(betUnits); 
-        }
+function render(){
+  document.getElementById("dateChip").textContent = S.day ? S.day.date : todayStr()+" · no day loaded";
+  document.getElementById("bankV").textContent = fmt(S.bank);
+  document.getElementById("peakV").textContent = fmt(S.peak);
+  const pl = S.bank - S.startBank;
+  document.getElementById("plV").textContent = (pl>=0?"+":"−") + "£" + Math.abs(pl).toFixed(2);
+  document.getElementById("plV").className = "v " + (pl>=0?"pos":"neg");
+  document.getElementById("undoBtn").disabled = !S.history.length;
 
-        inputField.value = '';
-        updateUI();
-    }
+  // ladder chips
+  const sv=document.getElementById("seqV");
+  sv.innerHTML = S.seq.map(n=>`<div class="n">${n}</div>`).join("") +
+    `<div class="arrow">→</div><div class="n next">${stakeUnits(S.seq)}</div>` +
+    `<span class="chip">${fmt(stakeAmount())} next</span>`;
 
-    updateUI();
+  const hero=document.getElementById("heroBody"), ha=document.getElementById("heroActions");
+  const nr=nextRace();
+  cur=nr;
+  if(nr){
+    const hot = /o'neill/i.test(nr.trainer) || /p t foley/i.test(nr.trainer);
+    const sec = nr.section==="watch" ? `<span class="chip watch">watch</span>` : "";
+    hero.innerHTML = `
+      <div class="course-line">${nr.course.toUpperCase()} · ${nr.time}</div>
+      <h2>${nr.horse}</h2>
+      <div class="meta">
+        <span class="stars">${"★".repeat(nr.stars)}</span>
+        <span class="chip">${nr.odds}</span>${hot?`<span class="chip hot">HOT yard</span>`:""}${sec}
+        <span>${nr.trainer}${nr.jockey?` / ${nr.jockey}`:""}</span>
+      </div>
+      <div class="stakebox"><div class="label" style="color:#a7f3d0">Place now</div>
+        <div class="big">${fmt(stakeAmount())}</div>
+        <div style="font-size:.65rem;color:#a7f3d0;margin-top:4px">ladder ${S.seq.join("-")} × ${(S.unit*100)}p units</div></div>`;
+    ha.innerHTML = `
+      <input class="ret" id="retIn" type="number" step="0.01" min="0" placeholder="Cash returned (£)">
+      <div class="btnrow">
+        <button class="btn green" onclick="processRace(cur, +document.getElementById('retIn').value)">WON — enter return</button>
+        <button class="btn red" onclick="processRace(cur, 0)">LOST</button>
+      </div>
+      <button class="btn ghost" style="margin-top:8px" onclick="skipRace(cur)">Race abandoned / skip</button>`;
+  } else {
+    hero.innerHTML = `<div class="label" style="color:var(--dim)">No race pending</div>
+      <h2 style="font-size:1.1rem">${S.day? "🎉 All races processed" : "No selections loaded"}</h2>
+      <div class="meta">${S.day? `Day P/L ${pl>=0?"+":""}${fmt(Math.abs(pl))}` : "Use Fetch below, or import the day's JSON file."}</div>`;
+    ha.innerHTML="";
+  }
+
+  // timeline
+  const tl=document.getElementById("timeline");
+  tl.innerHTML = S.day ? S.day.races.map(r=>{
+    const past = r.status!=="pending";
+    const isNow = nr && nr===r;
+    const b = {won:["won","WON"],lost:["lost","LOST"],skip:["skip","SKIPPED"],pending:["pending","STAKE SOON"]}[r.status]||["pending",""];
+    return `<div class="race ${past?"done":""} ${isNow?"now":""}">
+      <div class="t">${r.time}<small>${r.course}</small></div>
+      <div class="mid"><div class="h">${r.horse} <span class="stars">${"★".repeat(r.stars)}</span></div>
+        <div class="r">${r.trainer} · ${r.odds} · ${r.race}</div>
+        ${past&&r.stake!=null?`<div class="r">stake ${fmt(r.stake)} → ret ${fmt(r.ret)}</div>`:""}</div>
+      <div class="badge ${b[0]}">${b[1]}</div></div>`;
+  }).join("") : `<div class="card" style="font-size:.82rem;color:var(--dim)">Fetch the day's selections, or import <code>inform-shortlist-*.json</code> from the desktop pipeline.</div>`;
+
+  // ledger
+  const ll=document.getElementById("ledgerList");
+  ll.innerHTML = S.log.length ? S.log.map(l=>{
+    const d=l.ret-l.stake; const cls=d>=0?"pos":"neg";
+    return `<div class="lrow"><span>${l.time} ${l.course} — ${l.horse}</span>
+      <span class="${cls}">${d>=0?"+":""}${fmt(Math.abs(d))}</span></div>`;
+  }).join("") : `<div style="color:var(--dim)">No races processed yet.</div>`;
+
+  updateBell();
+  tick(); // immediate countdown refresh
+}
+
+/* countdown ticker */
+function tick(){
+  const el=document.getElementById("countdown");
+  const nr=nextRace();
+  if(!nr){ el.textContent=""; return; }
+  const diff = epoch(S.day.date, nr.time) - Date.now();
+  if(diff<=0){ el.textContent="RACE OFF"; el.className="countdown off"; }
+  else{
+    el.className="countdown";
+    const h=Math.floor(diff/3600000), m=Math.floor(diff%3600000/60000), s=Math.floor(diff%60000/1000);
+    el.textContent = (h>0? h+":" : "") + String(m).padStart(2,"0")+":"+String(s).padStart(2,"0");
+  }
+}
+setInterval(tick, 1000);
+
+document.getElementById("fileIn").addEventListener("change", e=>{
+  const f=e.target.files[0]; if(!f) return;
+  f.text().then(t=>{ try{ adoptDay(JSON.parse(t)); }catch(err){ toast("Invalid JSON file"); } });
+  e.target.value="";
+});
+
+/* notifications: reschedule if permission granted from another tab, keep list fresh */
+window.addEventListener("focus", ()=>{ schedule(); });
+
+render();
+if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});
 </script>
 </body>
 </html>
