@@ -233,12 +233,14 @@ function banner(msg, good){ const b=document.getElementById("banner");
 /* ================= selection day ================= */
 function adoptDay(j){
   if(!j || !Array.isArray(j.finals) || !j.finals.length){ toast("That file has no selections."); return; }
-  if(S.day && S.day.date===j.date && S.day.races.some(r=>r.status!=="pending")){
-    if(!confirm("Replace the in-play day "+j.date+" with the fetched list? Results already entered today would be cleared.")){
+  const oldDay = S.day;
+  const sameDate = oldDay && oldDay.date===j.date;
+  if(sameDate && oldDay.races.some(r=>r.status!=="pending")){
+    if(!confirm("Apply the updated published list for "+j.date+"?\n\nYour results already entered are carried over — only NEW selections get added.")){
       toast("Kept the current day"); return;
     }
   }
-  S.day = {
+  const newDay = {
     date: j.date, stamp: j.racemetrics_stamp || "", startBank: S.bank,
     races: j.finals.map(f => ({
       race_id:f.race_id, time:f.time, course:f.course, horse:f.horse, trainer:f.trainer, jockey:f.jockey||"",
@@ -246,7 +248,15 @@ function adoptDay(j){
       dt:f.time, status:"pending", stake:null, ret:null
     })).sort((a,b)=> epoch(j.date, a.time)-epoch(j.date, b.time))
   };
-  S.day.races.forEach(r=> r.dtISO = `${j.date}T${r.time}:00`);
+  newDay.races.forEach(r=> r.dtISO = `${j.date}T${r.time}:00`);
+  if(sameDate){
+    /* carry over every result already entered — a refresh can never wipe the day */
+    const key = r => r.time+"|"+r.course+"|"+r.horse;
+    const oldMap = new Map(oldDay.races.map(r=>[key(r), r]));
+    newDay.races.forEach(r=>{ const o = oldMap.get(key(r));
+      if(o){ r.status=o.status; r.stake=o.stake; r.ret=o.ret; } });
+  }
+  S.day = newDay;
   save(); schedule(); render();
   const stale = j.date < todayStr();
   banner(stale ? `⚠️ Loaded ${j.date} selections — that file is stale, import or fetch a fresh one.` :
