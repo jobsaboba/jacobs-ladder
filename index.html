@@ -420,9 +420,7 @@ function undo(){
   restore(S.history.pop()); save(); schedule(); render(); toast("Undone");
 }
 function skipRace(race){ snapshot(); race.status="skip"; race.stake=0; race.ret=0;
-  let n=0;
-  if(S.day) S.day.races.forEach(x=>{ if(x!==race && x.status==="pending" && x.time===race.time && x.course===race.course){ x.status="skip"; x.stake=0; x.ret=0; n++; } });
-  save(); schedule(); render(); toast(`${race.horse} skipped${n?" (+"+n+" string"+(n>1?"s":"")+")":""} — ladder unchanged`); }
+  save(); schedule(); render(); toast(`${race.horse} skipped — ladder unchanged`); }
 function resetDay(){
   if(!S.day){ toast("No day loaded"); return; }
   if(!confirm("Reset the whole race day? Ladder goes back to 1-2-2 and every result is cleared.")) return;
