@@ -102,6 +102,10 @@
   .unit{display:flex; background:var(--panel2); border:1px solid var(--line); border-radius:10px; padding:3px}
   .unit button{border:none; background:transparent; color:var(--dim); font-weight:800; font-size:.78rem; padding:6px 9px; border-radius:8px; cursor:pointer}
   .unit button.active{background:var(--sky); color:#06202f}
+  .unit input.unitin{width:58px; background:#0a1626; border:1px solid var(--line); color:var(--ink);
+    font-weight:800; font-size:.85rem; text-align:center; border-radius:8px; padding:7px 4px; outline:none}
+  .unit input.unitin:focus{border-color:var(--sky)}
+  .unit .psym{color:var(--dim); font-weight:800; font-size:.8rem; padding-right:3px}
   .toast{position:fixed; left:50%; transform:translateX(-50%); bottom:150px; background:#123; color:var(--ink);
     border:1px solid var(--line); padding:10px 16px; border-radius:999px; font-size:.82rem; z-index:50; opacity:0; transition:opacity .25s}
   .toast.show{opacity:1}
@@ -117,9 +121,9 @@
     <div class="datechip" id="dateChip"></div>
   </div>
   <div class="topbtns">
-    <div class="unit">
-      <button id="u5" class="active" onclick="setUnit(0.05)">5p</button>
-      <button id="u10" onclick="setUnit(0.10)">10p</button>
+    <div class="unit" title="Stake for every ladder number (pence)">
+      <input id="unitIn" class="unitin" inputmode="decimal" value="5" aria-label="Stake in pence">
+      <span class="psym">p</span>
     </div>
     <button class="iconbtn" id="bellBtn" onclick="askBell()" title="Race alerts">🔔</button>
     <button class="iconbtn" id="instBtn" style="display:none" onclick="doInstall()" title="Install app">⤓</button>
@@ -182,7 +186,8 @@ const LS = "jlapp_v2";
 const WORKER_URL = "https://jacobs-ladder-push.jobsaboba.workers.dev";
 const VAPID_PUBLIC = "BBZGIRt21ZpXzpjhHFfimhaDYai4IhohqO8qHdYIiC3gxMp7sTXzblRCFRacSpHPzAS3WQf87qyPntuoWNUKwQg";
 let S = load();
-let timers = [], deferredPrompt = null, heroTimer = null, bannerTimer = null, cur = null;
+let timers = [], deferredPrompt = null, heroTimer = null, bannerTimer = null, cur = null,
+    lastSeenDay = todayStr(), lastTry = 0;
 
 function blank(){ return { unit:0.05, bank:10.00, peak:10.00, seq:[1,2,2], startBank:10.00, day:null, log:[], history:[] }; }
 function load(){ try{ const j=JSON.parse(localStorage.getItem(LS)); if(j&&j.seq) return j; }catch(e){} return blank(); }
@@ -224,6 +229,11 @@ function banner(msg, good){ const b=document.getElementById("banner");
 /* ================= selection day ================= */
 function adoptDay(j){
   if(!j || !Array.isArray(j.finals) || !j.finals.length){ toast("That file has no selections."); return; }
+  if(S.day && S.day.date===j.date && S.day.races.some(r=>r.status!=="pending")){
+    if(!confirm("Replace the in-play day "+j.date+" with the fetched list? Results already entered today would be cleared.")){
+      toast("Kept the current day"); return;
+    }
+  }
   S.day = {
     date: j.date, stamp: j.racemetrics_stamp || "", startBank: S.bank,
     races: j.finals.map(f => ({
@@ -239,13 +249,50 @@ function adoptDay(j){
                  `✅ ${S.day.races.length} selections loaded for ${j.date} (RaceMetrics ${j.racemetrics_stamp||""})`, !stale);
 }
 
-function fetchData(){
-  const btn=document.getElementById("fetchBtn"); btn.textContent="⟳ Fetching…";
-  fetch("data/latest.json?ts="+Date.now(), {cache:"no-store"})
-    .then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
-    .then(j=>{ adoptDay(j); })
-    .catch(()=>{ banner("Could not fetch selections (offline or none published yet). You can import the JSON file instead."); })
-    .finally(()=>{ btn.textContent="⟳ Fetch day's selections"; });
+/* Pull today's shortlist in race order.
+   Tries data/<today>.json first (one file per day), then data/latest.json. */
+function dataUrls(){ return ["data/"+todayStr()+".json?ts="+Date.now(), "data/latest.json?ts="+Date.now()]; }
+
+async function fetchData(silent){
+  const btn=document.getElementById("fetchBtn");
+  if(!silent) btn.textContent="⟳ Fetching…";
+  const problems=[];
+  for(const u of dataUrls()){
+    try{
+      const r=await fetch(u, {cache:"no-store"});
+      if(!r.ok){ problems.push(u.split("?")[0]+" → HTTP "+r.status); continue; }
+      const j=await r.json();
+      if(!j || !Array.isArray(j.finals) || !j.finals.length){ problems.push(u.split("?")[0]+" → empty"); continue; }
+      if(silent && j.date !== todayStr()){ problems.push("latest.json is for "+j.date); continue; }
+      adoptDay(j);
+      if(!silent) btn.textContent="⟳ Fetch day's selections";
+      return true;
+    }catch(e){ problems.push(u.split("?")[0]+" → "+(e.message||e)); }
+  }
+  if(!silent){
+    banner("Could not fetch today's selections ("+problems[0]+"). The morning publish may not have run yet — try again later or import the JSON file instead.");
+    btn.textContent="⟳ Fetch day's selections";
+  } else if(S.day && S.day.date < todayStr()){
+    toast("Could not refresh — still showing "+S.day.date);
+  } else if(!S.day){
+    banner("No selections fetched yet ("+problems[0]+"). They publish with the morning shortlist — the app will keep checking.");
+  }
+  return false;
+}
+
+/* on open: if nothing is loaded, or the day in memory is from an earlier date,
+   refresh automatically so the app always starts on the current shortlist */
+async function autoRefresh(){
+  if(S.day && S.day.date === todayStr()) return;
+  await fetchData(true);
+}
+/* keep checking while the app stays open: midnight rollover + retry before publish lands */
+async function publishWatch(){
+  const t = todayStr();
+  if(t !== lastSeenDay){ lastSeenDay = t; await autoRefresh(); return; }
+  if((!S.day || S.day.date < todayStr()) && Date.now() - lastTry > 15*60*1000){
+    lastTry = Date.now(); await fetchData(true);
+  }
 }
 
 function importJson(){ document.getElementById("fileIn").click(); }
@@ -333,8 +380,23 @@ window.addEventListener("beforeinstallprompt", e=>{
 function doInstall(){ if(deferredPrompt){ deferredPrompt.prompt(); deferredPrompt=null; document.getElementById("instBtn").style.display="none"; } }
 
 /* ================= UI ================= */
-function setUnit(v){ S.unit=v; document.getElementById("u5").classList.toggle("active",v===0.05);
-  document.getElementById("u10").classList.toggle("active",v===0.10); save(); render(); }
+function setUnit(v){
+  const n = Math.min(Math.max(+v || 0.0001, 0.0001), 100); /* £0.01p .. £100 */
+  S.unit = n; save(); render();
+}
+/* one editable stake box (pence) — replaces the old 5p/10p buttons.
+   Type any stake: 5 = 5p, 10 = 10p, 15 = 15p, 50 = 50p, 1000 = £10 ... */
+function onUnitInput(){
+  const el = document.getElementById("unitIn");
+  const n = parseFloat(String(el.value).replace(/[^0-9.]/g, ""));
+  if(isNaN(n) || n <= 0) return;             /* ignore half-typed values */
+  setUnit(n / 100); applyUnitEditor();
+  toast("Stake unit set to " + +(n.toFixed(2)) + "p");
+}
+function applyUnitEditor(){
+  const el = document.getElementById("unitIn");
+  if(document.activeElement !== el) el.value = +((S.unit * 100).toFixed(2));
+}
 
 function editBank(){
   const v = prompt("Adjust current bank (£):", S.bank.toFixed(2));
@@ -369,6 +431,7 @@ function copySummary(){
 function nextRace(){ return S.day ? S.day.races.find(r=>r.status==="pending") : null; }
 
 function render(){
+  applyUnitEditor(); /* keep the stake box showing the saved stake on every redraw */
   document.getElementById("dateChip").textContent = S.day ? S.day.date : todayStr()+" · no day loaded";
   document.getElementById("bankV").textContent = fmt(S.bank);
   document.getElementById("peakV").textContent = fmt(S.peak);
@@ -464,7 +527,23 @@ document.getElementById("fileIn").addEventListener("change", e=>{
 /* notifications: reschedule if permission granted from another tab, keep list fresh */
 window.addEventListener("focus", ()=>{ schedule(); });
 
-render();
+/* ---- never closes without consent while races are pending ---- */
+window.addEventListener("beforeunload", e=>{
+  if(S.day && S.day.races.some(r=>r.status==="pending")){
+    e.preventDefault(); e.returnValue = "Races still pending — close Jacob's Ladder?";
+    return e.returnValue;
+  }
+});
+
+/* stake box wiring */
+const uIn = document.getElementById("unitIn");
+uIn.addEventListener("change", onUnitInput);
+uIn.addEventListener("blur", applyUnitEditor);
+
+render();               /* draws immediately with the saved stake */
+autoRefresh();          /* fetch today's shortlist if absent/stale */
+setInterval(publishWatch, 60000);
+
 if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});
 </script>
 </body>
