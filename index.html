@@ -106,6 +106,10 @@
     font-weight:800; font-size:.85rem; text-align:center; border-radius:8px; padding:7px 4px; outline:none}
   .unit input.unitin:focus{border-color:var(--sky)}
   .unit .psym{color:var(--dim); font-weight:800; font-size:.8rem; padding-right:3px}
+  .rowcard{background:var(--panel2); border:1px solid var(--line); border-radius:12px; padding:10px 12px; margin-top:10px}
+  .rowcard .rowh{display:flex; align-items:center; gap:6px; flex-wrap:wrap}
+  .rowcard .rowh .h{font-weight:900; font-size:1.02rem}
+  .rowcard .meta{font-size:.72rem; color:var(--dim); margin:3px 0 8px; display:flex; gap:6px; flex-wrap:wrap; align-items:center}
   .toast{position:fixed; left:50%; transform:translateX(-50%); bottom:150px; background:#123; color:var(--ink);
     border:1px solid var(--line); padding:10px 16px; border-radius:999px; font-size:.82rem; z-index:50; opacity:0; transition:opacity .25s}
   .toast.show{opacity:1}
@@ -237,7 +241,7 @@ function adoptDay(j){
   S.day = {
     date: j.date, stamp: j.racemetrics_stamp || "", startBank: S.bank,
     races: j.finals.map(f => ({
-      time:f.time, course:f.course, horse:f.horse, trainer:f.trainer, jockey:f.jockey||"",
+      race_id:f.race_id, time:f.time, course:f.course, horse:f.horse, trainer:f.trainer, jockey:f.jockey||"",
       stars:f.stars||0, odds:f.odds||"", race:f.race||"", section:f.section||"main", lost_to:f.lost_to||"",
       dt:f.time, status:"pending", stake:null, ret:null
     })).sort((a,b)=> epoch(j.date, a.time)-epoch(j.date, b.time))
@@ -323,19 +327,30 @@ function restore(s){
 }
 function processRace(race, ret){
   ret = Math.max(0, +ret || 0);
-  const units = stakeUnits(S.seq); const stake = units*S.unit;
   snapshot();
-  race.stake = stake; race.ret = ret;
-  S.bank = r2(S.bank - stake + ret);
-  race.status = ret > stake + 0.001 ? "won" : "lost";
-  let settled=false;
-  if(S.bank > S.peak + 0.001){ S.peak=S.bank; S.seq=[1,2,2]; settled=true; }
-  else if(ret > stake + 0.001){ S.seq = S.seq.length<=2 ? [1,2,2] : S.seq.slice(1,-1); }
-  else { S.seq.push(units); }
-  S.log.push({time:race.time, course:race.course, horse:race.horse, stake, ret, bank:S.bank});
+  const rows = S.day.races.filter(r=>groupKey(r)===groupKey(race));
+  const n = rows.length;
+  freezeShares(rows, stakeAmount());      /* the race's ladder stake splits equally across its selections */
+  race.ret = ret;
+  S.bank = r2(S.bank - race.stake + ret);
+  race.status = ret > race.stake + 0.001 ? "won" : "lost";
+  const done = rows.every(r=>r.status!=="pending");
+  let settled=false, raceWon=false, tStake=0, tRet=0;
+  if(done){
+    tStake = r2(rows.reduce((s,r)=>s+(r.stake||0),0));
+    tRet   = r2(rows.reduce((s,r)=>s+(r.ret||0),0));
+    if(tStake>0){
+      if(S.bank > S.peak + 0.001){ S.peak=S.bank; S.seq=[1,2,2]; settled=true; }
+      else if(tRet > tStake + 0.001){ S.seq = S.seq.length<=2 ? [1,2,2] : S.seq.slice(1,-1); }
+      else { S.seq.push(stakeUnits(S.seq)); }
+      S.log.push({time:race.time, course:race.course,
+        horse:rows.map(r=>r.horse).join(" + "), stake:tStake, ret:tRet, bank:S.bank});
+      raceWon = tRet > tStake + 0.001;
+    }
+  }
   save(); schedule(); render();
-  if(settled) banner(`🎉 New bank peak ${fmt(S.peak)} — ladder settled back to 1-2-2`, true);
-  else if(race.status==="won") banner(`✅ ${race.horse} returned ${fmt(ret)} — ends scratched off`, true);
+  if(done && settled) banner(`🎉 New bank peak ${fmt(S.peak)} — ladder settled back to 1-2-2`, true);
+  else if(done && raceWon) banner(`✅ ${race.time} ${race.course} — race won ${fmt(tRet-tStake)}, ends scratched off`, true);
 }
 
 /* ================= notifications ================= */
@@ -441,6 +456,40 @@ function copySummary(){
 
 function nextRace(){ return S.day ? S.day.races.find(r=>r.status==="pending") : null; }
 
+/* a race = every selection row sharing its race_id (the pick + its strings) */
+function groupKey(r){ return (r.race_id!=null ? "id"+r.race_id : "t"+r.time+"@"+r.course); }
+let heroGroup = [];
+/* each race's ladder stake splits equally across its selections */
+function freezeShares(rows, raceStake){
+  const open = rows.filter(r=>r.stake==null);
+  if(!open.length) return;
+  const fixed = r2(rows.filter(r=>r.stake!=null).reduce((s,r)=>s+r.stake,0));
+  const base = r2((raceStake - fixed) / open.length);
+  open.forEach((r,i)=>{ r.stake = (i===open.length-1) ? r2(raceStake - fixed - base*(open.length-1)) : base; });
+}
+function rowStakeOf(r){
+  if(r && r.stake!=null) return r.stake;
+  const rows = S.day.races.filter(x=>groupKey(x)===groupKey(r));
+  return rows.length ? r2(stakeAmount()/rows.length) : stakeAmount();
+}
+function rowCard(r,i){
+  const hot = /o'neill/i.test(r.trainer) || /p t foley/i.test(r.trainer);
+  const sec = r.section==="watch" ? `<span class="chip watch">string</span>` : "";
+  return `<div class="rowcard">
+    <div class="rowh"><span class="h">${r.horse}</span><span class="stars">${"★".repeat(r.stars)}</span>
+      <span class="chip">${r.odds}</span>${hot?`<span class="chip hot">HOT yard</span>`:""}${sec}</div>
+    <div class="meta"><span>${fmt(rowStakeOf(r))} on this horse</span>
+      <span>${r.trainer}${r.jockey?` / ${r.jockey}`:""}</span>
+      ${r.lost_to?`<span>${r.lost_to.startsWith("stablemate")?r.lost_to:"race goes to "+r.lost_to}</span>`:""}</div>
+    <input class="ret" id="ret${i}" type="number" step="0.01" min="0" placeholder="Cash returned for ${r.horse} (£)">
+    <div class="btnrow">
+      <button class="btn green" onclick="processRace(heroGroup[${i}], +document.getElementById('ret${i}').value)">WON — enter return</button>
+      <button class="btn red" onclick="processRace(heroGroup[${i}], 0)">LOST</button>
+    </div>
+    <button class="btn ghost" style="margin-top:8px" onclick="skipRace(heroGroup[${i}])">Not running / skip this horse</button>
+  </div>`;
+}
+
 function render(){
   applyUnitEditor(); /* keep the stake box showing the saved stake on every redraw */
   document.getElementById("dateChip").textContent = S.day ? S.day.date : todayStr()+" · no day loaded";
@@ -460,27 +509,16 @@ function render(){
   const hero=document.getElementById("heroBody"), ha=document.getElementById("heroActions");
   const nr=nextRace();
   cur=nr;
+  heroGroup = nr ? S.day.races.filter(r=>groupKey(r)===groupKey(nr)) : [];
   if(nr){
-    const hot = /o'neill/i.test(nr.trainer) || /p t foley/i.test(nr.trainer);
-    const sec = nr.section==="watch" ? `<span class="chip watch">watch</span>` : "";
+    const n = heroGroup.length;
     hero.innerHTML = `
-      <div class="course-line">${nr.course.toUpperCase()} · ${nr.time}</div>
-      <h2>${nr.horse}</h2>
-      <div class="meta">
-        <span class="stars">${"★".repeat(nr.stars)}</span>
-        <span class="chip">${nr.odds}</span>${hot?`<span class="chip hot">HOT yard</span>`:""}${sec}
-        <span>${nr.trainer}${nr.jockey?` / ${nr.jockey}`:""}</span>
-      </div>
-      <div class="stakebox"><div class="label" style="color:#a7f3d0">Place now</div>
+      <div class="course-line">${nr.course.toUpperCase()} · ${nr.time}${n>1?` · ${n} selections`:""}</div>
+      <div class="stakebox"><div class="label" style="color:#a7f3d0">${n>1?`Race outlay — ${fmt(stakeAmount()/n)} per horse on ${n}`:"Place now"}</div>
         <div class="big">${fmt(stakeAmount())}</div>
-        <div style="font-size:.65rem;color:#a7f3d0;margin-top:4px">ladder ${S.seq.join("-")} × ${(S.unit*100)}p units</div></div>`;
-    ha.innerHTML = `
-      <input class="ret" id="retIn" type="number" step="0.01" min="0" placeholder="Cash returned (£)">
-      <div class="btnrow">
-        <button class="btn green" onclick="processRace(cur, +document.getElementById('retIn').value)">WON — enter return</button>
-        <button class="btn red" onclick="processRace(cur, 0)">LOST</button>
-      </div>
-      <button class="btn ghost" style="margin-top:8px" onclick="skipRace(cur)">Race abandoned / skip</button>`;
+        <div style="font-size:.65rem;color:#a7f3d0;margin-top:4px">ladder ${S.seq.join("-")} × ${(S.unit*100)}p${n>1?` · split across ${n} horses`:" units"}</div></div>
+      ${heroGroup.map((r,i)=>rowCard(r,i)).join("")}`;
+    ha.innerHTML="";
   } else {
     hero.innerHTML = `<div class="label" style="color:var(--dim)">No race pending</div>
       <h2 style="font-size:1.1rem">${S.day? "🎉 All races processed" : "No selections loaded"}</h2>
