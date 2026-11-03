@@ -333,12 +333,9 @@ function processRace(race, ret){
   else if(ret > stake + 0.001){ S.seq = S.seq.length<=2 ? [1,2,2] : S.seq.slice(1,-1); }
   else { S.seq.push(units); }
   S.log.push({time:race.time, course:race.course, horse:race.horse, stake, ret, bank:S.bank});
-  let strSkip=0;
-  if(S.day) S.day.races.forEach(x=>{ if(x!==race && x.status==="pending" && x.time===race.time && x.course===race.course){ x.status="skip"; x.stake=0; x.ret=0; strSkip++; } });
   save(); schedule(); render();
   if(settled) banner(`🎉 New bank peak ${fmt(S.peak)} — ladder settled back to 1-2-2`, true);
   else if(race.status==="won") banner(`✅ ${race.horse} returned ${fmt(ret)} — ends scratched off`, true);
-  if(strSkip) toast(strSkip + (strSkip===1?" string":" strings") + " skipped");
 }
 
 /* ================= notifications ================= */
@@ -498,7 +495,7 @@ function render(){
   tl.innerHTML = S.day ? S.day.races.map(r=>{
     const past = r.status!=="pending";
     const isNow = nr && nr===r;
-    const b = {won:["won","WON"],lost:["lost","LOST"],skip:["skip","SKIPPED"],pending:["pending", r.section==="watch" ? "STRING" : "STAKE SOON"]}[r.status]||["pending",""];
+    const b = {won:["won","WON"],lost:["lost","LOST"],skip:["skip","SKIPPED"],pending:["pending","STAKE SOON"]}[r.status]||["pending",""];
     return `<div class="race ${past?"done":""} ${isNow?"now":""}">
       <div class="t">${r.time}<small>${r.course}</small></div>
       <div class="mid"><div class="h">${r.horse} <span class="stars">${"★".repeat(r.stars)}</span></div>
