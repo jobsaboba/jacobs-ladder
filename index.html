@@ -63,9 +63,13 @@
   .btn.small{padding:8px 10px; font-size:.75rem; width:auto; border-radius:10px}
 
   /* ladder strip */
+  .cardhead{display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:12px}
+  .headbtns{display:flex; gap:6px; flex-shrink:0}
+  .headbtns .btn{padding:7px 10px; width:auto; border-radius:10px; font-size:.72rem}
   .stats{display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-bottom:10px}
-  .stat{background:var(--panel2); border:1px solid var(--line); border-radius:12px; padding:8px 10px}
-  .stat .v{font-weight:800; font-size:1.02rem; margin-top:2px}
+  .stat{background:var(--panel2); border:1px solid var(--line); border-radius:12px; padding:8px 10px; overflow:hidden}
+  .stat .label{margin-bottom:2px; white-space:nowrap; letter-spacing:1px}
+  .stat .v{font-weight:800; font-size:1.02rem; margin-top:2px; white-space:nowrap}
   .stat .v.gold{color:var(--amber)} .stat .v.pos{color:var(--em)} .stat .v.neg{color:var(--red)}
   .seq{display:flex; gap:6px; flex-wrap:wrap; align-items:center; margin-top:4px}
   .seq .n{background:var(--sky); color:#06202f; font-weight:900; border-radius:8px; padding:5px 10px; font-size:.9rem}
@@ -148,10 +152,13 @@
 
 <!-- LADDER STATE -->
 <div class="card">
-  <div class="label">Ladder &amp; bank
-    <button class="btn ghost small" style="float:right" onclick="editBank()">✎ Bank</button>
-    <button class="btn ghost small" style="float:right; margin-right:6px" onclick="undo()" id="undoBtn">↩ Undo</button>
-    <button class="btn ghost small" style="float:right; margin-right:6px" onclick="resetCycle()">⟲ New cycle</button>
+  <div class="cardhead">
+    <div class="label" style="margin:0">Ladder & bank</div>
+    <div class="headbtns">
+      <button class="btn ghost small" onclick="resetCycle()">⟲ New cycle</button>
+      <button class="btn ghost small" onclick="undo()" id="undoBtn">↩ Undo</button>
+      <button class="btn ghost small" onclick="editBank()">✎ Bank</button>
+    </div>
   </div>
   <div class="stats">
     <div class="stat"><div class="label">Bank</div><div class="v" id="bankV"></div></div>
