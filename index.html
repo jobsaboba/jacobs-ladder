@@ -151,6 +151,7 @@
   <div class="label">Ladder &amp; bank
     <button class="btn ghost small" style="float:right" onclick="editBank()">✎ Bank</button>
     <button class="btn ghost small" style="float:right; margin-right:6px" onclick="undo()" id="undoBtn">↩ Undo</button>
+    <button class="btn ghost small" style="float:right; margin-right:6px" onclick="resetCycle()">⟲ New cycle</button>
   </div>
   <div class="stats">
     <div class="stat"><div class="label">Bank</div><div class="v" id="bankV"></div></div>
@@ -440,6 +441,13 @@ function editBank(){
   snapshot(); S.bank=r2(n); if(S.bank>S.peak){ S.peak=S.bank; S.seq=[1,2,2]; }
   save(); render(); toast("Bank updated");
 }
+/* fresh cycle: bank, peak, day P/L and the ladder all start from zero again */
+function resetCycle(){
+  const v = prompt("Start a new cycle — what bank do you start from (£)?\nBank, peak, day P/L and the ladder reset; nothing else changes.", S.bank.toFixed(2));
+  if(v===null) return; const n = +v; if(isNaN(n)) { toast("Not a number"); return; }
+  snapshot(); S.bank=r2(n); S.peak=S.bank; S.startBank=S.bank; S.seq=[1,2,2]; S.log=[];
+  save(); schedule(); render(); toast("New cycle started — good luck");
+}
 function undo(){
   if(!S.history.length){ toast("Nothing to undo"); return; }
   restore(S.history.pop()); save(); schedule(); render(); toast("Undone");
@@ -541,13 +549,18 @@ function render(){
   tl.innerHTML = S.day ? S.day.races.map(r=>{
     const past = r.status!=="pending";
     const isNow = nr && nr===r;
-    const b = {won:["won","WON"],lost:["lost","LOST"],skip:["skip","SKIPPED"],pending:["pending","STAKE SOON"]}[r.status]||["pending",""];
+    const b = {won:["won","WON"],lost:["lost","LOST"],skip:["skip","SKIPPED"],pending:["pending",""]}[r.status]||["pending",""];
+    let amt = "";
+    if((r.status==="won"||r.status==="lost") && r.ret!=null && r.stake!=null){
+      const d = r2(r.ret - r.stake);
+      amt = (d>=0?"+":"−")+"£"+Math.abs(d).toFixed(2);
+    }
     return `<div class="race ${past?"done":""} ${isNow?"now":""}">
       <div class="t">${r.time}<small>${r.course}</small></div>
       <div class="mid"><div class="h">${r.horse} <span class="stars">${"★".repeat(r.stars)}</span></div>
         <div class="r">${r.trainer} · ${r.odds} · ${r.race}${r.lost_to?` · ${r.lost_to.startsWith("stablemate")?r.lost_to:"race goes to "+r.lost_to}`:""}</div>
         ${past&&r.stake!=null?`<div class="r">stake ${fmt(r.stake)} → ret ${fmt(r.ret)}</div>`:""}</div>
-      <div class="badge ${b[0]}">${b[1]}</div></div>`;
+      ${b[1]?`<div class="badge ${b[0]}">${b[1]}${amt?" "+amt:""}</div>`:""}</div>`;
   }).join("") : `<div class="card" style="font-size:.82rem;color:var(--dim)">Fetch the day's selections, or import <code>inform-shortlist-*.json</code> from the desktop pipeline.</div>`;
 
   // ledger
