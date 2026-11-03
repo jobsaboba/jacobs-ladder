@@ -280,10 +280,21 @@ async function fetchData(silent){
   return false;
 }
 
-/* on open: if nothing is loaded, or the day in memory is from an earlier date,
-   refresh automatically so the app always starts on the current shortlist */
+/* on open: refresh if nothing is loaded, the day in memory is from an earlier
+   date, or the published list has grown (string entries publish in race order) */
 async function autoRefresh(){
-  if(S.day && S.day.date === todayStr()) return;
+  if(S.day && S.day.date === todayStr()){
+    try{
+      const r = await fetch(dataUrls()[0], {cache:"no-store"});
+      if(r.ok){
+        const j = await r.json();
+        if(j && j.date===todayStr() && Array.isArray(j.finals) && j.finals.length > S.day.races.length){
+          adoptDay(j); /* picks+strings finished publishing */
+        }
+      }
+    }catch(e){ /* offline — keep what we have */ }
+    return;
+  }
   await fetchData(true);
 }
 /* keep checking while the app stays open: midnight rollover + retry before publish lands */
