@@ -238,7 +238,7 @@ function adoptDay(j){
     date: j.date, stamp: j.racemetrics_stamp || "", startBank: S.bank,
     races: j.finals.map(f => ({
       time:f.time, course:f.course, horse:f.horse, trainer:f.trainer, jockey:f.jockey||"",
-      stars:f.stars||0, odds:f.odds||"", race:f.race||"", section:f.section||"main",
+      stars:f.stars||0, odds:f.odds||"", race:f.race||"", section:f.section||"main", lost_to:f.lost_to||"",
       dt:f.time, status:"pending", stake:null, ret:null
     })).sort((a,b)=> epoch(j.date, a.time)-epoch(j.date, b.time))
   };
@@ -322,9 +322,12 @@ function processRace(race, ret){
   else if(ret > stake + 0.001){ S.seq = S.seq.length<=2 ? [1,2,2] : S.seq.slice(1,-1); }
   else { S.seq.push(units); }
   S.log.push({time:race.time, course:race.course, horse:race.horse, stake, ret, bank:S.bank});
+  let strSkip=0;
+  if(S.day) S.day.races.forEach(x=>{ if(x!==race && x.status==="pending" && x.time===race.time && x.course===race.course){ x.status="skip"; x.stake=0; x.ret=0; strSkip++; } });
   save(); schedule(); render();
   if(settled) banner(`🎉 New bank peak ${fmt(S.peak)} — ladder settled back to 1-2-2`, true);
   else if(race.status==="won") banner(`✅ ${race.horse} returned ${fmt(ret)} — ends scratched off`, true);
+  if(strSkip) toast(strSkip + (strSkip===1?" string":" strings") + " skipped");
 }
 
 /* ================= notifications ================= */
@@ -409,7 +412,9 @@ function undo(){
   restore(S.history.pop()); save(); schedule(); render(); toast("Undone");
 }
 function skipRace(race){ snapshot(); race.status="skip"; race.stake=0; race.ret=0;
-  save(); schedule(); render(); toast(`${race.horse} skipped — ladder unchanged`); }
+  let n=0;
+  if(S.day) S.day.races.forEach(x=>{ if(x!==race && x.status==="pending" && x.time===race.time && x.course===race.course){ x.status="skip"; x.stake=0; x.ret=0; n++; } });
+  save(); schedule(); render(); toast(`${race.horse} skipped${n?" (+"+n+" string"+(n>1?"s":"")+")":""} — ladder unchanged`); }
 function resetDay(){
   if(!S.day){ toast("No day loaded"); return; }
   if(!confirm("Reset the whole race day? Ladder goes back to 1-2-2 and every result is cleared.")) return;
@@ -482,11 +487,11 @@ function render(){
   tl.innerHTML = S.day ? S.day.races.map(r=>{
     const past = r.status!=="pending";
     const isNow = nr && nr===r;
-    const b = {won:["won","WON"],lost:["lost","LOST"],skip:["skip","SKIPPED"],pending:["pending","STAKE SOON"]}[r.status]||["pending",""];
+    const b = {won:["won","WON"],lost:["lost","LOST"],skip:["skip","SKIPPED"],pending:["pending", r.section==="watch" ? "STRING" : "STAKE SOON"]}[r.status]||["pending",""];
     return `<div class="race ${past?"done":""} ${isNow?"now":""}">
       <div class="t">${r.time}<small>${r.course}</small></div>
       <div class="mid"><div class="h">${r.horse} <span class="stars">${"★".repeat(r.stars)}</span></div>
-        <div class="r">${r.trainer} · ${r.odds} · ${r.race}</div>
+        <div class="r">${r.trainer} · ${r.odds} · ${r.race}${r.lost_to?` · ${r.lost_to.startsWith("stablemate")?r.lost_to:"race goes to "+r.lost_to}`:""}</div>
         ${past&&r.stake!=null?`<div class="r">stake ${fmt(r.stake)} → ret ${fmt(r.ret)}</div>`:""}</div>
       <div class="badge ${b[0]}">${b[1]}</div></div>`;
   }).join("") : `<div class="card" style="font-size:.82rem;color:var(--dim)">Fetch the day's selections, or import <code>inform-shortlist-*.json</code> from the desktop pipeline.</div>`;
