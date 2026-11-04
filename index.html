@@ -603,7 +603,7 @@ render();               /* draws immediately with the saved stake */
 autoRefresh();          /* fetch today's shortlist if absent/stale */
 setInterval(publishWatch, 60000);
 
-if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});
+if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js", { updateViaCache: "none" }).catch(()=>{});
 </script>
 </body>
 </html>
