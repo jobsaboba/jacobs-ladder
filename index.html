@@ -174,6 +174,9 @@
 <h3 class="sec">Day ledger <button class="btn ghost small" style="float:right" onclick="copySummary()">⧉ Copy</button></h3>
 <div class="card"><div id="ledgerList"></div></div>
 
+<h3 class="sec">Evening review <button class="btn ghost small" style="float:right" onclick="toggleResults()" id="resultsBtn">📊 Show</button></h3>
+<div class="card" id="resultsCard" style="display:none"><div id="resultsBody"></div></div>
+
 <footer class="actions">
   <div class="grid">
     <button class="btn primary" id="fetchBtn" onclick="fetchData()">⟳ Fetch day's selections</button>
@@ -300,6 +303,56 @@ async function fetchData(silent){
     banner("No selections fetched yet ("+problems[0]+"). They publish with the morning shortlist — the app will keep checking.");
   }
   return false;
+}
+
+/* ---- evening review: today's results, published from the laptop ---- */
+let resultsOpen=false;
+function toggleResults(){
+  resultsOpen=!resultsOpen;
+  const card=document.getElementById("resultsCard"), btn=document.getElementById("resultsBtn");
+  card.style.display=resultsOpen?"":"none";
+  btn.textContent=resultsOpen?"✕ Hide":"📊 Show";
+  if(resultsOpen) loadResults();
+}
+async function loadResults(){
+  const body=document.getElementById("resultsBody");
+  body.innerHTML=`<div style="padding:8px;color:var(--dim);font-size:.85rem">Loading today's results…</div>`;
+  try{
+    const r=await fetch("data/results-"+todayStr()+".json?ts="+Date.now(), {cache:"no-store"});
+    if(!r.ok) throw 0;
+    renderResults(await r.json(), body);
+  }catch(e){
+    body.innerHTML=`<div style="padding:10px;color:var(--dim);font-size:.85rem">No results published for today yet.<br><small>Run <b>Evening Review</b> on the laptop after racing, then tap 📊 again.</small></div>`;
+  }
+}
+function renderResults(d, el){
+  const s=d.score||{};
+  const box=(l,v)=>`<div class="stat"><div class="label">${l}</div><div class="v">${v}</div></div>`;
+  const band=(title,arr,fmt)=>arr&&arr.length
+    ? `<div class="label" style="margin:12px 0 4px">${title}</div>
+       <div style="font-size:.78rem;line-height:1.75">${arr.map(fmt).join("")}</div>` : "";
+  const mark={WIN:"✅",PLACE:"🟢",UNPL:"❌",NR:"🚫","?":"⏳"};
+  el.innerHTML=`
+    <div class="stats">
+      ${box("Settled",s.settled??0)}${box("WON",s.won??0)}${box("Placed",s.placed??0)}
+      ${box("Unplaced",s.unplaced??0)}${box("Win %",s.win_pct!=null?s.win_pct+"%":"—")}${box("Place+ %",s.place_pct!=null?s.place_pct+"%":"—")}
+    </div>
+    ${d.trainers&&d.trainers.length?`
+      <div class="label" style="margin:12px 0 4px">Yards — 14-day form vs today</div>
+      <div style="font-size:.78rem;line-height:1.75">${d.trainers.map(t=>`
+        <div style="display:flex;justify-content:space-between;gap:8px">
+          <span>${t.name}</span>
+          <span style="color:var(--dim);white-space:nowrap">${t.w14} / ${t.p14} → <b>${t.w}W ${t.p}P ${t.u}U</b></span>
+        </div>`).join("")}</div>`:""}
+    ${band("By Timeform stars", d.stars, b=>`<div>${"★".repeat(b.stars)} <span style="color:var(--dim)">n=${b.n} · W ${b.win_pct} · P+ ${b.place_pct}</span></div>`)}
+    ${band("By odds", d.odds, b=>`<div>${b.label} <span style="color:var(--dim)">n=${b.n} · W ${b.win_pct} · P+ ${b.place_pct}</span></div>`)}
+    ${band("By field size", d.fields, b=>`<div>${b.label} <span style="color:var(--dim)">n=${b.n} · W ${b.win_pct} · P+ ${b.place_pct}</span></div>`)}
+    <div class="label" style="margin:12px 0 4px">Every pick</div>
+    <div style="font-size:.8rem;line-height:1.85">${(d.picks||[]).map(p=>`
+      <div>${mark[p.res]||"?"} ${p.time} ${p.meeting} — <b>${p.horse}</b> ${"★".repeat(p.stars||0)} ${p.odds||""}
+        ${p.res==="?"?"":`<span style="color:var(--dim)">pos ${p.pos??"—"} · ${p.res}</span>`}</div>`).join("")}</div>
+    ${d.strings?`<div style="margin-top:10px;font-size:.78rem;color:var(--dim)">strings (not bet): ${d.strings.settled} settled — W ${d.strings.win_pct} · P+ ${d.strings.place_pct}</div>`:""}
+    <div style="margin-top:8px;font-size:.68rem;color:var(--dim)">published ${(d.generated||"").replace("T"," ").slice(0,16)}</div>`;
 }
 
 /* on open: refresh if nothing is loaded, the day in memory is from an earlier
