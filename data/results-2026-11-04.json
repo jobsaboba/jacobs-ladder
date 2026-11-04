@@ -1,0 +1,406 @@
+{
+  "date": "2026-11-04",
+  "generated": "2026-11-04T19:04:32+00:00",
+  "score": {
+    "picks": 22,
+    "settled": 20,
+    "won": 8,
+    "placed": 4,
+    "unplaced": 8,
+    "nr": 0,
+    "pending": 2,
+    "win_pct": 40,
+    "place_pct": 60
+  },
+  "trainers": [
+    {
+      "name": "Charlie Appleby",
+      "w14": "23.8%",
+      "p14": "71.4%",
+      "w": 2,
+      "p": 1,
+      "u": 0,
+      "n": 3
+    },
+    {
+      "name": "Joe Tizzard",
+      "w14": "36.7%",
+      "p14": "70.0%",
+      "w": 1,
+      "p": 1,
+      "u": 0,
+      "n": 2
+    },
+    {
+      "name": "James Owen",
+      "w14": "24.1%",
+      "p14": "58.6%",
+      "w": 0,
+      "p": 0,
+      "u": 2,
+      "n": 2
+    },
+    {
+      "name": "Neil Mulholland",
+      "w14": "25.0%",
+      "p14": "40.0%",
+      "w": 0,
+      "p": 1,
+      "u": 1,
+      "n": 2
+    },
+    {
+      "name": "Gavin Cromwell",
+      "w14": "14.0%",
+      "p14": "37.2%",
+      "w": 0,
+      "p": 0,
+      "u": 2,
+      "n": 2
+    },
+    {
+      "name": "Ed Bethell",
+      "w14": "33.3%",
+      "p14": "66.7%",
+      "w": 1,
+      "p": 0,
+      "u": 1,
+      "n": 2
+    },
+    {
+      "name": "Patrick J Flynn",
+      "w14": "50.0%",
+      "p14": "50.0%",
+      "w": 2,
+      "p": 0,
+      "u": 0,
+      "n": 2
+    },
+    {
+      "name": "Jamie Snowden",
+      "w14": "35.3%",
+      "p14": "76.5%",
+      "w": 0,
+      "p": 1,
+      "u": 0,
+      "n": 1
+    },
+    {
+      "name": "Michael Easterby",
+      "w14": "17.6%",
+      "p14": "47.1%",
+      "w": 1,
+      "p": 0,
+      "u": 0,
+      "n": 1
+    },
+    {
+      "name": "Adrian Paul Keatley",
+      "w14": "30.0%",
+      "p14": "70.0%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
+    },
+    {
+      "name": "Ralph Beckett",
+      "w14": "21.9%",
+      "p14": "59.4%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
+    },
+    {
+      "name": "G M Lyons",
+      "w14": "50.0%",
+      "p14": "62.5%",
+      "w": 1,
+      "p": 0,
+      "u": 0,
+      "n": 1
+    }
+  ],
+  "stars": [
+    {
+      "stars": 5,
+      "n": 9,
+      "w": 5,
+      "win_pct": "56%",
+      "place_pct": "67%"
+    },
+    {
+      "stars": 4,
+      "n": 4,
+      "w": 1,
+      "win_pct": "25%",
+      "place_pct": "50%"
+    },
+    {
+      "stars": 3,
+      "n": 7,
+      "w": 2,
+      "win_pct": "29%",
+      "place_pct": "57%"
+    }
+  ],
+  "odds": [
+    {
+      "label": "evens–2/1",
+      "n": 4,
+      "w": 3,
+      "win_pct": "75%",
+      "place_pct": "100%"
+    },
+    {
+      "label": "2/1–5/1",
+      "n": 12,
+      "w": 4,
+      "win_pct": "33%",
+      "place_pct": "50%"
+    },
+    {
+      "label": "5/1–10/1",
+      "n": 2,
+      "w": 1,
+      "win_pct": "50%",
+      "place_pct": "100%"
+    },
+    {
+      "label": "10/1+",
+      "n": 2,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    }
+  ],
+  "fields": [
+    {
+      "label": "small (≤8)",
+      "n": 3,
+      "w": 3,
+      "win_pct": "100%",
+      "place_pct": "100%"
+    },
+    {
+      "label": "mid (9–12)",
+      "n": 9,
+      "w": 3,
+      "win_pct": "33%",
+      "place_pct": "33%"
+    },
+    {
+      "label": "big (13+)",
+      "n": 8,
+      "w": 2,
+      "win_pct": "25%",
+      "place_pct": "75%"
+    }
+  ],
+  "picks": [
+    {
+      "time": "12:20",
+      "meeting": "Chepstow",
+      "horse": "Gingerbred",
+      "stars": 5,
+      "odds": "4/5",
+      "pos": 1,
+      "res": "WIN"
+    },
+    {
+      "time": "12:51",
+      "meeting": "Chepstow",
+      "horse": "Red Acres Max",
+      "stars": 5,
+      "odds": "11/4",
+      "pos": 2,
+      "res": "PLACE"
+    },
+    {
+      "time": "13:50",
+      "meeting": "Nottingham",
+      "horse": "Temple",
+      "stars": 5,
+      "odds": "9/2",
+      "pos": 7,
+      "res": "UNPL"
+    },
+    {
+      "time": "13:58",
+      "meeting": "Chepstow",
+      "horse": "Jerry The Dreamer",
+      "stars": 4,
+      "odds": "5/1",
+      "pos": 8,
+      "res": "UNPL"
+    },
+    {
+      "time": "14:05",
+      "meeting": "Wexford",
+      "horse": "Caprison",
+      "stars": 3,
+      "odds": "6/1",
+      "pos": 5,
+      "res": "UNPL"
+    },
+    {
+      "time": "14:30",
+      "meeting": "Chepstow",
+      "horse": "Rula Bula",
+      "stars": 5,
+      "odds": "5/4",
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "14:53",
+      "meeting": "Nottingham",
+      "horse": "Borjina",
+      "stars": 5,
+      "odds": "10/3",
+      "pos": 4,
+      "res": "UNPL"
+    },
+    {
+      "time": "15:17",
+      "meeting": "Musselburgh",
+      "horse": "The Resdev Scholar",
+      "stars": 5,
+      "odds": "6/1",
+      "pos": 1,
+      "res": "WIN"
+    },
+    {
+      "time": "15:30",
+      "meeting": "Kempton",
+      "horse": "Valentia Light",
+      "stars": 4,
+      "odds": "11/4",
+      "pos": 1,
+      "res": "WIN"
+    },
+    {
+      "time": "15:40",
+      "meeting": "Chepstow",
+      "horse": "Midnight Pass",
+      "stars": 3,
+      "odds": "8/1",
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "15:45",
+      "meeting": "Wexford",
+      "horse": "Take Stock",
+      "stars": 3,
+      "odds": "8/1",
+      "pos": 6,
+      "res": "UNPL"
+    },
+    {
+      "time": "15:50",
+      "meeting": "Musselburgh",
+      "horse": "Wobwobwob",
+      "stars": 5,
+      "odds": "3/1",
+      "pos": 6,
+      "res": "UNPL"
+    },
+    {
+      "time": "15:55",
+      "meeting": "Nottingham",
+      "horse": "Look Back Smiling",
+      "stars": 3,
+      "odds": "4/1",
+      "pos": 3,
+      "res": "PLACE"
+    },
+    {
+      "time": "16:00",
+      "meeting": "Kempton",
+      "horse": "Light Of The Stars",
+      "stars": 5,
+      "odds": "11/8",
+      "pos": 1,
+      "res": "WIN"
+    },
+    {
+      "time": "16:10",
+      "meeting": "Chepstow",
+      "horse": "Uncle Cc",
+      "stars": 3,
+      "odds": "4/1",
+      "pos": 2,
+      "res": "PLACE"
+    },
+    {
+      "time": "16:30",
+      "meeting": "Kempton",
+      "horse": "Silken Warrior",
+      "stars": 4,
+      "odds": "11/4",
+      "pos": 3,
+      "res": "PLACE"
+    },
+    {
+      "time": "17:00",
+      "meeting": "Kempton",
+      "horse": "Valvano",
+      "stars": 4,
+      "odds": "6/1",
+      "pos": 5,
+      "res": "UNPL"
+    },
+    {
+      "time": "17:15",
+      "meeting": "Dundalk",
+      "horse": "Caffu Zafeen",
+      "stars": 3,
+      "odds": "10/3",
+      "pos": 1,
+      "res": "WIN"
+    },
+    {
+      "time": "17:30",
+      "meeting": "Kempton",
+      "horse": "Persian Spirit",
+      "stars": 5,
+      "odds": "4/1",
+      "pos": 1,
+      "res": "WIN"
+    },
+    {
+      "time": "17:45",
+      "meeting": "Dundalk",
+      "horse": "Justiciar",
+      "stars": 5,
+      "odds": "4/1",
+      "pos": 1,
+      "res": "WIN"
+    },
+    {
+      "time": "18:30",
+      "meeting": "Kempton",
+      "horse": "Super Hit",
+      "stars": 3,
+      "odds": "6/1",
+      "pos": 7,
+      "res": "UNPL"
+    },
+    {
+      "time": "18:45",
+      "meeting": "Dundalk",
+      "horse": "Carrigans Grove",
+      "stars": 3,
+      "odds": "11/2",
+      "pos": 1,
+      "res": "WIN"
+    }
+  ],
+  "strings": {
+    "settled": 33,
+    "win_pct": "0%",
+    "place_pct": "9%"
+  }
+}
