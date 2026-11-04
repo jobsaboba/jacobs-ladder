@@ -1,7 +1,7 @@
 {
   "date": "2026-11-04",
   "racemetrics_stamp": "4 November 2026 at 05:17",
-  "generated": "2026-11-04T05:38:30+00:00",
+  "generated": "2026-11-04T06:28:49+00:00",
   "finals": [
     {
       "race_id": 947464,
@@ -286,52 +286,6 @@
       "string_rank": 2,
       "string": "2nd",
       "lost_to": "stablemate Caprison"
-    },
-    {
-      "race_id": 946937,
-      "course": "Nottingham",
-      "time": "14:23",
-      "race": "Experience Hospitality At Nottingham Racecourse Novice Stakes (GBB/GBBPlus Race)",
-      "horse": "The Resdev Tyke",
-      "jockey": "",
-      "trainer": "M & D Easterby",
-      "section": "main",
-      "stars": 0,
-      "odds": "",
-      "comment": "",
-      "string_rank": 99
-    },
-    {
-      "race_id": 946937,
-      "course": "Nottingham",
-      "time": "14:23",
-      "race": "Experience Hospitality At Nottingham Racecourse Novice Stakes (GBB/GBBPlus Race)",
-      "horse": "Temple",
-      "jockey": "Rossa Ryan",
-      "trainer": "James Owen",
-      "section": "watch",
-      "stars": 0,
-      "odds": "",
-      "comment": "",
-      "string_rank": 1,
-      "string": "1st",
-      "lost_to": "The Resdev Tyke"
-    },
-    {
-      "race_id": 946937,
-      "course": "Nottingham",
-      "time": "14:23",
-      "race": "Experience Hospitality At Nottingham Racecourse Novice Stakes (GBB/GBBPlus Race)",
-      "horse": "Marquetry",
-      "jockey": "",
-      "trainer": "A M Balding",
-      "section": "watch",
-      "stars": 0,
-      "odds": "",
-      "comment": "",
-      "string_rank": 1,
-      "string": "1st",
-      "lost_to": "The Resdev Tyke"
     },
     {
       "race_id": 946952,
@@ -1101,36 +1055,6 @@
       "comment": "Failed to see his race out on debut in a valuable Punchestown bumper in April but showed a bit more when ninth of 11 in bumper at same course (2m, good to soft) on return last month. Tongue tie applied for this hurdling debut.",
       "string_rank": 2,
       "lost_to": "stablemate Caprison"
-    },
-    {
-      "race_id": 946937,
-      "course": "Nottingham",
-      "time": "14:23",
-      "race": "Experience Hospitality At Nottingham Racecourse Novice Stakes (GBB/GBBPlus Race)",
-      "horse": "Temple",
-      "jockey": "Rossa Ryan",
-      "trainer": "James Owen",
-      "section": "watch",
-      "stars": 0,
-      "odds": "",
-      "comment": "",
-      "string_rank": 1,
-      "lost_to": "The Resdev Tyke"
-    },
-    {
-      "race_id": 946937,
-      "course": "Nottingham",
-      "time": "14:23",
-      "race": "Experience Hospitality At Nottingham Racecourse Novice Stakes (GBB/GBBPlus Race)",
-      "horse": "Marquetry",
-      "jockey": "",
-      "trainer": "A M Balding",
-      "section": "watch",
-      "stars": 0,
-      "odds": "",
-      "comment": "",
-      "string_rank": 1,
-      "lost_to": "The Resdev Tyke"
     },
     {
       "race_id": 946938,
