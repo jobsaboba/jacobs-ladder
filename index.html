@@ -133,7 +133,7 @@
       <input id="unitIn" class="unitin" inputmode="decimal" value="5" aria-label="Stake in pence">
       <span class="psym">p</span>
     </div>
-    <button class="iconbtn" id="bellBtn" onclick="askBell()" title="Race alerts">🔔</button>
+    <button class="iconbtn" id="resultsBtnTop" onclick="toggleResults()" title="Evening review">📊</button>
     <button class="iconbtn" id="instBtn" style="display:none" onclick="doInstall()" title="Install app">⤓</button>
   </div>
 </header>
@@ -194,38 +194,13 @@
 /* ================= state ================= */
 const LS = "jlapp_v2";
 
-/* ---- push/alerts config ----
-   WORKER_URL: the Cloudflare worker URL, e.g. "https://jacobs-ladder-push.yourname.workers.dev".
-   Fill it in after `npx wrangler deploy` (see README-APP.md) and re-upload index.html.
-   VAPID_PUBLIC: the app's public push key (pairs with the private key secret on the worker). */
-const WORKER_URL = "https://jacobs-ladder-push.jobsaboba.workers.dev";
-const VAPID_PUBLIC = "BBZGIRt21ZpXzpjhHFfimhaDYai4IhohqO8qHdYIiC3gxMp7sTXzblRCFRacSpHPzAS3WQf87qyPntuoWNUKwQg";
 let S = load();
-let timers = [], deferredPrompt = null, heroTimer = null, bannerTimer = null, cur = null,
+let deferredPrompt = null, heroTimer = null, bannerTimer = null, cur = null,
     lastSeenDay = todayStr(), lastTry = 0;
 
 function blank(){ return { unit:0.05, bank:10.00, peak:10.00, seq:[1,2,2], startBank:10.00, day:null, log:[], history:[] }; }
 function load(){ try{ const j=JSON.parse(localStorage.getItem(LS)); if(j&&j.seq) return j; }catch(e){} return blank(); }
-function save(){ localStorage.setItem(LS, JSON.stringify(S)); mirrorState(); }
-
-/* mirror of the ladder for the service worker (IndexedDB survives app close) */
-function mirrorState(){
-  try{
-    const open = indexedDB.open("jlapp", 1);
-    open.onupgradeneeded = () => open.result.createObjectStore("state");
-    open.onsuccess = () => {
-      const tx = open.result.transaction("state", "readwrite");
-      tx.objectStore("state").put({ seq: [...S.seq], unit: S.unit, next: fmt(stakeAmount()) }, "ladder");
-    };
-  }catch(e){ /* mirror is best-effort */ }
-}
-function urlB64ToUint8(b64){
-  const pad = b64.length % 4 === 0 ? "" : "=".repeat(4 - (b64.length % 4));
-  const raw = atob(b64.replace(/-/g, "+").replace(/_/g, "/") + pad);
-  const out = new Uint8Array(raw.length);
-  for (let i = 0; i < raw.length; i++) out[i] = raw.charCodeAt(i);
-  return out;
-}
+function save(){ localStorage.setItem(LS, JSON.stringify(S)); }
 
 function r2(n){ return Math.round(n*100)/100; }
 function fmt(n){ return "£" + r2(n).toFixed(2); }
@@ -268,7 +243,7 @@ function adoptDay(j){
       if(o){ r.status=o.status; r.stake=o.stake; r.ret=o.ret; } });
   }
   S.day = newDay;
-  save(); schedule(); render();
+  save(); render();
   const stale = j.date < todayStr();
   banner(stale ? `⚠️ Loaded ${j.date} selections — that file is stale, import or fetch a fresh one.` :
                  `✅ ${S.day.races.length} selections loaded for ${j.date} (RaceMetrics ${j.racemetrics_stamp||""})`, !stale);
@@ -309,10 +284,12 @@ async function fetchData(silent){
 let resultsOpen=false;
 function toggleResults(){
   resultsOpen=!resultsOpen;
-  const card=document.getElementById("resultsCard"), btn=document.getElementById("resultsBtn");
+  const card=document.getElementById("resultsCard"), btn=document.getElementById("resultsBtn"),
+        top=document.getElementById("resultsBtnTop");
   card.style.display=resultsOpen?"":"none";
   btn.textContent=resultsOpen?"✕ Hide":"📊 Show";
-  if(resultsOpen) loadResults();
+  top.classList.toggle("on", resultsOpen);
+  if(resultsOpen){ loadResults(); card.scrollIntoView({behavior:"smooth", block:"start"}); }
 }
 async function loadResults(){
   const body=document.getElementById("resultsBody");
@@ -419,55 +396,9 @@ function processRace(race, ret){
       raceWon = tRet > tStake + 0.001;
     }
   }
-  save(); schedule(); render();
+  save(); render();
   if(done && settled) banner(`🎉 New bank peak ${fmt(S.peak)} — ladder settled back to 1-2-2`, true);
   else if(done && raceWon) banner(`✅ ${race.time} ${race.course} — race won ${fmt(tRet-tStake)}, ends scratched off`, true);
-}
-
-/* ================= notifications ================= */
-function askBell(){
-  if(!("Notification" in window)){ toast("Notifications not supported here"); return; }
-  Notification.requestPermission().then(async p=>{
-    updateBell(); if(p==="granted"){ toast("Race alerts on"); schedule(); } else { toast("Alerts blocked in phone settings"); return; }
-    // true background push (fires even when the app is fully closed)
-    try{
-      if(!WORKER_URL){ banner("Local alerts on. For alerts while the app is closed, set WORKER_URL in index.html after deploying the push worker (README-APP.md)."); return; }
-      if(!("pushManager" in window)) { toast("Background push not supported"); return; }
-      const reg = await navigator.serviceWorker.ready;
-      let sub = await reg.pushManager.getSubscription();
-      if(!sub) sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: urlB64ToUint8(VAPID_PUBLIC) });
-      const res = await fetch(WORKER_URL + "/subscribe", {
-        method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ sub: sub.toJSON() })
-      });
-      if(!res.ok) throw new Error("server " + res.status);
-      S.pushSub = true; save();
-      banner("🔔 Race alerts enabled — including when the app is fully closed.", true);
-    }catch(err){
-      banner("Background push setup failed: " + err.message + " — local (app-open) alerts stay active.");
-    }
-  });
-}
-function updateBell(){ const b=document.getElementById("bellBtn");
-  b.classList.toggle("on", "Notification" in window && Notification.permission==="granted"); }
-function clearTimers(){ timers.forEach(clearTimeout); timers=[]; }
-function schedule(){
-  clearTimers();
-  if(!S.day || !("Notification" in window) || Notification.permission!=="granted") return;
-  const now=Date.now();
-  S.day.races.forEach(r=>{
-    if(r.status!=="pending") return;
-    const at = epoch(S.day.date, r.time) - 10*60*1000;
-    if(at <= now) return;
-    timers.push(setTimeout(()=>{
-      const next = S.day.races.find(x=>x.status==="pending" && x.time===r.time && x.course===r.course);
-      const stake = next ? stakeAmount() : null;
-      new Notification(`${r.course} ${r.time} — ${r.horse}`, {
-        body:`Stake ${fmt(stake||stakeAmount())} · ${r.trainer} · ${r.odds} · ${"★".repeat(r.stars)}`,
-        tag:`${r.course}-${r.time}`, badge:"icons/icon-192.png"
-      });
-    }, at-now));
-  });
 }
 
 /* ================= install ================= */
@@ -506,20 +437,20 @@ function resetCycle(){
   const v = prompt("Start a new cycle — what bank do you start from (£)?\nBank, peak, day P/L and the ladder reset; nothing else changes.", S.bank.toFixed(2));
   if(v===null) return; const n = +v; if(isNaN(n)) { toast("Not a number"); return; }
   snapshot(); S.bank=r2(n); S.peak=S.bank; S.startBank=S.bank; S.seq=[1,2,2]; S.log=[];
-  save(); schedule(); render(); toast("New cycle started — good luck");
+  save(); render(); toast("New cycle started — good luck");
 }
 function undo(){
   if(!S.history.length){ toast("Nothing to undo"); return; }
-  restore(S.history.pop()); save(); schedule(); render(); toast("Undone");
+  restore(S.history.pop()); save(); render(); toast("Undone");
 }
 function skipRace(race){ snapshot(); race.status="skip"; race.stake=0; race.ret=0;
-  save(); schedule(); render(); toast(`${race.horse} skipped — ladder unchanged`); }
+  save(); render(); toast(`${race.horse} skipped — ladder unchanged`); }
 function resetDay(){
   if(!S.day){ toast("No day loaded"); return; }
   if(!confirm("Reset the whole race day? Ladder goes back to 1-2-2 and every result is cleared.")) return;
   snapshot(); const bank = S.bank; // keep bank continuity
   S.day.races.forEach(r=>{ r.status="pending"; r.stake=null; r.ret=null; });
-  S.seq=[1,2,2]; S.log=[]; S.startBank=bank; save(); schedule(); render(); toast("Day reset");
+  S.seq=[1,2,2]; S.log=[]; S.startBank=bank; save(); render(); toast("Day reset");
 }
 function copySummary(){
   if(!S.day){ toast("No day loaded"); return; }
@@ -631,7 +562,6 @@ function render(){
       <span class="${cls}">${d>=0?"+":""}${fmt(Math.abs(d))}</span></div>`;
   }).join("") : `<div style="color:var(--dim)">No races processed yet.</div>`;
 
-  updateBell();
   tick(); // immediate countdown refresh
 }
 
@@ -655,9 +585,6 @@ document.getElementById("fileIn").addEventListener("change", e=>{
   f.text().then(t=>{ try{ adoptDay(JSON.parse(t)); }catch(err){ toast("Invalid JSON file"); } });
   e.target.value="";
 });
-
-/* notifications: reschedule if permission granted from another tab, keep list fresh */
-window.addEventListener("focus", ()=>{ schedule(); });
 
 /* ---- never closes without consent while races are pending ---- */
 window.addEventListener("beforeunload", e=>{

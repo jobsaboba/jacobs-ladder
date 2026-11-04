@@ -14,73 +14,11 @@ self.addEventListener("activate", (e) => {
   );
 });
 
-/* ---- background race alerts (wake push when the app is fully closed) ---- */
-const dayUrl = "./data/latest.json";
-
-function idbOpen() {
-  return new Promise((res, rej) => {
-    const r = indexedDB.open("jlapp", 1);
-    r.onupgradeneeded = () => r.result.createObjectStore("state");
-    r.onsuccess = () => res(r.result);
-    r.onerror = rej;
-  });
-}
-async function mirrorGet() {
-  try {
-    const db = await idbOpen();
-    return await new Promise((res) => {
-      const rq = db.transaction("state").objectStore("state").get("ladder");
-      rq.onsuccess = () => res(rq.result || null);
-      rq.onerror = () => res(null);
-    });
-  } catch { return null; }
-}
-async function raceOfDay() {
-  const res = await fetch(dayUrl + "?ts=" + Date.now(), { cache: "no-store" });
-  if (!res.ok) return null;
-  const day = await res.json();
-  if (!day || !Array.isArray(day.finals)) return null;
-  const now = Date.now();
-  const times = (f) => new Date(`${day.date}T${f.time}:00`).getTime();
-  const upcoming = day.finals.filter((f) => times(f) - now >= -5 * 60000);
-  upcoming.sort((a, b) => times(a) - times(b));
-  return { race: upcoming[0] || null, date: day.date };
-}
-
-self.addEventListener("push", (e) => {
-  e.waitUntil((async () => {
-    const { race } = await raceOfDay();
-    if (!race) {
-      return self.registration.showNotification("Jacob's Ladder", {
-        body: "Race alert — open the app for today's selections",
-        badge: "icons/icon-192.png",
-      });
-    }
-    const m = await mirrorGet();
-    const title = `${race.course} ${race.time} — ${race.horse}`;
-    const body =
-      (m && m.next ? `Place your stake ${m.next} — ` : "") +
-      `${race.trainer} · ${race.odds} · ${"★".repeat(race.stars || 0)}`;
-    await self.registration.showNotification(title, {
-      body, tag: `${race.course}-${race.time}`,
-      badge: "icons/icon-192.png", data: { url: "./" },
-    });
-  })());
-});
-
-self.addEventListener("notificationclick", (e) => {
-  e.notification.close();
-  e.waitUntil(
-    clients.matchAll({ type: "window", includeUncontrolled: true }).then((list) =>
-      list.length ? list[0].focus() : clients.openWindow(e.notification.data?.url || "./")
-    )
-  );
-});
-
-self.addEventListener("fetch", (e) => {  const url = new URL(e.request.url);
+self.addEventListener("fetch", (e) => {
+  const url = new URL(e.request.url);
   if (url.origin !== self.location.origin) return;
 
-  // selections JSON: always try the network first so race days stay fresh
+  // selections & results JSON: always try the network first so race days stay fresh
   if (url.pathname.includes("/data/")) {
     e.respondWith(
       fetch(e.request)
