@@ -1,7 +1,7 @@
 {
   "date": "2026-11-05",
   "racemetrics_stamp": "5 November 2026 at 05:48",
-  "generated": "2026-11-05T05:49:18+00:00",
+  "generated": "2026-11-05T06:03:55+00:00",
   "finals": [
     {
       "race_id": 947079,
@@ -262,22 +262,6 @@
       "lost_to": "Optician"
     },
     {
-      "race_id": 947107,
-      "course": "Chelmsford City",
-      "time": "15:05",
-      "race": "All-Weather Championship Is Back Nursery",
-      "horse": "Magical Life",
-      "jockey": "D Egan",
-      "trainer": "J S Moore",
-      "section": "watch",
-      "stars": 2,
-      "odds": "14/1",
-      "comment": "Gained a first success in Kempton nursery in August. Back on track with second of 13 in similar event at Bath (1m, good) before seeming ill at ease on Newmarket's undulations. Goes up further in trip but she's pretty exposed now.",
-      "string_rank": 1,
-      "string": "1st",
-      "lost_to": "Magical Life"
-    },
-    {
       "race_id": 947084,
       "course": "Plumpton",
       "time": "15:22",
@@ -304,22 +288,6 @@
       "odds": "15/2",
       "comment": "C&D winner who hasn't fired this year but is relatively lightly raced of late and now races from below her last winning mark so could do better with cheekpieces back on.",
       "string_rank": 99
-    },
-    {
-      "race_id": 947108,
-      "course": "Chelmsford City",
-      "time": "15:40",
-      "race": "Midnite Ain't Your Grandad's Bookie Handicap (GBBPlus Race)",
-      "horse": "Belle Of Kt",
-      "jockey": "Millie Wonnacott",
-      "trainer": "J S Moore",
-      "section": "watch",
-      "stars": 4,
-      "odds": "14/1",
-      "comment": "Had an excellent summer, completing a 4-timer at Lingfield. Down the field back on turf last 2 starts but expected to make an impact returned to all-weather.",
-      "string_rank": 1,
-      "string": "1st",
-      "lost_to": "Belle Of Kt"
     },
     {
       "race_id": 947091,
@@ -608,36 +576,6 @@
       "comment": "Won twice in 3 starts including at Catterick in September but shaped as if amiss when last of 9 at York in a handicap 27 days ago so now needs to prove well-being back on all-weather.",
       "string_rank": 1,
       "lost_to": "Optician"
-    },
-    {
-      "race_id": 947107,
-      "course": "Chelmsford City",
-      "time": "15:05",
-      "race": "All-Weather Championship Is Back Nursery",
-      "horse": "Magical Life",
-      "jockey": "D Egan",
-      "trainer": "J S Moore",
-      "section": "main",
-      "stars": 2,
-      "odds": "14/1",
-      "comment": "Gained a first success in Kempton nursery in August. Back on track with second of 13 in similar event at Bath (1m, good) before seeming ill at ease on Newmarket's undulations. Goes up further in trip but she's pretty exposed now.",
-      "string_rank": 1,
-      "lost_to": "Magical Life"
-    },
-    {
-      "race_id": 947108,
-      "course": "Chelmsford City",
-      "time": "15:40",
-      "race": "Midnite Ain't Your Grandad's Bookie Handicap (GBBPlus Race)",
-      "horse": "Belle Of Kt",
-      "jockey": "Millie Wonnacott",
-      "trainer": "J S Moore",
-      "section": "watch",
-      "stars": 4,
-      "odds": "14/1",
-      "comment": "Had an excellent summer, completing a 4-timer at Lingfield. Down the field back on turf last 2 starts but expected to make an impact returned to all-weather.",
-      "string_rank": 1,
-      "lost_to": "Belle Of Kt"
     },
     {
       "race_id": 947100,
