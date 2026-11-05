@@ -227,7 +227,8 @@ function adoptDay(j){
     }
   }
   const newDay = {
-    date: j.date, stamp: j.racemetrics_stamp || "", startBank: S.bank,
+    date: j.date, stamp: j.racemetrics_stamp || "", generated: j.generated || "",
+    startBank: S.bank,
     races: j.finals.map(f => ({
       race_id:f.race_id, time:f.time, course:f.course, horse:f.horse, trainer:f.trainer, jockey:f.jockey||"",
       stars:f.stars||0, odds:f.odds||"", race:f.race||"", section:f.section||"main", lost_to:f.lost_to||"",
@@ -340,9 +341,12 @@ async function autoRefresh(){
       const r = await fetch(dataUrls()[0], {cache:"no-store"});
       if(r.ok){
         const j = await r.json();
-        if(j && j.date===todayStr() && Array.isArray(j.finals) && j.finals.length > S.day.races.length){
-          adoptDay(j); /* picks+strings finished publishing */
-        }
+        /* adopt whenever the published list CHANGED — longer (strings finished
+           publishing) or shorter (yard cap / corrections removed rows) */
+        const changed = j && j.date===todayStr() && Array.isArray(j.finals) &&
+          (j.finals.length !== S.day.races.length ||
+           (j.generated && S.day.generated && j.generated !== S.day.generated));
+        if(changed) adoptDay(j);
       }
     }catch(e){ /* offline — keep what we have */ }
     return;
