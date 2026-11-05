@@ -1,5 +1,5 @@
 /* Jacob's Ladder Racing — service worker (app shell cache + fresh data) */
-const CACHE = "jlapp-v7";
+const CACHE = "jlapp-v9";
 const SHELL = ["./", "./index.html", "./manifest.webmanifest", "./icons/icon-192.png", "./icons/icon-512.png"];
 
 self.addEventListener("install", (e) => {
@@ -18,12 +18,14 @@ self.addEventListener("fetch", (e) => {
   const url = new URL(e.request.url);
   if (url.origin !== self.location.origin) return;
   if (e.request.method !== "GET") return;
+  if (e.request.headers.has("range")) return;
 
-  // always bypass the HTTP cache: GitHub Pages serves max-age=600, which can
-  // leave an installed app stuck on the previous shell for up to ten minutes.
-  // network-first with no-store — offline falls back to the cached copy.
+  // GitHub Pages caches files for 10 minutes and shares that copy across
+  // loads — right after a deploy the app can be served yesterday's shell.
+  // A unique query per fetch always misses the CDN and pulls from origin.
+  const busted = url.pathname + "?sw=" + Date.now();
   e.respondWith(
-    fetch(e.request, { cache: "no-store" })
+    fetch(busted, { cache: "no-store" })
       .then((res) => {
         const copy = res.clone();
         caches.open(CACHE).then((c) => c.put(e.request, copy));
