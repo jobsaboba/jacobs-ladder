@@ -1,7 +1,7 @@
 {
   "date": "2026-11-05",
-  "racemetrics_stamp": "5 November 2026 at 05:48",
-  "generated": "2026-11-05T06:19:21+00:00",
+  "racemetrics_stamp": "5 November 2026 at 06:34",
+  "generated": "2026-11-05T06:50:29+00:00",
   "finals": [
     {
       "race_id": 947079,
@@ -186,22 +186,6 @@
       "lost_to": "Taskheer"
     },
     {
-      "race_id": 947089,
-      "course": "Newcastle",
-      "time": "14:42",
-      "race": "Get Raceday Ready Novices' Handicap Chase (GBB Race)",
-      "horse": "Bel Ombre",
-      "jockey": "",
-      "trainer": "N P Mulholland",
-      "section": "watch",
-      "stars": 0,
-      "odds": "",
-      "comment": "",
-      "string_rank": 1,
-      "string": "1st",
-      "lost_to": "Bel Ombre"
-    },
-    {
       "race_id": 947083,
       "course": "Plumpton",
       "time": "14:47",
@@ -266,14 +250,30 @@
       "course": "Plumpton",
       "time": "15:22",
       "race": "Star Sports Handicap Chase (GBB Race)",
+      "horse": "Bel Ombre",
+      "jockey": "C O'Farrell",
+      "trainer": "N P Mulholland",
+      "section": "main",
+      "stars": 5,
+      "odds": "11/10",
+      "comment": "Fair bumper/hurdles winner and much improved on his chasing debut when impressively landing 6-runner handicap at Worcester (2½m, good to soft) last month, jumping boldly in front. Hiked up 10 lb but the one to beat.",
+      "string_rank": 99
+    },
+    {
+      "race_id": 947084,
+      "course": "Plumpton",
+      "time": "15:22",
+      "race": "Star Sports Handicap Chase (GBB Race)",
       "horse": "Rip Wheeler",
       "jockey": "R T Dunne",
       "trainer": "Jamie & Josh Moore",
-      "section": "main",
+      "section": "watch",
       "stars": 4,
       "odds": "9/2",
       "comment": "Much improved for the switch to fences and signed off for last season with a fourth victory in 4-runner handicap at Fontwell (2¾m, good to firm) in April. Has won off a break so not taken lightly on his reappearance.",
-      "string_rank": 99
+      "string_rank": 1,
+      "string": "1st",
+      "lost_to": "Bel Ombre"
     },
     {
       "race_id": 947099,
@@ -533,21 +533,6 @@
       "lost_to": "Taskheer"
     },
     {
-      "race_id": 947089,
-      "course": "Newcastle",
-      "time": "14:42",
-      "race": "Get Raceday Ready Novices' Handicap Chase (GBB Race)",
-      "horse": "Bel Ombre",
-      "jockey": "",
-      "trainer": "N P Mulholland",
-      "section": "main",
-      "stars": 0,
-      "odds": "",
-      "comment": "",
-      "string_rank": 1,
-      "lost_to": "Bel Ombre"
-    },
-    {
       "race_id": 947083,
       "course": "Plumpton",
       "time": "14:47",
@@ -576,6 +561,21 @@
       "comment": "Won twice in 3 starts including at Catterick in September but shaped as if amiss when last of 9 at York in a handicap 27 days ago so now needs to prove well-being back on all-weather.",
       "string_rank": 1,
       "lost_to": "Optician"
+    },
+    {
+      "race_id": 947084,
+      "course": "Plumpton",
+      "time": "15:22",
+      "race": "Star Sports Handicap Chase (GBB Race)",
+      "horse": "Rip Wheeler",
+      "jockey": "R T Dunne",
+      "trainer": "Jamie & Josh Moore",
+      "section": "watch",
+      "stars": 4,
+      "odds": "9/2",
+      "comment": "Much improved for the switch to fences and signed off for last season with a fourth victory in 4-runner handicap at Fontwell (2¾m, good to firm) in April. Has won off a break so not taken lightly on his reappearance.",
+      "string_rank": 1,
+      "lost_to": "Bel Ombre"
     },
     {
       "race_id": 947100,
