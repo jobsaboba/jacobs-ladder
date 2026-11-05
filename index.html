@@ -171,6 +171,9 @@
 <h3 class="sec">Today's selections</h3>
 <div id="timeline"></div>
 
+<h3 class="sec">Strings — not bet <button class="btn ghost small" style="float:right" onclick="toggleStrings()" id="stringsBtn">👁 Show</button></h3>
+<div class="card" id="stringsCard" style="display:none"><div id="stringsBody"></div></div>
+
 <h3 class="sec">Day ledger <button class="btn ghost small" style="float:right" onclick="copySummary()">⧉ Copy</button></h3>
 <div class="card"><div id="ledgerList"></div></div>
 
@@ -245,9 +248,10 @@ function adoptDay(j){
   }
   S.day = newDay;
   save(); render();
+  const nbet = S.day.races.filter(r=>r.section==="main").length;
   const stale = j.date < todayStr();
   banner(stale ? `⚠️ Loaded ${j.date} selections — that file is stale, import or fetch a fresh one.` :
-                 `✅ ${S.day.races.length} selections loaded for ${j.date} (RaceMetrics ${j.racemetrics_stamp||""})`, !stale);
+                 `✅ ${nbet} bets loaded for ${j.date} (+${S.day.races.length-nbet} strings) (RaceMetrics ${j.racemetrics_stamp||""})`, !stale);
 }
 
 /* Pull today's shortlist in race order.
@@ -279,6 +283,24 @@ async function fetchData(silent){
     banner("No selections fetched yet ("+problems[0]+"). They publish with the morning shortlist — the app will keep checking.");
   }
   return false;
+}
+
+/* ---- strings: the yard's other runners — reference only, never bet ---- */
+let stringsOpen=false;
+function toggleStrings(){
+  stringsOpen=!stringsOpen;
+  const card=document.getElementById("stringsCard"), btn=document.getElementById("stringsBtn");
+  card.style.display=stringsOpen?"":"none";
+  btn.textContent=stringsOpen?"✕ Hide":"👁 Show";
+  if(stringsOpen) renderStrings();
+}
+function renderStrings(){
+  const rows=S.day ? S.day.races.filter(r=>r.section==="watch") : [];
+  document.getElementById("stringsBody").innerHTML = rows.length ? rows.map(r=>`
+    <div style="display:flex;justify-content:space-between;gap:8px;font-size:.8rem;line-height:1.8">
+      <span>${r.time} ${r.course} — <b>${r.horse}</b> ${"★".repeat(r.stars||0)}</span>
+      <span style="color:var(--dim);white-space:nowrap">${r.odds||""}${r.lost_to?` · ${r.lost_to.startsWith("stablemate")?r.lost_to:"→ "+r.lost_to}`:""}</span>
+    </div>`).join("") : `<div style="color:var(--dim);font-size:.8rem">No strings today.</div>`;
 }
 
 /* ---- evening review: today's results, published from the laptop ---- */
@@ -380,7 +402,8 @@ function restore(s){
 function processRace(race, ret){
   ret = Math.max(0, +ret || 0);
   snapshot();
-  const rows = S.day.races.filter(r=>groupKey(r)===groupKey(race));
+  /* the pick takes the race's full ladder stake — strings are never bet */
+  const rows = bettable().filter(r=>groupKey(r)===groupKey(race));
   const n = rows.length;
   freezeShares(rows, stakeAmount());      /* the race's ladder stake splits equally across its selections */
   race.ret = ret;
@@ -467,7 +490,9 @@ function copySummary(){
   navigator.clipboard?.writeText(lines.join("\n")).then(()=>toast("Day summary copied")).catch(()=>toast("Copy failed"));
 }
 
-function nextRace(){ return S.day ? S.day.races.find(r=>r.status==="pending") : null; }
+/* only picks (section "main") are bet — strings are reference-only */
+function bettable(){ return S.day ? S.day.races.filter(r=>r.section==="main") : []; }
+function nextRace(){ return bettable().find(r=>r.status==="pending"); }
 
 /* a race = every selection row sharing its race_id (the pick + its strings) */
 function groupKey(r){ return (r.race_id!=null ? "id"+r.race_id : "t"+r.time+"@"+r.course); }
@@ -482,7 +507,7 @@ function freezeShares(rows, raceStake){
 }
 function rowStakeOf(r){
   if(r && r.stake!=null) return r.stake;
-  const rows = S.day.races.filter(x=>groupKey(x)===groupKey(r));
+  const rows = bettable().filter(x=>groupKey(x)===groupKey(r));
   return rows.length ? r2(stakeAmount()/rows.length) : stakeAmount();
 }
 function rowCard(r,i){
@@ -499,7 +524,7 @@ function rowCard(r,i){
       <button class="btn green" onclick="processRace(heroGroup[${i}], +document.getElementById('ret${i}').value)">WON — enter return</button>
       <button class="btn red" onclick="processRace(heroGroup[${i}], 0)">LOST</button>
     </div>
-    <button class="btn ghost" style="margin-top:8px" onclick="skipRace(heroGroup[${i}])">Not running / skip this horse</button>
+    <button class="btn ghost" style="margin-top:8px" onclick="skipRace(heroGroup[${i}])">Not running / skip this race</button>
   </div>`;
 }
 
@@ -522,14 +547,13 @@ function render(){
   const hero=document.getElementById("heroBody"), ha=document.getElementById("heroActions");
   const nr=nextRace();
   cur=nr;
-  heroGroup = nr ? S.day.races.filter(r=>groupKey(r)===groupKey(nr)) : [];
+  heroGroup = nr ? bettable().filter(r=>groupKey(r)===groupKey(nr)) : [];
   if(nr){
-    const n = heroGroup.length;
     hero.innerHTML = `
-      <div class="course-line">${nr.course.toUpperCase()} · ${nr.time}${n>1?` · ${n} selections`:""}</div>
-      <div class="stakebox"><div class="label" style="color:#a7f3d0">${n>1?`Race outlay — ${fmt(stakeAmount()/n)} per horse on ${n}`:"Place now"}</div>
+      <div class="course-line">${nr.course.toUpperCase()} · ${nr.time}</div>
+      <div class="stakebox"><div class="label" style="color:#a7f3d0">Place now — full race stake</div>
         <div class="big">${fmt(stakeAmount())}</div>
-        <div style="font-size:.65rem;color:#a7f3d0;margin-top:4px">ladder ${S.seq.join("-")} × ${(S.unit*100)}p${n>1?` · split across ${n} horses`:" units"}</div></div>
+        <div style="font-size:.65rem;color:#a7f3d0;margin-top:4px">ladder ${S.seq.join("-")} × ${(S.unit*100)}p on ${nr.horse}</div></div>
       ${heroGroup.map((r,i)=>rowCard(r,i)).join("")}`;
     ha.innerHTML="";
   } else {
@@ -539,9 +563,9 @@ function render(){
     ha.innerHTML="";
   }
 
-  // timeline
+  // timeline — picks only; strings live in their own section below
   const tl=document.getElementById("timeline");
-  tl.innerHTML = S.day ? S.day.races.map(r=>{
+  tl.innerHTML = S.day ? bettable().map(r=>{
     const past = r.status!=="pending";
     const isNow = nr && nr===r;
     const b = {won:["won","WON"],lost:["lost","LOST"],skip:["skip","SKIPPED"],pending:["pending",""]}[r.status]||["pending",""];
@@ -592,7 +616,7 @@ document.getElementById("fileIn").addEventListener("change", e=>{
 
 /* ---- never closes without consent while races are pending ---- */
 window.addEventListener("beforeunload", e=>{
-  if(S.day && S.day.races.some(r=>r.status==="pending")){
+  if(S.day && bettable().some(r=>r.status==="pending")){
     e.preventDefault(); e.returnValue = "Races still pending — close Jacob's Ladder?";
     return e.returnValue;
   }
