@@ -1,0 +1,508 @@
+{
+  "date": "2026-11-05",
+  "generated": "2026-11-05T17:32:58+00:00",
+  "score": {
+    "picks": 9,
+    "settled": 8,
+    "won": 3,
+    "placed": 1,
+    "unplaced": 4,
+    "nr": 0,
+    "pending": 1,
+    "win_pct": 38,
+    "place_pct": 50
+  },
+  "trainers": [
+    {
+      "name": "Joe Tizzard",
+      "w14": "37.0%",
+      "p14": "70.4%",
+      "w": 1,
+      "p": 0,
+      "u": 1,
+      "n": 2
+    },
+    {
+      "name": "David Simcock",
+      "w14": "33.3%",
+      "p14": "55.6%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
+    },
+    {
+      "name": "Jamie Snowden",
+      "w14": "33.3%",
+      "p14": "77.8%",
+      "w": 1,
+      "p": 0,
+      "u": 0,
+      "n": 1
+    },
+    {
+      "name": "Charlie Johnston",
+      "w14": "17.4%",
+      "p14": "39.1%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
+    },
+    {
+      "name": "Neil Mulholland",
+      "w14": "22.2%",
+      "p14": "44.4%",
+      "w": 1,
+      "p": 0,
+      "u": 0,
+      "n": 1
+    },
+    {
+      "name": "Charlie Longsdon",
+      "w14": "38.5%",
+      "p14": "61.5%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
+    },
+    {
+      "name": "Ed Walker",
+      "w14": "26.9%",
+      "p14": "57.7%",
+      "w": 0,
+      "p": 1,
+      "u": 0,
+      "n": 1
+    }
+  ],
+  "stars": [
+    {
+      "stars": 5,
+      "n": 3,
+      "w": 3,
+      "win_pct": "100%",
+      "place_pct": "100%"
+    },
+    {
+      "stars": 4,
+      "n": 3,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
+    {
+      "stars": 3,
+      "n": 2,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "50%"
+    }
+  ],
+  "odds": [
+    {
+      "label": "evens–2/1",
+      "n": 3,
+      "w": 3,
+      "win_pct": "100%",
+      "place_pct": "100%"
+    },
+    {
+      "label": "2/1–5/1",
+      "n": 2,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
+    {
+      "label": "5/1–10/1",
+      "n": 2,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
+    {
+      "label": "10/1+",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "100%"
+    }
+  ],
+  "fields": [
+    {
+      "label": "small (≤8)",
+      "n": 5,
+      "w": 3,
+      "win_pct": "60%",
+      "place_pct": "60%"
+    },
+    {
+      "label": "mid (9–12)",
+      "n": 2,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "50%"
+    },
+    {
+      "label": "big (13+)",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    }
+  ],
+  "picks": [
+    {
+      "time": "13:08",
+      "meeting": "Plumpton",
+      "horse": "Sweet Caryline",
+      "trainer": "J Tizzard",
+      "stars": 4,
+      "odds": "3/1",
+      "sp": "9/4",
+      "sp_dec": 3.25,
+      "pos": 3,
+      "res": "UNPL"
+    },
+    {
+      "time": "13:43",
+      "meeting": "Plumpton",
+      "horse": "Jenny France",
+      "trainer": "J Tizzard",
+      "stars": 5,
+      "odds": "11/10",
+      "sp": "4/7",
+      "sp_dec": 1.5714285714285714,
+      "pos": 1,
+      "res": "WIN"
+    },
+    {
+      "time": "14:30",
+      "meeting": "Chelmsford City",
+      "horse": "Makes Me Wonder",
+      "trainer": "D M Simcock",
+      "stars": 3,
+      "odds": "8/1",
+      "sp": "9/1",
+      "sp_dec": 10.0,
+      "pos": 7,
+      "res": "UNPL"
+    },
+    {
+      "time": "14:47",
+      "meeting": "Plumpton",
+      "horse": "Central Command",
+      "trainer": "Jamie Snowden",
+      "stars": 5,
+      "odds": "11/8",
+      "sp": "4/7",
+      "sp_dec": 1.5714285714285714,
+      "pos": 1,
+      "res": "WIN"
+    },
+    {
+      "time": "15:05",
+      "meeting": "Chelmsford City",
+      "horse": "Wild Orchid",
+      "trainer": "C Johnston",
+      "stars": 4,
+      "odds": "4/1",
+      "sp": "7/2",
+      "sp_dec": 4.5,
+      "pos": 8,
+      "res": "UNPL"
+    },
+    {
+      "time": "15:22",
+      "meeting": "Plumpton",
+      "horse": "Bel Ombre",
+      "trainer": "N P Mulholland",
+      "stars": 5,
+      "odds": "11/10",
+      "sp": "8/13",
+      "sp_dec": 1.6153846153846154,
+      "pos": 1,
+      "res": "WIN"
+    },
+    {
+      "time": "15:55",
+      "meeting": "Plumpton",
+      "horse": "Stroll On By",
+      "trainer": "C E Longsdon",
+      "stars": 4,
+      "odds": "13/2",
+      "sp": "15/2",
+      "sp_dec": 8.5,
+      "pos": 4,
+      "res": "UNPL"
+    },
+    {
+      "time": "16:30",
+      "meeting": "Southwell",
+      "horse": "Forbidden Colours",
+      "trainer": "E Walker",
+      "stars": 3,
+      "odds": "11/2",
+      "sp": "11/1",
+      "sp_dec": 12.0,
+      "pos": 3,
+      "res": "PLACE"
+    },
+    {
+      "time": "18:30",
+      "meeting": "Southwell",
+      "horse": "Prince Of Pillo",
+      "trainer": "R A Fahey",
+      "stars": 5,
+      "odds": "5/2",
+      "sp": "5/2",
+      "sp_dec": 3.5,
+      "pos": 0,
+      "res": "?"
+    }
+  ],
+  "strings": {
+    "settled": 16,
+    "win_pct": "12%",
+    "place_pct": "31%"
+  },
+  "outsiders": [
+    {
+      "time": "12:42",
+      "meeting": "Newbury",
+      "horse": "Non Stop",
+      "trainer": "J Tizzard",
+      "string": "1st",
+      "stars": 3,
+      "odds": "16/1",
+      "sp": "11/1",
+      "sp_dec": 12.0,
+      "pos": 5,
+      "res": "UNPL",
+      "lost_to": "Non Stop"
+    },
+    {
+      "time": "13:25",
+      "meeting": "Clonmel",
+      "horse": "Don't Hold Back",
+      "trainer": "P Nolan",
+      "string": "1st",
+      "stars": 4,
+      "odds": "10/1",
+      "sp": "2/1",
+      "sp_dec": 3.0,
+      "pos": 5,
+      "res": "UNPL",
+      "lost_to": "Don't Hold Back"
+    },
+    {
+      "time": "13:34",
+      "meeting": "Newcastle",
+      "horse": "Freshers Week",
+      "trainer": "C E Longsdon",
+      "string": "1st",
+      "stars": 5,
+      "odds": "16/1",
+      "sp": "4/1",
+      "sp_dec": 5.0,
+      "pos": 3,
+      "res": "PLACE",
+      "lost_to": "Freshers Week"
+    },
+    {
+      "time": "13:57",
+      "meeting": "Chelmsford City",
+      "horse": "Lapidarist",
+      "trainer": "D M Simcock",
+      "string": "1st",
+      "stars": 2,
+      "odds": "12/1",
+      "sp": "20/1",
+      "sp_dec": 21.0,
+      "pos": 8,
+      "res": "UNPL",
+      "lost_to": "Lapidarist"
+    },
+    {
+      "time": "14:25",
+      "meeting": "Newbury",
+      "horse": "Moon Chime",
+      "trainer": "D Killahena & G McPherson",
+      "string": "1st",
+      "stars": 5,
+      "odds": "10/1",
+      "sp": "9/1",
+      "sp_dec": 10.0,
+      "pos": 10,
+      "res": "UNPL",
+      "lost_to": "Moon Chime"
+    },
+    {
+      "time": "14:47",
+      "meeting": "Plumpton",
+      "horse": "Nicolai",
+      "trainer": "N P Mulholland",
+      "string": "1st",
+      "stars": 2,
+      "odds": "66/1",
+      "sp": "50/1",
+      "sp_dec": 51.0,
+      "pos": 4,
+      "res": "UNPL",
+      "lost_to": "Central Command"
+    },
+    {
+      "time": "14:53",
+      "meeting": "Southwell",
+      "horse": "Prince Of Calypso",
+      "trainer": "E Bethell",
+      "string": "1st",
+      "stars": 3,
+      "odds": "12/1",
+      "sp": "4/1",
+      "sp_dec": 5.0,
+      "pos": 3,
+      "res": "PLACE",
+      "lost_to": "Prince Of Calypso"
+    },
+    {
+      "time": "15:28",
+      "meeting": "Southwell",
+      "horse": "Benacre",
+      "trainer": "C Johnston",
+      "string": "1st",
+      "stars": 5,
+      "odds": "20/1",
+      "sp": "7/1",
+      "sp_dec": 8.0,
+      "pos": 1,
+      "res": "WIN",
+      "lost_to": "Benacre"
+    },
+    {
+      "time": "15:28",
+      "meeting": "Southwell",
+      "horse": "Orangesandlemons",
+      "trainer": "E Bethell",
+      "string": "1st",
+      "stars": 3,
+      "odds": "15/2",
+      "sp": "10/1",
+      "sp_dec": 11.0,
+      "pos": 11,
+      "res": "UNPL",
+      "lost_to": "Benacre"
+    },
+    {
+      "time": "16:00",
+      "meeting": "Southwell",
+      "horse": "Rogue Inferno",
+      "trainer": "E Bethell",
+      "string": "1st",
+      "stars": 2,
+      "odds": "25/1",
+      "sp": "33/1",
+      "sp_dec": 34.0,
+      "pos": 4,
+      "res": "UNPL",
+      "lost_to": "Rogue Inferno"
+    },
+    {
+      "time": "16:15",
+      "meeting": "Chelmsford City",
+      "horse": "Hitched",
+      "trainer": "D M Simcock",
+      "string": "1st",
+      "stars": 3,
+      "odds": "20/1",
+      "sp": "33/1",
+      "sp_dec": 34.0,
+      "pos": 8,
+      "res": "UNPL",
+      "lost_to": "Hitched"
+    },
+    {
+      "time": "16:45",
+      "meeting": "Chelmsford City",
+      "horse": "Berkshire Dream",
+      "trainer": "A M Balding",
+      "string": "1st",
+      "stars": 2,
+      "odds": "20/1",
+      "sp": "28/1",
+      "sp_dec": 29.0,
+      "pos": 1,
+      "res": "WIN",
+      "lost_to": "Berkshire Dream"
+    },
+    {
+      "time": "17:00",
+      "meeting": "Southwell",
+      "horse": "North Star Kodi",
+      "trainer": "R A Fahey",
+      "string": "1st",
+      "stars": 5,
+      "odds": "12/1",
+      "sp": "3/1",
+      "sp_dec": 4.0,
+      "pos": 3,
+      "res": "PLACE",
+      "lost_to": "North Star Kodi"
+    },
+    {
+      "time": "17:00",
+      "meeting": "Southwell",
+      "horse": "Get On That Baby",
+      "trainer": "M & D Easterby",
+      "string": "1st",
+      "stars": 3,
+      "odds": "15/2",
+      "sp": "20/1",
+      "sp_dec": 21.0,
+      "pos": 5,
+      "res": "UNPL",
+      "lost_to": "North Star Kodi"
+    },
+    {
+      "time": "17:00",
+      "meeting": "Southwell",
+      "horse": "Ventura Power",
+      "trainer": "G Boughey",
+      "string": "1st",
+      "stars": 2,
+      "odds": "25/1",
+      "sp": "20/1",
+      "sp_dec": 21.0,
+      "pos": 10,
+      "res": "UNPL",
+      "lost_to": "North Star Kodi"
+    },
+    {
+      "time": "17:30",
+      "meeting": "Southwell",
+      "horse": "Alanka",
+      "trainer": "R A Fahey",
+      "string": "1st",
+      "stars": 3,
+      "odds": "20/1",
+      "sp": "16/1",
+      "sp_dec": 17.0,
+      "pos": 0,
+      "res": "UNPL",
+      "lost_to": "Alanka"
+    }
+  ],
+  "outsider_score": {
+    "strings": 16,
+    "settled": 16,
+    "won": 2,
+    "placed": 3,
+    "unplaced": 11,
+    "nr": 0,
+    "pending": 0,
+    "win_pct": 12,
+    "place_pct": 31
+  }
+}
