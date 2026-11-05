@@ -1,36 +1,8 @@
 {
   "date": "2026-11-05",
-  "racemetrics_stamp": "5 November 2026 at 06:34",
-  "generated": "2026-11-05T06:52:49+00:00",
+  "racemetrics_stamp": "5 November 2026 at 07:49",
+  "generated": "2026-11-05T08:06:33+00:00",
   "finals": [
-    {
-      "race_id": 947079,
-      "course": "Plumpton",
-      "time": "12:33",
-      "race": "Download The Star Sports App Novices' Handicap Chase (GBB Race)",
-      "horse": "Soomaroy",
-      "jockey": "Caoilin Quinn",
-      "trainer": "Jamie & Josh Moore",
-      "section": "main",
-      "stars": 3,
-      "odds": "11/8",
-      "comment": "£190,000 purchase after scoring in points. Built on debut promise to land 2m maiden hurdle at Hereford last December but pulled up (possibly amiss) in 21f novice at Kempton in March on final run for Nicky Henderson. Not written off on yard/chasing debut.",
-      "string_rank": 99
-    },
-    {
-      "race_id": 947092,
-      "course": "Newbury",
-      "time": "12:42",
-      "race": "OLBG Conditional Jockeys' Handicap Hurdle",
-      "horse": "Zarakerjack",
-      "jockey": "Freddie Mitchell",
-      "trainer": "Jamie & Josh Moore",
-      "section": "main",
-      "stars": 4,
-      "odds": "6/1",
-      "comment": "Did plenty wrong when placing in a couple of juvenile hurdles at Kempton last winter. Positive signs on the Flat since being gelded, doubling his tally with a fairly useful success at Epsom in late-September. Opening mark looks potentially lenient if he can jump/settle better back hurdling.",
-      "string_rank": 99
-    },
     {
       "race_id": 947092,
       "course": "Newbury",
@@ -45,7 +17,7 @@
       "comment": "Better than ever when winning a handicap hurdle at Wincanton prior to finishing mid-field in a strong Class 4 handicap last December. Below his best both starts over fences subsequently, latterly well-held third following a breathing operation. Another who has gone well fresh previously, though.",
       "string_rank": 1,
       "string": "1st",
-      "lost_to": "Zarakerjack"
+      "lost_to": "Non Stop"
     },
     {
       "race_id": 947080,
@@ -124,22 +96,6 @@
       "lost_to": "Lapidarist"
     },
     {
-      "race_id": 947082,
-      "course": "Plumpton",
-      "time": "14:15",
-      "race": "Call Star Sports On 08000 521 321 Handicap Chase (GBB Race)",
-      "horse": "Diplomatic Ash",
-      "jockey": "Tom Cannon",
-      "trainer": "Jamie & Josh Moore",
-      "section": "watch",
-      "stars": 2,
-      "odds": "6/1",
-      "comment": "Not straightforward but he put his best foot forward to score over hurdles here (21f) in May. Made mistakes when last of 7 back chasing in handicap at Fontwell (19f, good to soft) 3 weeks ago. Has his stamina to prove here too.",
-      "string_rank": 1,
-      "string": "1st",
-      "lost_to": "Diplomatic Ash"
-    },
-    {
       "race_id": 947095,
       "course": "Newbury",
       "time": "14:25",
@@ -160,30 +116,14 @@
       "course": "Chelmsford City",
       "time": "14:30",
       "race": "Midnite Built Different Handicap (Div 2)",
-      "horse": "Taskheer",
-      "jockey": "H Crouch",
-      "trainer": "Jamie & Josh Moore",
-      "section": "main",
-      "stars": 3,
-      "odds": "7/1",
-      "comment": "Free-going sort who went close to making a winning start for this yard in classified event at Lingfield and backed that up returned to a handicap when third back down in trip there since.",
-      "string_rank": 99
-    },
-    {
-      "race_id": 947106,
-      "course": "Chelmsford City",
-      "time": "14:30",
-      "race": "Midnite Built Different Handicap (Div 2)",
       "horse": "Makes Me Wonder",
       "jockey": "Taryn Langley",
       "trainer": "D M Simcock",
-      "section": "watch",
+      "section": "main",
       "stars": 3,
       "odds": "8/1",
       "comment": "Has largely held his form this season and return to this longer trip will suit, but has just the one career win from 19 outings.",
-      "string_rank": 1,
-      "string": "1st",
-      "lost_to": "Taskheer"
+      "string_rank": 99
     },
     {
       "race_id": 947083,
@@ -220,20 +160,6 @@
       "course": "Southwell",
       "time": "14:53",
       "race": "Midnite A Next Generation Betting App Handicap (GBBPlus Race)",
-      "horse": "Optician",
-      "jockey": "Jason Hart",
-      "trainer": "M Herrington",
-      "section": "main",
-      "stars": 3,
-      "odds": "5/2",
-      "comment": "Turned in a shocker at York 26 days ago before bouncing back to win a handicap over 11f here 14 days ago, having the run of things from the front. May find this tougher if not enjoying the same tactical advantages back up in grade and trip.",
-      "string_rank": 99
-    },
-    {
-      "race_id": 947098,
-      "course": "Southwell",
-      "time": "14:53",
-      "race": "Midnite A Next Generation Betting App Handicap (GBBPlus Race)",
       "horse": "Prince Of Calypso",
       "jockey": "Jack Callan",
       "trainer": "E Bethell",
@@ -243,7 +169,21 @@
       "comment": "Won twice in 3 starts including at Catterick in September but shaped as if amiss when last of 9 at York in a handicap 27 days ago so now needs to prove well-being back on all-weather.",
       "string_rank": 1,
       "string": "1st",
-      "lost_to": "Optician"
+      "lost_to": "Prince Of Calypso"
+    },
+    {
+      "race_id": 947107,
+      "course": "Chelmsford City",
+      "time": "15:05",
+      "race": "All-Weather Championship Is Back Nursery",
+      "horse": "Wild Orchid",
+      "jockey": "Callum Shepherd",
+      "trainer": "C Johnston",
+      "section": "main",
+      "stars": 4,
+      "odds": "4/1",
+      "comment": "Took a big step forward on her nursery bow with fourth of 10 at Yarmouth (1m) 2 places behind Chaise Longue and backed that up when off the mark at Brighton a month ago. Looks to be still learning so there may well be more to come upped in distance back on all-weather.",
+      "string_rank": 99
     },
     {
       "race_id": 947084,
@@ -260,20 +200,20 @@
       "string_rank": 99
     },
     {
-      "race_id": 947084,
-      "course": "Plumpton",
-      "time": "15:22",
-      "race": "Star Sports Handicap Chase (GBB Race)",
-      "horse": "Rip Wheeler",
-      "jockey": "R T Dunne",
-      "trainer": "Jamie & Josh Moore",
+      "race_id": 947099,
+      "course": "Southwell",
+      "time": "15:28",
+      "race": "AWC Finals Day At Newcastle 26th March Handicap",
+      "horse": "Benacre",
+      "jockey": "Jason Hart",
+      "trainer": "C Johnston",
       "section": "watch",
-      "stars": 4,
-      "odds": "9/2",
-      "comment": "Much improved for the switch to fences and signed off for last season with a fourth victory in 4-runner handicap at Fontwell (2¾m, good to firm) in April. Has won off a break so not taken lightly on his reappearance.",
+      "stars": 5,
+      "odds": "20/1",
+      "comment": "Well handicapped on last winter's form but struggled through the summer on turf and then reportedly finished lame when last of 9 at Newcastle in September. First-time visor now tried and, though yet to win over 1m, he's interesting from this mark if back in form after 61 days off.",
       "string_rank": 1,
       "string": "1st",
-      "lost_to": "Bel Ombre"
+      "lost_to": "Benacre"
     },
     {
       "race_id": 947099,
@@ -283,25 +223,13 @@
       "horse": "Orangesandlemons",
       "jockey": "C Horgan",
       "trainer": "E Bethell",
-      "section": "main",
+      "section": "watch",
       "stars": 3,
       "odds": "15/2",
       "comment": "C&D winner who hasn't fired this year but is relatively lightly raced of late and now races from below her last winning mark so could do better with cheekpieces back on.",
-      "string_rank": 99
-    },
-    {
-      "race_id": 947091,
-      "course": "Newcastle",
-      "time": "15:50",
-      "race": "attheraces.com/marketmovers 'Junior' NH Flat Race (GBB Race)",
-      "horse": "Coronation Hill",
-      "jockey": "K Brogan",
-      "trainer": "J & A O'Neill",
-      "section": "main",
-      "stars": 3,
-      "odds": "6/1",
-      "comment": "Kingston Hill gelding. Dam (h99), bumper/2m/17f hurdle winner, also 1m-9f winner who stayed 1¾m on Flat. Wears tongue strap. Yard's newcomers always respected.",
-      "string_rank": 99
+      "string_rank": 1,
+      "string": "1st",
+      "lost_to": "Benacre"
     },
     {
       "race_id": 947085,
@@ -384,30 +312,32 @@
       "course": "Southwell",
       "time": "17:00",
       "race": "Midnite It's Actually Pretty Good Nursery",
-      "horse": "Get On That Baby",
-      "jockey": "Joanna Mason",
-      "trainer": "M & D Easterby",
-      "section": "main",
-      "stars": 3,
-      "odds": "15/2",
-      "comment": "Did better with debut under belt when fourth of 13 in novice at Beverley (5f, good to firm) just over 6 weeks ago and now makes the quick switch to a nursery. Upped in trip.",
-      "string_rank": 99
+      "horse": "North Star Kodi",
+      "jockey": "O J Orr",
+      "trainer": "R A Fahey",
+      "section": "watch",
+      "stars": 5,
+      "odds": "12/1",
+      "comment": "Shaped encouragingly when third in a pair of maidens at Hamilton in May but has failed to make an impact in a couple of nurseries more recently. Handicapper drops him 3 lb so not discounted down in grade.",
+      "string_rank": 1,
+      "string": "1st",
+      "lost_to": "North Star Kodi"
     },
     {
       "race_id": 947102,
       "course": "Southwell",
       "time": "17:00",
       "race": "Midnite It's Actually Pretty Good Nursery",
-      "horse": "Quiet Soul",
-      "jockey": "Jason Hart",
-      "trainer": "M Herrington",
+      "horse": "Get On That Baby",
+      "jockey": "Joanna Mason",
+      "trainer": "M & D Easterby",
       "section": "watch",
       "stars": 3,
-      "odds": "10/1",
-      "comment": "Maiden who went backwards from stable debut returned to a nursery when sixth of 12 at this course (5f) 3 weeks ago. Back up in trip.",
+      "odds": "15/2",
+      "comment": "Did better with debut under belt when fourth of 13 in novice at Beverley (5f, good to firm) just over 6 weeks ago and now makes the quick switch to a nursery. Upped in trip.",
       "string_rank": 1,
       "string": "1st",
-      "lost_to": "Get On That Baby"
+      "lost_to": "North Star Kodi"
     },
     {
       "race_id": 947102,
@@ -423,7 +353,37 @@
       "comment": "Largely disappointing since encouraging debut sixth in 6f Windsor maiden (winner landed Redcar 2-Y-O Trophy) but a gelding operation and switch to a nursery got him back on track when fourth at Yarmouth on first try over 7f last month. Not so good at Wolverhampton since, however. Cheekpieces on.",
       "string_rank": 1,
       "string": "1st",
-      "lost_to": "Get On That Baby"
+      "lost_to": "North Star Kodi"
+    },
+    {
+      "race_id": 947103,
+      "course": "Southwell",
+      "time": "17:30",
+      "race": "Make The Move To Midnite Restricted Maiden Fillies' Stakes (GBB Race)",
+      "horse": "Alanka",
+      "jockey": "O J Orr",
+      "trainer": "R A Fahey",
+      "section": "watch",
+      "stars": 3,
+      "odds": "20/1",
+      "comment": "Foaled March 28. Footstepsinthesand filly. Dam maiden (stayed 9f) half-sister to very smart 10.5f-2m winner Litigant, out of smart French 1¼m-12.5f winner Jomana. Yard 5-43 with 2-y-o debutants this season at time of writing.",
+      "string_rank": 1,
+      "string": "1st",
+      "lost_to": "Alanka"
+    },
+    {
+      "race_id": 947105,
+      "course": "Southwell",
+      "time": "18:30",
+      "race": "Midnite: Built For 2026 Not 2006 Handicap (Div 2)",
+      "horse": "Prince Of Pillo",
+      "jockey": "J Garritty",
+      "trainer": "R A Fahey",
+      "section": "main",
+      "stars": 5,
+      "odds": "5/2",
+      "comment": "Dual winner in the first half of 2025 (including over C&D) and took a step back in the right direction when second of 10 over C&D 17 days ago, going down only to a thriving sort. Given a chance to build on that promise.",
+      "string_rank": 99
     }
   ],
   "dropped": [
@@ -440,7 +400,7 @@
       "odds": "16/1",
       "comment": "Better than ever when winning a handicap hurdle at Wincanton prior to finishing mid-field in a strong Class 4 handicap last December. Below his best both starts over fences subsequently, latterly well-held third following a breathing operation. Another who has gone well fresh previously, though.",
       "string_rank": 1,
-      "lost_to": "Zarakerjack"
+      "lost_to": "Non Stop"
     },
     {
       "race_id": 946905,
@@ -488,21 +448,6 @@
       "lost_to": "Lapidarist"
     },
     {
-      "race_id": 947082,
-      "course": "Plumpton",
-      "time": "14:15",
-      "race": "Call Star Sports On 08000 521 321 Handicap Chase (GBB Race)",
-      "horse": "Diplomatic Ash",
-      "jockey": "Tom Cannon",
-      "trainer": "Jamie & Josh Moore",
-      "section": "main",
-      "stars": 2,
-      "odds": "6/1",
-      "comment": "Not straightforward but he put his best foot forward to score over hurdles here (21f) in May. Made mistakes when last of 7 back chasing in handicap at Fontwell (19f, good to soft) 3 weeks ago. Has his stamina to prove here too.",
-      "string_rank": 1,
-      "lost_to": "Diplomatic Ash"
-    },
-    {
       "race_id": 947095,
       "course": "Newbury",
       "time": "14:25",
@@ -516,21 +461,6 @@
       "comment": "Landed the Swinton at Haydock (2m) in May and better than ever on the Flat since with a pair of 2m handicap wins. Shaping really well on his return to this sphere prior to falling last (still in front) in Silver Trophy at Chepstow (19f, soft) last month. Interesting on first go over 3m.",
       "string_rank": 1,
       "lost_to": "Moon Chime"
-    },
-    {
-      "race_id": 947106,
-      "course": "Chelmsford City",
-      "time": "14:30",
-      "race": "Midnite Built Different Handicap (Div 2)",
-      "horse": "Makes Me Wonder",
-      "jockey": "Taryn Langley",
-      "trainer": "D M Simcock",
-      "section": "watch",
-      "stars": 3,
-      "odds": "8/1",
-      "comment": "Has largely held his form this season and return to this longer trip will suit, but has just the one career win from 19 outings.",
-      "string_rank": 1,
-      "lost_to": "Taskheer"
     },
     {
       "race_id": 947083,
@@ -560,22 +490,37 @@
       "odds": "12/1",
       "comment": "Won twice in 3 starts including at Catterick in September but shaped as if amiss when last of 9 at York in a handicap 27 days ago so now needs to prove well-being back on all-weather.",
       "string_rank": 1,
-      "lost_to": "Optician"
+      "lost_to": "Prince Of Calypso"
     },
     {
-      "race_id": 947084,
-      "course": "Plumpton",
-      "time": "15:22",
-      "race": "Star Sports Handicap Chase (GBB Race)",
-      "horse": "Rip Wheeler",
-      "jockey": "R T Dunne",
-      "trainer": "Jamie & Josh Moore",
+      "race_id": 947099,
+      "course": "Southwell",
+      "time": "15:28",
+      "race": "AWC Finals Day At Newcastle 26th March Handicap",
+      "horse": "Benacre",
+      "jockey": "Jason Hart",
+      "trainer": "C Johnston",
       "section": "watch",
-      "stars": 4,
-      "odds": "9/2",
-      "comment": "Much improved for the switch to fences and signed off for last season with a fourth victory in 4-runner handicap at Fontwell (2¾m, good to firm) in April. Has won off a break so not taken lightly on his reappearance.",
+      "stars": 5,
+      "odds": "20/1",
+      "comment": "Well handicapped on last winter's form but struggled through the summer on turf and then reportedly finished lame when last of 9 at Newcastle in September. First-time visor now tried and, though yet to win over 1m, he's interesting from this mark if back in form after 61 days off.",
       "string_rank": 1,
-      "lost_to": "Bel Ombre"
+      "lost_to": "Benacre"
+    },
+    {
+      "race_id": 947099,
+      "course": "Southwell",
+      "time": "15:28",
+      "race": "AWC Finals Day At Newcastle 26th March Handicap",
+      "horse": "Orangesandlemons",
+      "jockey": "C Horgan",
+      "trainer": "E Bethell",
+      "section": "watch",
+      "stars": 3,
+      "odds": "15/2",
+      "comment": "C&D winner who hasn't fired this year but is relatively lightly raced of late and now races from below her last winning mark so could do better with cheekpieces back on.",
+      "string_rank": 1,
+      "lost_to": "Benacre"
     },
     {
       "race_id": 947100,
@@ -627,15 +572,30 @@
       "course": "Southwell",
       "time": "17:00",
       "race": "Midnite It's Actually Pretty Good Nursery",
-      "horse": "Quiet Soul",
-      "jockey": "Jason Hart",
-      "trainer": "M Herrington",
+      "horse": "North Star Kodi",
+      "jockey": "O J Orr",
+      "trainer": "R A Fahey",
+      "section": "watch",
+      "stars": 5,
+      "odds": "12/1",
+      "comment": "Shaped encouragingly when third in a pair of maidens at Hamilton in May but has failed to make an impact in a couple of nurseries more recently. Handicapper drops him 3 lb so not discounted down in grade.",
+      "string_rank": 1,
+      "lost_to": "North Star Kodi"
+    },
+    {
+      "race_id": 947102,
+      "course": "Southwell",
+      "time": "17:00",
+      "race": "Midnite It's Actually Pretty Good Nursery",
+      "horse": "Get On That Baby",
+      "jockey": "Joanna Mason",
+      "trainer": "M & D Easterby",
       "section": "watch",
       "stars": 3,
-      "odds": "10/1",
-      "comment": "Maiden who went backwards from stable debut returned to a nursery when sixth of 12 at this course (5f) 3 weeks ago. Back up in trip.",
+      "odds": "15/2",
+      "comment": "Did better with debut under belt when fourth of 13 in novice at Beverley (5f, good to firm) just over 6 weeks ago and now makes the quick switch to a nursery. Upped in trip.",
       "string_rank": 1,
-      "lost_to": "Get On That Baby"
+      "lost_to": "North Star Kodi"
     },
     {
       "race_id": 947102,
@@ -650,7 +610,22 @@
       "odds": "25/1",
       "comment": "Largely disappointing since encouraging debut sixth in 6f Windsor maiden (winner landed Redcar 2-Y-O Trophy) but a gelding operation and switch to a nursery got him back on track when fourth at Yarmouth on first try over 7f last month. Not so good at Wolverhampton since, however. Cheekpieces on.",
       "string_rank": 1,
-      "lost_to": "Get On That Baby"
+      "lost_to": "North Star Kodi"
+    },
+    {
+      "race_id": 947103,
+      "course": "Southwell",
+      "time": "17:30",
+      "race": "Make The Move To Midnite Restricted Maiden Fillies' Stakes (GBB Race)",
+      "horse": "Alanka",
+      "jockey": "O J Orr",
+      "trainer": "R A Fahey",
+      "section": "watch",
+      "stars": 3,
+      "odds": "20/1",
+      "comment": "Foaled March 28. Footstepsinthesand filly. Dam maiden (stayed 9f) half-sister to very smart 10.5f-2m winner Litigant, out of smart French 1¼m-12.5f winner Jomana. Yard 5-43 with 2-y-o debutants this season at time of writing.",
+      "string_rank": 1,
+      "lost_to": "Alanka"
     }
   ]
 }
