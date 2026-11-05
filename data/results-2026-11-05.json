@@ -1,6 +1,6 @@
 {
   "date": "2026-11-05",
-  "generated": "2026-11-05T17:32:58+00:00",
+  "generated": "2026-11-05T17:37:04+00:00",
   "score": {
     "picks": 9,
     "settled": 8,
@@ -489,7 +489,7 @@
       "odds": "20/1",
       "sp": "16/1",
       "sp_dec": 17.0,
-      "pos": 0,
+      "pos": 7,
       "res": "UNPL",
       "lost_to": "Alanka"
     }
