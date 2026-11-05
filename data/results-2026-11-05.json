@@ -1,16 +1,16 @@
 {
   "date": "2026-11-05",
-  "generated": "2026-11-05T17:37:04+00:00",
+  "generated": "2026-11-05T18:45:34+00:00",
   "score": {
     "picks": 9,
-    "settled": 8,
+    "settled": 9,
     "won": 3,
     "placed": 1,
-    "unplaced": 4,
+    "unplaced": 5,
     "nr": 0,
-    "pending": 1,
-    "win_pct": 38,
-    "place_pct": 50
+    "pending": 0,
+    "win_pct": 33,
+    "place_pct": 44
   },
   "trainers": [
     {
@@ -75,15 +75,24 @@
       "p": 1,
       "u": 0,
       "n": 1
+    },
+    {
+      "name": "Richard Fahey",
+      "w14": "10.8%",
+      "p14": "37.8%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
     }
   ],
   "stars": [
     {
       "stars": 5,
-      "n": 3,
+      "n": 4,
       "w": 3,
-      "win_pct": "100%",
-      "place_pct": "100%"
+      "win_pct": "75%",
+      "place_pct": "75%"
     },
     {
       "stars": 4,
@@ -110,7 +119,7 @@
     },
     {
       "label": "2/1–5/1",
-      "n": 2,
+      "n": 3,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -140,10 +149,10 @@
     },
     {
       "label": "mid (9–12)",
-      "n": 2,
+      "n": 3,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "50%"
+      "place_pct": "33%"
     },
     {
       "label": "big (13+)",
@@ -257,10 +266,10 @@
       "trainer": "R A Fahey",
       "stars": 5,
       "odds": "5/2",
-      "sp": "5/2",
-      "sp_dec": 3.5,
-      "pos": 0,
-      "res": "?"
+      "sp": "11/4",
+      "sp_dec": 3.75,
+      "pos": 4,
+      "res": "UNPL"
     }
   ],
   "strings": {
