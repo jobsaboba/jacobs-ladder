@@ -1,6 +1,6 @@
 {
   "date": "2026-11-06",
-  "generated": "2026-11-06T19:00:15+00:00",
+  "generated": "2026-11-06T19:30:16+00:00",
   "score": {
     "picks": 13,
     "settled": 11,
@@ -321,9 +321,9 @@
     }
   ],
   "strings": {
-    "settled": 17,
-    "win_pct": "18%",
-    "place_pct": "35%"
+    "settled": 18,
+    "win_pct": "17%",
+    "place_pct": "39%"
   },
   "outsiders": [
     {
@@ -572,22 +572,22 @@
       "string": "1st",
       "stars": 3,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "5/1",
+      "sp_dec": 6.0,
+      "pos": 2,
+      "res": "PLACE",
       "lost_to": "Naval Gazer"
     }
   ],
   "outsider_score": {
     "strings": 18,
-    "settled": 17,
+    "settled": 18,
     "won": 3,
-    "placed": 3,
+    "placed": 4,
     "unplaced": 11,
     "nr": 0,
-    "pending": 1,
-    "win_pct": 18,
-    "place_pct": 35
+    "pending": 0,
+    "win_pct": 17,
+    "place_pct": 39
   }
 }
