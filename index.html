@@ -89,6 +89,7 @@
   .badge{font-size:.62rem; font-weight:900; border-radius:8px; padding:3px 7px; white-space:nowrap; align-self:center}
   .badge.won{background:#0b2e21; color:var(--em)} .badge.lost{background:#331111; color:#fca5a5}
   .badge.skip{background:#1c2a44; color:var(--dim)} .badge.pending{background:#2d2410; color:#fcd34d}
+  .badge.placed{background:#123227; color:#86efac}
 
   /* ledger */
   #ledgerList{font-size:.78rem}
@@ -172,7 +173,7 @@
 <div id="timeline"></div>
 
 <h3 class="sec">Outsiders — separate bets <button class="btn ghost small" style="float:right" onclick="toggleStrings()" id="stringsBtn">👁 Show</button></h3>
-<div class="card" id="stringsCard" style="display:none"><div id="stringsBody"></div></div>
+<div id="stringsCard" style="display:none"><div id="stringsBody"></div></div>
 
 <h3 class="sec">Day ledger <button class="btn ghost small" style="float:right" onclick="copySummary()">⧉ Copy</button></h3>
 <div class="card"><div id="ledgerList"></div></div>
@@ -187,7 +188,7 @@
     <button class="btn ghost" onclick="resetDay()">✕ Reset day</button>
   </div>
   <div class="hint">Stake = first + last of the ladder &times; unit · any new bank peak resets the ladder to 1-2-2.<br>
-  © Dave Court · v10</div>
+  © Dave Court · v11</div>
 </footer>
 
 <div class="toast" id="toast"></div>
@@ -207,6 +208,7 @@ function save(){ localStorage.setItem(LS, JSON.stringify(S)); }
 
 function r2(n){ return Math.round(n*100)/100; }
 function fmt(n){ return "£" + r2(n).toFixed(2); }
+function ord(n){ n=+n||0; const s=["th","st","nd","rd"], v=n%100; return n+(s[(v-20)%10]||s[v]||s[0]); }
 function todayStr(){ const d=new Date(); return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
 function stakeUnits(seq){ return seq.length>1 ? seq[0]+seq[seq.length-1] : seq[0]; }
 function stakeAmount(){ return stakeUnits(S.seq)*S.unit; }
@@ -249,6 +251,7 @@ function adoptDay(j){
   }
   S.day = newDay;
   save(); render();
+  fetchResults();   /* results may already exist for this date (re-adopt / stale day) */
   const nbet = S.day.races.filter(r=>r.section==="main").length;
   const stale = j.date < todayStr();
   banner(stale ? `⚠️ Loaded ${j.date} selections — that file is stale, import or fetch a fresh one.` :
@@ -297,13 +300,17 @@ function toggleStrings(){
 }
 function renderStrings(){
   const rows=S.day ? S.day.races.filter(r=>r.section==="watch") : [];
-  document.getElementById("stringsBody").innerHTML = rows.length ? rows.map(r=>`
-    <div class="rowcard">
-      <div class="rowh"><span class="h">${r.horse}</span><span class="stars">${"★".repeat(r.stars||0)}</span>
-        <span class="chip">${r.odds||"—"}</span><span class="chip watch">${r.string?r.string+" string":"outsider"}</span></div>
-      <div class="meta"><span>${r.time} · ${r.course}</span><span>${r.trainer}${r.jockey?` / ${r.jockey}`:""}</span>
-        ${r.lost_to?`<span>${r.lost_to.startsWith("stablemate")?r.lost_to:"race goes to "+r.lost_to}</span>`:""}</div>
-    </div>`).join("") : `<div style="color:var(--dim);font-size:.8rem">No outsiders today.</div>`;
+  document.getElementById("stringsBody").innerHTML = rows.length ? rows.map(r=>{
+    /* identical cards to today's selections; the badge slot shows the
+       official win / place / lose once the evening review is published */
+    const off = resOf(r);
+    const b = off ? ({WIN:["won","WON"],PLACE:["placed","PLACE"+(off.pos?" "+ord(off.pos):"")],UNPL:["lost","LOST"],NR:["skip","NR"]}[off.res]||["pending",""]) : ["pending",""];
+    return `<div class="race ${off?"done":""}">
+      <div class="t">${r.time}<small>${r.course}</small></div>
+      <div class="mid"><div class="h">${r.horse} <span class="stars">${"★".repeat(r.stars||0)}</span></div>
+        <div class="r">${r.trainer}${r.jockey?` / ${r.jockey}`:""} · ${r.odds||""}</div></div>
+      ${b[1]?`<div class="badge ${b[0]}">${b[1]}</div>`:""}</div>`;
+  }).join("") : `<div style="color:var(--dim);font-size:.8rem">No outsiders today.</div>`;
 }
 
 /* ---- evening review: today's results, published from the laptop ---- */
@@ -323,7 +330,9 @@ async function loadResults(){
   try{
     const r=await fetch("data/results-"+todayStr()+".json?ts="+Date.now(), {cache:"no-store"});
     if(!r.ok) throw 0;
-    renderResults(await r.json(), body);
+    const d = await r.json();
+    renderResults(d, body);
+    applyResults(d);
   }catch(e){
     body.innerHTML=`<div style="padding:10px;color:var(--dim);font-size:.85rem">No results published for today yet.<br><small>Run <b>Evening Review</b> on the laptop after racing, then tap 📊 again.</small></div>`;
   }
@@ -363,6 +372,33 @@ function renderResults(d, el){
     <div style="margin-top:8px;font-size:.68rem;color:var(--dim)">published ${(d.generated||"").replace("T"," ").slice(0,16)}</div>`;
 }
 
+/* ---- official results on the cards: win / place / lose badges ----
+   fetched quietly in the background once the evening review is published.
+   Races you've already processed keep YOUR badge — the official result only
+   fills the gaps, so the ladder money is never touched by it. */
+function applyResults(d){
+  if(!d || !S.day || d.date !== S.day.date) return;
+  const byKey = {};
+  for(const p of [...(d.picks||[]), ...(d.outsiders||[])]){
+    if(p.res && p.res !== "?") byKey[p.time+"|"+p.horse] = {res:p.res, pos:p.pos};
+  }
+  const sig = JSON.stringify(byKey);
+  if(S.results && S.results.date === d.date && S.results.sig === sig) return;  /* nothing new */
+  S.results = {date: d.date, byKey, sig};
+  save(); render();
+}
+function resOf(r){
+  const R = S.results;
+  return (R && S.day && R.date === S.day.date) ? (R.byKey[r.time+"|"+r.horse] || null) : null;
+}
+async function fetchResults(){
+  if(!S.day) return;
+  try{
+    const r = await fetch("data/results-"+S.day.date+".json?ts="+Date.now(), {cache:"no-store"});
+    if(r.ok) applyResults(await r.json());
+  }catch(e){ /* no results published yet — cards stay as they are */ }
+}
+
 /* on open: refresh if nothing is loaded, the day in memory is from an earlier
    date, or the published list has grown (string entries publish in race order) */
 async function autoRefresh(){
@@ -385,6 +421,7 @@ async function autoRefresh(){
 }
 /* keep checking while the app stays open: midnight rollover + retry before publish lands */
 async function publishWatch(){
+  fetchResults();   /* pick up the evening review the moment it lands */
   const t = todayStr();
   if(t !== lastSeenDay){ lastSeenDay = t; await autoRefresh(); return; }
   if((!S.day || S.day.date < todayStr()) && Date.now() - lastTry > 15*60*1000){
@@ -525,8 +562,7 @@ function rowCard(r,i){
     <div class="rowh"><span class="h">${r.horse}</span><span class="stars">${"★".repeat(r.stars)}</span>
       <span class="chip">${r.odds}</span>${hot?`<span class="chip hot">HOT yard</span>`:""}${sec}</div>
     <div class="meta"><span>${fmt(rowStakeOf(r))} on this horse</span>
-      <span>${r.trainer}${r.jockey?` / ${r.jockey}`:""}</span>
-      ${r.lost_to?`<span>${r.lost_to.startsWith("stablemate")?r.lost_to:"race goes to "+r.lost_to}</span>`:""}</div>
+      <span>${r.trainer}${r.jockey?` / ${r.jockey}`:""}</span></div>
     <input class="ret" id="ret${i}" type="number" step="0.01" min="0" placeholder="Cash returned for ${r.horse} (£)">
     <div class="btnrow">
       <button class="btn green" onclick="processRace(heroGroup[${i}], +document.getElementById('ret${i}').value)">WON — enter return</button>
@@ -576,7 +612,12 @@ function render(){
   tl.innerHTML = S.day ? bettable().map(r=>{
     const past = r.status!=="pending";
     const isNow = nr && nr===r;
-    const b = {won:["won","WON"],lost:["lost","LOST"],skip:["skip","SKIPPED"],pending:["pending",""]}[r.status]||["pending",""];
+    /* your own badge wins once you've processed the race; otherwise the
+       official result (win / place / lose) shows as soon as it's published */
+    const off = resOf(r);
+    const b = r.status!=="pending" ? ({won:["won","WON"],lost:["lost","LOST"],skip:["skip","SKIPPED"],pending:["pending",""]}[r.status]||["pending",""])
+            : off ? ({WIN:["won","WON"],PLACE:["placed","PLACE"+(off.pos?" "+ord(off.pos):"")],UNPL:["lost","LOST"],NR:["skip","NR"]}[off.res]||["pending",""])
+            : ["pending",""];
     let amt = "";
     if((r.status==="won"||r.status==="lost") && r.ret!=null && r.stake!=null){
       const d = r2(r.ret - r.stake);
@@ -585,7 +626,7 @@ function render(){
     return `<div class="race ${past?"done":""} ${isNow?"now":""}">
       <div class="t">${r.time}<small>${r.course}</small></div>
       <div class="mid"><div class="h">${r.horse} <span class="stars">${"★".repeat(r.stars)}</span></div>
-        <div class="r">${r.trainer}${r.jockey?` / ${r.jockey}`:""} · ${r.odds}${r.lost_to?` · ${r.lost_to.startsWith("stablemate")?r.lost_to:"race goes to "+r.lost_to}`:""}</div>
+        <div class="r">${r.trainer}${r.jockey?` / ${r.jockey}`:""} · ${r.odds}</div>
         ${past&&r.stake!=null?`<div class="r">stake ${fmt(r.stake)} → ret ${fmt(r.ret)}</div>`:""}</div>
       ${b[1]?`<div class="badge ${b[0]}">${b[1]}${amt?" "+amt:""}</div>`:""}</div>`;
   }).join("") : `<div class="card" style="font-size:.82rem;color:var(--dim)">Fetch the day's selections, or import <code>inform-shortlist-*.json</code> from the desktop pipeline.</div>`;
@@ -637,6 +678,7 @@ uIn.addEventListener("blur", applyUnitEditor);
 
 render();               /* draws immediately with the saved stake */
 autoRefresh();          /* fetch today's shortlist if absent/stale */
+fetchResults();         /* official win/place/lose badges if results are already out */
 setInterval(publishWatch, 60000);
 
 if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js?v="+Date.now(), { updateViaCache: "none" }).catch(()=>{});
