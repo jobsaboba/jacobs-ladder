@@ -1,16 +1,16 @@
 {
   "date": "2026-11-06",
-  "generated": "2026-11-06T18:30:17+00:00",
+  "generated": "2026-11-06T19:00:15+00:00",
   "score": {
     "picks": 13,
-    "settled": 10,
+    "settled": 11,
     "won": 3,
     "placed": 2,
-    "unplaced": 5,
+    "unplaced": 6,
     "nr": 0,
-    "pending": 3,
-    "win_pct": 30,
-    "place_pct": 50
+    "pending": 2,
+    "win_pct": 27,
+    "place_pct": 45
   },
   "trainers": [
     {
@@ -75,6 +75,15 @@
       "p": 0,
       "u": 1,
       "n": 1
+    },
+    {
+      "name": "G M Lyons",
+      "w14": "50.0%",
+      "p14": "62.5%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
     }
   ],
   "stars": [
@@ -87,10 +96,10 @@
     },
     {
       "stars": 4,
-      "n": 3,
+      "n": 4,
       "w": 1,
-      "win_pct": "33%",
-      "place_pct": "67%"
+      "win_pct": "25%",
+      "place_pct": "50%"
     },
     {
       "stars": 3,
@@ -124,7 +133,7 @@
     },
     {
       "label": "10/1+",
-      "n": 2,
+      "n": 3,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -147,10 +156,10 @@
     },
     {
       "label": "big (13+)",
-      "n": 2,
+      "n": 3,
       "w": 1,
-      "win_pct": "50%",
-      "place_pct": "100%"
+      "win_pct": "33%",
+      "place_pct": "67%"
     }
   ],
   "picks": [
@@ -281,10 +290,10 @@
       "trainer": "G M Lyons",
       "stars": 4,
       "odds": "7/2",
-      "sp": "7/2",
-      "sp_dec": 4.5,
-      "pos": 0,
-      "res": "?"
+      "sp": "10/1",
+      "sp_dec": 11.0,
+      "pos": 6,
+      "res": "UNPL"
     },
     {
       "time": "19:45",
@@ -312,9 +321,9 @@
     }
   ],
   "strings": {
-    "settled": 13,
-    "win_pct": "23%",
-    "place_pct": "38%"
+    "settled": 17,
+    "win_pct": "18%",
+    "place_pct": "35%"
   },
   "outsiders": [
     {
@@ -507,10 +516,10 @@
       "string": "2nd",
       "stars": 4,
       "odds": "8/1",
-      "sp": "8/1",
-      "sp_dec": 9.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "10/1",
+      "sp_dec": 11.0,
+      "pos": 7,
+      "res": "UNPL",
       "lost_to": "stablemate Suzie Songs"
     },
     {
@@ -521,10 +530,10 @@
       "string": "3rd",
       "stars": 3,
       "odds": "33/1",
-      "sp": "33/1",
-      "sp_dec": 34.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "40/1",
+      "sp_dec": 41.0,
+      "pos": 9,
+      "res": "UNPL",
       "lost_to": "stablemate Suzie Songs"
     },
     {
@@ -535,10 +544,10 @@
       "string": "1st",
       "stars": 2,
       "odds": "20/1",
-      "sp": "20/1",
-      "sp_dec": 21.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "16/1",
+      "sp_dec": 17.0,
+      "pos": 2,
+      "res": "PLACE",
       "lost_to": "Suzie Songs"
     },
     {
@@ -549,10 +558,10 @@
       "string": "1st",
       "stars": 2,
       "odds": "20/1",
-      "sp": "20/1",
-      "sp_dec": 21.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "50/1",
+      "sp_dec": 51.0,
+      "pos": 13,
+      "res": "UNPL",
       "lost_to": "Suzie Songs"
     },
     {
@@ -572,13 +581,13 @@
   ],
   "outsider_score": {
     "strings": 18,
-    "settled": 13,
+    "settled": 17,
     "won": 3,
-    "placed": 2,
-    "unplaced": 8,
+    "placed": 3,
+    "unplaced": 11,
     "nr": 0,
-    "pending": 5,
-    "win_pct": 23,
-    "place_pct": 38
+    "pending": 1,
+    "win_pct": 18,
+    "place_pct": 35
   }
 }
