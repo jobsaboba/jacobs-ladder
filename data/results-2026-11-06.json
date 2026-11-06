@@ -1,16 +1,16 @@
 {
   "date": "2026-11-06",
-  "generated": "2026-11-06T16:30:17+00:00",
+  "generated": "2026-11-06T17:00:16+00:00",
   "score": {
     "picks": 13,
-    "settled": 6,
+    "settled": 7,
     "won": 1,
     "placed": 2,
-    "unplaced": 3,
+    "unplaced": 4,
     "nr": 0,
-    "pending": 7,
-    "win_pct": 17,
-    "place_pct": 50
+    "pending": 6,
+    "win_pct": 14,
+    "place_pct": 43
   },
   "trainers": [
     {
@@ -48,6 +48,15 @@
       "p": 1,
       "u": 0,
       "n": 1
+    },
+    {
+      "name": "Charlie Johnston",
+      "w14": "20.0%",
+      "p14": "35.0%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
     }
   ],
   "stars": [
@@ -60,10 +69,10 @@
     },
     {
       "stars": 4,
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "100%"
+      "place_pct": "50%"
     },
     {
       "stars": 3,
@@ -80,6 +89,13 @@
       "w": 1,
       "win_pct": "33%",
       "place_pct": "67%"
+    },
+    {
+      "label": "2/1–5/1",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
     },
     {
       "label": "5/1–10/1",
@@ -99,10 +115,10 @@
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 4,
+      "n": 5,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "25%"
+      "place_pct": "20%"
     },
     {
       "label": "mid (9–12)",
@@ -201,8 +217,8 @@
       "odds": "9/4",
       "sp": "9/4",
       "sp_dec": 3.25,
-      "pos": 0,
-      "res": "?"
+      "pos": 3,
+      "res": "UNPL"
     },
     {
       "time": "17:00",
