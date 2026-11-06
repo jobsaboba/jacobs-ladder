@@ -120,7 +120,9 @@
   .toast.show{opacity:1}
 .pmark{position:absolute; right:14px; top:14px; writing-mode:vertical-rl; opacity:.25; font-size:.6rem; letter-spacing:3px; color:#6ee7b7; pointer-events:none}
   body{position:relative}
-  h3.sec{font-size:.68rem; text-transform:uppercase; letter-spacing:1.5px; color:var(--dim); margin:18px 2px 8px}
+  h3.sec{font-size:.68rem; text-transform:uppercase; letter-spacing:1.5px; color:var(--dim); margin:18px 2px 8px;
+    display:flex; align-items:center; justify-content:space-between; gap:8px}
+  h3.sec .btn{flex-shrink:0}
 </style>
 </head>
 <body>
@@ -172,13 +174,13 @@
 <h3 class="sec">Today's selections</h3>
 <div id="timeline"></div>
 
-<h3 class="sec">Outsiders — separate bets <button class="btn ghost small" style="float:right" onclick="toggleStrings()" id="stringsBtn">👁 Show</button></h3>
+<h3 class="sec">Outsiders — separate bets <button class="btn ghost small" onclick="toggleStrings()" id="stringsBtn">👁 Show</button></h3>
 <div id="stringsCard" style="display:none"><div id="stringsBody"></div></div>
 
-<h3 class="sec">Day ledger <button class="btn ghost small" style="float:right" onclick="copySummary()">⧉ Copy</button></h3>
+<h3 class="sec">Day ledger <button class="btn ghost small" onclick="copySummary()">⧉ Copy</button></h3>
 <div class="card"><div id="ledgerList"></div></div>
 
-<h3 class="sec">Evening review <button class="btn ghost small" style="float:right" onclick="toggleResults()" id="resultsBtn">📊 Show</button></h3>
+<h3 class="sec">Evening review <button class="btn ghost small" onclick="toggleResults()" id="resultsBtn">📊 Show</button></h3>
 <div class="card" id="resultsCard" style="display:none"><div id="resultsBody"></div></div>
 
 <footer class="actions">
@@ -188,7 +190,7 @@
     <button class="btn ghost" onclick="resetDay()">✕ Reset day</button>
   </div>
   <div class="hint">Stake = first + last of the ladder &times; unit · any new bank peak resets the ladder to 1-2-2.<br>
-  © Dave Court · v12</div>
+  © Dave Court · v13</div>
 </footer>
 
 <div class="toast" id="toast"></div>
