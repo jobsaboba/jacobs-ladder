@@ -1,15 +1,15 @@
 {
   "date": "2026-11-06",
-  "generated": "2026-11-06T14:14:34+00:00",
+  "generated": "2026-11-06T15:00:14+00:00",
   "score": {
     "picks": 13,
-    "settled": 2,
+    "settled": 4,
     "won": 1,
-    "placed": 0,
-    "unplaced": 1,
+    "placed": 1,
+    "unplaced": 2,
     "nr": 0,
-    "pending": 11,
-    "win_pct": 50,
+    "pending": 9,
+    "win_pct": 25,
     "place_pct": 50
   },
   "trainers": [
@@ -19,8 +19,8 @@
       "p14": "82.4%",
       "w": 1,
       "p": 0,
-      "u": 0,
-      "n": 1
+      "u": 1,
+      "n": 2
     },
     {
       "name": "Neil Mulholland",
@@ -29,6 +29,15 @@
       "w": 0,
       "p": 0,
       "u": 1,
+      "n": 1
+    },
+    {
+      "name": "Tim Easterby",
+      "w14": "10.2%",
+      "p14": "44.9%",
+      "w": 0,
+      "p": 1,
+      "u": 0,
       "n": 1
     }
   ],
@@ -39,6 +48,20 @@
       "w": 1,
       "win_pct": "50%",
       "place_pct": "50%"
+    },
+    {
+      "stars": 4,
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "100%"
+    },
+    {
+      "stars": 3,
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
     }
   ],
   "odds": [
@@ -48,15 +71,29 @@
       "w": 1,
       "win_pct": "50%",
       "place_pct": "50%"
+    },
+    {
+      "label": "5/1–10/1",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "100%"
+    },
+    {
+      "label": "10/1+",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
     }
   ],
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 1,
+      "n": 3,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "0%"
+      "place_pct": "33%"
     },
     {
       "label": "mid (9–12)",
@@ -98,10 +135,10 @@
       "trainer": "Jamie Snowden",
       "stars": 3,
       "odds": "9/4",
-      "sp": "9/4",
-      "sp_dec": 3.25,
-      "pos": 0,
-      "res": "?"
+      "sp": "12/1",
+      "sp_dec": 13.0,
+      "pos": 7,
+      "res": "UNPL"
     },
     {
       "time": "14:53",
@@ -110,10 +147,10 @@
       "trainer": "T D Easterby",
       "stars": 4,
       "odds": "7/1",
-      "sp": "7/1",
-      "sp_dec": 8.0,
-      "pos": 0,
-      "res": "?"
+      "sp": "11/2",
+      "sp_dec": 6.5,
+      "pos": 2,
+      "res": "PLACE"
     },
     {
       "time": "15:20",
@@ -225,9 +262,9 @@
     }
   ],
   "strings": {
-    "settled": 2,
-    "win_pct": "0%",
-    "place_pct": "50%"
+    "settled": 6,
+    "win_pct": "33%",
+    "place_pct": "67%"
   },
   "outsiders": [
     {
@@ -266,10 +303,10 @@
       "string": "1st",
       "stars": 3,
       "odds": "5/2",
-      "sp": "5/2",
-      "sp_dec": 3.5,
-      "pos": 0,
-      "res": "?",
+      "sp": "11/2",
+      "sp_dec": 6.5,
+      "pos": 2,
+      "res": "PLACE",
       "lost_to": "Donnie Azoff"
     },
     {
@@ -280,10 +317,10 @@
       "string": "1st",
       "stars": 2,
       "odds": "20/1",
-      "sp": "20/1",
-      "sp_dec": 21.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "40/1",
+      "sp_dec": 41.0,
+      "pos": 1,
+      "res": "WIN",
       "lost_to": "Donnie Azoff"
     },
     {
@@ -294,10 +331,10 @@
       "string": "2nd",
       "stars": 4,
       "odds": "8/1",
-      "sp": "8/1",
-      "sp_dec": 9.0,
+      "sp": "7/1",
+      "sp_dec": 8.0,
       "pos": 0,
-      "res": "?",
+      "res": "UNPL",
       "lost_to": "stablemate Stoneacre Donny"
     },
     {
@@ -308,10 +345,10 @@
       "string": "1st",
       "stars": 3,
       "odds": "25/1",
-      "sp": "25/1",
-      "sp_dec": 26.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 1,
+      "res": "WIN",
       "lost_to": "Stoneacre Donny"
     },
     {
@@ -485,13 +522,13 @@
   ],
   "outsider_score": {
     "strings": 18,
-    "settled": 2,
-    "won": 0,
-    "placed": 1,
-    "unplaced": 1,
+    "settled": 6,
+    "won": 2,
+    "placed": 2,
+    "unplaced": 2,
     "nr": 0,
-    "pending": 16,
-    "win_pct": 0,
-    "place_pct": 50
+    "pending": 12,
+    "win_pct": 33,
+    "place_pct": 67
   }
 }
