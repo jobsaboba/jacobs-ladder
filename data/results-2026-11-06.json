@@ -1,16 +1,16 @@
 {
   "date": "2026-11-06",
-  "generated": "2026-11-06T17:00:16+00:00",
+  "generated": "2026-11-06T17:30:16+00:00",
   "score": {
     "picks": 13,
-    "settled": 7,
-    "won": 1,
+    "settled": 8,
+    "won": 2,
     "placed": 2,
     "unplaced": 4,
     "nr": 0,
-    "pending": 6,
-    "win_pct": 14,
-    "place_pct": 43
+    "pending": 5,
+    "win_pct": 25,
+    "place_pct": 50
   },
   "trainers": [
     {
@@ -57,6 +57,15 @@
       "p": 0,
       "u": 1,
       "n": 1
+    },
+    {
+      "name": "Ed Walker",
+      "w14": "27.3%",
+      "p14": "63.6%",
+      "w": 1,
+      "p": 0,
+      "u": 0,
+      "n": 1
     }
   ],
   "stars": [
@@ -76,10 +85,10 @@
     },
     {
       "stars": 3,
-      "n": 2,
-      "w": 0,
-      "win_pct": "0%",
-      "place_pct": "0%"
+      "n": 3,
+      "w": 1,
+      "win_pct": "33%",
+      "place_pct": "33%"
     }
   ],
   "odds": [
@@ -92,10 +101,10 @@
     },
     {
       "label": "2/1–5/1",
-      "n": 1,
-      "w": 0,
-      "win_pct": "0%",
-      "place_pct": "0%"
+      "n": 2,
+      "w": 1,
+      "win_pct": "50%",
+      "place_pct": "50%"
     },
     {
       "label": "5/1–10/1",
@@ -122,8 +131,8 @@
     },
     {
       "label": "mid (9–12)",
-      "n": 1,
-      "w": 1,
+      "n": 2,
+      "w": 2,
       "win_pct": "100%",
       "place_pct": "100%"
     },
@@ -227,10 +236,10 @@
       "trainer": "E Walker",
       "stars": 3,
       "odds": "6/1",
-      "sp": "6/1",
-      "sp_dec": 7.0,
-      "pos": 0,
-      "res": "?"
+      "sp": "7/2",
+      "sp_dec": 4.5,
+      "pos": 1,
+      "res": "WIN"
     },
     {
       "time": "18:00",
@@ -294,9 +303,9 @@
     }
   ],
   "strings": {
-    "settled": 11,
-    "win_pct": "27%",
-    "place_pct": "45%"
+    "settled": 12,
+    "win_pct": "25%",
+    "place_pct": "42%"
   },
   "outsiders": [
     {
@@ -461,10 +470,10 @@
       "string": "1st",
       "stars": 3,
       "odds": "16/1",
-      "sp": "16/1",
-      "sp_dec": 17.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "12/1",
+      "sp_dec": 13.0,
+      "pos": 4,
+      "res": "UNPL",
       "lost_to": "Royal Message"
     },
     {
@@ -554,13 +563,13 @@
   ],
   "outsider_score": {
     "strings": 18,
-    "settled": 11,
+    "settled": 12,
     "won": 3,
     "placed": 2,
-    "unplaced": 6,
+    "unplaced": 7,
     "nr": 0,
-    "pending": 7,
-    "win_pct": 27,
-    "place_pct": 45
+    "pending": 6,
+    "win_pct": 25,
+    "place_pct": 42
   }
 }
