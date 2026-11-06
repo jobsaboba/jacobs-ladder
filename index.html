@@ -187,7 +187,7 @@
     <button class="btn ghost" onclick="resetDay()">✕ Reset day</button>
   </div>
   <div class="hint">Stake = first + last of the ladder &times; unit · any new bank peak resets the ladder to 1-2-2.<br>
-  © Dave Court · v9</div>
+  © Dave Court · v10</div>
 </footer>
 
 <div class="toast" id="toast"></div>
@@ -585,7 +585,7 @@ function render(){
     return `<div class="race ${past?"done":""} ${isNow?"now":""}">
       <div class="t">${r.time}<small>${r.course}</small></div>
       <div class="mid"><div class="h">${r.horse} <span class="stars">${"★".repeat(r.stars)}</span></div>
-        <div class="r">${r.trainer} · ${r.odds} · ${r.race}${r.lost_to?` · ${r.lost_to.startsWith("stablemate")?r.lost_to:"race goes to "+r.lost_to}`:""}</div>
+        <div class="r">${r.trainer}${r.jockey?` / ${r.jockey}`:""} · ${r.odds}${r.lost_to?` · ${r.lost_to.startsWith("stablemate")?r.lost_to:"race goes to "+r.lost_to}`:""}</div>
         ${past&&r.stake!=null?`<div class="r">stake ${fmt(r.stake)} → ret ${fmt(r.ret)}</div>`:""}</div>
       ${b[1]?`<div class="badge ${b[0]}">${b[1]}${amt?" "+amt:""}</div>`:""}</div>`;
   }).join("") : `<div class="card" style="font-size:.82rem;color:var(--dim)">Fetch the day's selections, or import <code>inform-shortlist-*.json</code> from the desktop pipeline.</div>`;
