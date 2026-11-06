@@ -188,7 +188,7 @@
     <button class="btn ghost" onclick="resetDay()">✕ Reset day</button>
   </div>
   <div class="hint">Stake = first + last of the ladder &times; unit · any new bank peak resets the ladder to 1-2-2.<br>
-  © Dave Court · v11</div>
+  © Dave Court · v12</div>
 </footer>
 
 <div class="toast" id="toast"></div>
@@ -304,7 +304,7 @@ function renderStrings(){
     /* identical cards to today's selections; the badge slot shows the
        official win / place / lose once the evening review is published */
     const off = resOf(r);
-    const b = off ? ({WIN:["won","WON"],PLACE:["placed","PLACE"+(off.pos?" "+ord(off.pos):"")],UNPL:["lost","LOST"],NR:["skip","NR"]}[off.res]||["pending",""]) : ["pending",""];
+    const b = resBadge(off);
     return `<div class="race ${off?"done":""}">
       <div class="t">${r.time}<small>${r.course}</small></div>
       <div class="mid"><div class="h">${r.horse} <span class="stars">${"★".repeat(r.stars||0)}</span></div>
@@ -380,7 +380,7 @@ function applyResults(d){
   if(!d || !S.day || d.date !== S.day.date) return;
   const byKey = {};
   for(const p of [...(d.picks||[]), ...(d.outsiders||[])]){
-    if(p.res && p.res !== "?") byKey[p.time+"|"+p.horse] = {res:p.res, pos:p.pos};
+    if(p.res && p.res !== "?") byKey[p.time+"|"+p.horse] = {res:p.res, pos:p.pos, sp:p.sp||p.odds||""};
   }
   const sig = JSON.stringify(byKey);
   if(S.results && S.results.date === d.date && S.results.sig === sig) return;  /* nothing new */
@@ -390,6 +390,15 @@ function applyResults(d){
 function resOf(r){
   const R = S.results;
   return (R && S.day && R.date === S.day.date) ? (R.byKey[r.time+"|"+r.horse] || null) : null;
+}
+/* official result badge: result + finishing position + the SP it returned at */
+function resBadge(off){
+  if(!off) return ["pending",""];
+  const price = off.sp ? " @ "+off.sp : "";
+  return ({WIN:["won","WON"+price],
+           PLACE:["placed","PLACE"+(off.pos?" "+ord(off.pos):"")+price],
+           UNPL:["lost","LOST"+price],
+           NR:["skip","NR"]}[off.res]) || ["pending",""];
 }
 async function fetchResults(){
   if(!S.day) return;
@@ -616,8 +625,7 @@ function render(){
        official result (win / place / lose) shows as soon as it's published */
     const off = resOf(r);
     const b = r.status!=="pending" ? ({won:["won","WON"],lost:["lost","LOST"],skip:["skip","SKIPPED"],pending:["pending",""]}[r.status]||["pending",""])
-            : off ? ({WIN:["won","WON"],PLACE:["placed","PLACE"+(off.pos?" "+ord(off.pos):"")],UNPL:["lost","LOST"],NR:["skip","NR"]}[off.res]||["pending",""])
-            : ["pending",""];
+            : resBadge(off);
     let amt = "";
     if((r.status==="won"||r.status==="lost") && r.ret!=null && r.stake!=null){
       const d = r2(r.ret - r.stake);
