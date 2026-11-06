@@ -1,6 +1,6 @@
 {
   "date": "2026-11-06",
-  "generated": "2026-11-06T17:30:16+00:00",
+  "generated": "2026-11-06T18:00:16+00:00",
   "score": {
     "picks": 13,
     "settled": 8,
@@ -303,9 +303,9 @@
     }
   ],
   "strings": {
-    "settled": 12,
-    "win_pct": "25%",
-    "place_pct": "42%"
+    "settled": 13,
+    "win_pct": "23%",
+    "place_pct": "38%"
   },
   "outsiders": [
     {
@@ -484,10 +484,10 @@
       "string": "1st",
       "stars": 5,
       "odds": "20/1",
-      "sp": "20/1",
-      "sp_dec": 21.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "9/1",
+      "sp_dec": 10.0,
+      "pos": 6,
+      "res": "UNPL",
       "lost_to": "Frantic"
     },
     {
@@ -563,13 +563,13 @@
   ],
   "outsider_score": {
     "strings": 18,
-    "settled": 12,
+    "settled": 13,
     "won": 3,
     "placed": 2,
-    "unplaced": 7,
+    "unplaced": 8,
     "nr": 0,
-    "pending": 6,
-    "win_pct": 25,
-    "place_pct": 42
+    "pending": 5,
+    "win_pct": 23,
+    "place_pct": 38
   }
 }
