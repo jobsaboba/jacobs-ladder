@@ -1,21 +1,55 @@
 {
   "date": "2026-11-06",
-  "generated": "2026-11-06T05:33:44+00:00",
+  "generated": "2026-11-06T13:55:01+00:00",
   "score": {
     "picks": 13,
-    "settled": 0,
-    "won": 0,
+    "settled": 1,
+    "won": 1,
     "placed": 0,
     "unplaced": 0,
     "nr": 0,
-    "pending": 13,
-    "win_pct": null,
-    "place_pct": null
+    "pending": 12,
+    "win_pct": 100,
+    "place_pct": 100
   },
-  "trainers": [],
-  "stars": [],
-  "odds": [],
-  "fields": [],
+  "trainers": [
+    {
+      "name": "Jamie Snowden",
+      "w14": "35.3%",
+      "p14": "82.4%",
+      "w": 1,
+      "p": 0,
+      "u": 0,
+      "n": 1
+    }
+  ],
+  "stars": [
+    {
+      "stars": 5,
+      "n": 1,
+      "w": 1,
+      "win_pct": "100%",
+      "place_pct": "100%"
+    }
+  ],
+  "odds": [
+    {
+      "label": "evens–2/1",
+      "n": 1,
+      "w": 1,
+      "win_pct": "100%",
+      "place_pct": "100%"
+    }
+  ],
+  "fields": [
+    {
+      "label": "mid (9–12)",
+      "n": 1,
+      "w": 1,
+      "win_pct": "100%",
+      "place_pct": "100%"
+    }
+  ],
   "picks": [
     {
       "time": "12:50",
@@ -24,10 +58,10 @@
       "trainer": "Jamie Snowden",
       "stars": 5,
       "odds": "7/2",
-      "sp": "7/2",
-      "sp_dec": 4.5,
-      "pos": 0,
-      "res": "?"
+      "sp": "4/7",
+      "sp_dec": 1.5714285714285714,
+      "pos": 1,
+      "res": "WIN"
     },
     {
       "time": "14:00",
@@ -174,7 +208,11 @@
       "res": "?"
     }
   ],
-  "strings": null,
+  "strings": {
+    "settled": 1,
+    "win_pct": "0%",
+    "place_pct": "100%"
+  },
   "outsiders": [
     {
       "time": "12:50",
@@ -184,10 +222,10 @@
       "string": "1st",
       "stars": 3,
       "odds": "5/1",
-      "sp": "5/1",
-      "sp_dec": 6.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "18/1",
+      "sp_dec": 19.0,
+      "pos": 2,
+      "res": "PLACE",
       "lost_to": "Smokehouse"
     },
     {
@@ -198,8 +236,8 @@
       "string": "1st",
       "stars": 3,
       "odds": "14/1",
-      "sp": "14/1",
-      "sp_dec": 15.0,
+      "sp": "12/1",
+      "sp_dec": 13.0,
       "pos": 0,
       "res": "?",
       "lost_to": "Bucephalus"
@@ -431,13 +469,13 @@
   ],
   "outsider_score": {
     "strings": 18,
-    "settled": 0,
+    "settled": 1,
     "won": 0,
-    "placed": 0,
+    "placed": 1,
     "unplaced": 0,
     "nr": 0,
-    "pending": 18,
-    "win_pct": null,
-    "place_pct": null
+    "pending": 17,
+    "win_pct": 0,
+    "place_pct": 100
   }
 }
