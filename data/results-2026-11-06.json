@@ -1,16 +1,16 @@
 {
   "date": "2026-11-06",
-  "generated": "2026-11-06T13:55:01+00:00",
+  "generated": "2026-11-06T14:14:34+00:00",
   "score": {
     "picks": 13,
-    "settled": 1,
+    "settled": 2,
     "won": 1,
     "placed": 0,
-    "unplaced": 0,
+    "unplaced": 1,
     "nr": 0,
-    "pending": 12,
-    "win_pct": 100,
-    "place_pct": 100
+    "pending": 11,
+    "win_pct": 50,
+    "place_pct": 50
   },
   "trainers": [
     {
@@ -21,27 +21,43 @@
       "p": 0,
       "u": 0,
       "n": 1
+    },
+    {
+      "name": "Neil Mulholland",
+      "w14": "25.0%",
+      "p14": "50.0%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
     }
   ],
   "stars": [
     {
       "stars": 5,
-      "n": 1,
+      "n": 2,
       "w": 1,
-      "win_pct": "100%",
-      "place_pct": "100%"
+      "win_pct": "50%",
+      "place_pct": "50%"
     }
   ],
   "odds": [
     {
       "label": "evens–2/1",
-      "n": 1,
+      "n": 2,
       "w": 1,
-      "win_pct": "100%",
-      "place_pct": "100%"
+      "win_pct": "50%",
+      "place_pct": "50%"
     }
   ],
   "fields": [
+    {
+      "label": "small (≤8)",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
     {
       "label": "mid (9–12)",
       "n": 1,
@@ -70,10 +86,10 @@
       "trainer": "N P Mulholland",
       "stars": 5,
       "odds": "9/4",
-      "sp": "9/4",
-      "sp_dec": 3.25,
-      "pos": 0,
-      "res": "?"
+      "sp": "11/8",
+      "sp_dec": 2.375,
+      "pos": 2,
+      "res": "UNPL"
     },
     {
       "time": "14:35",
@@ -209,9 +225,9 @@
     }
   ],
   "strings": {
-    "settled": 1,
+    "settled": 2,
     "win_pct": "0%",
-    "place_pct": "100%"
+    "place_pct": "50%"
   },
   "outsiders": [
     {
@@ -238,8 +254,8 @@
       "odds": "14/1",
       "sp": "12/1",
       "sp_dec": 13.0,
-      "pos": 0,
-      "res": "?",
+      "pos": 3,
+      "res": "UNPL",
       "lost_to": "Bucephalus"
     },
     {
@@ -469,13 +485,13 @@
   ],
   "outsider_score": {
     "strings": 18,
-    "settled": 1,
+    "settled": 2,
     "won": 0,
     "placed": 1,
-    "unplaced": 0,
+    "unplaced": 1,
     "nr": 0,
-    "pending": 17,
+    "pending": 16,
     "win_pct": 0,
-    "place_pct": 100
+    "place_pct": 50
   }
 }
