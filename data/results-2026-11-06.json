@@ -1,15 +1,15 @@
 {
   "date": "2026-11-06",
-  "generated": "2026-11-06T18:00:16+00:00",
+  "generated": "2026-11-06T18:30:17+00:00",
   "score": {
     "picks": 13,
-    "settled": 8,
-    "won": 2,
+    "settled": 10,
+    "won": 3,
     "placed": 2,
-    "unplaced": 4,
+    "unplaced": 5,
     "nr": 0,
-    "pending": 5,
-    "win_pct": 25,
+    "pending": 3,
+    "win_pct": 30,
     "place_pct": 50
   },
   "trainers": [
@@ -32,21 +32,21 @@
       "n": 2
     },
     {
+      "name": "James Owen",
+      "w14": "26.8%",
+      "p14": "62.5%",
+      "w": 1,
+      "p": 1,
+      "u": 0,
+      "n": 2
+    },
+    {
       "name": "Neil Mulholland",
       "w14": "25.0%",
       "p14": "50.0%",
       "w": 0,
       "p": 0,
       "u": 1,
-      "n": 1
-    },
-    {
-      "name": "James Owen",
-      "w14": "26.8%",
-      "p14": "62.5%",
-      "w": 0,
-      "p": 1,
-      "u": 0,
       "n": 1
     },
     {
@@ -66,22 +66,31 @@
       "p": 0,
       "u": 0,
       "n": 1
+    },
+    {
+      "name": "Patrick J Flynn",
+      "w14": "62.5%",
+      "p14": "62.5%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
     }
   ],
   "stars": [
     {
       "stars": 5,
+      "n": 4,
+      "w": 1,
+      "win_pct": "25%",
+      "place_pct": "50%"
+    },
+    {
+      "stars": 4,
       "n": 3,
       "w": 1,
       "win_pct": "33%",
       "place_pct": "67%"
-    },
-    {
-      "stars": 4,
-      "n": 2,
-      "w": 0,
-      "win_pct": "0%",
-      "place_pct": "50%"
     },
     {
       "stars": 3,
@@ -101,8 +110,8 @@
     },
     {
       "label": "2/1–5/1",
-      "n": 2,
-      "w": 1,
+      "n": 4,
+      "w": 2,
       "win_pct": "50%",
       "place_pct": "50%"
     },
@@ -131,16 +140,16 @@
     },
     {
       "label": "mid (9–12)",
-      "n": 2,
+      "n": 3,
       "w": 2,
-      "win_pct": "100%",
-      "place_pct": "100%"
+      "win_pct": "67%",
+      "place_pct": "67%"
     },
     {
       "label": "big (13+)",
-      "n": 1,
-      "w": 0,
-      "win_pct": "0%",
+      "n": 2,
+      "w": 1,
+      "win_pct": "50%",
       "place_pct": "100%"
     }
   ],
@@ -248,10 +257,10 @@
       "trainer": "James Owen",
       "stars": 4,
       "odds": "4/1",
-      "sp": "4/1",
-      "sp_dec": 5.0,
-      "pos": 0,
-      "res": "?"
+      "sp": "5/2",
+      "sp_dec": 3.5,
+      "pos": 1,
+      "res": "WIN"
     },
     {
       "time": "18:15",
@@ -260,10 +269,10 @@
       "trainer": "P J Flynn",
       "stars": 5,
       "odds": "8/1",
-      "sp": "8/1",
-      "sp_dec": 9.0,
-      "pos": 0,
-      "res": "?"
+      "sp": "9/4",
+      "sp_dec": 3.25,
+      "pos": 8,
+      "res": "UNPL"
     },
     {
       "time": "18:45",
