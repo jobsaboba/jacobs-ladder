@@ -190,7 +190,8 @@
     <button class="btn ghost" onclick="resetDay()">✕ Reset day</button>
   </div>
   <div class="hint">Stake = first + last of the ladder &times; unit · any new bank peak resets the ladder to 1-2-2.<br>
-  © Dave Court · v13</div>
+  🔥 = jockey 20%+ strike rate over the last 30 days (horseracing.net)<br>
+  © Dave Court · v14</div>
 </footer>
 
 <div class="toast" id="toast"></div>
@@ -239,7 +240,7 @@ function adoptDay(j){
     races: j.finals.map(f => ({
       race_id:f.race_id, time:f.time, course:f.course, horse:f.horse, trainer:f.trainer, jockey:f.jockey||"",
       stars:f.stars||0, odds:f.odds||"", race:f.race||"", section:f.section||"main", lost_to:f.lost_to||"",
-      string:f.string||"",
+      string:f.string||"", hot:f.hot_jockey||false, sr:f.jockey_sr||"",
       dt:f.time, status:"pending", stake:null, ret:null
     })).sort((a,b)=> epoch(j.date, a.time)-epoch(j.date, b.time))
   };
@@ -310,7 +311,7 @@ function renderStrings(){
     return `<div class="race ${off?"done":""}">
       <div class="t">${r.time}<small>${r.course}</small></div>
       <div class="mid"><div class="h">${r.horse} <span class="stars">${"★".repeat(r.stars||0)}</span></div>
-        <div class="r">${r.trainer}${r.jockey?` / ${r.jockey}`:""} · ${r.odds||""}</div></div>
+        <div class="r">${r.trainer}${r.jockey?` / ${r.hot?"🔥 ":""}${r.jockey}`:""} · ${r.odds||""}</div></div>
       ${b[1]?`<div class="badge ${b[0]}">${b[1]}</div>`:""}</div>`;
   }).join("") : `<div style="color:var(--dim);font-size:.8rem">No outsiders today.</div>`;
 }
@@ -573,7 +574,7 @@ function rowCard(r,i){
     <div class="rowh"><span class="h">${r.horse}</span><span class="stars">${"★".repeat(r.stars)}</span>
       <span class="chip">${r.odds}</span>${hot?`<span class="chip hot">HOT yard</span>`:""}${sec}</div>
     <div class="meta"><span>${fmt(rowStakeOf(r))} on this horse</span>
-      <span>${r.trainer}${r.jockey?` / ${r.jockey}`:""}</span></div>
+      <span>${r.trainer}${r.jockey?` / ${r.hot?"🔥 ":""}${r.jockey}`:""}</span></div>
     <input class="ret" id="ret${i}" type="number" step="0.01" min="0" placeholder="Cash returned for ${r.horse} (£)">
     <div class="btnrow">
       <button class="btn green" onclick="processRace(heroGroup[${i}], +document.getElementById('ret${i}').value)">WON — enter return</button>
@@ -636,7 +637,7 @@ function render(){
     return `<div class="race ${past?"done":""} ${isNow?"now":""}">
       <div class="t">${r.time}<small>${r.course}</small></div>
       <div class="mid"><div class="h">${r.horse} <span class="stars">${"★".repeat(r.stars)}</span></div>
-        <div class="r">${r.trainer}${r.jockey?` / ${r.jockey}`:""} · ${r.odds}</div>
+        <div class="r">${r.trainer}${r.jockey?` / ${r.hot?"🔥 ":""}${r.jockey}`:""} · ${r.odds}</div>
         ${past&&r.stake!=null?`<div class="r">stake ${fmt(r.stake)} → ret ${fmt(r.ret)}</div>`:""}</div>
       ${b[1]?`<div class="badge ${b[0]}">${b[1]}${amt?" "+amt:""}</div>`:""}</div>`;
   }).join("") : `<div class="card" style="font-size:.82rem;color:var(--dim)">Fetch the day's selections, or import <code>inform-shortlist-*.json</code> from the desktop pipeline.</div>`;
