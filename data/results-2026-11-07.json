@@ -1,26 +1,26 @@
 {
   "date": "2026-11-07",
-  "generated": "2026-11-07T15:30:17+00:00",
+  "generated": "2026-11-07T16:00:26+00:00",
   "score": {
     "picks": 15,
-    "settled": 13,
-    "won": 1,
+    "settled": 14,
+    "won": 2,
     "placed": 4,
     "unplaced": 8,
     "nr": 0,
-    "pending": 2,
-    "win_pct": 8,
-    "place_pct": 38
+    "pending": 1,
+    "win_pct": 14,
+    "place_pct": 43
   },
   "trainers": [
     {
       "name": "Jamie Snowden",
       "w14": "38.9%",
       "p14": "83.3%",
-      "w": 0,
+      "w": 1,
       "p": 0,
       "u": 3,
-      "n": 3
+      "n": 4
     },
     {
       "name": "Michael Easterby",
@@ -105,10 +105,10 @@
     },
     {
       "stars": 4,
-      "n": 6,
-      "w": 0,
-      "win_pct": "0%",
-      "place_pct": "33%"
+      "n": 7,
+      "w": 1,
+      "win_pct": "14%",
+      "place_pct": "43%"
     },
     {
       "stars": 3,
@@ -121,10 +121,10 @@
   "odds": [
     {
       "label": "evens–2/1",
-      "n": 2,
-      "w": 1,
-      "win_pct": "50%",
-      "place_pct": "50%"
+      "n": 3,
+      "w": 2,
+      "win_pct": "67%",
+      "place_pct": "67%"
     },
     {
       "label": "2/1–5/1",
@@ -158,10 +158,10 @@
     },
     {
       "label": "big (13+)",
-      "n": 3,
-      "w": 0,
-      "win_pct": "0%",
-      "place_pct": "33%"
+      "n": 4,
+      "w": 1,
+      "win_pct": "25%",
+      "place_pct": "50%"
     }
   ],
   "picks": [
@@ -328,10 +328,10 @@
       "trainer": "Jamie Snowden",
       "stars": 4,
       "odds": "9/2",
-      "sp": "9/2",
-      "sp_dec": 5.5,
-      "pos": 0,
-      "res": "?"
+      "sp": "10/11",
+      "sp_dec": 1.9090909090909092,
+      "pos": 1,
+      "res": "WIN"
     },
     {
       "time": "15:55",
@@ -347,9 +347,9 @@
     }
   ],
   "strings": {
-    "settled": 25,
+    "settled": 33,
     "win_pct": "0%",
-    "place_pct": "8%"
+    "place_pct": "15%"
   },
   "outsiders": [
     {
@@ -712,8 +712,8 @@
       "odds": "10/1",
       "sp": "8/1",
       "sp_dec": 9.0,
-      "pos": 0,
-      "res": "?",
+      "pos": 9,
+      "res": "UNPL",
       "lost_to": "Lord Melbourne"
     },
     {
@@ -726,8 +726,8 @@
       "odds": "14/1",
       "sp": "11/1",
       "sp_dec": 12.0,
-      "pos": 0,
-      "res": "?",
+      "pos": 4,
+      "res": "PLACE",
       "lost_to": "Lord Melbourne"
     },
     {
@@ -740,8 +740,8 @@
       "odds": "14/1",
       "sp": "22/1",
       "sp_dec": 23.0,
-      "pos": 0,
-      "res": "?",
+      "pos": 2,
+      "res": "PLACE",
       "lost_to": "Lord Melbourne"
     },
     {
@@ -754,8 +754,8 @@
       "odds": "16/1",
       "sp": "40/1",
       "sp_dec": 41.0,
-      "pos": 0,
-      "res": "?",
+      "pos": 21,
+      "res": "UNPL",
       "lost_to": "Lord Melbourne"
     },
     {
@@ -766,10 +766,10 @@
       "string": "1st",
       "stars": 3,
       "odds": "12/1",
-      "sp": "12/1",
-      "sp_dec": 13.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "8/1",
+      "sp_dec": 9.0,
+      "pos": 6,
+      "res": "UNPL",
       "lost_to": "Southoftheborder"
     },
     {
@@ -780,10 +780,10 @@
       "string": "1st",
       "stars": 3,
       "odds": "20/1",
-      "sp": "20/1",
-      "sp_dec": 21.0,
+      "sp": "16/1",
+      "sp_dec": 17.0,
       "pos": 0,
-      "res": "?",
+      "res": "UNPL",
       "lost_to": "Southoftheborder"
     },
     {
@@ -794,10 +794,10 @@
       "string": "1st",
       "stars": 3,
       "odds": "6/1",
-      "sp": "6/1",
-      "sp_dec": 7.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "17/2",
+      "sp_dec": 9.5,
+      "pos": 2,
+      "res": "PLACE",
       "lost_to": "Chicks For Free"
     },
     {
@@ -808,10 +808,10 @@
       "string": "1st",
       "stars": 4,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 8,
+      "res": "UNPL",
       "lost_to": "Al Alami"
     },
     {
@@ -845,14 +845,14 @@
   ],
   "outsider_score": {
     "strings": 35,
-    "settled": 25,
+    "settled": 33,
     "won": 0,
-    "placed": 2,
-    "unplaced": 23,
+    "placed": 5,
+    "unplaced": 28,
     "nr": 0,
-    "pending": 10,
+    "pending": 2,
     "win_pct": 0,
-    "place_pct": 8
+    "place_pct": 15
   },
   "super6": [
     {
@@ -916,8 +916,8 @@
       "odds": "10/1",
       "sp": "8/1",
       "sp_dec": 9.0,
-      "pos": 0,
-      "res": "?",
+      "pos": 9,
+      "res": "UNPL",
       "score": 10
     },
     {
@@ -927,20 +927,20 @@
       "trainer": "James Owen",
       "stars": 4,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 8,
+      "res": "UNPL",
       "score": 10
     }
   ],
   "super6_score": {
     "listed": 6,
-    "settled": 4,
+    "settled": 6,
     "won": 0,
     "placed": 1,
     "win_pct": 0,
-    "place_pct": 25,
-    "pnl": -4.0
+    "place_pct": 17,
+    "pnl": -6.0
   }
 }
