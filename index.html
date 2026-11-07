@@ -194,7 +194,7 @@
   </div>
   <div class="hint">Stake = first + last of the ladder &times; unit · any new bank peak resets the ladder to 1-2-2.<br>
   🔥 = jockey 20%+ strike rate over the last 30 days (horseracing.net)<br>
-  © Dave Court · v15</div>
+  © Dave Court · v16</div>
 </footer>
 
 <div class="toast" id="toast"></div>
@@ -398,6 +398,12 @@ function renderResults(d, el){
       <div style="font-size:.8rem;line-height:1.85">${d.outsiders.map(p=>`
         <div>${mark[p.res]||"?"} ${p.time} ${p.meeting} — <b>${p.horse}</b> ${"★".repeat(p.stars||0)} ${p.odds||""}${p.string?` <span style="color:var(--dim)">${p.string} string</span>`:""}
           ${p.res==="?"?"":`<span style="color:var(--dim)">pos ${p.pos??"—"} · ${p.res}</span>`}</div>`).join("")}</div>`:""}
+    ${(d.super6&&d.super6.length)?`
+      <div class="label" style="margin:12px 0 4px">⚡ Super 6 — scored outsiders</div>
+      <div style="font-size:.8rem;line-height:1.85">${d.super6.map(p=>`
+        <div>${mark[p.res]||"?"} ${p.time} ${p.meeting} — <b>${p.horse}</b> ${"★".repeat(p.stars||0)} ${p.odds||""}
+          ${p.res==="?"?"":`<span style="color:var(--dim)">pos ${p.pos??"—"} · ${p.res}</span>`}</div>`).join("")}</div>`:""}
+    ${(()=>{const s6=d.super6_score; return s6?`<div style="margin-top:10px;font-size:.78rem;color:var(--dim)">⚡ Super 6: ${s6.settled} settled — won ${s6.win_pct}% · placed-or-better ${s6.place_pct}%${(s6.pnl!=null?` · P/L £${s6.pnl>=0?"+":"−"}${Math.abs(s6.pnl).toFixed(2)}`:"")}</div>`:""})()}
     ${(()=>{const os=d.outsider_score||d.strings; return os?`<div style="margin-top:10px;font-size:.78rem;color:var(--dim)">outsiders: ${os.settled} settled — won ${os.win_pct} · placed-or-better ${os.place_pct}</div>`:""})()}
     <div style="margin-top:8px;font-size:.68rem;color:var(--dim)">published ${(d.generated||"").replace("T"," ").slice(0,16)}</div>`;
 }
@@ -409,7 +415,7 @@ function renderResults(d, el){
 function applyResults(d){
   if(!d || !S.day || d.date !== S.day.date) return;
   const byKey = {};
-  for(const p of [...(d.picks||[]), ...(d.outsiders||[])]){
+  for(const p of [...(d.picks||[]), ...(d.outsiders||[]), ...(d.super6||[])]){
     if(p.res && p.res !== "?") byKey[p.time+"|"+p.horse] = {res:p.res, pos:p.pos, sp:p.sp||p.odds||""};
   }
   const sig = JSON.stringify(byKey);

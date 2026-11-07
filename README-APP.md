@@ -44,6 +44,13 @@ staking + next-race alerts. Single folder, no build tools, hosted free on GitHub
   is open in the background (switch apps freely; only fully closing the browser stops them).
 - **Undo** reverses any processed race (or bank edit), **Reset day** clears results but keeps the bank.
 - **Day ledger + Copy summary** exports the whole day's stakes/returns to the clipboard.
+- **⚡ Super 6** — the day's six strongest outsiders, one per race, published from the
+  dropped pool (the 9/1 cap deliberately ignored): first strings only, scored
+  stars ×2 +2 (demoted race's best runner) +1 (hot jockey), never two from the
+  same yard, and at most one 15/1+ long bomb. Same cards as the selections;
+  official result badges arrive with the evening review, which also lists a
+  ⚡ Super 6 score line. On the laptop they settle in `all-outsiders.xlsx`
+  plus their own `super6.xlsx` rolling ledger in *Desktop/JL Reviews*.
 - Each phone keeps its **own private bank** — friends install the same link but their
   staking state never mixes.
 
