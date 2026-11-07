@@ -1,6 +1,6 @@
 {
   "date": "2026-11-07",
-  "generated": "2026-11-07T13:00:17+00:00",
+  "generated": "2026-11-07T13:30:17+00:00",
   "score": {
     "picks": 15,
     "settled": 3,
@@ -133,8 +133,8 @@
       "trainer": "Jamie Snowden",
       "stars": 5,
       "odds": "9/4",
-      "sp": "9/4",
-      "sp_dec": 3.25,
+      "sp": "2/1",
+      "sp_dec": 3.0,
       "pos": 0,
       "res": "?"
     },
@@ -327,8 +327,8 @@
       "string": "1st",
       "stars": 4,
       "odds": "7/1",
-      "sp": "7/1",
-      "sp_dec": 8.0,
+      "sp": "9/4",
+      "sp_dec": 3.25,
       "pos": 0,
       "res": "?",
       "lost_to": "Senator"
@@ -813,8 +813,8 @@
       "trainer": "O Murphy",
       "stars": 4,
       "odds": "7/1",
-      "sp": "7/1",
-      "sp_dec": 8.0,
+      "sp": "9/4",
+      "sp_dec": 3.25,
       "pos": 0,
       "res": "?",
       "score": 9
