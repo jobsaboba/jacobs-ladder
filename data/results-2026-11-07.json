@@ -1,18 +1,36 @@
 {
   "date": "2026-11-07",
-  "generated": "2026-11-07T14:00:18+00:00",
+  "generated": "2026-11-07T14:30:17+00:00",
   "score": {
     "picks": 15,
-    "settled": 5,
+    "settled": 8,
     "won": 1,
-    "placed": 1,
-    "unplaced": 3,
+    "placed": 2,
+    "unplaced": 5,
     "nr": 0,
-    "pending": 10,
-    "win_pct": 20,
-    "place_pct": 40
+    "pending": 7,
+    "win_pct": 12,
+    "place_pct": 38
   },
   "trainers": [
+    {
+      "name": "Michael Easterby",
+      "w14": "21.1%",
+      "p14": "57.9%",
+      "w": 0,
+      "p": 2,
+      "u": 0,
+      "n": 2
+    },
+    {
+      "name": "Gavin Cromwell",
+      "w14": "18.8%",
+      "p14": "37.5%",
+      "w": 1,
+      "p": 0,
+      "u": 1,
+      "n": 2
+    },
     {
       "name": "Jamie Snowden",
       "w14": "38.9%",
@@ -23,27 +41,18 @@
       "n": 2
     },
     {
-      "name": "Michael Easterby",
-      "w14": "21.1%",
-      "p14": "57.9%",
-      "w": 0,
-      "p": 1,
-      "u": 0,
-      "n": 1
-    },
-    {
-      "name": "Gavin Cromwell",
-      "w14": "18.8%",
-      "p14": "37.5%",
-      "w": 1,
-      "p": 0,
-      "u": 0,
-      "n": 1
-    },
-    {
       "name": "Tim Easterby",
       "w14": "11.1%",
       "p14": "44.4%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
+    },
+    {
+      "name": "Olly Murphy",
+      "w14": "25.8%",
+      "p14": "64.5%",
       "w": 0,
       "p": 0,
       "u": 1,
@@ -53,53 +62,53 @@
   "stars": [
     {
       "stars": 5,
+      "n": 3,
+      "w": 1,
+      "win_pct": "33%",
+      "place_pct": "67%"
+    },
+    {
+      "stars": 4,
+      "n": 5,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "20%"
+    }
+  ],
+  "odds": [
+    {
+      "label": "evens–2/1",
       "n": 2,
       "w": 1,
       "win_pct": "50%",
       "place_pct": "50%"
     },
     {
-      "stars": 4,
-      "n": 3,
-      "w": 0,
-      "win_pct": "0%",
-      "place_pct": "33%"
-    }
-  ],
-  "odds": [
-    {
-      "label": "evens–2/1",
-      "n": 1,
-      "w": 1,
-      "win_pct": "100%",
-      "place_pct": "100%"
-    },
-    {
       "label": "2/1–5/1",
-      "n": 3,
+      "n": 4,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "33%"
+      "place_pct": "25%"
     },
     {
       "label": "5/1–10/1",
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "0%"
+      "place_pct": "50%"
     }
   ],
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 4,
+      "n": 6,
       "w": 1,
-      "win_pct": "25%",
-      "place_pct": "25%"
+      "win_pct": "17%",
+      "place_pct": "17%"
     },
     {
       "label": "mid (9–12)",
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "100%"
@@ -175,8 +184,8 @@
       "odds": "4/1",
       "sp": "10/3",
       "sp_dec": 4.333333333333334,
-      "pos": 0,
-      "res": "?"
+      "pos": 4,
+      "res": "UNPL"
     },
     {
       "time": "14:05",
@@ -185,10 +194,10 @@
       "trainer": "M & D Easterby",
       "stars": 5,
       "odds": "4/1",
-      "sp": "4/1",
-      "sp_dec": 5.0,
-      "pos": 0,
-      "res": "?"
+      "sp": "9/1",
+      "sp_dec": 10.0,
+      "pos": 3,
+      "res": "PLACE"
     },
     {
       "time": "14:20",
@@ -197,10 +206,10 @@
       "trainer": "G P Cromwell",
       "stars": 4,
       "odds": "5/4",
-      "sp": "5/4",
-      "sp_dec": 2.25,
-      "pos": 0,
-      "res": "?"
+      "sp": "6/5",
+      "sp_dec": 2.2,
+      "pos": 3,
+      "res": "UNPL"
     },
     {
       "time": "14:30",
@@ -288,9 +297,9 @@
     }
   ],
   "strings": {
-    "settled": 4,
+    "settled": 12,
     "win_pct": "0%",
-    "place_pct": "25%"
+    "place_pct": "8%"
   },
   "outsiders": [
     {
@@ -360,7 +369,7 @@
       "sp": "13/2",
       "sp_dec": 7.5,
       "pos": 0,
-      "res": "?",
+      "res": "UNPL",
       "lost_to": "Diamond Geezer"
     },
     {
@@ -371,10 +380,10 @@
       "string": "1st",
       "stars": 2,
       "odds": "20/1",
-      "sp": "20/1",
-      "sp_dec": 21.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "16/1",
+      "sp_dec": 17.0,
+      "pos": 4,
+      "res": "UNPL",
       "lost_to": "Keats House"
     },
     {
@@ -385,10 +394,10 @@
       "string": "1st",
       "stars": 4,
       "odds": "20/1",
-      "sp": "20/1",
-      "sp_dec": 21.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "12/1",
+      "sp_dec": 13.0,
+      "pos": 8,
+      "res": "UNPL",
       "lost_to": "Copacabana Sands"
     },
     {
@@ -399,10 +408,10 @@
       "string": "1st",
       "stars": 3,
       "odds": "8/1",
-      "sp": "8/1",
-      "sp_dec": 9.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "12/1",
+      "sp_dec": 13.0,
+      "pos": 6,
+      "res": "UNPL",
       "lost_to": "Copacabana Sands"
     },
     {
@@ -413,10 +422,10 @@
       "string": "1st",
       "stars": 3,
       "odds": "25/1",
-      "sp": "25/1",
-      "sp_dec": 26.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "28/1",
+      "sp_dec": 29.0,
+      "pos": 15,
+      "res": "UNPL",
       "lost_to": "Copacabana Sands"
     },
     {
@@ -427,10 +436,10 @@
       "string": "1st",
       "stars": 2,
       "odds": "20/1",
-      "sp": "20/1",
-      "sp_dec": 21.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "40/1",
+      "sp_dec": 41.0,
+      "pos": 19,
+      "res": "UNPL",
       "lost_to": "Copacabana Sands"
     },
     {
@@ -441,10 +450,10 @@
       "string": "2nd",
       "stars": 2,
       "odds": "25/1",
-      "sp": "25/1",
-      "sp_dec": 26.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "80/1",
+      "sp_dec": 81.0,
+      "pos": 12,
+      "res": "UNPL",
       "lost_to": "Copacabana Sands"
     },
     {
@@ -455,10 +464,10 @@
       "string": "2nd",
       "stars": 2,
       "odds": "50/1",
-      "sp": "50/1",
-      "sp_dec": 51.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "80/1",
+      "sp_dec": 81.0,
+      "pos": 14,
+      "res": "UNPL",
       "lost_to": "Copacabana Sands"
     },
     {
@@ -786,14 +795,14 @@
   ],
   "outsider_score": {
     "strings": 35,
-    "settled": 4,
+    "settled": 12,
     "won": 0,
     "placed": 1,
-    "unplaced": 3,
+    "unplaced": 11,
     "nr": 0,
-    "pending": 31,
+    "pending": 23,
     "win_pct": 0,
-    "place_pct": 25
+    "place_pct": 8
   },
   "super6": [
     {
@@ -842,10 +851,10 @@
       "trainer": "A M Balding",
       "stars": 4,
       "odds": "20/1",
-      "sp": "20/1",
-      "sp_dec": 21.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "12/1",
+      "sp_dec": 13.0,
+      "pos": 8,
+      "res": "UNPL",
       "score": 11
     },
     {
@@ -877,11 +886,11 @@
   ],
   "super6_score": {
     "listed": 6,
-    "settled": 3,
+    "settled": 4,
     "won": 0,
     "placed": 1,
     "win_pct": 0,
-    "place_pct": 33,
-    "pnl": -3.0
+    "place_pct": 25,
+    "pnl": -4.0
   }
 }
