@@ -1,16 +1,16 @@
 {
   "date": "2026-11-07",
-  "generated": "2026-11-07T14:30:17+00:00",
+  "generated": "2026-11-07T15:00:18+00:00",
   "score": {
     "picks": 15,
-    "settled": 8,
+    "settled": 11,
     "won": 1,
-    "placed": 2,
-    "unplaced": 5,
+    "placed": 3,
+    "unplaced": 7,
     "nr": 0,
-    "pending": 7,
-    "win_pct": 12,
-    "place_pct": 38
+    "pending": 4,
+    "win_pct": 9,
+    "place_pct": 36
   },
   "trainers": [
     {
@@ -57,22 +57,49 @@
       "p": 0,
       "u": 1,
       "n": 1
+    },
+    {
+      "name": "Charlie Longsdon",
+      "w14": "33.3%",
+      "p14": "66.7%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
+    },
+    {
+      "name": "George Boughey",
+      "w14": "28.6%",
+      "p14": "50.0%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
+    },
+    {
+      "name": "Ed Walker",
+      "w14": "27.3%",
+      "p14": "63.6%",
+      "w": 0,
+      "p": 1,
+      "u": 0,
+      "n": 1
     }
   ],
   "stars": [
     {
       "stars": 5,
-      "n": 3,
+      "n": 5,
       "w": 1,
-      "win_pct": "33%",
-      "place_pct": "67%"
+      "win_pct": "20%",
+      "place_pct": "40%"
     },
     {
       "stars": 4,
-      "n": 5,
+      "n": 6,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "20%"
+      "place_pct": "33%"
     }
   ],
   "odds": [
@@ -85,26 +112,26 @@
     },
     {
       "label": "2/1–5/1",
-      "n": 4,
+      "n": 6,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "25%"
+      "place_pct": "33%"
     },
     {
       "label": "5/1–10/1",
-      "n": 2,
+      "n": 3,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "50%"
+      "place_pct": "33%"
     }
   ],
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 6,
+      "n": 7,
       "w": 1,
-      "win_pct": "17%",
-      "place_pct": "17%"
+      "win_pct": "14%",
+      "place_pct": "14%"
     },
     {
       "label": "mid (9–12)",
@@ -112,6 +139,13 @@
       "w": 0,
       "win_pct": "0%",
       "place_pct": "100%"
+    },
+    {
+      "label": "big (13+)",
+      "n": 2,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "50%"
     }
   ],
   "picks": [
@@ -218,10 +252,10 @@
       "trainer": "C E Longsdon",
       "stars": 5,
       "odds": "5/4",
-      "sp": "5/4",
-      "sp_dec": 2.25,
-      "pos": 0,
-      "res": "?"
+      "sp": "2/1",
+      "sp_dec": 3.0,
+      "pos": 4,
+      "res": "UNPL"
     },
     {
       "time": "14:40",
@@ -230,10 +264,10 @@
       "trainer": "G Boughey",
       "stars": 5,
       "odds": "9/2",
-      "sp": "9/2",
-      "sp_dec": 5.5,
-      "pos": 0,
-      "res": "?"
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 9,
+      "res": "UNPL"
     },
     {
       "time": "14:45",
@@ -242,10 +276,10 @@
       "trainer": "E Walker",
       "stars": 4,
       "odds": "5/1",
-      "sp": "5/1",
-      "sp_dec": 6.0,
-      "pos": 0,
-      "res": "?"
+      "sp": "10/3",
+      "sp_dec": 4.333333333333334,
+      "pos": 3,
+      "res": "PLACE"
     },
     {
       "time": "15:00",
@@ -297,7 +331,7 @@
     }
   ],
   "strings": {
-    "settled": 12,
+    "settled": 24,
     "win_pct": "0%",
     "place_pct": "8%"
   },
@@ -478,10 +512,10 @@
       "string": "1st",
       "stars": 3,
       "odds": "7/1",
-      "sp": "7/1",
-      "sp_dec": 8.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "33/1",
+      "sp_dec": 34.0,
+      "pos": 11,
+      "res": "UNPL",
       "lost_to": "Deputy General"
     },
     {
@@ -492,10 +526,10 @@
       "string": "2nd",
       "stars": 3,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "25/1",
+      "sp_dec": 26.0,
+      "pos": 7,
+      "res": "UNPL",
       "lost_to": "Deputy General"
     },
     {
@@ -506,10 +540,10 @@
       "string": "1st",
       "stars": 3,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "11/1",
+      "sp_dec": 12.0,
+      "pos": 6,
+      "res": "UNPL",
       "lost_to": "Deputy General"
     },
     {
@@ -520,10 +554,10 @@
       "string": "1st",
       "stars": 3,
       "odds": "12/1",
-      "sp": "12/1",
-      "sp_dec": 13.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "10/1",
+      "sp_dec": 11.0,
+      "pos": 4,
+      "res": "UNPL",
       "lost_to": "Deputy General"
     },
     {
@@ -534,10 +568,10 @@
       "string": "1st",
       "stars": 4,
       "odds": "6/1",
-      "sp": "6/1",
-      "sp_dec": 7.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "10/3",
+      "sp_dec": 4.333333333333334,
+      "pos": 8,
+      "res": "UNPL",
       "lost_to": "Felicitas"
     },
     {
@@ -548,10 +582,10 @@
       "string": "1st",
       "stars": 4,
       "odds": "8/1",
-      "sp": "8/1",
-      "sp_dec": 9.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "7/1",
+      "sp_dec": 8.0,
+      "pos": 2,
+      "res": "PLACE",
       "lost_to": "Felicitas"
     },
     {
@@ -562,10 +596,10 @@
       "string": "1st",
       "stars": 3,
       "odds": "7/1",
-      "sp": "7/1",
-      "sp_dec": 8.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "16/1",
+      "sp_dec": 17.0,
+      "pos": 6,
+      "res": "UNPL",
       "lost_to": "Felicitas"
     },
     {
@@ -576,10 +610,10 @@
       "string": "1st",
       "stars": 3,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "11/1",
+      "sp_dec": 12.0,
+      "pos": 12,
+      "res": "UNPL",
       "lost_to": "Felicitas"
     },
     {
@@ -590,10 +624,10 @@
       "string": "2nd",
       "stars": 3,
       "odds": "12/1",
-      "sp": "12/1",
-      "sp_dec": 13.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "14/1",
+      "sp_dec": 15.0,
+      "pos": 7,
+      "res": "UNPL",
       "lost_to": "Felicitas"
     },
     {
@@ -606,8 +640,8 @@
       "odds": "14/1",
       "sp": "14/1",
       "sp_dec": 15.0,
-      "pos": 0,
-      "res": "?",
+      "pos": 5,
+      "res": "UNPL",
       "lost_to": "Felicitas"
     },
     {
@@ -618,10 +652,10 @@
       "string": "2nd",
       "stars": 2,
       "odds": "16/1",
-      "sp": "16/1",
-      "sp_dec": 17.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "25/1",
+      "sp_dec": 26.0,
+      "pos": 11,
+      "res": "UNPL",
       "lost_to": "Felicitas"
     },
     {
@@ -632,10 +666,10 @@
       "string": "3rd",
       "stars": 2,
       "odds": "25/1",
-      "sp": "25/1",
-      "sp_dec": 26.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "100/1",
+      "sp_dec": 101.0,
+      "pos": 16,
+      "res": "UNPL",
       "lost_to": "Felicitas"
     },
     {
@@ -795,12 +829,12 @@
   ],
   "outsider_score": {
     "strings": 35,
-    "settled": 12,
+    "settled": 24,
     "won": 0,
-    "placed": 1,
-    "unplaced": 11,
+    "placed": 2,
+    "unplaced": 22,
     "nr": 0,
-    "pending": 23,
+    "pending": 11,
     "win_pct": 0,
     "place_pct": 8
   },
