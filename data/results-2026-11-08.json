@@ -1,0 +1,309 @@
+{
+  "date": "2026-11-08",
+  "generated": "2026-11-08T13:00:12+00:00",
+  "score": {
+    "picks": 6,
+    "settled": 2,
+    "won": 0,
+    "placed": 0,
+    "unplaced": 2,
+    "nr": 1,
+    "pending": 3,
+    "win_pct": 0,
+    "place_pct": 0
+  },
+  "trainers": [
+    {
+      "name": "Gavin Cromwell",
+      "w14": "19.6%",
+      "p14": "39.2%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
+    },
+    {
+      "name": "Charlie Longsdon",
+      "w14": "40.0%",
+      "p14": "66.7%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
+    }
+  ],
+  "stars": [
+    {
+      "stars": 4,
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
+    {
+      "stars": 3,
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    }
+  ],
+  "odds": [
+    {
+      "label": "2/1–5/1",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
+    {
+      "label": "10/1+",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    }
+  ],
+  "fields": [
+    {
+      "label": "small (≤8)",
+      "n": 2,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    }
+  ],
+  "picks": [
+    {
+      "time": "12:00",
+      "meeting": "Naas",
+      "horse": "Mywayofthinkin",
+      "trainer": "G P Cromwell",
+      "stars": 3,
+      "odds": "8/1",
+      "sp": "14/1",
+      "sp_dec": 15.0,
+      "pos": 8,
+      "res": "UNPL"
+    },
+    {
+      "time": "12:40",
+      "meeting": "Sandown",
+      "horse": "Bowmore",
+      "trainer": "C E Longsdon",
+      "stars": 4,
+      "odds": "7/2",
+      "sp": "11/4",
+      "sp_dec": 3.75,
+      "pos": 3,
+      "res": "UNPL"
+    },
+    {
+      "time": "13:10",
+      "meeting": "Sandown",
+      "horse": "Mint Approved",
+      "trainer": "Jamie & Josh Moore",
+      "stars": 4,
+      "odds": "3/1",
+      "sp": "3/1",
+      "sp_dec": 4.0,
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "13:30",
+      "meeting": "Naas",
+      "horse": "Got The Honours",
+      "trainer": "G P Cromwell",
+      "stars": 3,
+      "odds": "4/1",
+      "sp": "4/1",
+      "sp_dec": 5.0,
+      "pos": 0,
+      "res": "NR"
+    },
+    {
+      "time": "15:25",
+      "meeting": "Sandown",
+      "horse": "Port Station",
+      "trainer": "James Owen",
+      "stars": 5,
+      "odds": "4/1",
+      "sp": "4/1",
+      "sp_dec": 5.0,
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "15:48",
+      "meeting": "Naas",
+      "horse": "Jetson Jane",
+      "trainer": "P Nolan",
+      "stars": 4,
+      "odds": "8/1",
+      "sp": "8/1",
+      "sp_dec": 9.0,
+      "pos": 0,
+      "res": "?"
+    }
+  ],
+  "strings": {
+    "settled": 1,
+    "win_pct": "0%",
+    "place_pct": "100%"
+  },
+  "outsiders": [
+    {
+      "time": "12:30",
+      "meeting": "Naas",
+      "horse": "Ignite The Moment",
+      "trainer": "P Nolan",
+      "string": "1st",
+      "stars": 3,
+      "odds": "14/1",
+      "sp": "33/1",
+      "sp_dec": 34.0,
+      "pos": 3,
+      "res": "PLACE",
+      "lost_to": "Ignite The Moment"
+    },
+    {
+      "time": "13:10",
+      "meeting": "Sandown",
+      "horse": "Prince Rasam",
+      "trainer": "Jamie & Josh Moore",
+      "string": "2nd",
+      "stars": 1,
+      "odds": "14/1",
+      "sp": "14/1",
+      "sp_dec": 15.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "stablemate Mint Approved"
+    },
+    {
+      "time": "14:04",
+      "meeting": "Naas",
+      "horse": "Le Moulin Rouge",
+      "trainer": "P Nolan",
+      "string": "1st",
+      "stars": 4,
+      "odds": "12/1",
+      "sp": "12/1",
+      "sp_dec": 13.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "Le Moulin Rouge"
+    },
+    {
+      "time": "14:04",
+      "meeting": "Naas",
+      "horse": "Park Of Kings",
+      "trainer": "P Nolan",
+      "string": "2nd",
+      "stars": 3,
+      "odds": "14/1",
+      "sp": "14/1",
+      "sp_dec": 15.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "Le Moulin Rouge"
+    },
+    {
+      "time": "14:04",
+      "meeting": "Naas",
+      "horse": "Daily Present",
+      "trainer": "P Nolan",
+      "string": "3rd",
+      "stars": 2,
+      "odds": "50/1",
+      "sp": "50/1",
+      "sp_dec": 51.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "Le Moulin Rouge"
+    },
+    {
+      "time": "14:15",
+      "meeting": "Sandown",
+      "horse": "St Pancras",
+      "trainer": "Jamie & Josh Moore",
+      "string": "1st",
+      "stars": 2,
+      "odds": "7/1",
+      "sp": "7/1",
+      "sp_dec": 8.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "St Pancras"
+    },
+    {
+      "time": "14:15",
+      "meeting": "Sandown",
+      "horse": "Macktoad",
+      "trainer": "Jamie & Josh Moore",
+      "string": "2nd",
+      "stars": 2,
+      "odds": "10/1",
+      "sp": "10/1",
+      "sp_dec": 11.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "St Pancras"
+    },
+    {
+      "time": "15:25",
+      "meeting": "Sandown",
+      "horse": "Kalif D'airy",
+      "trainer": "Jamie & Josh Moore",
+      "string": "1st",
+      "stars": 3,
+      "odds": "11/2",
+      "sp": "11/2",
+      "sp_dec": 6.5,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "Port Station"
+    }
+  ],
+  "outsider_score": {
+    "strings": 8,
+    "settled": 1,
+    "won": 0,
+    "placed": 1,
+    "unplaced": 0,
+    "nr": 0,
+    "pending": 7,
+    "win_pct": 0,
+    "place_pct": 100
+  },
+  "super6": [
+    {
+      "time": "14:04",
+      "meeting": "Naas",
+      "horse": "Le Moulin Rouge",
+      "trainer": "P Nolan",
+      "stars": 4,
+      "odds": "12/1",
+      "sp": "12/1",
+      "sp_dec": 13.0,
+      "pos": 0,
+      "res": "?",
+      "score": 10
+    },
+    {
+      "time": "15:25",
+      "meeting": "Sandown",
+      "horse": "Kalif D'airy",
+      "trainer": "Jamie & Josh Moore",
+      "stars": 3,
+      "odds": "11/2",
+      "sp": "11/2",
+      "sp_dec": 6.5,
+      "pos": 0,
+      "res": "?",
+      "score": 6
+    }
+  ],
+  "super6_score": null
+}
