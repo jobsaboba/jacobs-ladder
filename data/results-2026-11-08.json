@@ -1,16 +1,16 @@
 {
   "date": "2026-11-08",
-  "generated": "2026-11-08T15:30:08+00:00",
+  "generated": "2026-11-08T16:00:10+00:00",
   "score": {
     "picks": 6,
-    "settled": 3,
-    "won": 0,
+    "settled": 5,
+    "won": 1,
     "placed": 0,
-    "unplaced": 3,
+    "unplaced": 4,
     "nr": 1,
-    "pending": 2,
-    "win_pct": 0,
-    "place_pct": 0
+    "pending": 0,
+    "win_pct": 20,
+    "place_pct": 20
   },
   "trainers": [
     {
@@ -39,12 +39,37 @@
       "p": 0,
       "u": 1,
       "n": 1
+    },
+    {
+      "name": "James Owen",
+      "w14": "29.3%",
+      "p14": "63.8%",
+      "w": 1,
+      "p": 0,
+      "u": 0,
+      "n": 1
+    },
+    {
+      "name": "Paul Nolan",
+      "w14": "17.6%",
+      "p14": "44.1%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
     }
   ],
   "stars": [
     {
+      "stars": 5,
+      "n": 1,
+      "w": 1,
+      "win_pct": "100%",
+      "place_pct": "100%"
+    },
+    {
       "stars": 4,
-      "n": 2,
+      "n": 3,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -60,14 +85,14 @@
   "odds": [
     {
       "label": "2/1–5/1",
-      "n": 2,
-      "w": 0,
-      "win_pct": "0%",
-      "place_pct": "0%"
+      "n": 3,
+      "w": 1,
+      "win_pct": "33%",
+      "place_pct": "33%"
     },
     {
       "label": "10/1+",
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -76,10 +101,10 @@
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 3,
-      "w": 0,
-      "win_pct": "0%",
-      "place_pct": "0%"
+      "n": 5,
+      "w": 1,
+      "win_pct": "20%",
+      "place_pct": "20%"
     }
   ],
   "picks": [
@@ -140,8 +165,8 @@
       "odds": "4/1",
       "sp": "9/4",
       "sp_dec": 3.25,
-      "pos": 0,
-      "res": "?"
+      "pos": 1,
+      "res": "WIN"
     },
     {
       "time": "15:48",
@@ -150,16 +175,16 @@
       "trainer": "P Nolan",
       "stars": 4,
       "odds": "8/1",
-      "sp": "8/1",
-      "sp_dec": 9.0,
+      "sp": "18/1",
+      "sp_dec": 19.0,
       "pos": 0,
-      "res": "?"
+      "res": "UNPL"
     }
   ],
   "strings": {
-    "settled": 7,
-    "win_pct": "29%",
-    "place_pct": "43%"
+    "settled": 8,
+    "win_pct": "25%",
+    "place_pct": "38%"
   },
   "outsiders": [
     {
@@ -270,21 +295,21 @@
       "odds": "11/2",
       "sp": "17/2",
       "sp_dec": 9.5,
-      "pos": 0,
-      "res": "?",
+      "pos": 6,
+      "res": "UNPL",
       "lost_to": "Port Station"
     }
   ],
   "outsider_score": {
     "strings": 8,
-    "settled": 7,
+    "settled": 8,
     "won": 2,
     "placed": 1,
-    "unplaced": 4,
+    "unplaced": 5,
     "nr": 0,
-    "pending": 1,
-    "win_pct": 29,
-    "place_pct": 43
+    "pending": 0,
+    "win_pct": 25,
+    "place_pct": 38
   },
   "super6": [
     {
@@ -309,18 +334,18 @@
       "odds": "11/2",
       "sp": "17/2",
       "sp_dec": 9.5,
-      "pos": 0,
-      "res": "?",
+      "pos": 6,
+      "res": "UNPL",
       "score": 6
     }
   ],
   "super6_score": {
     "listed": 2,
-    "settled": 1,
+    "settled": 2,
     "won": 1,
     "placed": 0,
-    "win_pct": 100,
-    "place_pct": 100,
-    "pnl": 5.5
+    "win_pct": 50,
+    "place_pct": 50,
+    "pnl": 4.5
   }
 }
