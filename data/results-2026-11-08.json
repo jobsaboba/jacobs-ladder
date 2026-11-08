@@ -1,6 +1,6 @@
 {
   "date": "2026-11-08",
-  "generated": "2026-11-08T13:30:07+00:00",
+  "generated": "2026-11-08T14:30:07+00:00",
   "score": {
     "picks": 6,
     "settled": 3,
@@ -157,9 +157,9 @@
     }
   ],
   "strings": {
-    "settled": 2,
-    "win_pct": "0%",
-    "place_pct": "50%"
+    "settled": 7,
+    "win_pct": "29%",
+    "place_pct": "43%"
   },
   "outsiders": [
     {
@@ -198,10 +198,10 @@
       "string": "1st",
       "stars": 4,
       "odds": "12/1",
-      "sp": "12/1",
-      "sp_dec": 13.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "11/2",
+      "sp_dec": 6.5,
+      "pos": 1,
+      "res": "WIN",
       "lost_to": "Le Moulin Rouge"
     },
     {
@@ -212,10 +212,10 @@
       "string": "2nd",
       "stars": 3,
       "odds": "14/1",
-      "sp": "14/1",
-      "sp_dec": 15.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "28/1",
+      "sp_dec": 29.0,
+      "pos": 17,
+      "res": "UNPL",
       "lost_to": "Le Moulin Rouge"
     },
     {
@@ -226,10 +226,10 @@
       "string": "3rd",
       "stars": 2,
       "odds": "50/1",
-      "sp": "50/1",
-      "sp_dec": 51.0,
+      "sp": "100/1",
+      "sp_dec": 101.0,
       "pos": 0,
-      "res": "?",
+      "res": "UNPL",
       "lost_to": "Le Moulin Rouge"
     },
     {
@@ -240,10 +240,10 @@
       "string": "1st",
       "stars": 2,
       "odds": "7/1",
-      "sp": "7/1",
-      "sp_dec": 8.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "11/1",
+      "sp_dec": 12.0,
+      "pos": 6,
+      "res": "UNPL",
       "lost_to": "St Pancras"
     },
     {
@@ -254,10 +254,10 @@
       "string": "2nd",
       "stars": 2,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "4/1",
+      "sp_dec": 5.0,
+      "pos": 1,
+      "res": "WIN",
       "lost_to": "St Pancras"
     },
     {
@@ -277,14 +277,14 @@
   ],
   "outsider_score": {
     "strings": 8,
-    "settled": 2,
-    "won": 0,
+    "settled": 7,
+    "won": 2,
     "placed": 1,
-    "unplaced": 1,
+    "unplaced": 4,
     "nr": 0,
-    "pending": 6,
-    "win_pct": 0,
-    "place_pct": 50
+    "pending": 1,
+    "win_pct": 29,
+    "place_pct": 43
   },
   "super6": [
     {
@@ -294,10 +294,10 @@
       "trainer": "P Nolan",
       "stars": 4,
       "odds": "12/1",
-      "sp": "12/1",
-      "sp_dec": 13.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "11/2",
+      "sp_dec": 6.5,
+      "pos": 1,
+      "res": "WIN",
       "score": 10
     },
     {
@@ -314,5 +314,13 @@
       "score": 6
     }
   ],
-  "super6_score": null
+  "super6_score": {
+    "listed": 2,
+    "settled": 1,
+    "won": 1,
+    "placed": 0,
+    "win_pct": 100,
+    "place_pct": 100,
+    "pnl": 5.5
+  }
 }
