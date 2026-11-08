@@ -1,14 +1,14 @@
 {
   "date": "2026-11-08",
-  "generated": "2026-11-08T13:00:12+00:00",
+  "generated": "2026-11-08T13:30:07+00:00",
   "score": {
     "picks": 6,
-    "settled": 2,
+    "settled": 3,
     "won": 0,
     "placed": 0,
-    "unplaced": 2,
+    "unplaced": 3,
     "nr": 1,
-    "pending": 3,
+    "pending": 2,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -30,12 +30,21 @@
       "p": 0,
       "u": 1,
       "n": 1
+    },
+    {
+      "name": "Jamie and Josh Moore",
+      "w14": "18.5%",
+      "p14": "48.1%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
     }
   ],
   "stars": [
     {
       "stars": 4,
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -51,7 +60,7 @@
   "odds": [
     {
       "label": "2/1–5/1",
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -67,7 +76,7 @@
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 2,
+      "n": 3,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -105,10 +114,10 @@
       "trainer": "Jamie & Josh Moore",
       "stars": 4,
       "odds": "3/1",
-      "sp": "3/1",
-      "sp_dec": 4.0,
-      "pos": 0,
-      "res": "?"
+      "sp": "7/2",
+      "sp_dec": 4.5,
+      "pos": 3,
+      "res": "UNPL"
     },
     {
       "time": "13:30",
@@ -148,9 +157,9 @@
     }
   ],
   "strings": {
-    "settled": 1,
+    "settled": 2,
     "win_pct": "0%",
-    "place_pct": "100%"
+    "place_pct": "50%"
   },
   "outsiders": [
     {
@@ -175,10 +184,10 @@
       "string": "2nd",
       "stars": 1,
       "odds": "14/1",
-      "sp": "14/1",
-      "sp_dec": 15.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "40/1",
+      "sp_dec": 41.0,
+      "pos": 7,
+      "res": "UNPL",
       "lost_to": "stablemate Mint Approved"
     },
     {
@@ -268,14 +277,14 @@
   ],
   "outsider_score": {
     "strings": 8,
-    "settled": 1,
+    "settled": 2,
     "won": 0,
     "placed": 1,
-    "unplaced": 0,
+    "unplaced": 1,
     "nr": 0,
-    "pending": 7,
+    "pending": 6,
     "win_pct": 0,
-    "place_pct": 100
+    "place_pct": 50
   },
   "super6": [
     {
