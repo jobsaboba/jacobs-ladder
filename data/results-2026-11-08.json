@@ -1,6 +1,6 @@
 {
   "date": "2026-11-08",
-  "generated": "2026-11-08T14:30:07+00:00",
+  "generated": "2026-11-08T15:30:08+00:00",
   "score": {
     "picks": 6,
     "settled": 3,
@@ -138,8 +138,8 @@
       "trainer": "James Owen",
       "stars": 5,
       "odds": "4/1",
-      "sp": "4/1",
-      "sp_dec": 5.0,
+      "sp": "9/4",
+      "sp_dec": 3.25,
       "pos": 0,
       "res": "?"
     },
@@ -268,8 +268,8 @@
       "string": "1st",
       "stars": 3,
       "odds": "11/2",
-      "sp": "11/2",
-      "sp_dec": 6.5,
+      "sp": "17/2",
+      "sp_dec": 9.5,
       "pos": 0,
       "res": "?",
       "lost_to": "Port Station"
@@ -307,8 +307,8 @@
       "trainer": "Jamie & Josh Moore",
       "stars": 3,
       "odds": "11/2",
-      "sp": "11/2",
-      "sp_dec": 6.5,
+      "sp": "17/2",
+      "sp_dec": 9.5,
       "pos": 0,
       "res": "?",
       "score": 6
