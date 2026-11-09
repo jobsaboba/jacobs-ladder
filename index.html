@@ -174,9 +174,6 @@
 <h3 class="sec">Today's selections</h3>
 <div id="timeline"></div>
 
-<h3 class="sec">Outsiders — separate bets <button class="btn ghost small" onclick="toggleStrings()" id="stringsBtn">👁 Show</button></h3>
-<div id="stringsCard" style="display:none"><div id="stringsBody"></div></div>
-
 <h3 class="sec">Day ledger <button class="btn ghost small" onclick="copySummary()">⧉ Copy</button></h3>
 <div class="card"><div id="ledgerList"></div></div>
 
@@ -191,7 +188,7 @@
   </div>
   <div class="hint">Stake = first + last of the ladder &times; unit · any new bank peak resets the ladder to 1-2-2.<br>
   🔥 = jockey 20%+ strike rate over the last 30 days (horseracing.net)<br>
-  © Dave Court · v17</div>
+  © Dave Court · v18</div>
 </footer>
 
 <div class="toast" id="toast"></div>
@@ -292,30 +289,6 @@ async function fetchData(silent){
     banner("No selections fetched yet ("+problems[0]+"). They publish with the morning shortlist — the app will keep checking.");
   }
   return false;
-}
-
-/* ---- outsiders: the yard's other runners — bet separately, never on the ladder ---- */
-let stringsOpen=false;
-function toggleStrings(){
-  stringsOpen=!stringsOpen;
-  const card=document.getElementById("stringsCard"), btn=document.getElementById("stringsBtn");
-  card.style.display=stringsOpen?"":"none";
-  btn.textContent=stringsOpen?"✕ Hide":"👁 Show";
-  if(stringsOpen) renderStrings();
-}
-function renderStrings(){
-  const rows=S.day ? S.day.races.filter(r=>r.section==="watch") : [];
-  document.getElementById("stringsBody").innerHTML = rows.length ? rows.map(r=>{
-    /* identical cards to today's selections; the badge slot shows the
-       official win / place / lose once the evening review is published */
-    const off = resOf(r);
-    const b = resBadge(off);
-    return `<div class="race ${off?"done":""}">
-      <div class="t">${r.time}<small>${r.course}</small></div>
-      <div class="mid"><div class="h">${r.horse} <span class="stars">${"★".repeat(r.stars||0)}</span></div>
-        <div class="r">${r.trainer}${r.jockey?` / ${r.hot?"🔥 ":""}${r.jockey}`:""} · ${r.odds||""}</div></div>
-      ${b[1]?`<div class="badge ${b[0]}">${b[1]}</div>`:""}</div>`;
-  }).join("") : `<div style="color:var(--dim);font-size:.8rem">No outsiders today.</div>`;
 }
 
 /* ---- evening review: today's results, published from the laptop ---- */
@@ -622,9 +595,9 @@ function render(){
     ha.innerHTML="";
   }
 
-  // timeline — picks only; strings live in their own section below
+  // timeline — selections and outsiders together, one list in race order
   const tl=document.getElementById("timeline");
-  tl.innerHTML = S.day ? bettable().map(r=>{
+  tl.innerHTML = S.day ? S.day.races.map(r=>{
     const past = r.status!=="pending";
     const isNow = nr && nr===r;
     /* your own badge wins once you've processed the race; otherwise the
@@ -632,6 +605,7 @@ function render(){
     const off = resOf(r);
     const b = r.status!=="pending" ? ({won:["won","WON"],lost:["lost","LOST"],skip:["skip","SKIPPED"],pending:["pending",""]}[r.status]||["pending",""])
             : resBadge(off);
+    const sec = r.section==="watch" ? `<span class="chip watch">outsider</span>` : "";
     let amt = "";
     if((r.status==="won"||r.status==="lost") && r.ret!=null && r.stake!=null){
       const d = r2(r.ret - r.stake);
@@ -639,7 +613,7 @@ function render(){
     }
     return `<div class="race ${past?"done":""} ${isNow?"now":""}">
       <div class="t">${r.time}<small>${r.course}</small></div>
-      <div class="mid"><div class="h">${r.horse} <span class="stars">${"★".repeat(r.stars)}</span></div>
+      <div class="mid"><div class="h">${r.horse} <span class="stars">${"★".repeat(r.stars)}</span>${sec}</div>
         <div class="r">${r.trainer}${r.jockey?` / ${r.hot?"🔥 ":""}${r.jockey}`:""} · ${r.odds}</div>
         ${past&&r.stake!=null?`<div class="r">stake ${fmt(r.stake)} → ret ${fmt(r.ret)}</div>`:""}</div>
       ${b[1]?`<div class="badge ${b[0]}">${b[1]}${amt?" "+amt:""}</div>`:""}</div>`;
