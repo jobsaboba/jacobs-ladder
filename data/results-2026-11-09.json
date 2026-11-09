@@ -1,6 +1,6 @@
 {
   "date": "2026-11-09",
-  "generated": "2026-11-09T15:00:10+00:00",
+  "generated": "2026-11-09T15:30:10+00:00",
   "score": {
     "picks": 9,
     "settled": 7,
@@ -220,8 +220,8 @@
       "trainer": "N P Mulholland",
       "stars": 3,
       "odds": "11/2",
-      "sp": "11/2",
-      "sp_dec": 6.5,
+      "sp": "20/1",
+      "sp_dec": 21.0,
       "pos": 0,
       "res": "?"
     },
