@@ -174,9 +174,6 @@
 <h3 class="sec">Today's selections</h3>
 <div id="timeline"></div>
 
-<h3 class="sec">⚡ Super 6 — pick of the outsiders</h3>
-<div id="super6List"></div>
-
 <h3 class="sec">Outsiders — separate bets <button class="btn ghost small" onclick="toggleStrings()" id="stringsBtn">👁 Show</button></h3>
 <div id="stringsCard" style="display:none"><div id="stringsBody"></div></div>
 
@@ -194,7 +191,7 @@
   </div>
   <div class="hint">Stake = first + last of the ladder &times; unit · any new bank peak resets the ladder to 1-2-2.<br>
   🔥 = jockey 20%+ strike rate over the last 30 days (horseracing.net)<br>
-  © Dave Court · v16</div>
+  © Dave Court · v17</div>
 </footer>
 
 <div class="toast" id="toast"></div>
@@ -209,7 +206,7 @@ let deferredPrompt = null, heroTimer = null, bannerTimer = null, cur = null,
     lastSeenDay = todayStr(), lastTry = 0;
 
 function blank(){ return { unit:0.05, bank:10.00, peak:10.00, seq:[1,2,2], startBank:10.00, day:null, log:[], history:[] }; }
-function load(){ try{ const j=JSON.parse(localStorage.getItem(LS)); if(j&&j.seq) return j; }catch(e){} return blank(); }
+function load(){ try{ const j=JSON.parse(localStorage.getItem(LS)); if(j&&j.seq){ if(j.day&&Array.isArray(j.day.races)) j.day.races=j.day.races.filter(r=>r.section!=="super6"); return j; } }catch(e){} return blank(); }
 function save(){ localStorage.setItem(LS, JSON.stringify(S)); }
 
 function r2(n){ return Math.round(n*100)/100; }
@@ -237,7 +234,7 @@ function adoptDay(j){
       toast("Kept the current day"); return;
     }
   }
-  const rows = [].concat(j.finals || []).concat(j.super6 || []);  /* super6: separate-bets list, never ladder-bettable */
+  const rows = [].concat(j.finals || []);
   const newDay = {
     date: j.date, stamp: j.racemetrics_stamp || "", generated: j.generated || "",
     startBank: S.bank,
@@ -260,11 +257,10 @@ function adoptDay(j){
   save(); render();
   fetchResults();   /* results may already exist for this date (re-adopt / stale day) */
   const nbet = S.day.races.filter(r=>r.section==="main").length;
-  const sixN = S.day.races.filter(r=>r.section==="super6").length;
-  const outsiders = S.day.races.length - nbet - sixN;
+  const outsiders = S.day.races.length - nbet;
   const stale = j.date < todayStr();
   banner(stale ? `⚠️ Loaded ${j.date} selections — that file is stale, import or fetch a fresh one.` :
-                 `✅ ${nbet} bets loaded for ${j.date} (+${outsiders} outsiders${sixN?` · ⚡${sixN} Super 6`:""}) (RaceMetrics ${j.racemetrics_stamp||""})`, !stale);
+                 `✅ ${nbet} bets loaded for ${j.date} (+${outsiders} outsiders) (RaceMetrics ${j.racemetrics_stamp||""})`, !stale);
 }
 
 /* Pull today's shortlist in race order.
@@ -322,27 +318,6 @@ function renderStrings(){
   }).join("") : `<div style="color:var(--dim);font-size:.8rem">No outsiders today.</div>`;
 }
 
-/* ---- super 6: the day's six strongest outsiders, one per race,
-   scored by the pipeline (first strings only, demoted picks boosted,
-   hot jockey tiebreak, one long bomb max). Reference cards — like the
-   outsiders, never bet on the ladder; official result badge once published ---- */
-function renderSuper6(){
-  const rows=S.day ? S.day.races.filter(r=>r.section==="super6") : [];
-  const el=document.getElementById("super6List");
-  if(!el) return;
-  el.innerHTML = rows.length ? rows.map(r=>{
-    /* identical cards to today's selections; the badge slot shows the
-       official win / place / lose once the evening review is published */
-    const off = resOf(r);
-    const b = resBadge(off);
-    return `<div class="race ${off?"done":""}">
-      <div class="t">${r.time}<small>${r.course}</small></div>
-      <div class="mid"><div class="h">${r.horse} <span class="stars">${"★".repeat(r.stars||0)}</span></div>
-        <div class="r">${r.trainer}${r.jockey?` / ${r.hot?"🔥 ":""}${r.jockey}`:""} · ${r.odds||""}</div></div>
-      ${b[1]?`<div class="badge ${b[0]}">${b[1]}</div>`:""}</div>`;
-  }).join("") : (S.day ? `<div style="color:var(--dim);font-size:.8rem">No Super 6 today.</div>` : "");
-}
-
 /* ---- evening review: today's results, published from the laptop ---- */
 let resultsOpen=false;
 function toggleResults(){
@@ -398,12 +373,6 @@ function renderResults(d, el){
       <div style="font-size:.8rem;line-height:1.85">${d.outsiders.map(p=>`
         <div>${mark[p.res]||"?"} ${p.time} ${p.meeting} — <b>${p.horse}</b> ${"★".repeat(p.stars||0)} ${p.odds||""}${p.string?` <span style="color:var(--dim)">${p.string} string</span>`:""}
           ${p.res==="?"?"":`<span style="color:var(--dim)">pos ${p.pos??"—"} · ${p.res}</span>`}</div>`).join("")}</div>`:""}
-    ${(d.super6&&d.super6.length)?`
-      <div class="label" style="margin:12px 0 4px">⚡ Super 6 — scored outsiders</div>
-      <div style="font-size:.8rem;line-height:1.85">${d.super6.map(p=>`
-        <div>${mark[p.res]||"?"} ${p.time} ${p.meeting} — <b>${p.horse}</b> ${"★".repeat(p.stars||0)} ${p.odds||""}
-          ${p.res==="?"?"":`<span style="color:var(--dim)">pos ${p.pos??"—"} · ${p.res}</span>`}</div>`).join("")}</div>`:""}
-    ${(()=>{const s6=d.super6_score; return s6?`<div style="margin-top:10px;font-size:.78rem;color:var(--dim)">⚡ Super 6: ${s6.settled} settled — won ${s6.win_pct}% · placed-or-better ${s6.place_pct}%${(s6.pnl!=null?` · P/L £${s6.pnl>=0?"+":"−"}${Math.abs(s6.pnl).toFixed(2)}`:"")}</div>`:""})()}
     ${(()=>{const os=d.outsider_score||d.strings; return os?`<div style="margin-top:10px;font-size:.78rem;color:var(--dim)">outsiders: ${os.settled} settled — won ${os.win_pct} · placed-or-better ${os.place_pct}</div>`:""})()}
     <div style="margin-top:8px;font-size:.68rem;color:var(--dim)">published ${(d.generated||"").replace("T"," ").slice(0,16)}</div>`;
 }
@@ -415,7 +384,7 @@ function renderResults(d, el){
 function applyResults(d){
   if(!d || !S.day || d.date !== S.day.date) return;
   const byKey = {};
-  for(const p of [...(d.picks||[]), ...(d.outsiders||[]), ...(d.super6||[])]){
+  for(const p of [...(d.picks||[]), ...(d.outsiders||[])]){
     if(p.res && p.res !== "?") byKey[p.time+"|"+p.horse] = {res:p.res, pos:p.pos, sp:p.sp||p.odds||""};
   }
   const sig = JSON.stringify(byKey);
@@ -454,8 +423,7 @@ async function autoRefresh(){
         const j = await r.json();
         /* adopt whenever the published list CHANGED — longer (strings finished
            publishing) or shorter (yard cap / corrections removed rows) */
-        const count = Array.isArray(j.finals)
-          ? j.finals.length + (Array.isArray(j.super6) ? j.super6.length : 0) : 0;
+        const count = Array.isArray(j.finals) ? j.finals.length : 0;
         const changed = j && j.date===todayStr() && Array.isArray(j.finals) &&
           (count !== S.day.races.length ||
            (j.generated && S.day.generated && j.generated !== S.day.generated));
@@ -676,9 +644,6 @@ function render(){
         ${past&&r.stake!=null?`<div class="r">stake ${fmt(r.stake)} → ret ${fmt(r.ret)}</div>`:""}</div>
       ${b[1]?`<div class="badge ${b[0]}">${b[1]}${amt?" "+amt:""}</div>`:""}</div>`;
   }).join("") : `<div class="card" style="font-size:.82rem;color:var(--dim)">Fetch the day's selections, or import <code>inform-shortlist-*.json</code> from the desktop pipeline.</div>`;
-
-  // super 6 — the day's six scored outsiders, same cards, below the picks
-  renderSuper6();
 
   // ledger
   const ll=document.getElementById("ledgerList");
