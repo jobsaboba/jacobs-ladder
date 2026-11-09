@@ -1,0 +1,326 @@
+{
+  "date": "2026-11-09",
+  "generated": "2026-11-09T13:00:09+00:00",
+  "score": {
+    "picks": 9,
+    "settled": 4,
+    "won": 0,
+    "placed": 1,
+    "unplaced": 3,
+    "nr": 0,
+    "pending": 5,
+    "win_pct": 0,
+    "place_pct": 25
+  },
+  "trainers": [
+    {
+      "name": "Nicky Richards",
+      "w14": "33.3%",
+      "p14": "58.3%",
+      "w": 0,
+      "p": 1,
+      "u": 1,
+      "n": 2
+    },
+    {
+      "name": "Gavin Cromwell",
+      "w14": "19.0%",
+      "p14": "40.5%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
+    },
+    {
+      "name": "Olly Murphy",
+      "w14": "25.0%",
+      "p14": "64.3%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
+    }
+  ],
+  "stars": [
+    {
+      "stars": 5,
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "100%"
+    },
+    {
+      "stars": 4,
+      "n": 2,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
+    {
+      "stars": 3,
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    }
+  ],
+  "odds": [
+    {
+      "label": "evens–2/1",
+      "n": 3,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "33%"
+    },
+    {
+      "label": "2/1–5/1",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    }
+  ],
+  "fields": [
+    {
+      "label": "small (≤8)",
+      "n": 3,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
+    {
+      "label": "big (13+)",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "100%"
+    }
+  ],
+  "picks": [
+    {
+      "time": "12:20",
+      "meeting": "Carlisle",
+      "horse": "Poets Whisper",
+      "trainer": "N G Richards",
+      "stars": 5,
+      "odds": "7/2",
+      "sp": "13/8",
+      "sp_dec": 2.625,
+      "pos": 2,
+      "res": "PLACE"
+    },
+    {
+      "time": "12:30",
+      "meeting": "Punchestown",
+      "horse": "Good Option",
+      "trainer": "G P Cromwell",
+      "stars": 3,
+      "odds": "7/1",
+      "sp": "10/3",
+      "sp_dec": 4.333333333333334,
+      "pos": 3,
+      "res": "UNPL"
+    },
+    {
+      "time": "12:40",
+      "meeting": "Stratford",
+      "horse": "Act Of Authority",
+      "trainer": "O Murphy",
+      "stars": 4,
+      "odds": "1/1",
+      "sp": "11/8",
+      "sp_dec": 2.375,
+      "pos": 2,
+      "res": "UNPL"
+    },
+    {
+      "time": "12:50",
+      "meeting": "Carlisle",
+      "horse": "Parisencore",
+      "trainer": "N G Richards",
+      "stars": 4,
+      "odds": "1/2",
+      "sp": "11/10",
+      "sp_dec": 2.1,
+      "pos": 2,
+      "res": "UNPL"
+    },
+    {
+      "time": "13:30",
+      "meeting": "Punchestown",
+      "horse": "Blissful Bonita",
+      "trainer": "G P Cromwell",
+      "stars": 4,
+      "odds": "2/1",
+      "sp": "2/1",
+      "sp_dec": 3.0,
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "13:40",
+      "meeting": "Stratford",
+      "horse": "Sunshine Diamond",
+      "trainer": "N P Mulholland",
+      "stars": 4,
+      "odds": "7/1",
+      "sp": "7/1",
+      "sp_dec": 8.0,
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "14:50",
+      "meeting": "Stratford",
+      "horse": "She Is For Me Boys",
+      "trainer": "Jamie Snowden",
+      "stars": 4,
+      "odds": "7/1",
+      "sp": "7/1",
+      "sp_dec": 8.0,
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "15:25",
+      "meeting": "Stratford",
+      "horse": "Exactly Right",
+      "trainer": "N P Mulholland",
+      "stars": 3,
+      "odds": "11/2",
+      "sp": "11/2",
+      "sp_dec": 6.5,
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "15:35",
+      "meeting": "Carlisle",
+      "horse": "Lady Jetfire",
+      "trainer": "Jamie Snowden",
+      "stars": 5,
+      "odds": "3/1",
+      "sp": "3/1",
+      "sp_dec": 4.0,
+      "pos": 0,
+      "res": "?"
+    }
+  ],
+  "strings": {
+    "settled": 2,
+    "win_pct": "0%",
+    "place_pct": "0%"
+  },
+  "outsiders": [
+    {
+      "time": "12:00",
+      "meeting": "Punchestown",
+      "horse": "Laska Du Breuil",
+      "trainer": "G P Cromwell",
+      "string": "1st",
+      "stars": 3,
+      "odds": "16/1",
+      "sp": "11/1",
+      "sp_dec": 12.0,
+      "pos": 4,
+      "res": "UNPL",
+      "lost_to": "Laska Du Breuil"
+    },
+    {
+      "time": "12:20",
+      "meeting": "Carlisle",
+      "horse": "Dilrisk",
+      "trainer": "N G Richards",
+      "string": "2nd",
+      "stars": 2,
+      "odds": "25/1",
+      "sp": "100/1",
+      "sp_dec": 101.0,
+      "pos": 14,
+      "res": "UNPL",
+      "lost_to": "stablemate Poets Whisper"
+    },
+    {
+      "time": "14:38",
+      "meeting": "Punchestown",
+      "horse": "Carrig Padraig",
+      "trainer": "G P Cromwell",
+      "string": "1st",
+      "stars": 3,
+      "odds": "12/1",
+      "sp": "12/1",
+      "sp_dec": 13.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "Carrig Padraig"
+    },
+    {
+      "time": "15:35",
+      "meeting": "Carlisle",
+      "horse": "Who's That Lady",
+      "trainer": "O Murphy",
+      "string": "1st",
+      "stars": 4,
+      "odds": "5/1",
+      "sp": "5/1",
+      "sp_dec": 6.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "Lady Jetfire"
+    },
+    {
+      "time": "15:35",
+      "meeting": "Carlisle",
+      "horse": "Belle Noire",
+      "trainer": "N G Richards",
+      "string": "1st",
+      "stars": 4,
+      "odds": "6/1",
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "Lady Jetfire"
+    }
+  ],
+  "outsider_score": {
+    "strings": 5,
+    "settled": 2,
+    "won": 0,
+    "placed": 0,
+    "unplaced": 2,
+    "nr": 0,
+    "pending": 3,
+    "win_pct": 0,
+    "place_pct": 0
+  },
+  "super6": [
+    {
+      "time": "14:38",
+      "meeting": "Punchestown",
+      "horse": "Carrig Padraig",
+      "trainer": "G P Cromwell",
+      "stars": 3,
+      "odds": "12/1",
+      "sp": "12/1",
+      "sp_dec": 13.0,
+      "pos": 0,
+      "res": "?",
+      "score": 9
+    },
+    {
+      "time": "15:35",
+      "meeting": "Carlisle",
+      "horse": "Belle Noire",
+      "trainer": "N G Richards",
+      "stars": 4,
+      "odds": "6/1",
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 0,
+      "res": "?",
+      "score": 9
+    }
+  ],
+  "super6_score": null
+}
