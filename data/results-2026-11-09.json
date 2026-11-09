@@ -1,16 +1,16 @@
 {
   "date": "2026-11-09",
-  "generated": "2026-11-09T15:30:10+00:00",
+  "generated": "2026-11-09T16:00:12+00:00",
   "score": {
     "picks": 9,
-    "settled": 7,
-    "won": 0,
+    "settled": 9,
+    "won": 1,
     "placed": 2,
-    "unplaced": 5,
+    "unplaced": 6,
     "nr": 0,
-    "pending": 2,
-    "win_pct": 0,
-    "place_pct": 29
+    "pending": 0,
+    "win_pct": 11,
+    "place_pct": 33
   },
   "trainers": [
     {
@@ -32,27 +32,27 @@
       "n": 2
     },
     {
-      "name": "Olly Murphy",
-      "w14": "25.0%",
-      "p14": "64.3%",
-      "w": 0,
-      "p": 0,
-      "u": 1,
-      "n": 1
-    },
-    {
       "name": "Neil Mulholland",
       "w14": "26.1%",
       "p14": "60.9%",
       "w": 0,
       "p": 0,
-      "u": 1,
-      "n": 1
+      "u": 2,
+      "n": 2
     },
     {
       "name": "Jamie Snowden",
       "w14": "34.8%",
       "p14": "73.9%",
+      "w": 1,
+      "p": 0,
+      "u": 1,
+      "n": 2
+    },
+    {
+      "name": "Olly Murphy",
+      "w14": "25.0%",
+      "p14": "64.3%",
       "w": 0,
       "p": 0,
       "u": 1,
@@ -62,9 +62,9 @@
   "stars": [
     {
       "stars": 5,
-      "n": 1,
-      "w": 0,
-      "win_pct": "0%",
+      "n": 2,
+      "w": 1,
+      "win_pct": "50%",
       "place_pct": "100%"
     },
     {
@@ -76,7 +76,7 @@
     },
     {
       "stars": 3,
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -85,10 +85,10 @@
   "odds": [
     {
       "label": "evens–2/1",
-      "n": 4,
-      "w": 0,
-      "win_pct": "0%",
-      "place_pct": "25%"
+      "n": 5,
+      "w": 1,
+      "win_pct": "20%",
+      "place_pct": "40%"
     },
     {
       "label": "2/1–5/1",
@@ -103,21 +103,28 @@
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
+    },
+    {
+      "label": "10/1+",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
     }
   ],
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 5,
+      "n": 6,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
     },
     {
       "label": "mid (9–12)",
-      "n": 1,
-      "w": 0,
-      "win_pct": "0%",
+      "n": 2,
+      "w": 1,
+      "win_pct": "50%",
       "place_pct": "100%"
     },
     {
@@ -222,8 +229,8 @@
       "odds": "11/2",
       "sp": "20/1",
       "sp_dec": 21.0,
-      "pos": 0,
-      "res": "?"
+      "pos": 3,
+      "res": "UNPL"
     },
     {
       "time": "15:35",
@@ -232,16 +239,16 @@
       "trainer": "Jamie Snowden",
       "stars": 5,
       "odds": "3/1",
-      "sp": "3/1",
-      "sp_dec": 4.0,
-      "pos": 0,
-      "res": "?"
+      "sp": "5/6",
+      "sp_dec": 1.8333333333333335,
+      "pos": 1,
+      "res": "WIN"
     }
   ],
   "strings": {
-    "settled": 3,
+    "settled": 5,
     "win_pct": "0%",
-    "place_pct": "0%"
+    "place_pct": "20%"
   },
   "outsiders": [
     {
@@ -294,10 +301,10 @@
       "string": "1st",
       "stars": 4,
       "odds": "5/1",
-      "sp": "5/1",
-      "sp_dec": 6.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "20/1",
+      "sp_dec": 21.0,
+      "pos": 3,
+      "res": "PLACE",
       "lost_to": "Lady Jetfire"
     },
     {
@@ -308,23 +315,23 @@
       "string": "1st",
       "stars": 4,
       "odds": "6/1",
-      "sp": "6/1",
-      "sp_dec": 7.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "11/2",
+      "sp_dec": 6.5,
+      "pos": 8,
+      "res": "UNPL",
       "lost_to": "Lady Jetfire"
     }
   ],
   "outsider_score": {
     "strings": 5,
-    "settled": 3,
+    "settled": 5,
     "won": 0,
-    "placed": 0,
-    "unplaced": 3,
+    "placed": 1,
+    "unplaced": 4,
     "nr": 0,
-    "pending": 2,
+    "pending": 0,
     "win_pct": 0,
-    "place_pct": 0
+    "place_pct": 20
   },
   "super6": [
     {
@@ -347,20 +354,20 @@
       "trainer": "N G Richards",
       "stars": 4,
       "odds": "6/1",
-      "sp": "6/1",
-      "sp_dec": 7.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "11/2",
+      "sp_dec": 6.5,
+      "pos": 8,
+      "res": "UNPL",
       "score": 9
     }
   ],
   "super6_score": {
     "listed": 2,
-    "settled": 1,
+    "settled": 2,
     "won": 0,
     "placed": 0,
     "win_pct": 0,
     "place_pct": 0,
-    "pnl": -1.0
+    "pnl": -2.0
   }
 }
