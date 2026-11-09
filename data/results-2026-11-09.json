@@ -1,16 +1,16 @@
 {
   "date": "2026-11-09",
-  "generated": "2026-11-09T14:00:10+00:00",
+  "generated": "2026-11-09T15:00:10+00:00",
   "score": {
     "picks": 9,
-    "settled": 6,
+    "settled": 7,
     "won": 0,
     "placed": 2,
-    "unplaced": 4,
+    "unplaced": 5,
     "nr": 0,
-    "pending": 3,
+    "pending": 2,
     "win_pct": 0,
-    "place_pct": 33
+    "place_pct": 29
   },
   "trainers": [
     {
@@ -48,6 +48,15 @@
       "p": 0,
       "u": 1,
       "n": 1
+    },
+    {
+      "name": "Jamie Snowden",
+      "w14": "34.8%",
+      "p14": "73.9%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
     }
   ],
   "stars": [
@@ -60,10 +69,10 @@
     },
     {
       "stars": 4,
-      "n": 4,
+      "n": 5,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "25%"
+      "place_pct": "20%"
     },
     {
       "stars": 3,
@@ -87,12 +96,19 @@
       "w": 0,
       "win_pct": "0%",
       "place_pct": "50%"
+    },
+    {
+      "label": "5/1–10/1",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
     }
   ],
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 4,
+      "n": 5,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -192,10 +208,10 @@
       "trainer": "Jamie Snowden",
       "stars": 4,
       "odds": "7/1",
-      "sp": "7/1",
-      "sp_dec": 8.0,
-      "pos": 0,
-      "res": "?"
+      "sp": "5/1",
+      "sp_dec": 6.0,
+      "pos": 4,
+      "res": "UNPL"
     },
     {
       "time": "15:25",
@@ -223,7 +239,7 @@
     }
   ],
   "strings": {
-    "settled": 2,
+    "settled": 3,
     "win_pct": "0%",
     "place_pct": "0%"
   },
@@ -264,10 +280,10 @@
       "string": "1st",
       "stars": 3,
       "odds": "12/1",
-      "sp": "12/1",
-      "sp_dec": 13.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "40/1",
+      "sp_dec": 41.0,
+      "pos": 4,
+      "res": "UNPL",
       "lost_to": "Carrig Padraig"
     },
     {
@@ -301,12 +317,12 @@
   ],
   "outsider_score": {
     "strings": 5,
-    "settled": 2,
+    "settled": 3,
     "won": 0,
     "placed": 0,
-    "unplaced": 2,
+    "unplaced": 3,
     "nr": 0,
-    "pending": 3,
+    "pending": 2,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -318,10 +334,10 @@
       "trainer": "G P Cromwell",
       "stars": 3,
       "odds": "12/1",
-      "sp": "12/1",
-      "sp_dec": 13.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "40/1",
+      "sp_dec": 41.0,
+      "pos": 4,
+      "res": "UNPL",
       "score": 9
     },
     {
@@ -338,5 +354,13 @@
       "score": 9
     }
   ],
-  "super6_score": null
+  "super6_score": {
+    "listed": 2,
+    "settled": 1,
+    "won": 0,
+    "placed": 0,
+    "win_pct": 0,
+    "place_pct": 0,
+    "pnl": -1.0
+  }
 }
