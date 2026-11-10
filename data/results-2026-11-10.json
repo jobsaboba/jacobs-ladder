@@ -1,6 +1,6 @@
 {
   "date": "2026-11-10",
-  "generated": "2026-11-10T15:30:07+00:00",
+  "generated": "2026-11-10T16:00:07+00:00",
   "score": {
     "picks": 7,
     "settled": 5,
@@ -164,8 +164,8 @@
       "trainer": "Harry Derham",
       "stars": 5,
       "odds": "2/1",
-      "sp": "2/1",
-      "sp_dec": 3.0,
+      "sp": "5/2",
+      "sp_dec": 3.5,
       "pos": 0,
       "res": "?"
     },
@@ -224,8 +224,8 @@
       "string": "1st",
       "stars": 4,
       "odds": "4/1",
-      "sp": "4/1",
-      "sp_dec": 5.0,
+      "sp": "5/1",
+      "sp_dec": 6.0,
       "pos": 0,
       "res": "?",
       "lost_to": "Gallivanted"
@@ -276,8 +276,8 @@
       "trainer": "Jamie & Josh Moore",
       "stars": 4,
       "odds": "4/1",
-      "sp": "4/1",
-      "sp_dec": 5.0,
+      "sp": "5/1",
+      "sp_dec": 6.0,
       "pos": 0,
       "res": "?",
       "score": 8
