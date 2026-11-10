@@ -1,21 +1,55 @@
 {
   "date": "2026-11-10",
-  "generated": "2026-11-10T13:00:06+00:00",
+  "generated": "2026-11-10T14:00:07+00:00",
   "score": {
     "picks": 7,
-    "settled": 0,
-    "won": 0,
+    "settled": 1,
+    "won": 1,
     "placed": 0,
     "unplaced": 0,
     "nr": 0,
-    "pending": 7,
-    "win_pct": null,
-    "place_pct": null
+    "pending": 6,
+    "win_pct": 100,
+    "place_pct": 100
   },
-  "trainers": [],
-  "stars": [],
-  "odds": [],
-  "fields": [],
+  "trainers": [
+    {
+      "name": "James Owen",
+      "w14": "28.8%",
+      "p14": "65.4%",
+      "w": 1,
+      "p": 0,
+      "u": 0,
+      "n": 1
+    }
+  ],
+  "stars": [
+    {
+      "stars": 5,
+      "n": 1,
+      "w": 1,
+      "win_pct": "100%",
+      "place_pct": "100%"
+    }
+  ],
+  "odds": [
+    {
+      "label": "evens–2/1",
+      "n": 1,
+      "w": 1,
+      "win_pct": "100%",
+      "place_pct": "100%"
+    }
+  ],
+  "fields": [
+    {
+      "label": "small (≤8)",
+      "n": 1,
+      "w": 1,
+      "win_pct": "100%",
+      "place_pct": "100%"
+    }
+  ],
   "picks": [
     {
       "time": "13:40",
@@ -24,10 +58,10 @@
       "trainer": "James Owen",
       "stars": 5,
       "odds": "7/4",
-      "sp": "7/4",
-      "sp_dec": 2.75,
-      "pos": 0,
-      "res": "?"
+      "sp": "13/8",
+      "sp_dec": 2.625,
+      "pos": 1,
+      "res": "WIN"
     },
     {
       "time": "14:10",
