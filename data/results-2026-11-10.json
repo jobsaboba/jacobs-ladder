@@ -1,16 +1,16 @@
 {
   "date": "2026-11-10",
-  "generated": "2026-11-10T15:00:07+00:00",
+  "generated": "2026-11-10T15:30:07+00:00",
   "score": {
     "picks": 7,
-    "settled": 4,
+    "settled": 5,
     "won": 1,
-    "placed": 1,
+    "placed": 2,
     "unplaced": 2,
     "nr": 0,
-    "pending": 3,
-    "win_pct": 25,
-    "place_pct": 50
+    "pending": 2,
+    "win_pct": 20,
+    "place_pct": 60
   },
   "trainers": [
     {
@@ -30,6 +30,15 @@
       "p": 1,
       "u": 0,
       "n": 1
+    },
+    {
+      "name": "Gavin Cromwell",
+      "w14": "16.2%",
+      "p14": "45.9%",
+      "w": 0,
+      "p": 1,
+      "u": 0,
+      "n": 1
     }
   ],
   "stars": [
@@ -42,10 +51,10 @@
     },
     {
       "stars": 4,
-      "n": 2,
+      "n": 3,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "0%"
+      "place_pct": "33%"
     },
     {
       "stars": 3,
@@ -65,10 +74,10 @@
     },
     {
       "label": "2/1–5/1",
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "0%"
+      "place_pct": "50%"
     },
     {
       "label": "5/1–10/1",
@@ -81,10 +90,10 @@
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 4,
+      "n": 5,
       "w": 1,
-      "win_pct": "25%",
-      "place_pct": "50%"
+      "win_pct": "20%",
+      "place_pct": "60%"
     }
   ],
   "picks": [
@@ -143,10 +152,10 @@
       "trainer": "G P Cromwell",
       "stars": 4,
       "odds": "4/1",
-      "sp": "4/1",
-      "sp_dec": 5.0,
-      "pos": 0,
-      "res": "?"
+      "sp": "9/2",
+      "sp_dec": 5.5,
+      "pos": 2,
+      "res": "PLACE"
     },
     {
       "time": "15:40",
