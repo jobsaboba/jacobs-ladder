@@ -1,16 +1,16 @@
 {
   "date": "2026-11-10",
-  "generated": "2026-11-10T14:30:06+00:00",
+  "generated": "2026-11-10T15:00:07+00:00",
   "score": {
     "picks": 7,
-    "settled": 3,
+    "settled": 4,
     "won": 1,
     "placed": 1,
-    "unplaced": 1,
+    "unplaced": 2,
     "nr": 0,
-    "pending": 4,
-    "win_pct": 33,
-    "place_pct": 67
+    "pending": 3,
+    "win_pct": 25,
+    "place_pct": 50
   },
   "trainers": [
     {
@@ -19,8 +19,8 @@
       "p14": "65.4%",
       "w": 1,
       "p": 0,
-      "u": 1,
-      "n": 2
+      "u": 2,
+      "n": 3
     },
     {
       "name": "Neil Mulholland",
@@ -42,7 +42,7 @@
     },
     {
       "stars": 4,
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -72,19 +72,19 @@
     },
     {
       "label": "5/1–10/1",
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "100%"
+      "place_pct": "50%"
     }
   ],
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 3,
+      "n": 4,
       "w": 1,
-      "win_pct": "33%",
-      "place_pct": "67%"
+      "win_pct": "25%",
+      "place_pct": "50%"
     }
   ],
   "picks": [
@@ -131,10 +131,10 @@
       "trainer": "James Owen",
       "stars": 4,
       "odds": "2/1",
-      "sp": "2/1",
-      "sp_dec": 3.0,
-      "pos": 0,
-      "res": "?"
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 5,
+      "res": "UNPL"
     },
     {
       "time": "15:00",
@@ -174,7 +174,7 @@
     }
   ],
   "strings": {
-    "settled": 1,
+    "settled": 2,
     "win_pct": "0%",
     "place_pct": "0%"
   },
@@ -203,8 +203,8 @@
       "odds": "6/1",
       "sp": "6/1",
       "sp_dec": 7.0,
-      "pos": 0,
-      "res": "?",
+      "pos": 8,
+      "res": "UNPL",
       "lost_to": "Zaraquelle"
     },
     {
@@ -224,12 +224,12 @@
   ],
   "outsider_score": {
     "strings": 3,
-    "settled": 1,
+    "settled": 2,
     "won": 0,
     "placed": 0,
-    "unplaced": 1,
+    "unplaced": 2,
     "nr": 0,
-    "pending": 2,
+    "pending": 1,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -256,8 +256,8 @@
       "odds": "6/1",
       "sp": "6/1",
       "sp_dec": 7.0,
-      "pos": 0,
-      "res": "?",
+      "pos": 8,
+      "res": "UNPL",
       "score": 6
     },
     {
@@ -276,11 +276,11 @@
   ],
   "super6_score": {
     "listed": 3,
-    "settled": 1,
+    "settled": 2,
     "won": 0,
     "placed": 0,
     "win_pct": 0,
     "place_pct": 0,
-    "pnl": -1.0
+    "pnl": -2.0
   }
 }
