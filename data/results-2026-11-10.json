@@ -1,16 +1,16 @@
 {
   "date": "2026-11-10",
-  "generated": "2026-11-10T14:00:07+00:00",
+  "generated": "2026-11-10T14:30:06+00:00",
   "score": {
     "picks": 7,
-    "settled": 1,
+    "settled": 3,
     "won": 1,
-    "placed": 0,
-    "unplaced": 0,
+    "placed": 1,
+    "unplaced": 1,
     "nr": 0,
-    "pending": 6,
-    "win_pct": 100,
-    "place_pct": 100
+    "pending": 4,
+    "win_pct": 33,
+    "place_pct": 67
   },
   "trainers": [
     {
@@ -19,6 +19,15 @@
       "p14": "65.4%",
       "w": 1,
       "p": 0,
+      "u": 1,
+      "n": 2
+    },
+    {
+      "name": "Neil Mulholland",
+      "w14": "24.0%",
+      "p14": "64.0%",
+      "w": 0,
+      "p": 1,
       "u": 0,
       "n": 1
     }
@@ -30,6 +39,20 @@
       "w": 1,
       "win_pct": "100%",
       "place_pct": "100%"
+    },
+    {
+      "stars": 4,
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
+    {
+      "stars": 3,
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "100%"
     }
   ],
   "odds": [
@@ -39,15 +62,29 @@
       "w": 1,
       "win_pct": "100%",
       "place_pct": "100%"
+    },
+    {
+      "label": "2/1–5/1",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
+    {
+      "label": "5/1–10/1",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "100%"
     }
   ],
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 1,
+      "n": 3,
       "w": 1,
-      "win_pct": "100%",
-      "place_pct": "100%"
+      "win_pct": "33%",
+      "place_pct": "67%"
     }
   ],
   "picks": [
@@ -70,10 +107,10 @@
       "trainer": "James Owen",
       "stars": 4,
       "odds": "5/2",
-      "sp": "5/2",
-      "sp_dec": 3.5,
-      "pos": 0,
-      "res": "?"
+      "sp": "4/1",
+      "sp_dec": 5.0,
+      "pos": 4,
+      "res": "UNPL"
     },
     {
       "time": "14:20",
@@ -82,10 +119,10 @@
       "trainer": "N P Mulholland",
       "stars": 3,
       "odds": "9/2",
-      "sp": "9/2",
-      "sp_dec": 5.5,
-      "pos": 0,
-      "res": "?"
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 2,
+      "res": "PLACE"
     },
     {
       "time": "14:50",
@@ -136,7 +173,11 @@
       "res": "?"
     }
   ],
-  "strings": null,
+  "strings": {
+    "settled": 1,
+    "win_pct": "0%",
+    "place_pct": "0%"
+  },
   "outsiders": [
     {
       "time": "14:00",
@@ -146,10 +187,10 @@
       "string": "1st",
       "stars": 1,
       "odds": "66/1",
-      "sp": "66/1",
-      "sp_dec": 67.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "125/1",
+      "sp_dec": 126.0,
+      "pos": 8,
+      "res": "UNPL",
       "lost_to": "Sound As A Bell"
     },
     {
@@ -183,14 +224,14 @@
   ],
   "outsider_score": {
     "strings": 3,
-    "settled": 0,
+    "settled": 1,
     "won": 0,
     "placed": 0,
-    "unplaced": 0,
+    "unplaced": 1,
     "nr": 0,
-    "pending": 3,
-    "win_pct": null,
-    "place_pct": null
+    "pending": 2,
+    "win_pct": 0,
+    "place_pct": 0
   },
   "super6": [
     {
@@ -200,10 +241,10 @@
       "trainer": "G P Cromwell",
       "stars": 1,
       "odds": "66/1",
-      "sp": "66/1",
-      "sp_dec": 67.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "125/1",
+      "sp_dec": 126.0,
+      "pos": 8,
+      "res": "UNPL",
       "score": 5
     },
     {
@@ -233,5 +274,13 @@
       "score": 8
     }
   ],
-  "super6_score": null
+  "super6_score": {
+    "listed": 3,
+    "settled": 1,
+    "won": 0,
+    "placed": 0,
+    "win_pct": 0,
+    "place_pct": 0,
+    "pnl": -1.0
+  }
 }
