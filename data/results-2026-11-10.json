@@ -1,0 +1,203 @@
+{
+  "date": "2026-11-10",
+  "generated": "2026-11-10T13:00:06+00:00",
+  "score": {
+    "picks": 7,
+    "settled": 0,
+    "won": 0,
+    "placed": 0,
+    "unplaced": 0,
+    "nr": 0,
+    "pending": 7,
+    "win_pct": null,
+    "place_pct": null
+  },
+  "trainers": [],
+  "stars": [],
+  "odds": [],
+  "fields": [],
+  "picks": [
+    {
+      "time": "13:40",
+      "meeting": "Huntingdon",
+      "horse": "Teorie",
+      "trainer": "James Owen",
+      "stars": 5,
+      "odds": "7/4",
+      "sp": "7/4",
+      "sp_dec": 2.75,
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "14:10",
+      "meeting": "Huntingdon",
+      "horse": "Dancing Dame",
+      "trainer": "James Owen",
+      "stars": 4,
+      "odds": "5/2",
+      "sp": "5/2",
+      "sp_dec": 3.5,
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "14:20",
+      "meeting": "Lingfield",
+      "horse": "Miss Carbo",
+      "trainer": "N P Mulholland",
+      "stars": 3,
+      "odds": "9/2",
+      "sp": "9/2",
+      "sp_dec": 5.5,
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "14:50",
+      "meeting": "Lingfield",
+      "horse": "Zaraquelle",
+      "trainer": "James Owen",
+      "stars": 4,
+      "odds": "2/1",
+      "sp": "2/1",
+      "sp_dec": 3.0,
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "15:00",
+      "meeting": "Fairyhouse",
+      "horse": "Everest The Brave",
+      "trainer": "G P Cromwell",
+      "stars": 4,
+      "odds": "4/1",
+      "sp": "4/1",
+      "sp_dec": 5.0,
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "15:40",
+      "meeting": "Huntingdon",
+      "horse": "Gallivanted",
+      "trainer": "Harry Derham",
+      "stars": 5,
+      "odds": "2/1",
+      "sp": "2/1",
+      "sp_dec": 3.0,
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "16:00",
+      "meeting": "Fairyhouse",
+      "horse": "Heron Hill",
+      "trainer": "G P Cromwell",
+      "stars": 4,
+      "odds": "9/4",
+      "sp": "9/4",
+      "sp_dec": 3.25,
+      "pos": 0,
+      "res": "?"
+    }
+  ],
+  "strings": null,
+  "outsiders": [
+    {
+      "time": "14:00",
+      "meeting": "Fairyhouse",
+      "horse": "Sound As A Bell",
+      "trainer": "G P Cromwell",
+      "string": "1st",
+      "stars": 1,
+      "odds": "66/1",
+      "sp": "66/1",
+      "sp_dec": 67.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "Sound As A Bell"
+    },
+    {
+      "time": "14:50",
+      "meeting": "Lingfield",
+      "horse": "Castle Quarter",
+      "trainer": "N P Mulholland",
+      "string": "1st",
+      "stars": 3,
+      "odds": "6/1",
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "Zaraquelle"
+    },
+    {
+      "time": "15:40",
+      "meeting": "Huntingdon",
+      "horse": "Cayman Dancer",
+      "trainer": "Jamie & Josh Moore",
+      "string": "1st",
+      "stars": 4,
+      "odds": "4/1",
+      "sp": "4/1",
+      "sp_dec": 5.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "Gallivanted"
+    }
+  ],
+  "outsider_score": {
+    "strings": 3,
+    "settled": 0,
+    "won": 0,
+    "placed": 0,
+    "unplaced": 0,
+    "nr": 0,
+    "pending": 3,
+    "win_pct": null,
+    "place_pct": null
+  },
+  "super6": [
+    {
+      "time": "14:00",
+      "meeting": "Fairyhouse",
+      "horse": "Sound As A Bell",
+      "trainer": "G P Cromwell",
+      "stars": 1,
+      "odds": "66/1",
+      "sp": "66/1",
+      "sp_dec": 67.0,
+      "pos": 0,
+      "res": "?",
+      "score": 5
+    },
+    {
+      "time": "14:50",
+      "meeting": "Lingfield",
+      "horse": "Castle Quarter",
+      "trainer": "N P Mulholland",
+      "stars": 3,
+      "odds": "6/1",
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 0,
+      "res": "?",
+      "score": 6
+    },
+    {
+      "time": "15:40",
+      "meeting": "Huntingdon",
+      "horse": "Cayman Dancer",
+      "trainer": "Jamie & Josh Moore",
+      "stars": 4,
+      "odds": "4/1",
+      "sp": "4/1",
+      "sp_dec": 5.0,
+      "pos": 0,
+      "res": "?",
+      "score": 8
+    }
+  ],
+  "super6_score": null
+}
