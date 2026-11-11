@@ -1,16 +1,16 @@
 {
   "date": "2026-11-11",
-  "generated": "2026-11-11T15:00:12+00:00",
+  "generated": "2026-11-11T15:30:12+00:00",
   "score": {
     "picks": 14,
-    "settled": 10,
-    "won": 5,
+    "settled": 12,
+    "won": 6,
     "placed": 2,
-    "unplaced": 3,
+    "unplaced": 4,
     "nr": 0,
-    "pending": 4,
+    "pending": 2,
     "win_pct": 50,
-    "place_pct": 70
+    "place_pct": 67
   },
   "trainers": [
     {
@@ -19,8 +19,17 @@
       "p14": "64.3%",
       "w": 2,
       "p": 1,
+      "u": 1,
+      "n": 4
+    },
+    {
+      "name": "Jamie Snowden",
+      "w14": "38.1%",
+      "p14": "71.4%",
+      "w": 2,
+      "p": 0,
       "u": 0,
-      "n": 3
+      "n": 2
     },
     {
       "name": "Harry Derham",
@@ -59,15 +68,6 @@
       "n": 1
     },
     {
-      "name": "Jamie Snowden",
-      "w14": "38.1%",
-      "p14": "71.4%",
-      "w": 1,
-      "p": 0,
-      "u": 0,
-      "n": 1
-    },
-    {
       "name": "Patrick J Flynn",
       "w14": "50.0%",
       "p14": "50.0%",
@@ -87,9 +87,9 @@
     },
     {
       "stars": 4,
-      "n": 4,
-      "w": 1,
-      "win_pct": "25%",
+      "n": 6,
+      "w": 2,
+      "win_pct": "33%",
       "place_pct": "50%"
     },
     {
@@ -110,14 +110,14 @@
     },
     {
       "label": "2/1–5/1",
-      "n": 5,
-      "w": 2,
-      "win_pct": "40%",
-      "place_pct": "60%"
+      "n": 6,
+      "w": 3,
+      "win_pct": "50%",
+      "place_pct": "67%"
     },
     {
       "label": "5/1–10/1",
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -126,10 +126,10 @@
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 7,
-      "w": 4,
-      "win_pct": "57%",
-      "place_pct": "71%"
+      "n": 9,
+      "w": 5,
+      "win_pct": "56%",
+      "place_pct": "67%"
     },
     {
       "label": "mid (9–12)",
@@ -276,8 +276,8 @@
       "odds": "3/1",
       "sp": "9/4",
       "sp_dec": 3.25,
-      "pos": 0,
-      "res": "?"
+      "pos": 1,
+      "res": "WIN"
     },
     {
       "time": "15:13",
@@ -286,10 +286,10 @@
       "trainer": "N G Richards",
       "stars": 4,
       "odds": "7/2",
-      "sp": "7/2",
-      "sp_dec": 4.5,
-      "pos": 0,
-      "res": "?"
+      "sp": "7/1",
+      "sp_dec": 8.0,
+      "pos": 6,
+      "res": "UNPL"
     },
     {
       "time": "16:32",
