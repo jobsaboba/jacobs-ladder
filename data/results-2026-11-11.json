@@ -1,16 +1,16 @@
 {
   "date": "2026-11-11",
-  "generated": "2026-11-11T17:00:12+00:00",
+  "generated": "2026-11-11T17:30:12+00:00",
   "score": {
     "picks": 14,
-    "settled": 13,
+    "settled": 14,
     "won": 6,
     "placed": 2,
-    "unplaced": 5,
+    "unplaced": 6,
     "nr": 0,
-    "pending": 1,
-    "win_pct": 46,
-    "place_pct": 62
+    "pending": 0,
+    "win_pct": 43,
+    "place_pct": 57
   },
   "trainers": [
     {
@@ -41,6 +41,15 @@
       "n": 2
     },
     {
+      "name": "Patrick J Flynn",
+      "w14": "50.0%",
+      "p14": "50.0%",
+      "w": 0,
+      "p": 0,
+      "u": 2,
+      "n": 2
+    },
+    {
       "name": "Graeme McPherson",
       "w14": "33.3%",
       "p14": "50.0%",
@@ -65,15 +74,6 @@
       "w": 0,
       "p": 1,
       "u": 0,
-      "n": 1
-    },
-    {
-      "name": "Patrick J Flynn",
-      "w14": "50.0%",
-      "p14": "50.0%",
-      "w": 0,
-      "p": 0,
-      "u": 1,
       "n": 1
     },
     {
@@ -103,10 +103,10 @@
     },
     {
       "stars": 3,
-      "n": 3,
+      "n": 4,
       "w": 2,
-      "win_pct": "67%",
-      "place_pct": "67%"
+      "win_pct": "50%",
+      "place_pct": "50%"
     }
   ],
   "odds": [
@@ -119,10 +119,10 @@
     },
     {
       "label": "2/1–5/1",
-      "n": 7,
+      "n": 8,
       "w": 3,
-      "win_pct": "43%",
-      "place_pct": "57%"
+      "win_pct": "38%",
+      "place_pct": "50%"
     },
     {
       "label": "5/1–10/1",
@@ -149,7 +149,7 @@
     },
     {
       "label": "big (13+)",
-      "n": 2,
+      "n": 3,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -319,10 +319,10 @@
       "trainer": "P J Flynn",
       "stars": 3,
       "odds": "6/1",
-      "sp": "6/1",
-      "sp_dec": 7.0,
-      "pos": 0,
-      "res": "?"
+      "sp": "7/2",
+      "sp_dec": 4.5,
+      "pos": 5,
+      "res": "UNPL"
     }
   ],
   "strings": {
