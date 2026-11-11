@@ -1,16 +1,16 @@
 {
   "date": "2026-11-11",
-  "generated": "2026-11-11T15:30:12+00:00",
+  "generated": "2026-11-11T17:00:12+00:00",
   "score": {
     "picks": 14,
-    "settled": 12,
+    "settled": 13,
     "won": 6,
     "placed": 2,
-    "unplaced": 4,
+    "unplaced": 5,
     "nr": 0,
-    "pending": 2,
-    "win_pct": 50,
-    "place_pct": 67
+    "pending": 1,
+    "win_pct": 46,
+    "place_pct": 62
   },
   "trainers": [
     {
@@ -75,15 +75,24 @@
       "p": 0,
       "u": 1,
       "n": 1
+    },
+    {
+      "name": "Gavin Cromwell",
+      "w14": "16.2%",
+      "p14": "45.9%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
     }
   ],
   "stars": [
     {
       "stars": 5,
-      "n": 3,
+      "n": 4,
       "w": 2,
-      "win_pct": "67%",
-      "place_pct": "100%"
+      "win_pct": "50%",
+      "place_pct": "75%"
     },
     {
       "stars": 4,
@@ -110,10 +119,10 @@
     },
     {
       "label": "2/1–5/1",
-      "n": 6,
+      "n": 7,
       "w": 3,
-      "win_pct": "50%",
-      "place_pct": "67%"
+      "win_pct": "43%",
+      "place_pct": "57%"
     },
     {
       "label": "5/1–10/1",
@@ -140,7 +149,7 @@
     },
     {
       "label": "big (13+)",
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -298,10 +307,10 @@
       "trainer": "G P Cromwell",
       "stars": 5,
       "odds": "9/4",
-      "sp": "9/4",
-      "sp_dec": 3.25,
-      "pos": 0,
-      "res": "?"
+      "sp": "4/1",
+      "sp_dec": 5.0,
+      "pos": 4,
+      "res": "UNPL"
     },
     {
       "time": "17:02",
@@ -317,7 +326,7 @@
     }
   ],
   "strings": {
-    "settled": 1,
+    "settled": 2,
     "win_pct": "0%",
     "place_pct": "0%"
   },
@@ -344,10 +353,10 @@
       "string": "2nd",
       "stars": 3,
       "odds": "6/1",
-      "sp": "6/1",
-      "sp_dec": 7.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "25/1",
+      "sp_dec": 26.0,
+      "pos": 5,
+      "res": "UNPL",
       "lost_to": "stablemate Marcescence"
     },
     {
@@ -381,12 +390,12 @@
   ],
   "outsider_score": {
     "strings": 4,
-    "settled": 1,
+    "settled": 2,
     "won": 0,
     "placed": 0,
-    "unplaced": 1,
+    "unplaced": 2,
     "nr": 0,
-    "pending": 3,
+    "pending": 2,
     "win_pct": 0,
     "place_pct": 0
   },
