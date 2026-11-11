@@ -1,16 +1,16 @@
 {
   "date": "2026-11-11",
-  "generated": "2026-11-11T13:00:12+00:00",
+  "generated": "2026-11-11T13:30:12+00:00",
   "score": {
     "picks": 14,
-    "settled": 1,
+    "settled": 2,
     "won": 1,
     "placed": 0,
-    "unplaced": 0,
+    "unplaced": 1,
     "nr": 0,
-    "pending": 13,
-    "win_pct": 100,
-    "place_pct": 100
+    "pending": 12,
+    "win_pct": 50,
+    "place_pct": 50
   },
   "trainers": [
     {
@@ -21,6 +21,15 @@
       "p": 0,
       "u": 0,
       "n": 1
+    },
+    {
+      "name": "Tom Lacey",
+      "w14": "26.7%",
+      "p14": "66.7%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
     }
   ],
   "stars": [
@@ -30,6 +39,13 @@
       "w": 1,
       "win_pct": "100%",
       "place_pct": "100%"
+    },
+    {
+      "stars": 3,
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
     }
   ],
   "odds": [
@@ -39,15 +55,22 @@
       "w": 1,
       "win_pct": "100%",
       "place_pct": "100%"
+    },
+    {
+      "label": "5/1–10/1",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
     }
   ],
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 1,
+      "n": 2,
       "w": 1,
-      "win_pct": "100%",
-      "place_pct": "100%"
+      "win_pct": "50%",
+      "place_pct": "50%"
     }
   ],
   "picks": [
@@ -72,8 +95,8 @@
       "odds": "6/1",
       "sp": "6/1",
       "sp_dec": 7.0,
-      "pos": 0,
-      "res": "?"
+      "pos": 4,
+      "res": "UNPL"
     },
     {
       "time": "13:30",
