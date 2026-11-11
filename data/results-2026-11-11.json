@@ -1,18 +1,27 @@
 {
   "date": "2026-11-11",
-  "generated": "2026-11-11T14:00:13+00:00",
+  "generated": "2026-11-11T14:30:12+00:00",
   "score": {
     "picks": 14,
-    "settled": 5,
-    "won": 2,
+    "settled": 7,
+    "won": 4,
     "placed": 2,
     "unplaced": 1,
     "nr": 0,
-    "pending": 9,
-    "win_pct": 40,
-    "place_pct": 80
+    "pending": 7,
+    "win_pct": 57,
+    "place_pct": 86
   },
   "trainers": [
+    {
+      "name": "Nicky Richards",
+      "w14": "28.6%",
+      "p14": "64.3%",
+      "w": 1,
+      "p": 1,
+      "u": 0,
+      "n": 2
+    },
     {
       "name": "Graeme McPherson",
       "w14": "33.3%",
@@ -41,18 +50,18 @@
       "n": 1
     },
     {
-      "name": "Nicky Richards",
-      "w14": "28.6%",
-      "p14": "64.3%",
-      "w": 0,
-      "p": 1,
+      "name": "Jamie Snowden",
+      "w14": "38.1%",
+      "p14": "71.4%",
+      "w": 1,
+      "p": 0,
       "u": 0,
       "n": 1
     },
     {
-      "name": "Jamie Snowden",
-      "w14": "38.1%",
-      "p14": "71.4%",
+      "name": "Harry Derham",
+      "w14": "21.7%",
+      "p14": "39.1%",
       "w": 1,
       "p": 0,
       "u": 0,
@@ -62,9 +71,9 @@
   "stars": [
     {
       "stars": 5,
-      "n": 2,
-      "w": 1,
-      "win_pct": "50%",
+      "n": 3,
+      "w": 2,
+      "win_pct": "67%",
       "place_pct": "100%"
     },
     {
@@ -76,25 +85,25 @@
     },
     {
       "stars": 3,
-      "n": 1,
-      "w": 0,
-      "win_pct": "0%",
-      "place_pct": "0%"
+      "n": 2,
+      "w": 1,
+      "win_pct": "50%",
+      "place_pct": "50%"
     }
   ],
   "odds": [
     {
       "label": "evens–2/1",
-      "n": 3,
-      "w": 2,
-      "win_pct": "67%",
+      "n": 4,
+      "w": 3,
+      "win_pct": "75%",
       "place_pct": "100%"
     },
     {
       "label": "2/1–5/1",
-      "n": 1,
-      "w": 0,
-      "win_pct": "0%",
+      "n": 2,
+      "w": 1,
+      "win_pct": "50%",
       "place_pct": "100%"
     },
     {
@@ -108,16 +117,16 @@
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 4,
-      "w": 2,
-      "win_pct": "50%",
-      "place_pct": "75%"
+      "n": 5,
+      "w": 3,
+      "win_pct": "60%",
+      "place_pct": "80%"
     },
     {
       "label": "mid (9–12)",
-      "n": 1,
-      "w": 0,
-      "win_pct": "0%",
+      "n": 2,
+      "w": 1,
+      "win_pct": "50%",
       "place_pct": "100%"
     }
   ],
@@ -189,10 +198,10 @@
       "trainer": "Harry Derham",
       "stars": 5,
       "odds": "10/3",
-      "sp": "10/3",
-      "sp_dec": 4.333333333333334,
-      "pos": 0,
-      "res": "?"
+      "sp": "11/8",
+      "sp_dec": 2.375,
+      "pos": 1,
+      "res": "WIN"
     },
     {
       "time": "14:13",
@@ -201,10 +210,10 @@
       "trainer": "N G Richards",
       "stars": 3,
       "odds": "10/3",
-      "sp": "10/3",
-      "sp_dec": 4.333333333333334,
-      "pos": 0,
-      "res": "?"
+      "sp": "4/1",
+      "sp_dec": 5.0,
+      "pos": 1,
+      "res": "WIN"
     },
     {
       "time": "14:21",
@@ -213,8 +222,8 @@
       "trainer": "Harry Derham",
       "stars": 4,
       "odds": "3/1",
-      "sp": "3/1",
-      "sp_dec": 4.0,
+      "sp": "10/3",
+      "sp_dec": 4.333333333333334,
       "pos": 0,
       "res": "?"
     },
