@@ -1,0 +1,309 @@
+{
+  "date": "2026-11-11",
+  "generated": "2026-11-11T13:00:12+00:00",
+  "score": {
+    "picks": 14,
+    "settled": 1,
+    "won": 1,
+    "placed": 0,
+    "unplaced": 0,
+    "nr": 0,
+    "pending": 13,
+    "win_pct": 100,
+    "place_pct": 100
+  },
+  "trainers": [
+    {
+      "name": "Graeme McPherson",
+      "w14": "33.3%",
+      "p14": "50.0%",
+      "w": 1,
+      "p": 0,
+      "u": 0,
+      "n": 1
+    }
+  ],
+  "stars": [
+    {
+      "stars": 5,
+      "n": 1,
+      "w": 1,
+      "win_pct": "100%",
+      "place_pct": "100%"
+    }
+  ],
+  "odds": [
+    {
+      "label": "evens–2/1",
+      "n": 1,
+      "w": 1,
+      "win_pct": "100%",
+      "place_pct": "100%"
+    }
+  ],
+  "fields": [
+    {
+      "label": "small (≤8)",
+      "n": 1,
+      "w": 1,
+      "win_pct": "100%",
+      "place_pct": "100%"
+    }
+  ],
+  "picks": [
+    {
+      "time": "12:50",
+      "meeting": "Warwick",
+      "horse": "Seraphic",
+      "trainer": "D Killahena & G McPherson",
+      "stars": 5,
+      "odds": "13/8",
+      "sp": "6/5",
+      "sp_dec": 2.2,
+      "pos": 1,
+      "res": "WIN"
+    },
+    {
+      "time": "13:00",
+      "meeting": "Bangor-on-Dee",
+      "horse": "Piper Park",
+      "trainer": "T Lacey",
+      "stars": 3,
+      "odds": "6/1",
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "13:30",
+      "meeting": "Bangor-on-Dee",
+      "horse": "Broomfields Cave",
+      "trainer": "N P Mulholland",
+      "stars": 4,
+      "odds": "13/8",
+      "sp": "13/8",
+      "sp_dec": 2.625,
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "13:40",
+      "meeting": "Ayr",
+      "horse": "Attin",
+      "trainer": "N G Richards",
+      "stars": 5,
+      "odds": "4/5",
+      "sp": "4/5",
+      "sp_dec": 1.8,
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "13:50",
+      "meeting": "Warwick",
+      "horse": "Fresh Perspective",
+      "trainer": "Jamie Snowden",
+      "stars": 4,
+      "odds": "7/2",
+      "sp": "7/2",
+      "sp_dec": 4.5,
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "14:05",
+      "meeting": "Bangor-on-Dee",
+      "horse": "Rockson Piel",
+      "trainer": "Harry Derham",
+      "stars": 5,
+      "odds": "10/3",
+      "sp": "10/3",
+      "sp_dec": 4.333333333333334,
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "14:13",
+      "meeting": "Ayr",
+      "horse": "Rickety Gate",
+      "trainer": "N G Richards",
+      "stars": 3,
+      "odds": "10/3",
+      "sp": "10/3",
+      "sp_dec": 4.333333333333334,
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "14:21",
+      "meeting": "Warwick",
+      "horse": "Ignore The Door",
+      "trainer": "Harry Derham",
+      "stars": 4,
+      "odds": "3/1",
+      "sp": "3/1",
+      "sp_dec": 4.0,
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "14:30",
+      "meeting": "Dundalk",
+      "horse": "Jordan Breeze",
+      "trainer": "P J Flynn",
+      "stars": 4,
+      "odds": "7/2",
+      "sp": "7/2",
+      "sp_dec": 4.5,
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "14:43",
+      "meeting": "Ayr",
+      "horse": "Ballynoe Boy",
+      "trainer": "N G Richards",
+      "stars": 3,
+      "odds": "9/4",
+      "sp": "9/4",
+      "sp_dec": 3.25,
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "14:51",
+      "meeting": "Warwick",
+      "horse": "Jackstell",
+      "trainer": "Jamie Snowden",
+      "stars": 4,
+      "odds": "3/1",
+      "sp": "3/1",
+      "sp_dec": 4.0,
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "15:13",
+      "meeting": "Ayr",
+      "horse": "No Regrets",
+      "trainer": "N G Richards",
+      "stars": 4,
+      "odds": "7/2",
+      "sp": "7/2",
+      "sp_dec": 4.5,
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "16:32",
+      "meeting": "Dundalk",
+      "horse": "Marcescence",
+      "trainer": "G P Cromwell",
+      "stars": 5,
+      "odds": "9/4",
+      "sp": "9/4",
+      "sp_dec": 3.25,
+      "pos": 0,
+      "res": "?"
+    },
+    {
+      "time": "17:02",
+      "meeting": "Dundalk",
+      "horse": "Carrigans Grove",
+      "trainer": "P J Flynn",
+      "stars": 3,
+      "odds": "6/1",
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 0,
+      "res": "?"
+    }
+  ],
+  "strings": null,
+  "outsiders": [
+    {
+      "time": "14:30",
+      "meeting": "Dundalk",
+      "horse": "Treasured Royal",
+      "trainer": "G P Cromwell",
+      "string": "1st",
+      "stars": 3,
+      "odds": "12/1",
+      "sp": "12/1",
+      "sp_dec": 13.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "Jordan Breeze"
+    },
+    {
+      "time": "16:32",
+      "meeting": "Dundalk",
+      "horse": "Jade Fox",
+      "trainer": "G P Cromwell",
+      "string": "2nd",
+      "stars": 3,
+      "odds": "6/1",
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "stablemate Marcescence"
+    },
+    {
+      "time": "17:32",
+      "meeting": "Dundalk",
+      "horse": "Flying Fortress",
+      "trainer": "G P Cromwell",
+      "string": "1st",
+      "stars": 3,
+      "odds": "16/1",
+      "sp": "16/1",
+      "sp_dec": 17.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "Flying Fortress"
+    },
+    {
+      "time": "17:32",
+      "meeting": "Dundalk",
+      "horse": "Highlander Addict",
+      "trainer": "P J Flynn",
+      "string": "1st",
+      "stars": 2,
+      "odds": "25/1",
+      "sp": "25/1",
+      "sp_dec": 26.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "Flying Fortress"
+    }
+  ],
+  "outsider_score": {
+    "strings": 4,
+    "settled": 0,
+    "won": 0,
+    "placed": 0,
+    "unplaced": 0,
+    "nr": 0,
+    "pending": 4,
+    "win_pct": null,
+    "place_pct": null
+  },
+  "super6": [
+    {
+      "time": "17:32",
+      "meeting": "Dundalk",
+      "horse": "Flying Fortress",
+      "trainer": "G P Cromwell",
+      "stars": 3,
+      "odds": "16/1",
+      "sp": "16/1",
+      "sp_dec": 17.0,
+      "pos": 0,
+      "res": "?",
+      "score": 8
+    }
+  ],
+  "super6_score": null
+}
