@@ -1,6 +1,6 @@
 {
   "date": "2026-11-11",
-  "generated": "2026-11-11T17:30:12+00:00",
+  "generated": "2026-11-11T18:00:12+00:00",
   "score": {
     "picks": 14,
     "settled": 14,
@@ -326,7 +326,7 @@
     }
   ],
   "strings": {
-    "settled": 2,
+    "settled": 4,
     "win_pct": "0%",
     "place_pct": "0%"
   },
@@ -367,10 +367,10 @@
       "string": "1st",
       "stars": 3,
       "odds": "16/1",
-      "sp": "16/1",
-      "sp_dec": 17.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "8/1",
+      "sp_dec": 9.0,
+      "pos": 4,
+      "res": "UNPL",
       "lost_to": "Flying Fortress"
     },
     {
@@ -383,19 +383,19 @@
       "odds": "25/1",
       "sp": "25/1",
       "sp_dec": 26.0,
-      "pos": 0,
-      "res": "?",
+      "pos": 13,
+      "res": "UNPL",
       "lost_to": "Flying Fortress"
     }
   ],
   "outsider_score": {
     "strings": 4,
-    "settled": 2,
+    "settled": 4,
     "won": 0,
     "placed": 0,
-    "unplaced": 2,
+    "unplaced": 4,
     "nr": 0,
-    "pending": 2,
+    "pending": 0,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -407,12 +407,20 @@
       "trainer": "G P Cromwell",
       "stars": 3,
       "odds": "16/1",
-      "sp": "16/1",
-      "sp_dec": 17.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "8/1",
+      "sp_dec": 9.0,
+      "pos": 4,
+      "res": "UNPL",
       "score": 8
     }
   ],
-  "super6_score": null
+  "super6_score": {
+    "listed": 1,
+    "settled": 1,
+    "won": 0,
+    "placed": 0,
+    "win_pct": 0,
+    "place_pct": 0,
+    "pnl": -1.0
+  }
 }
