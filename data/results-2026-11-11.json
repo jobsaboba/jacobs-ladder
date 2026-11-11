@@ -1,25 +1,34 @@
 {
   "date": "2026-11-11",
-  "generated": "2026-11-11T14:30:12+00:00",
+  "generated": "2026-11-11T15:00:12+00:00",
   "score": {
     "picks": 14,
-    "settled": 7,
-    "won": 4,
+    "settled": 10,
+    "won": 5,
     "placed": 2,
-    "unplaced": 1,
+    "unplaced": 3,
     "nr": 0,
-    "pending": 7,
-    "win_pct": 57,
-    "place_pct": 86
+    "pending": 4,
+    "win_pct": 50,
+    "place_pct": 70
   },
   "trainers": [
     {
       "name": "Nicky Richards",
       "w14": "28.6%",
       "p14": "64.3%",
-      "w": 1,
+      "w": 2,
       "p": 1,
       "u": 0,
+      "n": 3
+    },
+    {
+      "name": "Harry Derham",
+      "w14": "21.7%",
+      "p14": "39.1%",
+      "w": 1,
+      "p": 0,
+      "u": 1,
       "n": 2
     },
     {
@@ -59,12 +68,12 @@
       "n": 1
     },
     {
-      "name": "Harry Derham",
-      "w14": "21.7%",
-      "p14": "39.1%",
-      "w": 1,
+      "name": "Patrick J Flynn",
+      "w14": "50.0%",
+      "p14": "50.0%",
+      "w": 0,
       "p": 0,
-      "u": 0,
+      "u": 1,
       "n": 1
     }
   ],
@@ -78,17 +87,17 @@
     },
     {
       "stars": 4,
-      "n": 2,
+      "n": 4,
       "w": 1,
-      "win_pct": "50%",
-      "place_pct": "100%"
+      "win_pct": "25%",
+      "place_pct": "50%"
     },
     {
       "stars": 3,
-      "n": 2,
-      "w": 1,
-      "win_pct": "50%",
-      "place_pct": "50%"
+      "n": 3,
+      "w": 2,
+      "win_pct": "67%",
+      "place_pct": "67%"
     }
   ],
   "odds": [
@@ -101,10 +110,10 @@
     },
     {
       "label": "2/1–5/1",
-      "n": 2,
-      "w": 1,
-      "win_pct": "50%",
-      "place_pct": "100%"
+      "n": 5,
+      "w": 2,
+      "win_pct": "40%",
+      "place_pct": "60%"
     },
     {
       "label": "5/1–10/1",
@@ -117,10 +126,10 @@
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 5,
-      "w": 3,
-      "win_pct": "60%",
-      "place_pct": "80%"
+      "n": 7,
+      "w": 4,
+      "win_pct": "57%",
+      "place_pct": "71%"
     },
     {
       "label": "mid (9–12)",
@@ -128,6 +137,13 @@
       "w": 1,
       "win_pct": "50%",
       "place_pct": "100%"
+    },
+    {
+      "label": "big (13+)",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
     }
   ],
   "picks": [
@@ -224,8 +240,8 @@
       "odds": "3/1",
       "sp": "10/3",
       "sp_dec": 4.333333333333334,
-      "pos": 0,
-      "res": "?"
+      "pos": 2,
+      "res": "UNPL"
     },
     {
       "time": "14:30",
@@ -234,10 +250,10 @@
       "trainer": "P J Flynn",
       "stars": 4,
       "odds": "7/2",
-      "sp": "7/2",
-      "sp_dec": 4.5,
-      "pos": 0,
-      "res": "?"
+      "sp": "10/3",
+      "sp_dec": 4.333333333333334,
+      "pos": 7,
+      "res": "UNPL"
     },
     {
       "time": "14:43",
@@ -246,10 +262,10 @@
       "trainer": "N G Richards",
       "stars": 3,
       "odds": "9/4",
-      "sp": "9/4",
-      "sp_dec": 3.25,
-      "pos": 0,
-      "res": "?"
+      "sp": "3/1",
+      "sp_dec": 4.0,
+      "pos": 1,
+      "res": "WIN"
     },
     {
       "time": "14:51",
@@ -258,8 +274,8 @@
       "trainer": "Jamie Snowden",
       "stars": 4,
       "odds": "3/1",
-      "sp": "3/1",
-      "sp_dec": 4.0,
+      "sp": "9/4",
+      "sp_dec": 3.25,
       "pos": 0,
       "res": "?"
     },
@@ -300,7 +316,11 @@
       "res": "?"
     }
   ],
-  "strings": null,
+  "strings": {
+    "settled": 1,
+    "win_pct": "0%",
+    "place_pct": "0%"
+  },
   "outsiders": [
     {
       "time": "14:30",
@@ -310,10 +330,10 @@
       "string": "1st",
       "stars": 3,
       "odds": "12/1",
-      "sp": "12/1",
-      "sp_dec": 13.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "22/1",
+      "sp_dec": 23.0,
+      "pos": 5,
+      "res": "UNPL",
       "lost_to": "Jordan Breeze"
     },
     {
@@ -361,14 +381,14 @@
   ],
   "outsider_score": {
     "strings": 4,
-    "settled": 0,
+    "settled": 1,
     "won": 0,
     "placed": 0,
-    "unplaced": 0,
+    "unplaced": 1,
     "nr": 0,
-    "pending": 4,
-    "win_pct": null,
-    "place_pct": null
+    "pending": 3,
+    "win_pct": 0,
+    "place_pct": 0
   },
   "super6": [
     {
