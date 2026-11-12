@@ -174,9 +174,9 @@
       "sp_dec": 3.25,
       "pos": 3,
       "res": "UNPL",
-      "stake": 0.36,
+      "stake": 0.52,
       "ret": 0.0,
-      "bank_after": 35.56
+      "bank_after": 51.17
     },
     {
       "time": "13:43",
@@ -189,9 +189,9 @@
       "sp_dec": 1.5714285714285714,
       "pos": 1,
       "res": "WIN",
-      "stake": 0.36,
+      "stake": 0.51,
       "ret": 1.57,
-      "bank_after": 36.77
+      "bank_after": 52.23
     },
     {
       "time": "14:30",
@@ -204,9 +204,9 @@
       "sp_dec": 10.0,
       "pos": 7,
       "res": "UNPL",
-      "stake": 0.37,
+      "stake": 0.52,
       "ret": 0.0,
-      "bank_after": 36.4
+      "bank_after": 51.71
     },
     {
       "time": "14:47",
@@ -219,9 +219,9 @@
       "sp_dec": 1.5714285714285714,
       "pos": 1,
       "res": "WIN",
-      "stake": 0.36,
+      "stake": 0.52,
       "ret": 1.57,
-      "bank_after": 37.61
+      "bank_after": 52.76
     },
     {
       "time": "15:05",
@@ -234,9 +234,9 @@
       "sp_dec": 4.5,
       "pos": 8,
       "res": "UNPL",
-      "stake": 0.38,
+      "stake": 0.53,
       "ret": 0.0,
-      "bank_after": 37.23
+      "bank_after": 52.23
     },
     {
       "time": "15:22",
@@ -249,9 +249,9 @@
       "sp_dec": 1.6153846153846154,
       "pos": 1,
       "res": "WIN",
-      "stake": 0.37,
+      "stake": 0.52,
       "ret": 1.62,
-      "bank_after": 38.48
+      "bank_after": 53.33
     },
     {
       "time": "15:55",
@@ -264,9 +264,9 @@
       "sp_dec": 8.5,
       "pos": 4,
       "res": "UNPL",
-      "stake": 0.38,
+      "stake": 0.53,
       "ret": 0.0,
-      "bank_after": 38.1
+      "bank_after": 52.8
     },
     {
       "time": "16:30",
@@ -279,9 +279,9 @@
       "sp_dec": 12.0,
       "pos": 3,
       "res": "PLACE",
-      "stake": 0.38,
+      "stake": 0.53,
       "ret": 0.0,
-      "bank_after": 37.72
+      "bank_after": 52.27
     },
     {
       "time": "18:30",
@@ -294,9 +294,9 @@
       "sp_dec": 3.75,
       "pos": 4,
       "res": "UNPL",
-      "stake": 0.38,
+      "stake": 0.52,
       "ret": 0.0,
-      "bank_after": 37.34
+      "bank_after": 51.75
     }
   ],
   "strings": {
@@ -542,10 +542,10 @@
     "place_pct": 31
   },
   "bank": {
-    "start": 35.92,
-    "end": 37.34,
-    "next_stake": 0.37,
+    "start": 51.69,
+    "end": 51.75,
+    "next_stake": 0.52,
     "season_start": 10.0,
-    "season_end": 37.34
+    "season_end": 51.75
   }
 }
