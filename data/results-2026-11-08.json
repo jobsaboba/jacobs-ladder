@@ -126,9 +126,9 @@
       "sp_dec": 15.0,
       "pos": 8,
       "res": "UNPL",
-      "stake": 0.5,
+      "stake": 0.61,
       "ret": 0.0,
-      "bank_after": 49.4
+      "bank_after": 60.19
     },
     {
       "time": "12:40",
@@ -141,9 +141,9 @@
       "sp_dec": 3.75,
       "pos": 3,
       "res": "UNPL",
-      "stake": 0.49,
+      "stake": 0.6,
       "ret": 0.0,
-      "bank_after": 48.91
+      "bank_after": 59.59
     },
     {
       "time": "13:10",
@@ -156,9 +156,9 @@
       "sp_dec": 4.5,
       "pos": 3,
       "res": "UNPL",
-      "stake": 0.49,
+      "stake": 0.6,
       "ret": 0.0,
-      "bank_after": 48.42
+      "bank_after": 58.99
     },
     {
       "time": "13:30",
@@ -183,9 +183,9 @@
       "sp_dec": 3.25,
       "pos": 1,
       "res": "WIN",
-      "stake": 0.48,
+      "stake": 0.59,
       "ret": 3.25,
-      "bank_after": 51.19
+      "bank_after": 61.65
     },
     {
       "time": "15:48",
@@ -198,9 +198,9 @@
       "sp_dec": 19.0,
       "pos": 12,
       "res": "UNPL",
-      "stake": 0.51,
+      "stake": 0.62,
       "ret": 0.0,
-      "bank_after": 50.68
+      "bank_after": 61.03
     }
   ],
   "strings": {
@@ -371,10 +371,10 @@
     "pnl": 4.5
   },
   "bank": {
-    "start": 49.9,
-    "end": 50.68,
-    "next_stake": 0.51,
+    "start": 60.8,
+    "end": 61.03,
+    "next_stake": 0.61,
     "season_start": 10.0,
-    "season_end": 50.68
+    "season_end": 61.03
   }
 }
