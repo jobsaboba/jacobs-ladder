@@ -33,12 +33,20 @@
   .banner.show{display:block}
   .banner.good{background:#0b2e21; border-color:#14532d; color:#a7f3d0}
 
+  /* day tabs — same pattern as the Holy Grail */
+  .days{display:flex; gap:6px; overflow-x:auto; padding:2px 0 10px; scrollbar-width:none}
+  .days::-webkit-scrollbar{display:none}
+  .day{border:1px solid var(--line); background:var(--panel); color:var(--dim); border-radius:999px;
+    padding:6px 11px; font-size:.72rem; font-weight:800; white-space:nowrap; cursor:pointer; flex-shrink:0}
+  .day.on{background:var(--sky); border-color:var(--sky); color:#06202f}
+  .day .dot{display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--emerald); margin-left:5px; opacity:.9}
+
   .card{background:var(--panel); border:1px solid var(--line); border-radius:18px;
     padding:16px; margin-bottom:12px; box-shadow:0 8px 22px rgba(0,0,0,.35)}
   .label{font-size:.65rem; color:var(--dim); text-transform:uppercase; letter-spacing:1.5px; margin-bottom:6px}
   .row{display:flex; justify-content:space-between; align-items:center; gap:8px}
 
-  /* hero */
+  /* hero (today only) */
   #hero .course-line{font-size:.8rem; color:var(--sky); font-weight:700; letter-spacing:.5px}
   #hero h2{margin:2px 0 4px; font-size:1.5rem; line-height:1.15}
   .meta{font-size:.78rem; color:var(--dim); display:flex; gap:8px; flex-wrap:wrap; align-items:center}
@@ -53,8 +61,7 @@
   .btn.ghost{background:var(--panel2); color:var(--dim); border:1px solid var(--line); font-weight:600}
   .btn.small{padding:8px 10px; font-size:.75rem; width:auto; border-radius:10px}
 
-  .cardhead{display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:12px}
-  .stats{display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-bottom:10px}
+  .stats{display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px}
   .stat{background:var(--panel2); border:1px solid var(--line); border-radius:12px; padding:8px 10px; overflow:hidden}
   .stat .label{margin-bottom:2px; white-space:nowrap; letter-spacing:1px}
   .stat .v{font-weight:800; font-size:1.02rem; margin-top:2px; white-space:nowrap}
@@ -80,13 +87,10 @@
   .hint{font-size:.68rem; color:var(--dim); text-align:center; margin-top:8px; line-height:1.5}
   .topbtns{display:flex; gap:6px}
   .iconbtn{background:var(--panel); border:1px solid var(--line); color:var(--dim); border-radius:10px; padding:7px 9px; font-size:.9rem; cursor:pointer}
-  .iconbtn.on{border-color:var(--emerald); color:var(--em)}
   .toast{position:fixed; left:50%; transform:translateX(-50%); bottom:130px; background:#123; color:var(--ink);
     border:1px solid var(--line); padding:10px 16px; border-radius:999px; font-size:.82rem; z-index:50; opacity:0; transition:opacity .25s}
   .toast.show{opacity:1}
-  h3.sec{font-size:.68rem; text-transform:uppercase; letter-spacing:1.5px; color:var(--dim); margin:18px 2px 8px;
-    display:flex; align-items:center; justify-content:space-between; gap:8px}
-  h3.sec .btn{flex-shrink:0}
+  h3.sec{font-size:.68rem; text-transform:uppercase; letter-spacing:1.5px; color:var(--dim); margin:18px 2px 8px}
 </style>
 </head>
 <body>
@@ -96,55 +100,61 @@
     <div class="datechip" id="dateChip"></div>
   </div>
   <div class="topbtns">
-    <button class="iconbtn" id="resultsBtnTop" onclick="toggleResults()" title="Evening review">📊</button>
     <button class="iconbtn" id="instBtn" style="display:none" onclick="doInstall()" title="Install app">⤓</button>
   </div>
 </header>
 
 <div class="banner" id="banner"></div>
 
-<!-- HERO : next race -->
-<div class="card" id="hero">
-  <div class="row">
-    <div class="label" id="heroLabel">Next race</div>
-    <div class="countdown" id="countdown">--:--</div>
-  </div>
-  <div id="heroBody"></div>
-</div>
+<!-- day tabs along the top — every published day, newest first -->
+<div class="days" id="days"></div>
 
-<!-- ROLLING BANK -->
-<div class="card">
-  <div class="cardhead">
+<!-- DAY SUMMARY -->
+<div class="card" id="sumCard">
+  <div class="row" style="margin-bottom:8px">
     <div class="label" style="margin:0">Rolling bank</div>
     <div class="chip" id="nextStakeChip"></div>
   </div>
   <div class="stats">
     <div class="stat"><div class="label">Bank</div><div class="v gold" id="bankV">—</div></div>
     <div class="stat"><div class="label">Day P/L</div><div class="v" id="plV">—</div></div>
-    <div class="stat"><div class="label">Today W·P·L</div><div class="v" id="wplV">—</div></div>
+    <div class="stat"><div class="label">W·P·L</div><div class="v" id="wplV">—</div></div>
   </div>
 </div>
 
-<h3 class="sec">Today's selections</h3>
+<!-- HERO : next race (today only) -->
+<div class="card" id="hero" style="display:none">
+  <div class="row">
+    <div class="label">Next race</div>
+    <div class="countdown" id="countdown"></div>
+  </div>
+  <div id="heroBody"></div>
+</div>
+
+<h3 class="sec">Selections · stakes · returns</h3>
 <div id="timeline"></div>
 
-<h3 class="sec">Evening review <button class="btn ghost small" onclick="toggleResults()" id="resultsBtn">📊 Show</button></h3>
-<div class="card" id="resultsCard" style="display:none"><div id="resultsBody"></div></div>
-
 <footer class="actions">
-  <button class="btn ghost" id="fetchBtn" onclick="fetchData(false)">⟳ Fetch today's selections</button>
-  <div class="hint">£10 start · every pick stakes <b>1% of the rolling bank</b> · win-only at SP — a WIN pays the price, anything else costs the stake, non-runners refunded.<br>
-  Results settle themselves every 30 minutes through the afternoon. 🔥 = jockey 20%+ strike rate, last 30 days (horseracing.net)<br>
-  © Dave Court · v19</div>
+  <button class="btn ghost" id="fetchBtn" onclick="refreshDay(false)">⟳ Refresh this day</button>
+  <div class="hint">Tap a day along the top — every published day with its odds, stakes, returns and the rolling bank.<br>
+  £10 start · every pick stakes <b>1% of the rolling bank</b> · win-only at SP — a WIN pays the price, anything else costs the stake, non-runners refunded.<br>
+  🔥 = jockey 20%+ strike rate, last 30 days (horseracing.net) · © Dave Court · v20</div>
 </footer>
 
 <div class="toast" id="toast"></div>
 
 <script>
-/* ================= state (pure viewer — the laptop publishes the money) */
-let day = null;        // published day file: finals + morning bank hint
-let results = null;    // published results file: badges + walked money
-let deferredPrompt = null, cur = null, lastSeenDay = todayStr(), lastTry = 0;
+"use strict";
+/* Jacob's Ladder v20 — pure viewer. Day tabs (like the Holy Grail):
+   every published day's selections, odds, results, stakes and the
+   rolling bank. The laptop computes and publishes all of it. */
+
+let DAYS = [];             // every published day, newest first
+let SEL = todayStr();      // the day on screen
+let day = null;            // data/<SEL>.json (finals + morning bank hint)
+let results = null;        // data/results-<SEL>.json (badges + walked money)
+const loaded = new Map();  // date → {day, results} — switch tabs without refetch
+let deferredPrompt = null, cur = null, lastSeenDay = todayStr();
 
 function todayStr(){ const d=new Date(); return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
 function r2(n){ return Math.round(n*100)/100; }
@@ -152,69 +162,111 @@ function fmt(n){ return "£" + r2(n).toFixed(2); }
 function sgn(n){ return (n>=0?"+":"−") + "£" + Math.abs(r2(n)).toFixed(2); }
 function ord(n){ n=+n||0; const s=["th","st","nd","rd"], v=n%100; return n+(s[(v-20)%10]||s[v]||s[0]); }
 function epoch(date, t){ return new Date(`${date}T${t}:00`).getTime(); }
+function esc(s){ return String(s ?? "").replace(/[&<>"']/g, c =>
+  ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
 
 function toast(msg){ const t=document.getElementById("toast"); t.textContent=msg; t.classList.add("show");
   clearTimeout(window.__tt); window.__tt=setTimeout(()=>t.classList.remove("show"),2600); }
-
 function banner(msg, good){ const b=document.getElementById("banner");
   b.textContent=msg; b.className="banner show"+(good?" good":"");
   if(!good){ setTimeout(()=>{ if(b.textContent===msg) b.className="banner"; }, 6000); } }
 
-/* ================= published data ================= */
-function dataUrls(){ return ["data/"+todayStr()+".json?ts="+Date.now(), "data/latest.json?ts="+Date.now()]; }
-
-async function fetchData(silent){
-  const btn=document.getElementById("fetchBtn");
-  if(!silent) btn.textContent="⟳ Fetching…";
-  let problem = "";
-  for(const u of dataUrls()){
-    try{
-      const r=await fetch(u, {cache:"no-store"});
-      if(!r.ok){ problem=u.split("?")[0]+" → HTTP "+r.status; continue; }
-      const j=await r.json();
-      if(!j || !Array.isArray(j.finals) || !j.finals.length){ problem=u.split("?")[0]+" → empty"; continue; }
-      if(j.date !== todayStr()){ problem="published list is for "+j.date; continue; }
-      day = j;
-      if(!silent){ btn.textContent="⟳ Fetch today's selections";
-        banner(`✅ ${mainPicks().length} picks loaded for ${j.date} (+${(j.finals.length-mainPicks().length)} strings) — RaceMetrics ${j.racemetrics_stamp||""}`, true); }
-      render();
-      fetchResults();
-      return true;
-    }catch(e){ problem=u.split("?")[0]+" → "+(e.message||e); }
-  }
-  if(!silent){
-    btn.textContent="⟳ Fetch today's selections";
-    banner("Could not fetch today's selections ("+problem+"). The 07:15 morning publish may not have run yet — try again later.");
-  } else if(Date.now() - lastTry > 0){
-    lastTry = Date.now();
-  }
-  return false;
+async function jget(path){
+  const res = await fetch(path + "?ts=" + Date.now(), {cache:"no-store"});
+  if(!res.ok) throw new Error(path + " → HTTP " + res.status);
+  return res.json();
 }
 
-async function fetchResults(){
-  try{
-    const r = await fetch("data/results-"+todayStr()+".json?ts="+Date.now(), {cache:"no-store"});
-    if(!r.ok) return false;
-    const j = await r.json();
-    if(j.date !== todayStr()) return false;
-    const sig = JSON.stringify((j.picks||[]).map(p=>[p.time,p.horse,p.res,p.pos,p.stake]));
-    const old = results && results.__sig;
-    if(old === sig) return false;               /* nothing new */
-    j.__sig = sig;
-    results = j;
-    render();
+/* ================= day loading ================= */
+async function loadDay(d, quiet){
+  if(loaded.has(d)){
+    ({day, results} = loaded.get(d));
+    SEL = d; render();
     return true;
-  }catch(e){ return false; }
+  }
+  if(!quiet) document.getElementById("timeline").innerHTML =
+    `<div class="card" style="font-size:.82rem;color:var(--dim)">Loading ${esc(d)}…</div>`;
+  const dv = jget(`data/${d}.json`).then(j=>({ok:true, j})).catch(()=>({ok:false}));
+  const rv = jget(`data/results-${d}.json`).then(j=>({ok:true, j})).catch(()=>({ok:false}));
+  const [dd, rr] = await Promise.all([dv, rv]);
+  day   = dd.ok ? dd.j : null;
+  results = rr.ok ? rr.j : null;
+  if(!day && !results){
+    if(d === todayStr()){
+      day = null; results = null; SEL = d; render();
+      banner("Nothing published for today yet — the 07:15 morning publish lands the shortlist here.", false);
+    } else {
+      toast("No data for " + d);
+      DAYS = DAYS.filter(x=>x!==d); render(); SEL = DAYS[0] || todayStr(); loadDay(SEL, true);
+    }
+    return false;
+  }
+  loaded.set(d, {day, results});
+  SEL = d; render();
+  location.hash = d;
+  return true;
 }
 
-/* pick with an official result yet? (money rows exist only for settled/pending bets) */
-function moneyOf(f){
-  if(!results || results.date !== (day && day.date)) return null;
-  return (results.money || {})[f.time+"|"+f.horse] || null;
+async function refreshDay(silent){
+  const btn=document.getElementById("fetchBtn");
+  if(!silent) btn.textContent="⟳ Refreshing…";
+  loaded.delete(SEL);
+  const ok = await loadDay(SEL, true);
+  if(!silent){
+    btn.textContent="⟳ Refresh this day";
+    if(ok) toast("Refreshed " + SEL);
+  }
+  return ok;
 }
-function mainPicks(){ return day ? day.finals.filter(f=>f.section==="main") : []; }
+
+/* ================= tabs ================= */
+function renderTabs(){
+  const box = document.getElementById("days");
+  box.innerHTML = "";
+  for(const d of DAYS){
+    const el = document.createElement("button");
+    el.className = "day" + (d === SEL ? " on" : "");
+    el.textContent = d.slice(5).replace("-", "/");
+    const rec = loaded.get(d);
+    if(rec && rec.results && rec.results.score && rec.results.score.settled)
+      el.insertAdjacentHTML("beforeend", '<span class="dot"></span>');
+    el.onclick = () => loadDay(d);
+    box.appendChild(el);
+  }
+  if(SEL && !DAYS.includes(SEL)){           /* safety: keep the shown day visible */
+    const el = document.createElement("button");
+    el.className = "day on"; el.textContent = SEL.slice(5).replace("-", "/");
+    box.prepend(el);
+  }
+}
+
+/* ================= rows ================= */
+function moneyMap(){
+  const m = {};
+  if(results && results.picks) results.picks.forEach(p=>{ m[p.time+"|"+p.horse]=p; });
+  return m;
+}
+function dayRows(){
+  const rows = [];
+  if(day && Array.isArray(day.finals)){
+    for(const f of day.finals) rows.push(f);
+  } else if(results){                       /* e.g. 2026-11-02 — results only */
+    for(const p of (results.picks||[]))
+      rows.push({course:p.meeting, time:p.time, horse:p.horse, trainer:p.trainer,
+                 jockey:"", stars:p.stars||0, odds:p.odds||"", section:"main"});
+    for(const o of (results.outsiders||[]))
+      rows.push({course:o.meeting, time:o.time, horse:o.horse, trainer:o.trainer,
+                 stars:o.stars||0, odds:o.odds||"", section:"watch", string:o.string});
+  }
+  rows.sort((a,b)=> epoch("2020-01-01", a.time||"99:99") - epoch("2020-01-01", b.time||"99:99")
+                      || String(a.course).localeCompare(String(b.course))
+                      || (a.section==="main"?0:1));
+  return rows;
+}
+function mainRows(){ return dayRows().filter(f=>f.section==="main"); }
 function nextRace(){
-  return mainPicks().find(f=>{ const m=moneyOf(f); return !m || m.res==="?"; });
+  const m = moneyMap();
+  return mainRows().find(f=>{ const x=m[f.time+"|"+f.horse]; return !x || x.res==="?"; });
 }
 
 /* ================= rendering ================= */
@@ -228,9 +280,12 @@ function resBadge(m){
 }
 
 function render(){
-  document.getElementById("dateChip").textContent = day ? day.date : todayStr()+" · nothing loaded yet";
+  const isToday = SEL === todayStr();
+  document.getElementById("dateChip").textContent = SEL + (isToday ? " · today" : "");
+  document.title = "Ladder · " + SEL;
+  renderTabs();
 
-  /* ---- bank card ---- */
+  /* ---- bank / day summary ---- */
   const b = (results && results.bank) || (day && day.bank) || null;
   const bankV=document.getElementById("bankV"), plV=document.getElementById("plV"),
         wplV=document.getElementById("wplV"), nsC=document.getElementById("nextStakeChip");
@@ -251,44 +306,54 @@ function render(){
     wplV.textContent="—"; wplV.className="v";
   }
 
-  /* ---- hero: next pending race ---- */
-  const hero=document.getElementById("heroBody");
-  const nr=nextRace();
-  cur=nr;
-  if(nr){
-    const m = moneyOf(nr);
-    hero.innerHTML = `
-      <div class="course-line">${(nr.course||"").toUpperCase()} · ${(day&&day.date)||""}</div>
-      <h2>${nr.horse} <span class="stars">${"★".repeat(nr.stars||0)}</span></h2>
-      <div class="meta">
-        <span class="chip">${nr.odds||""}</span>
-        ${nr.hot_jockey?`<span class="chip hot">🔥 ${nr.jockey||""}</span>`:`<span>${[nr.trainer,nr.jockey].filter(Boolean).join(" / ")}</span>`}
-        ${m && m.stake!=null ? `<span class="chip money">planned stake ${fmt(m.stake)}</span>`
-          : (day && day.bank ? `<span class="chip money">planned stake ${fmt(day.bank.next_stake)}</span>` : "")}
-      </div>
-      ${nr.race?`<div class="meta" style="margin-top:6px">${nr.race}</div>`:""}`;
-  } else {
-    hero.innerHTML = day
-      ? `<div class="label" style="color:var(--dim)">All settled</div>
-         <h2 style="font-size:1.1rem">🎉 Every race has a result</h2>
-         <div class="meta">Badges below carry the official placings and money.</div>`
-      : `<div class="label" style="color:var(--dim)">No selections loaded</div>
-         <h2 style="font-size:1.1rem">Waiting for the morning publish</h2>
-         <div class="meta">The shortlist lands here after the 07:15 build — or tap ⟳ below.</div>`;
+  /* ---- hero: next pending race, today only ---- */
+  const hero=document.getElementById("hero");
+  const nr = isToday ? nextRace() : null;
+  cur = nr;
+  hero.style.display = isToday ? "" : "none";
+  if(isToday){
+    const heroBody=document.getElementById("heroBody");
+    if(nr){
+      const m = (moneyMap())[nr.time+"|"+nr.horse] || null;
+      heroBody.innerHTML = `
+        <div class="course-line">${esc((nr.course||"").toUpperCase())} · ${esc(SEL)}</div>
+        <h2>${esc(nr.horse)} <span class="stars">${"★".repeat(nr.stars||0)}</span></h2>
+        <div class="meta">
+          <span class="chip">${esc(nr.odds||"")}</span>
+          ${nr.hot_jockey?`<span class="chip hot">🔥 ${esc(nr.jockey||"")}</span>`:`<span>${esc([nr.trainer,nr.jockey].filter(Boolean).join(" / "))}</span>`}
+          ${m && m.stake!=null ? `<span class="chip money">planned stake ${fmt(m.stake)}</span>`
+            : (day && day.bank ? `<span class="chip money">planned stake ${fmt(day.bank.next_stake)}</span>` : "")}
+        </div>
+        ${nr.race?`<div class="meta" style="margin-top:6px">${esc(nr.race)}</div>`:""}`;
+    } else {
+      heroBody.innerHTML = day
+        ? `<div class="label" style="color:var(--dim)">All settled</div>
+           <h2 style="font-size:1.1rem">🎉 Every race has a result</h2>
+           <div class="meta">Badges below carry the official placings and money.</div>`
+        : `<div class="label" style="color:var(--dim)">Nothing loaded</div>
+           <h2 style="font-size:1.1rem">Waiting for the morning publish</h2>
+           <div class="meta">The shortlist lands here after the 07:15 build.</div>`;
+    }
   }
 
   /* ---- timeline: picks and strings, race order ---- */
-  const money = {};
-  if(results && results.picks) results.picks.forEach(p=>{ money[p.time+"|"+p.horse]=p; });
+  const money = moneyMap();
+  const rows = dayRows();
   const tl=document.getElementById("timeline");
-  tl.innerHTML = day ? day.finals.map(f=>{
+  if(!rows.length){
+    tl.innerHTML = isToday
+      ? `<div class="card" style="font-size:.82rem;color:var(--dim)">No selections published yet — tap ⟳ below; they land after the 07:15 morning build.</div>`
+      : `<div class="card" style="font-size:.82rem;color:var(--dim)">No data for ${esc(SEL)}.</div>`;
+    return;
+  }
+  tl.innerHTML = rows.map(f=>{
     const m = money[f.time+"|"+f.horse] || null;
     const past = m && m.res!=="?";
-    const isNow = nr && nr===f;
+    const isNow = isToday && nr && nr===f;
     const bd = resBadge(m);
-    const str = f.section==="watch" ? `<span class="chip watch">string</span>` : "";
+    const str = f.section==="watch" ? `<span class="chip watch">${f.string?esc(f.string)+" string":"string"}</span>` : "";
     let amt = "";
-    if(m && f.section==="main"){
+    if(m && f.section!=="watch"){
       if(m.res==="NR") amt = `<span class="chip">NR — stake returned</span>`;
       else if(m.res==="?") amt = `<span class="chip money">planned stake ${fmt(m.stake)}</span>`;
       else if(m.stake!=null){
@@ -297,96 +362,28 @@ function render(){
       }
     }
     return `<div class="race ${past?"done":""} ${isNow?"now":""}">
-      <div class="t">${f.time}<small>${f.course}</small></div>
-      <div class="mid"><div class="h">${f.horse} <span class="stars">${"★".repeat(f.stars||0)}</span>${str}</div>
-        <div class="r">${f.trainer}${f.jockey?` / ${f.hot_jockey?"🔥 ":""}${f.jockey}`:""} · ${f.odds||""}</div>
+      <div class="t">${esc(f.time)}<small>${esc(f.course)}</small></div>
+      <div class="mid"><div class="h">${esc(f.horse)} <span class="stars">${"★".repeat(f.stars||0)}</span>${str}</div>
+        <div class="r">${esc(f.trainer)}${f.jockey?` / ${f.hot_jockey?"🔥 ":""}${esc(f.jockey)}`:""} · ${esc(f.odds||"")}</div>
         ${amt?`<div class="r" style="margin-top:3px">${amt}</div>`:""}</div>
       ${bd?`<div class="badge ${bd[0]}">${bd[1]}</div>`:""}</div>`;
-  }).join("") : `<div class="card" style="font-size:.82rem;color:var(--dim)">No selections fetched yet — tap ⟳ below, they publish after the 07:15 morning build.</div>`;
-
-  tick();
+  }).join("");
 }
 
-/* ================= evening review panel ================= */
-let resultsOpen=false;
-function toggleResults(){
-  resultsOpen=!resultsOpen;
-  const card=document.getElementById("resultsCard"), btn=document.getElementById("resultsBtn"),
-        top=document.getElementById("resultsBtnTop");
-  card.style.display=resultsOpen?"":"none";
-  btn.textContent=resultsOpen?"✕ Hide":"📊 Show";
-  top.classList.toggle("on", resultsOpen);
-  if(resultsOpen){ loadResults(); card.scrollIntoView({behavior:"smooth", block:"start"}); }
-}
-async function loadResults(){
-  const body=document.getElementById("resultsBody");
-  body.innerHTML=`<div style="padding:8px;color:var(--dim);font-size:.85rem">Loading today's results…</div>`;
-  if(!results){ await fetchResults(); }
-  if(!results){
-    body.innerHTML=`<div style="padding:10px;color:var(--dim);font-size:.85rem">No results published for today yet.<br><small>They start landing once the first races are off — the laptop refreshes every 30 minutes.</small></div>`;
-    return;
-  }
-  renderResults(results, body);
-}
-function renderResults(d, el){
-  const s=d.score||{};
-  const box=(l,v)=>`<div class="stat"><div class="label">${l}</div><div class="v">${v}</div></div>`;
-  const band=(title,arr,fmt)=>arr&&arr.length
-    ? `<div class="label" style="margin:12px 0 4px">${title}</div>
-       <div style="font-size:.78rem;line-height:1.75">${arr.map(fmt).join("")}</div>` : "";
-  const mark={WIN:"✅",PLACE:"🟢",UNPL:"❌",NR:"🚫","?":"⏳"};
-  el.innerHTML=`
-    <div class="stats">
-      ${box("Settled",s.settled??0)}${box("WON",s.won??0)}${box("Placed",s.placed??0)}
-      ${box("Unplaced",s.unplaced??0)}${box("Win %",s.win_pct!=null?s.win_pct+"%":"—")}${box("Place+ %",s.place_pct!=null?s.place_pct+"%":"—")}
-    </div>
-    ${d.trainers&&d.trainers.length?`
-      <div class="label" style="margin:12px 0 4px">Yards — 14-day form vs today</div>
-      <div style="font-size:.78rem;line-height:1.75">${d.trainers.map(t=>`
-        <div style="display:flex;justify-content:space-between;gap:8px">
-          <span>${t.name}</span>
-          <span style="color:var(--dim);white-space:nowrap">${t.w14} / ${t.p14} → <b>${t.w}W ${t.p}P ${t.u}U</b></span>
-        </div>`).join("")}</div>`:""}
-    ${band("By Timeform stars", d.stars, b=>`<div>${"★".repeat(b.stars)} <span style="color:var(--dim)">n=${b.n} · W ${b.win_pct} · P+ ${b.place_pct}</span></div>`)}
-    ${band("By odds", d.odds, b=>`<div>${b.label} <span style="color:var(--dim)">n=${b.n} · W ${b.win_pct} · P+ ${b.place_pct}</span></div>`)}
-    ${band("By field size", d.fields, b=>`<div>${b.label} <span style="color:var(--dim)">n=${b.n} · W ${b.win_pct} · P+ ${b.place_pct}</span></div>`)}
-    <div class="label" style="margin:12px 0 4px">Every pick — 1% of the bank, win-only at SP</div>
-    <div style="font-size:.8rem;line-height:1.85">${(d.picks||[]).map(p=>{
-      const cash = (p.res==="?"||p.res==="NR"||p.stake==null) ? "" :
-        ` <span style="color:var(--dim)">stake £${(+p.stake).toFixed(2)} → £${(+(p.ret||0)).toFixed(2)}${p.bank_after!=null?" · bank £"+(+p.bank_after).toFixed(2):""}</span>`;
-      return `<div>${mark[p.res]||"?"} ${p.time} ${p.meeting} — <b>${p.horse}</b> ${"★".repeat(p.stars||0)} ${p.odds||""}
-        ${p.res==="?"?"":`<span style="color:var(--dim)">pos ${p.pos??"—"} · ${p.res}</span>`}${cash}</div>`;}).join("")}</div>
-    ${(d.outsiders&&d.outsiders.length)?`
-      <div class="label" style="margin:12px 0 4px">Strings — not bet, reference only</div>
-      <div style="font-size:.8rem;line-height:1.85">${d.outsiders.map(p=>`
-        <div>${mark[p.res]||"?"} ${p.time} ${p.meeting} — <b>${p.horse}</b> ${"★".repeat(p.stars||0)} ${p.odds||""}${p.string?` <span style="color:var(--dim)">${p.string} string</span>`:""}
-          ${p.res==="?"?"":`<span style="color:var(--dim)">pos ${p.pos??"—"} · ${p.res}</span>`}</div>`).join("")}</div>`:""}
-    ${(()=>{const os=d.outsider_score||d.strings; return os?`<div style="margin-top:10px;font-size:.78rem;color:var(--dim)">strings: ${os.settled} settled — won ${os.win_pct} · placed-or-better ${os.place_pct}</div>`:""})()}
-    <div style="margin-top:8px;font-size:.68rem;color:var(--dim)">published ${(d.generated||"").replace("T"," ").slice(0,16)}</div>`;
-}
-
-/* ================= keep-fresh loop ================= */
-async function refresh(){
-  await fetchResults();                       /* badges + money the moment they land */
-  if(!day || day.date !== todayStr()){ await fetchData(true); return; }
-  try{
-    const r = await fetch(dataUrls()[0], {cache:"no-store"});
-    if(r.ok){
-      const j = await r.json();
-      if(j && j.date===todayStr() && Array.isArray(j.finals) &&
-         (j.finals.length !== day.finals.length ||
-          (j.generated && day.generated && j.generated !== day.generated))){
-        day = j; render();
-      }
-    }
-  }catch(e){ /* offline — keep what we have */ }
+/* ================= keep-fresh loop (today only) ================= */
+async function watch(){
+  const t = todayStr();
+  if(t !== lastSeenDay){ lastSeenDay = t; DAYS = []; loaded.clear(); await init(true); return; }
+  if(SEL !== t) return;                     /* browsing history — leave it alone */
+  if(day || results) await refreshDay(true);
+  else await loadDay(t, true);
 }
 
 /* countdown ticker */
 function tick(){
   const el=document.getElementById("countdown");
-  if(!cur || !day){ el.textContent=""; return; }
-  const diff = epoch(day.date, cur.time) - Date.now();
+  if(!cur || SEL !== todayStr() || !day){ el.textContent=""; return; }
+  const diff = epoch(SEL, cur.time) - Date.now();
   if(diff<=0){ el.textContent="RACE OFF"; el.className="countdown off"; }
   else{
     el.className="countdown";
@@ -396,21 +393,32 @@ function tick(){
 }
 setInterval(tick, 1000);
 
-/* midnight rollover */
-setInterval(async ()=>{
-  const t = todayStr();
-  if(t !== lastSeenDay){ lastSeenDay = t; day = null; results = null; await fetchData(true); fetchResults(); }
-}, 30000);
-
 /* ================= install ================= */
 window.addEventListener("beforeinstallprompt", e=>{
   e.preventDefault(); deferredPrompt=e; document.getElementById("instBtn").style.display="";
 });
 function doInstall(){ if(deferredPrompt){ deferredPrompt.prompt(); deferredPrompt=null; document.getElementById("instBtn").style.display="none"; } }
 
-render();
-(async ()=>{ await fetchData(true); await fetchResults(); })();
-setInterval(refresh, 60000);
+/* ================= boot ================= */
+async function init(quiet){
+  try{
+    const idx = await jget("data/index.json");
+    DAYS = idx.days || [];
+  }catch(e){
+    try{
+      const latest = await jget("data/latest.json");
+      DAYS = latest.date ? [latest.date] : [];
+    }catch(e2){ DAYS = []; }
+  }
+  if(!DAYS.includes(todayStr())) DAYS.unshift(todayStr());  /* today is always a tab */
+  const hash = (location.hash || "").replace("#", "");
+  SEL = (hash && DAYS.includes(hash)) ? hash
+      : (DAYS.includes(todayStr()) ? todayStr() : DAYS[0] || todayStr());
+  await loadDay(SEL, quiet);
+}
+
+init();
+setInterval(watch, 60000);
 
 if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js?v="+Date.now(), { updateViaCache: "none" }).catch(()=>{});
 </script>
