@@ -1,6 +1,6 @@
 {
   "date": "2026-11-12",
-  "generated": "2026-11-12T16:08:26+00:00",
+  "generated": "2026-11-12T16:18:54+00:00",
   "score": {
     "picks": 7,
     "settled": 7,
@@ -129,9 +129,9 @@
       "sp_dec": 5.0,
       "pos": 4,
       "res": "UNPL",
-      "stake": 0.69,
+      "stake": 0.82,
       "ret": 0.0,
-      "bank_after": 68.2
+      "bank_after": 81.27
     },
     {
       "time": "12:30",
@@ -144,9 +144,9 @@
       "sp_dec": 3.0,
       "pos": 2,
       "res": "UNPL",
-      "stake": 0.68,
+      "stake": 0.8,
       "ret": 0.0,
-      "bank_after": 67.52
+      "bank_after": 79.66
     },
     {
       "time": "12:41",
@@ -159,9 +159,9 @@
       "sp_dec": 5.5,
       "pos": 2,
       "res": "PLACE",
-      "stake": 0.68,
+      "stake": 0.79,
       "ret": 0.0,
-      "bank_after": 66.84
+      "bank_after": 78.07
     },
     {
       "time": "13:16",
@@ -174,9 +174,9 @@
       "sp_dec": 2.625,
       "pos": 1,
       "res": "WIN",
-      "stake": 0.67,
+      "stake": 0.77,
       "ret": 2.62,
-      "bank_after": 68.79
+      "bank_after": 79.14
     },
     {
       "time": "14:50",
@@ -189,9 +189,9 @@
       "sp_dec": 1.6153846153846154,
       "pos": 1,
       "res": "WIN",
-      "stake": 0.69,
+      "stake": 0.77,
       "ret": 1.62,
-      "bank_after": 69.72
+      "bank_after": 77.68
     },
     {
       "time": "15:01",
@@ -204,9 +204,9 @@
       "sp_dec": 5.5,
       "pos": 8,
       "res": "UNPL",
-      "stake": 0.7,
+      "stake": 0.78,
       "ret": 0.0,
-      "bank_after": 69.02
+      "bank_after": 76.9
     },
     {
       "time": "15:36",
@@ -219,9 +219,9 @@
       "sp_dec": 3.125,
       "pos": 4,
       "res": "UNPL",
-      "stake": 0.69,
+      "stake": 0.95,
       "ret": 0.0,
-      "bank_after": 68.33
+      "bank_after": 94.18
     }
   ],
   "strings": {
@@ -242,7 +242,10 @@
       "sp_dec": 41.0,
       "pos": 8,
       "res": "UNPL",
-      "lost_to": "Yafaarr"
+      "lost_to": "Yafaarr",
+      "stake": 0.81,
+      "ret": 0.0,
+      "bank_after": 80.46
     },
     {
       "time": "12:30",
@@ -256,7 +259,10 @@
       "sp_dec": 13.0,
       "pos": 3,
       "res": "UNPL",
-      "lost_to": "Princess Of Habo"
+      "lost_to": "Princess Of Habo",
+      "stake": 0.8,
+      "ret": 0.0,
+      "bank_after": 78.86
     },
     {
       "time": "13:05",
@@ -270,7 +276,10 @@
       "sp_dec": 8.5,
       "pos": 3,
       "res": "PLACE",
-      "lost_to": "Thetype Istitle"
+      "lost_to": "Thetype Istitle",
+      "stake": 0.78,
+      "ret": 0.0,
+      "bank_after": 77.29
     },
     {
       "time": "13:16",
@@ -284,7 +293,10 @@
       "sp_dec": 4.5,
       "pos": 5,
       "res": "UNPL",
-      "lost_to": "Tell The Tale"
+      "lost_to": "Tell The Tale",
+      "stake": 0.77,
+      "ret": 0.0,
+      "bank_after": 77.6
     },
     {
       "time": "13:16",
@@ -298,7 +310,10 @@
       "sp_dec": 9.5,
       "pos": 3,
       "res": "UNPL",
-      "lost_to": "Tell The Tale"
+      "lost_to": "Tell The Tale",
+      "stake": 0.77,
+      "ret": 0.0,
+      "bank_after": 78.37
     },
     {
       "time": "13:16",
@@ -312,7 +327,10 @@
       "sp_dec": 4.5,
       "pos": 2,
       "res": "PLACE",
-      "lost_to": "Tell The Tale"
+      "lost_to": "Tell The Tale",
+      "stake": 0.77,
+      "ret": 0.0,
+      "bank_after": 76.83
     },
     {
       "time": "15:15",
@@ -326,7 +344,10 @@
       "sp_dec": 19.0,
       "pos": 1,
       "res": "WIN",
-      "lost_to": "Duke Otto"
+      "lost_to": "Duke Otto",
+      "stake": 0.77,
+      "ret": 19.0,
+      "bank_after": 95.13
     }
   ],
   "outsider_score": {
@@ -403,10 +424,10 @@
     "place_pct": 50
   },
   "bank": {
-    "start": 68.89,
-    "end": 68.33,
-    "next_stake": 0.68,
+    "start": 82.09,
+    "end": 94.18,
+    "next_stake": 0.94,
     "season_start": 10.0,
-    "season_end": 68.33
+    "season_end": 94.18
   }
 }

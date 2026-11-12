@@ -183,9 +183,9 @@
       "sp_dec": 1.5714285714285714,
       "pos": 1,
       "res": "WIN",
-      "stake": 0.66,
+      "stake": 0.94,
       "ret": 1.57,
-      "bank_after": 67.06
+      "bank_after": 94.21
     },
     {
       "time": "14:00",
@@ -198,9 +198,9 @@
       "sp_dec": 2.375,
       "pos": 2,
       "res": "UNPL",
-      "stake": 0.67,
+      "stake": 0.92,
       "ret": 0.0,
-      "bank_after": 66.39
+      "bank_after": 91.42
     },
     {
       "time": "14:35",
@@ -213,9 +213,9 @@
       "sp_dec": 13.0,
       "pos": 7,
       "res": "UNPL",
-      "stake": 0.66,
+      "stake": 0.91,
       "ret": 0.0,
-      "bank_after": 65.73
+      "bank_after": 90.51
     },
     {
       "time": "14:53",
@@ -228,9 +228,9 @@
       "sp_dec": 6.5,
       "pos": 2,
       "res": "PLACE",
-      "stake": 0.66,
+      "stake": 1.3,
       "ret": 0.0,
-      "bank_after": 65.07
+      "bank_after": 128.39
     },
     {
       "time": "15:20",
@@ -243,9 +243,9 @@
       "sp_dec": 17.0,
       "pos": 5,
       "res": "UNPL",
-      "stake": 0.65,
+      "stake": 1.34,
       "ret": 0.0,
-      "bank_after": 64.42
+      "bank_after": 132.75
     },
     {
       "time": "15:43",
@@ -258,9 +258,9 @@
       "sp_dec": 2.1,
       "pos": 3,
       "res": "PLACE",
-      "stake": 0.64,
+      "stake": 1.31,
       "ret": 0.0,
-      "bank_after": 63.78
+      "bank_after": 130.11
     },
     {
       "time": "16:30",
@@ -273,9 +273,9 @@
       "sp_dec": 3.25,
       "pos": 3,
       "res": "UNPL",
-      "stake": 0.64,
+      "stake": 1.33,
       "ret": 0.0,
-      "bank_after": 63.14
+      "bank_after": 131.27
     },
     {
       "time": "17:00",
@@ -288,9 +288,9 @@
       "sp_dec": 4.5,
       "pos": 1,
       "res": "WIN",
-      "stake": 0.63,
+      "stake": 1.31,
       "ret": 4.5,
-      "bank_after": 67.01
+      "bank_after": 134.46
     },
     {
       "time": "18:00",
@@ -303,9 +303,9 @@
       "sp_dec": 3.5,
       "pos": 1,
       "res": "WIN",
-      "stake": 0.67,
+      "stake": 1.32,
       "ret": 3.5,
-      "bank_after": 69.84
+      "bank_after": 134.0
     },
     {
       "time": "18:15",
@@ -318,9 +318,9 @@
       "sp_dec": 3.25,
       "pos": 8,
       "res": "UNPL",
-      "stake": 0.7,
+      "stake": 1.34,
       "ret": 0.0,
-      "bank_after": 69.14
+      "bank_after": 132.66
     },
     {
       "time": "18:45",
@@ -333,9 +333,9 @@
       "sp_dec": 11.0,
       "pos": 6,
       "res": "UNPL",
-      "stake": 0.69,
+      "stake": 1.33,
       "ret": 0.0,
-      "bank_after": 68.45
+      "bank_after": 131.33
     },
     {
       "time": "19:45",
@@ -348,9 +348,9 @@
       "sp_dec": 2.375,
       "pos": 7,
       "res": "UNPL",
-      "stake": 0.68,
+      "stake": 1.27,
       "ret": 0.0,
-      "bank_after": 67.77
+      "bank_after": 126.11
     },
     {
       "time": "20:15",
@@ -363,9 +363,9 @@
       "sp_dec": 6.5,
       "pos": 6,
       "res": "UNPL",
-      "stake": 0.68,
+      "stake": 1.26,
       "ret": 0.0,
-      "bank_after": 67.09
+      "bank_after": 124.85
     }
   ],
   "strings": {
@@ -386,7 +386,10 @@
       "sp_dec": 19.0,
       "pos": 2,
       "res": "PLACE",
-      "lost_to": "Smokehouse"
+      "lost_to": "Smokehouse",
+      "stake": 0.94,
+      "ret": 0.0,
+      "bank_after": 93.27
     },
     {
       "time": "13:50",
@@ -400,7 +403,10 @@
       "sp_dec": 13.0,
       "pos": 3,
       "res": "UNPL",
-      "lost_to": "Bucephalus"
+      "lost_to": "Bucephalus",
+      "stake": 0.93,
+      "ret": 0.0,
+      "bank_after": 92.34
     },
     {
       "time": "14:35",
@@ -414,7 +420,10 @@
       "sp_dec": 6.5,
       "pos": 2,
       "res": "PLACE",
-      "lost_to": "Donnie Azoff"
+      "lost_to": "Donnie Azoff",
+      "stake": 0.91,
+      "ret": 0.0,
+      "bank_after": 129.69
     },
     {
       "time": "14:35",
@@ -428,7 +437,10 @@
       "sp_dec": 41.0,
       "pos": 1,
       "res": "WIN",
-      "lost_to": "Donnie Azoff"
+      "lost_to": "Donnie Azoff",
+      "stake": 0.91,
+      "ret": 41.0,
+      "bank_after": 130.6
     },
     {
       "time": "14:53",
@@ -456,7 +468,10 @@
       "sp_dec": 7.0,
       "pos": 1,
       "res": "WIN",
-      "lost_to": "Stoneacre Donny"
+      "lost_to": "Stoneacre Donny",
+      "stake": 1.3,
+      "ret": 7.0,
+      "bank_after": 134.09
     },
     {
       "time": "15:20",
@@ -484,7 +499,10 @@
       "sp_dec": 9.0,
       "pos": 9,
       "res": "UNPL",
-      "lost_to": "Marble Sands"
+      "lost_to": "Marble Sands",
+      "stake": 1.33,
+      "ret": 0.0,
+      "bank_after": 131.42
     },
     {
       "time": "15:43",
@@ -498,7 +516,10 @@
       "sp_dec": 6.5,
       "pos": 1,
       "res": "WIN",
-      "lost_to": "Winston's Oath"
+      "lost_to": "Winston's Oath",
+      "stake": 1.31,
+      "ret": 6.5,
+      "bank_after": 135.3
     },
     {
       "time": "16:00",
@@ -512,7 +533,10 @@
       "sp_dec": 15.0,
       "pos": 10,
       "res": "UNPL",
-      "lost_to": "Seadreamin"
+      "lost_to": "Seadreamin",
+      "stake": 1.35,
+      "ret": 0.0,
+      "bank_after": 132.6
     },
     {
       "time": "16:00",
@@ -526,7 +550,10 @@
       "sp_dec": 51.0,
       "pos": 8,
       "res": "UNPL",
-      "lost_to": "Seadreamin"
+      "lost_to": "Seadreamin",
+      "stake": 1.35,
+      "ret": 0.0,
+      "bank_after": 133.95
     },
     {
       "time": "17:00",
@@ -540,7 +567,10 @@
       "sp_dec": 13.0,
       "pos": 4,
       "res": "UNPL",
-      "lost_to": "Royal Message"
+      "lost_to": "Royal Message",
+      "stake": 1.31,
+      "ret": 0.0,
+      "bank_after": 133.15
     },
     {
       "time": "17:30",
@@ -554,7 +584,10 @@
       "sp_dec": 10.0,
       "pos": 6,
       "res": "UNPL",
-      "lost_to": "Frantic"
+      "lost_to": "Frantic",
+      "stake": 1.33,
+      "ret": 0.0,
+      "bank_after": 131.82
     },
     {
       "time": "18:45",
@@ -596,7 +629,10 @@
       "sp_dec": 17.0,
       "pos": 2,
       "res": "PLACE",
-      "lost_to": "Suzie Songs"
+      "lost_to": "Suzie Songs",
+      "stake": 1.33,
+      "ret": 0.0,
+      "bank_after": 130.0
     },
     {
       "time": "18:45",
@@ -610,7 +646,10 @@
       "sp_dec": 51.0,
       "pos": 13,
       "res": "UNPL",
-      "lost_to": "Suzie Songs"
+      "lost_to": "Suzie Songs",
+      "stake": 1.33,
+      "ret": 0.0,
+      "bank_after": 128.67
     },
     {
       "time": "19:15",
@@ -624,7 +663,10 @@
       "sp_dec": 6.0,
       "pos": 2,
       "res": "PLACE",
-      "lost_to": "Naval Gazer"
+      "lost_to": "Naval Gazer",
+      "stake": 1.29,
+      "ret": 0.0,
+      "bank_after": 127.38
     }
   ],
   "outsider_score": {
@@ -639,10 +681,10 @@
     "place_pct": 39
   },
   "bank": {
-    "start": 66.15,
-    "end": 67.09,
-    "next_stake": 0.67,
+    "start": 93.58,
+    "end": 124.85,
+    "next_stake": 1.25,
     "season_start": 10.0,
-    "season_end": 67.09
+    "season_end": 124.85
   }
 }

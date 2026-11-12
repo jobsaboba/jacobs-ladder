@@ -126,9 +126,9 @@
       "sp_dec": 15.0,
       "pos": 8,
       "res": "UNPL",
-      "stake": 0.61,
+      "stake": 0.85,
       "ret": 0.0,
-      "bank_after": 60.19
+      "bank_after": 84.32
     },
     {
       "time": "12:40",
@@ -141,9 +141,9 @@
       "sp_dec": 3.75,
       "pos": 3,
       "res": "UNPL",
-      "stake": 0.6,
+      "stake": 0.83,
       "ret": 0.0,
-      "bank_after": 59.59
+      "bank_after": 82.65
     },
     {
       "time": "13:10",
@@ -156,9 +156,9 @@
       "sp_dec": 4.5,
       "pos": 3,
       "res": "UNPL",
-      "stake": 0.6,
+      "stake": 0.83,
       "ret": 0.0,
-      "bank_after": 58.99
+      "bank_after": 81.82
     },
     {
       "time": "13:30",
@@ -183,9 +183,9 @@
       "sp_dec": 3.25,
       "pos": 1,
       "res": "WIN",
-      "stake": 0.59,
+      "stake": 0.87,
       "ret": 3.25,
-      "bank_after": 61.65
+      "bank_after": 89.0
     },
     {
       "time": "15:48",
@@ -198,9 +198,9 @@
       "sp_dec": 19.0,
       "pos": 12,
       "res": "UNPL",
-      "stake": 0.62,
+      "stake": 0.88,
       "ret": 0.0,
-      "bank_after": 61.03
+      "bank_after": 87.25
     }
   ],
   "strings": {
@@ -221,7 +221,10 @@
       "sp_dec": 34.0,
       "pos": 3,
       "res": "PLACE",
-      "lost_to": "Ignite The Moment"
+      "lost_to": "Ignite The Moment",
+      "stake": 0.84,
+      "ret": 0.0,
+      "bank_after": 83.48
     },
     {
       "time": "13:10",
@@ -249,7 +252,10 @@
       "sp_dec": 6.5,
       "pos": 1,
       "res": "WIN",
-      "lost_to": "Le Moulin Rouge"
+      "lost_to": "Le Moulin Rouge",
+      "stake": 0.82,
+      "ret": 6.5,
+      "bank_after": 87.5
     },
     {
       "time": "14:04",
@@ -291,7 +297,10 @@
       "sp_dec": 12.0,
       "pos": 6,
       "res": "UNPL",
-      "lost_to": "St Pancras"
+      "lost_to": "St Pancras",
+      "stake": 0.88,
+      "ret": 0.0,
+      "bank_after": 86.62
     },
     {
       "time": "14:15",
@@ -319,7 +328,10 @@
       "sp_dec": 9.5,
       "pos": 6,
       "res": "UNPL",
-      "lost_to": "Port Station"
+      "lost_to": "Port Station",
+      "stake": 0.87,
+      "ret": 0.0,
+      "bank_after": 88.13
     }
   ],
   "outsider_score": {
@@ -371,10 +383,10 @@
     "pnl": 4.5
   },
   "bank": {
-    "start": 60.8,
-    "end": 61.03,
-    "next_stake": 0.61,
+    "start": 85.17,
+    "end": 87.25,
+    "next_stake": 0.87,
     "season_start": 10.0,
-    "season_end": 61.03
+    "season_end": 87.25
   }
 }

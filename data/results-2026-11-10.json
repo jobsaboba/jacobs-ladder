@@ -109,9 +109,9 @@
       "sp_dec": 2.625,
       "pos": 1,
       "res": "WIN",
-      "stake": 0.58,
+      "stake": 0.78,
       "ret": 2.62,
-      "bank_after": 59.63
+      "bank_after": 80.2
     },
     {
       "time": "14:10",
@@ -124,9 +124,9 @@
       "sp_dec": 5.0,
       "pos": 4,
       "res": "UNPL",
-      "stake": 0.6,
+      "stake": 0.79,
       "ret": 0.0,
-      "bank_after": 59.03
+      "bank_after": 78.61
     },
     {
       "time": "14:20",
@@ -139,9 +139,9 @@
       "sp_dec": 7.0,
       "pos": 2,
       "res": "PLACE",
-      "stake": 0.59,
+      "stake": 0.79,
       "ret": 0.0,
-      "bank_after": 58.44
+      "bank_after": 77.82
     },
     {
       "time": "14:50",
@@ -154,9 +154,9 @@
       "sp_dec": 7.0,
       "pos": 5,
       "res": "UNPL",
-      "stake": 0.58,
+      "stake": 0.78,
       "ret": 0.0,
-      "bank_after": 57.86
+      "bank_after": 77.04
     },
     {
       "time": "15:00",
@@ -169,9 +169,9 @@
       "sp_dec": 5.5,
       "pos": 2,
       "res": "PLACE",
-      "stake": 0.58,
+      "stake": 0.76,
       "ret": 0.0,
-      "bank_after": 57.28
+      "bank_after": 75.5
     },
     {
       "time": "15:40",
@@ -196,9 +196,9 @@
       "sp_dec": 1.9090909090909092,
       "pos": 1,
       "res": "WIN",
-      "stake": 0.57,
+      "stake": 0.76,
       "ret": 1.91,
-      "bank_after": 58.62
+      "bank_after": 76.65
     }
   ],
   "strings": {
@@ -219,7 +219,10 @@
       "sp_dec": 126.0,
       "pos": 8,
       "res": "UNPL",
-      "lost_to": "Sound As A Bell"
+      "lost_to": "Sound As A Bell",
+      "stake": 0.8,
+      "ret": 0.0,
+      "bank_after": 79.4
     },
     {
       "time": "14:50",
@@ -233,7 +236,10 @@
       "sp_dec": 7.0,
       "pos": 8,
       "res": "UNPL",
-      "lost_to": "Zaraquelle"
+      "lost_to": "Zaraquelle",
+      "stake": 0.78,
+      "ret": 0.0,
+      "bank_after": 76.26
     },
     {
       "time": "15:40",
@@ -311,10 +317,10 @@
     "place_pct": 0
   },
   "bank": {
-    "start": 57.59,
-    "end": 58.62,
-    "next_stake": 0.59,
+    "start": 78.36,
+    "end": 76.65,
+    "next_stake": 0.77,
     "season_start": 10.0,
-    "season_end": 58.62
+    "season_end": 76.65
   }
 }

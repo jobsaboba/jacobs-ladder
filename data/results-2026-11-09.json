@@ -147,9 +147,9 @@
       "sp_dec": 2.625,
       "pos": 2,
       "res": "PLACE",
-      "stake": 0.61,
+      "stake": 0.86,
       "ret": 0.0,
-      "bank_after": 60.42
+      "bank_after": 85.52
     },
     {
       "time": "12:30",
@@ -162,9 +162,9 @@
       "sp_dec": 4.333333333333334,
       "pos": 3,
       "res": "UNPL",
-      "stake": 0.6,
+      "stake": 0.86,
       "ret": 0.0,
-      "bank_after": 59.82
+      "bank_after": 84.66
     },
     {
       "time": "12:40",
@@ -177,9 +177,9 @@
       "sp_dec": 2.375,
       "pos": 2,
       "res": "UNPL",
-      "stake": 0.6,
+      "stake": 0.85,
       "ret": 0.0,
-      "bank_after": 59.22
+      "bank_after": 83.81
     },
     {
       "time": "12:50",
@@ -192,9 +192,9 @@
       "sp_dec": 2.1,
       "pos": 2,
       "res": "UNPL",
-      "stake": 0.59,
+      "stake": 0.84,
       "ret": 0.0,
-      "bank_after": 58.63
+      "bank_after": 82.97
     },
     {
       "time": "13:30",
@@ -207,9 +207,9 @@
       "sp_dec": 3.0,
       "pos": 3,
       "res": "PLACE",
-      "stake": 0.59,
+      "stake": 0.83,
       "ret": 0.0,
-      "bank_after": 58.04
+      "bank_after": 82.14
     },
     {
       "time": "13:40",
@@ -222,9 +222,9 @@
       "sp_dec": 2.875,
       "pos": 4,
       "res": "UNPL",
-      "stake": 0.58,
+      "stake": 0.82,
       "ret": 0.0,
-      "bank_after": 57.46
+      "bank_after": 81.32
     },
     {
       "time": "14:50",
@@ -237,9 +237,9 @@
       "sp_dec": 6.0,
       "pos": 4,
       "res": "UNPL",
-      "stake": 0.57,
+      "stake": 0.81,
       "ret": 0.0,
-      "bank_after": 56.89
+      "bank_after": 79.7
     },
     {
       "time": "15:25",
@@ -252,9 +252,9 @@
       "sp_dec": 21.0,
       "pos": 3,
       "res": "UNPL",
-      "stake": 0.57,
+      "stake": 0.8,
       "ret": 0.0,
-      "bank_after": 56.32
+      "bank_after": 78.9
     },
     {
       "time": "15:35",
@@ -267,9 +267,9 @@
       "sp_dec": 1.8333333333333335,
       "pos": 1,
       "res": "WIN",
-      "stake": 0.56,
+      "stake": 0.79,
       "ret": 1.83,
-      "bank_after": 57.59
+      "bank_after": 79.94
     }
   ],
   "strings": {
@@ -290,7 +290,10 @@
       "sp_dec": 12.0,
       "pos": 4,
       "res": "UNPL",
-      "lost_to": "Laska Du Breuil"
+      "lost_to": "Laska Du Breuil",
+      "stake": 0.87,
+      "ret": 0.0,
+      "bank_after": 86.38
     },
     {
       "time": "12:20",
@@ -318,7 +321,10 @@
       "sp_dec": 41.0,
       "pos": 4,
       "res": "UNPL",
-      "lost_to": "Carrig Padraig"
+      "lost_to": "Carrig Padraig",
+      "stake": 0.81,
+      "ret": 0.0,
+      "bank_after": 80.51
     },
     {
       "time": "15:35",
@@ -332,7 +338,10 @@
       "sp_dec": 21.0,
       "pos": 3,
       "res": "PLACE",
-      "lost_to": "Lady Jetfire"
+      "lost_to": "Lady Jetfire",
+      "stake": 0.79,
+      "ret": 0.0,
+      "bank_after": 78.36
     },
     {
       "time": "15:35",
@@ -346,7 +355,10 @@
       "sp_dec": 6.5,
       "pos": 8,
       "res": "UNPL",
-      "lost_to": "Lady Jetfire"
+      "lost_to": "Lady Jetfire",
+      "stake": 0.79,
+      "ret": 0.0,
+      "bank_after": 79.15
     }
   ],
   "outsider_score": {
@@ -398,10 +410,10 @@
     "pnl": -2.0
   },
   "bank": {
-    "start": 61.03,
-    "end": 57.59,
-    "next_stake": 0.58,
+    "start": 87.25,
+    "end": 78.36,
+    "next_stake": 0.78,
     "season_start": 10.0,
-    "season_end": 57.59
+    "season_end": 78.36
   }
 }

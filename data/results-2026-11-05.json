@@ -174,9 +174,9 @@
       "sp_dec": 3.25,
       "pos": 3,
       "res": "UNPL",
-      "stake": 0.67,
+      "stake": 0.7,
       "ret": 0.0,
-      "bank_after": 66.79
+      "bank_after": 68.94
     },
     {
       "time": "13:43",
@@ -189,9 +189,9 @@
       "sp_dec": 1.5714285714285714,
       "pos": 1,
       "res": "WIN",
-      "stake": 0.67,
+      "stake": 0.68,
       "ret": 1.57,
-      "bank_after": 67.69
+      "bank_after": 68.46
     },
     {
       "time": "14:30",
@@ -204,9 +204,9 @@
       "sp_dec": 10.0,
       "pos": 7,
       "res": "UNPL",
-      "stake": 0.68,
+      "stake": 0.67,
       "ret": 0.0,
-      "bank_after": 67.01
+      "bank_after": 66.43
     },
     {
       "time": "14:47",
@@ -219,9 +219,9 @@
       "sp_dec": 1.5714285714285714,
       "pos": 1,
       "res": "WIN",
-      "stake": 0.67,
+      "stake": 0.66,
       "ret": 1.57,
-      "bank_after": 67.91
+      "bank_after": 67.34
     },
     {
       "time": "15:05",
@@ -234,9 +234,9 @@
       "sp_dec": 4.5,
       "pos": 8,
       "res": "UNPL",
-      "stake": 0.68,
+      "stake": 0.66,
       "ret": 0.0,
-      "bank_after": 67.23
+      "bank_after": 65.35
     },
     {
       "time": "15:22",
@@ -249,9 +249,9 @@
       "sp_dec": 1.6153846153846154,
       "pos": 1,
       "res": "WIN",
-      "stake": 0.67,
+      "stake": 0.65,
       "ret": 1.62,
-      "bank_after": 68.18
+      "bank_after": 66.32
     },
     {
       "time": "15:55",
@@ -264,9 +264,9 @@
       "sp_dec": 8.5,
       "pos": 4,
       "res": "UNPL",
-      "stake": 0.68,
+      "stake": 0.73,
       "ret": 0.0,
-      "bank_after": 67.5
+      "bank_after": 72.27
     },
     {
       "time": "16:30",
@@ -279,9 +279,9 @@
       "sp_dec": 12.0,
       "pos": 3,
       "res": "PLACE",
-      "stake": 0.68,
+      "stake": 0.71,
       "ret": 0.0,
-      "bank_after": 66.82
+      "bank_after": 70.12
     },
     {
       "time": "18:30",
@@ -294,9 +294,9 @@
       "sp_dec": 3.75,
       "pos": 4,
       "res": "UNPL",
-      "stake": 0.67,
+      "stake": 0.95,
       "ret": 0.0,
-      "bank_after": 66.15
+      "bank_after": 93.58
     }
   ],
   "strings": {
@@ -317,7 +317,10 @@
       "sp_dec": 12.0,
       "pos": 5,
       "res": "UNPL",
-      "lost_to": "Non Stop"
+      "lost_to": "Non Stop",
+      "stake": 0.7,
+      "ret": 0.0,
+      "bank_after": 69.64
     },
     {
       "time": "13:25",
@@ -331,7 +334,10 @@
       "sp_dec": 3.0,
       "pos": 5,
       "res": "UNPL",
-      "lost_to": "Don't Hold Back"
+      "lost_to": "Don't Hold Back",
+      "stake": 0.69,
+      "ret": 0.0,
+      "bank_after": 68.25
     },
     {
       "time": "13:34",
@@ -345,7 +351,10 @@
       "sp_dec": 5.0,
       "pos": 3,
       "res": "PLACE",
-      "lost_to": "Freshers Week"
+      "lost_to": "Freshers Week",
+      "stake": 0.68,
+      "ret": 0.0,
+      "bank_after": 67.57
     },
     {
       "time": "13:57",
@@ -359,7 +368,10 @@
       "sp_dec": 21.0,
       "pos": 8,
       "res": "UNPL",
-      "lost_to": "Lapidarist"
+      "lost_to": "Lapidarist",
+      "stake": 0.68,
+      "ret": 0.0,
+      "bank_after": 67.78
     },
     {
       "time": "14:25",
@@ -373,7 +385,10 @@
       "sp_dec": 10.0,
       "pos": 10,
       "res": "UNPL",
-      "lost_to": "Moon Chime"
+      "lost_to": "Moon Chime",
+      "stake": 0.68,
+      "ret": 0.0,
+      "bank_after": 67.1
     },
     {
       "time": "14:47",
@@ -387,7 +402,10 @@
       "sp_dec": 51.0,
       "pos": 4,
       "res": "UNPL",
-      "lost_to": "Central Command"
+      "lost_to": "Central Command",
+      "stake": 0.66,
+      "ret": 0.0,
+      "bank_after": 66.68
     },
     {
       "time": "14:53",
@@ -401,7 +419,10 @@
       "sp_dec": 5.0,
       "pos": 3,
       "res": "PLACE",
-      "lost_to": "Prince Of Calypso"
+      "lost_to": "Prince Of Calypso",
+      "stake": 0.67,
+      "ret": 0.0,
+      "bank_after": 66.01
     },
     {
       "time": "15:28",
@@ -415,7 +436,10 @@
       "sp_dec": 8.0,
       "pos": 1,
       "res": "WIN",
-      "lost_to": "Benacre"
+      "lost_to": "Benacre",
+      "stake": 0.66,
+      "ret": 8.0,
+      "bank_after": 73.66
     },
     {
       "time": "15:28",
@@ -429,7 +453,10 @@
       "sp_dec": 11.0,
       "pos": 11,
       "res": "UNPL",
-      "lost_to": "Benacre"
+      "lost_to": "Benacre",
+      "stake": 0.66,
+      "ret": 0.0,
+      "bank_after": 73.0
     },
     {
       "time": "16:00",
@@ -443,7 +470,10 @@
       "sp_dec": 34.0,
       "pos": 4,
       "res": "UNPL",
-      "lost_to": "Rogue Inferno"
+      "lost_to": "Rogue Inferno",
+      "stake": 0.72,
+      "ret": 0.0,
+      "bank_after": 71.55
     },
     {
       "time": "16:15",
@@ -457,7 +487,10 @@
       "sp_dec": 34.0,
       "pos": 8,
       "res": "UNPL",
-      "lost_to": "Hitched"
+      "lost_to": "Hitched",
+      "stake": 0.72,
+      "ret": 0.0,
+      "bank_after": 70.83
     },
     {
       "time": "16:45",
@@ -471,7 +504,10 @@
       "sp_dec": 29.0,
       "pos": 1,
       "res": "WIN",
-      "lost_to": "Berkshire Dream"
+      "lost_to": "Berkshire Dream",
+      "stake": 0.7,
+      "ret": 29.0,
+      "bank_after": 98.42
     },
     {
       "time": "17:00",
@@ -485,7 +521,10 @@
       "sp_dec": 4.0,
       "pos": 3,
       "res": "PLACE",
-      "lost_to": "North Star Kodi"
+      "lost_to": "North Star Kodi",
+      "stake": 0.98,
+      "ret": 0.0,
+      "bank_after": 96.46
     },
     {
       "time": "17:00",
@@ -499,7 +538,10 @@
       "sp_dec": 21.0,
       "pos": 5,
       "res": "UNPL",
-      "lost_to": "North Star Kodi"
+      "lost_to": "North Star Kodi",
+      "stake": 0.98,
+      "ret": 0.0,
+      "bank_after": 97.44
     },
     {
       "time": "17:00",
@@ -513,7 +555,10 @@
       "sp_dec": 21.0,
       "pos": 10,
       "res": "UNPL",
-      "lost_to": "North Star Kodi"
+      "lost_to": "North Star Kodi",
+      "stake": 0.98,
+      "ret": 0.0,
+      "bank_after": 95.48
     },
     {
       "time": "17:30",
@@ -527,7 +572,10 @@
       "sp_dec": 17.0,
       "pos": 7,
       "res": "UNPL",
-      "lost_to": "Alanka"
+      "lost_to": "Alanka",
+      "stake": 0.95,
+      "ret": 0.0,
+      "bank_after": 94.53
     }
   ],
   "outsider_score": {
@@ -542,10 +590,10 @@
     "place_pct": 31
   },
   "bank": {
-    "start": 67.46,
-    "end": 66.15,
-    "next_stake": 0.66,
+    "start": 70.34,
+    "end": 93.58,
+    "next_stake": 0.94,
     "season_start": 10.0,
-    "season_end": 66.15
+    "season_end": 93.58
   }
 }
