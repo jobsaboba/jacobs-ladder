@@ -307,8 +307,8 @@ function render(){
     const w=bets.filter(p=>p.res==="WIN").length,
           p_=bets.filter(p=>p.res==="PLACE").length,
           u=bets.filter(p=>p.res==="UNPL").length;
-    wplV.textContent = `${w}·${p_}·${u}`;
-    wplV.className = "v " + (w >= u ? "pos" : "neg");
+    wplV.innerHTML = `<span style="color:var(--em)">${w}</span>·<span style="color:var(--amber)">${p_}</span>·<span style="color:var(--red)">${u}</span>`;
+    wplV.className = "v";
   } else {
     wplV.textContent="—"; wplV.className="v";
   }
