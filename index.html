@@ -358,7 +358,8 @@ function render(){
     const past = m && m.res!=="?";
     const isNow = isToday && nr && nr===f;
     const bd = resBadge(m);
-    const str = f.section==="watch" ? `<span class="chip watch">${f.string?esc(f.string)+" string":"string"}</span>` : "";
+    const first = (f.string||"").toLowerCase().startsWith("1st");
+    const str = (f.section==="watch" && !first) ? `<span class="chip watch">${f.string?esc(f.string)+" string":"string"}</span>` : "";
     let amt = "";
     const isBet = f.section!=="watch" || (f.string||"").toLowerCase().startsWith("1st");
     if(m && isBet){
