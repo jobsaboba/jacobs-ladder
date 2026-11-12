@@ -1,21 +1,87 @@
 {
   "date": "2026-11-12",
-  "generated": "2026-11-12T07:48:15+00:00",
+  "generated": "2026-11-12T13:00:08+00:00",
   "score": {
     "picks": 7,
-    "settled": 0,
+    "settled": 3,
     "won": 0,
-    "placed": 0,
-    "unplaced": 0,
+    "placed": 1,
+    "unplaced": 2,
     "nr": 0,
-    "pending": 7,
-    "win_pct": null,
-    "place_pct": null
+    "pending": 4,
+    "win_pct": 0,
+    "place_pct": 33
   },
-  "trainers": [],
-  "stars": [],
-  "odds": [],
-  "fields": [],
+  "trainers": [
+    {
+      "name": "Gavin Cromwell",
+      "w14": "16.3%",
+      "p14": "48.8%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
+    },
+    {
+      "name": "Jamie Snowden",
+      "w14": "42.3%",
+      "p14": "80.8%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
+    },
+    {
+      "name": "Charlie Longsdon",
+      "w14": "42.9%",
+      "p14": "78.6%",
+      "w": 0,
+      "p": 1,
+      "u": 0,
+      "n": 1
+    }
+  ],
+  "stars": [
+    {
+      "stars": 5,
+      "n": 2,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
+    {
+      "stars": 4,
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "100%"
+    }
+  ],
+  "odds": [
+    {
+      "label": "2/1–5/1",
+      "n": 3,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "33%"
+    }
+  ],
+  "fields": [
+    {
+      "label": "small (≤8)",
+      "n": 2,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "50%"
+    },
+    {
+      "label": "mid (9–12)",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    }
+  ],
   "picks": [
     {
       "time": "11:43",
@@ -24,13 +90,13 @@
       "trainer": "G P Cromwell",
       "stars": 5,
       "odds": "3/1",
-      "sp": "3/1",
-      "sp_dec": 4.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "4/1",
+      "sp_dec": 5.0,
+      "pos": 4,
+      "res": "UNPL",
       "stake": 0.69,
-      "ret": null,
-      "bank_after": 68.89
+      "ret": 0.0,
+      "bank_after": 68.2
     },
     {
       "time": "12:30",
@@ -39,13 +105,13 @@
       "trainer": "Jamie Snowden",
       "stars": 5,
       "odds": "13/8",
-      "sp": "13/8",
-      "sp_dec": 2.625,
-      "pos": 0,
-      "res": "?",
-      "stake": 0.69,
-      "ret": null,
-      "bank_after": 68.89
+      "sp": "2/1",
+      "sp_dec": 3.0,
+      "pos": 2,
+      "res": "UNPL",
+      "stake": 0.68,
+      "ret": 0.0,
+      "bank_after": 67.52
     },
     {
       "time": "12:41",
@@ -54,13 +120,13 @@
       "trainer": "C E Longsdon",
       "stars": 4,
       "odds": "4/1",
-      "sp": "4/1",
-      "sp_dec": 5.0,
-      "pos": 0,
-      "res": "?",
-      "stake": 0.69,
-      "ret": null,
-      "bank_after": 68.89
+      "sp": "9/2",
+      "sp_dec": 5.5,
+      "pos": 2,
+      "res": "PLACE",
+      "stake": 0.68,
+      "ret": 0.0,
+      "bank_after": 66.84
     },
     {
       "time": "13:16",
@@ -73,9 +139,9 @@
       "sp_dec": 3.25,
       "pos": 0,
       "res": "?",
-      "stake": 0.69,
+      "stake": 0.67,
       "ret": null,
-      "bank_after": 68.89
+      "bank_after": 66.84
     },
     {
       "time": "14:50",
@@ -88,9 +154,9 @@
       "sp_dec": 2.375,
       "pos": 0,
       "res": "?",
-      "stake": 0.69,
+      "stake": 0.67,
       "ret": null,
-      "bank_after": 68.89
+      "bank_after": 66.84
     },
     {
       "time": "15:01",
@@ -103,9 +169,9 @@
       "sp_dec": 8.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.69,
+      "stake": 0.67,
       "ret": null,
-      "bank_after": 68.89
+      "bank_after": 66.84
     },
     {
       "time": "15:36",
@@ -118,12 +184,16 @@
       "sp_dec": 6.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.69,
+      "stake": 0.67,
       "ret": null,
-      "bank_after": 68.89
+      "bank_after": 66.84
     }
   ],
-  "strings": null,
+  "strings": {
+    "settled": 2,
+    "win_pct": "0%",
+    "place_pct": "0%"
+  },
   "outsiders": [
     {
       "time": "12:06",
@@ -133,10 +203,10 @@
       "string": "1st",
       "stars": 3,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "40/1",
+      "sp_dec": 41.0,
+      "pos": 8,
+      "res": "UNPL",
       "lost_to": "Yafaarr"
     },
     {
@@ -147,10 +217,10 @@
       "string": "1st",
       "stars": 2,
       "odds": "16/1",
-      "sp": "16/1",
-      "sp_dec": 17.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "12/1",
+      "sp_dec": 13.0,
+      "pos": 3,
+      "res": "UNPL",
       "lost_to": "Princess Of Habo"
     },
     {
@@ -226,14 +296,14 @@
   ],
   "outsider_score": {
     "strings": 7,
-    "settled": 0,
+    "settled": 2,
     "won": 0,
     "placed": 0,
-    "unplaced": 0,
+    "unplaced": 2,
     "nr": 0,
-    "pending": 7,
-    "win_pct": null,
-    "place_pct": null
+    "pending": 5,
+    "win_pct": 0,
+    "place_pct": 0
   },
   "super6": [
     {
@@ -243,10 +313,10 @@
       "trainer": "S England",
       "stars": 3,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "40/1",
+      "sp_dec": 41.0,
+      "pos": 8,
+      "res": "UNPL",
       "score": 9
     },
     {
@@ -289,12 +359,19 @@
       "score": 6
     }
   ],
-  "super6_score": null,
+  "super6_score": {
+    "listed": 4,
+    "settled": 1,
+    "won": 0,
+    "placed": 0,
+    "win_pct": 0,
+    "place_pct": 0
+  },
   "bank": {
     "start": 68.89,
-    "end": 68.89,
-    "next_stake": 0.69,
+    "end": 66.84,
+    "next_stake": 0.67,
     "season_start": 10.0,
-    "season_end": 68.89
+    "season_end": 66.84
   }
 }
