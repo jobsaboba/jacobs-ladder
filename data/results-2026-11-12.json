@@ -1,18 +1,27 @@
 {
   "date": "2026-11-12",
-  "generated": "2026-11-12T15:30:08+00:00",
+  "generated": "2026-11-12T16:00:09+00:00",
   "score": {
     "picks": 7,
-    "settled": 6,
+    "settled": 7,
     "won": 2,
     "placed": 1,
-    "unplaced": 3,
+    "unplaced": 4,
     "nr": 0,
-    "pending": 1,
-    "win_pct": 33,
-    "place_pct": 50
+    "pending": 0,
+    "win_pct": 29,
+    "place_pct": 43
   },
   "trainers": [
+    {
+      "name": "Neil Mulholland",
+      "w14": "23.1%",
+      "p14": "65.4%",
+      "w": 1,
+      "p": 0,
+      "u": 1,
+      "n": 2
+    },
     {
       "name": "Gavin Cromwell",
       "w14": "16.3%",
@@ -37,15 +46,6 @@
       "p14": "78.6%",
       "w": 0,
       "p": 1,
-      "u": 0,
-      "n": 1
-    },
-    {
-      "name": "Neil Mulholland",
-      "w14": "23.1%",
-      "p14": "65.4%",
-      "w": 1,
-      "p": 0,
       "u": 0,
       "n": 1
     },
@@ -78,10 +78,10 @@
     },
     {
       "stars": 4,
-      "n": 3,
+      "n": 4,
       "w": 1,
-      "win_pct": "33%",
-      "place_pct": "67%"
+      "win_pct": "25%",
+      "place_pct": "50%"
     }
   ],
   "odds": [
@@ -94,19 +94,19 @@
     },
     {
       "label": "2/1–5/1",
-      "n": 4,
+      "n": 5,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "25%"
+      "place_pct": "20%"
     }
   ],
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 5,
+      "n": 6,
       "w": 2,
-      "win_pct": "40%",
-      "place_pct": "60%"
+      "win_pct": "33%",
+      "place_pct": "50%"
     },
     {
       "label": "mid (9–12)",
@@ -214,13 +214,13 @@
       "trainer": "N P Mulholland",
       "stars": 4,
       "odds": "11/2",
-      "sp": "11/2",
-      "sp_dec": 6.5,
-      "pos": 0,
-      "res": "?",
+      "sp": "85/40",
+      "sp_dec": 3.125,
+      "pos": 4,
+      "res": "UNPL",
       "stake": 0.69,
-      "ret": null,
-      "bank_after": 69.02
+      "ret": 0.0,
+      "bank_after": 68.33
     }
   ],
   "strings": {
@@ -403,9 +403,9 @@
   },
   "bank": {
     "start": 68.89,
-    "end": 69.02,
-    "next_stake": 0.69,
+    "end": 68.33,
+    "next_stake": 0.68,
     "season_start": 10.0,
-    "season_end": 69.02
+    "season_end": 68.33
   }
 }
