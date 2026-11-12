@@ -137,7 +137,7 @@
 <footer class="actions">
   <button class="btn ghost" id="fetchBtn" onclick="refreshDay(false)">⟳ Refresh this day</button>
   <div class="hint">Tap a day along the top — every published day with its odds, stakes, returns and the rolling bank.<br>
-  £10 start · every pick stakes <b>1% of the rolling bank</b> · win-only at SP — a WIN pays the price, anything else costs the stake, non-runners refunded.<br>
+  £10 start · every pick stakes <b>1% of the rolling bank</b> · win-only at SP — a WIN pays the price, anything else costs the stake, non-runners and void races refunded.<br>
   🔥 = jockey 20%+ strike rate, last 30 days (horseracing.net) · © Dave Court · v20</div>
 </footer>
 
@@ -244,6 +244,7 @@ function renderTabs(){
 function moneyMap(){
   const m = {};
   if(results && results.picks) results.picks.forEach(p=>{ m[p.time+"|"+p.horse]=p; });
+  if(results && results.outsiders) results.outsiders.forEach(p=>{ m[p.time+"|"+p.horse]=p; });
   return m;
 }
 function dayRows(){
@@ -276,7 +277,8 @@ function resBadge(m){
   return ({WIN:["won","WON"+price],
            PLACE:["placed","PLACE"+(m.pos?" "+ord(m.pos):"")+price],
            UNPL:["lost","LOST"+price],
-           NR:["skip","NR"]}[m.res]) || null;
+           NR:["skip","NR"],
+           VOID:["skip","VOID"]}[m.res]) || null;
 }
 
 function render(){
@@ -354,7 +356,7 @@ function render(){
     const str = f.section==="watch" ? `<span class="chip watch">${f.string?esc(f.string)+" string":"string"}</span>` : "";
     let amt = "";
     if(m && f.section!=="watch"){
-      if(m.res==="NR") amt = `<span class="chip">NR — stake returned</span>`;
+      if(m.res==="NR"||m.res==="VOID") amt = `<span class="chip">stake returned</span>`;
       else if(m.res==="?") amt = `<span class="chip money">planned stake ${fmt(m.stake)}</span>`;
       else if(m.stake!=null){
         const d = r2((m.ret||0) - m.stake);
