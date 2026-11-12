@@ -21,7 +21,7 @@
   html,body{margin:0; padding:0}
   body{
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-    background:var(--bg); color:var(--ink); padding:12px 12px 140px; max-width:440px; margin:0 auto;
+    background:var(--bg); color:var(--ink); padding:12px 12px 120px; max-width:440px; margin:0 auto;
   }
   header{display:flex; justify-content:space-between; align-items:center; padding:6px 2px 12px}
   .brand{font-weight:900; font-size:1.05rem; letter-spacing:.3px}
@@ -46,35 +46,19 @@
   .chip{background:#1c2a44; border:1px solid var(--line); border-radius:999px; padding:2px 8px; font-size:.68rem; color:var(--dim)}
   .chip.hot{background:#052e1c; border-color:#10653f; color:var(--em); font-weight:700}
   .chip.watch{background:#2d2410; border-color:#6b5312; color:#fcd34d}
-  .stakebox{background:linear-gradient(135deg,#06412c,#065f46); border:1px solid #0a6e45;
-    border-radius:14px; text-align:center; padding:12px; margin:12px 0}
-  .stakebox .big{font-size:2.3rem; font-weight:900; color:var(--em); line-height:1}
+  .chip.money{background:#0a2740; border-color:#1d4d7a; color:var(--sky); font-weight:700}
   .countdown{font-variant-numeric:tabular-nums; font-size:1.5rem; font-weight:800; color:var(--sky)}
   .countdown.off{color:var(--red)}
-  input.ret{width:100%; padding:13px; border-radius:12px; border:1px solid var(--line);
-    background:var(--panel2); color:var(--ink); font-size:1.05rem; margin-bottom:8px}
   .btn{border:none; border-radius:12px; padding:13px; font-weight:800; font-size:.95rem; cursor:pointer; width:100%}
-  .btn.green{background:var(--emerald); color:#032015}
-  .btn.red{background:var(--red); color:#fff}
   .btn.ghost{background:var(--panel2); color:var(--dim); border:1px solid var(--line); font-weight:600}
-  .btn.ghost:disabled{opacity:.35}
-  .btnrow{display:flex; gap:8px}
-  .btnrow .btn{flex:1}
   .btn.small{padding:8px 10px; font-size:.75rem; width:auto; border-radius:10px}
 
-  /* ladder strip */
   .cardhead{display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:12px}
-  .headbtns{display:flex; gap:6px; flex-shrink:0}
-  .headbtns .btn{padding:7px 10px; width:auto; border-radius:10px; font-size:.72rem}
   .stats{display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-bottom:10px}
   .stat{background:var(--panel2); border:1px solid var(--line); border-radius:12px; padding:8px 10px; overflow:hidden}
   .stat .label{margin-bottom:2px; white-space:nowrap; letter-spacing:1px}
   .stat .v{font-weight:800; font-size:1.02rem; margin-top:2px; white-space:nowrap}
   .stat .v.gold{color:var(--amber)} .stat .v.pos{color:var(--em)} .stat .v.neg{color:var(--red)}
-  .seq{display:flex; gap:6px; flex-wrap:wrap; align-items:center; margin-top:4px}
-  .seq .n{background:var(--sky); color:#06202f; font-weight:900; border-radius:8px; padding:5px 10px; font-size:.9rem}
-  .seq .arrow{color:var(--dim); font-size:.85rem}
-  .seq .next{background:#0a2740; border:1px dashed var(--sky); color:var(--sky)}
 
   /* timeline */
   .race{display:flex; gap:10px; align-items:flex-start; background:var(--panel2);
@@ -84,42 +68,22 @@
   .race .mid{flex:1; min-width:0}
   .race .mid .h{font-weight:700; font-size:.92rem}
   .race .mid .r{font-size:.68rem; color:var(--dim); overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
-  .race.done{opacity:.55}
+  .race.done{opacity:.62}
   .race.now{border-color:var(--emerald); box-shadow:0 0 0 1px var(--emerald)}
   .badge{font-size:.62rem; font-weight:900; border-radius:8px; padding:3px 7px; white-space:nowrap; align-self:center}
   .badge.won{background:#0b2e21; color:var(--em)} .badge.lost{background:#331111; color:#fca5a5}
   .badge.skip{background:#1c2a44; color:var(--dim)} .badge.pending{background:#2d2410; color:#fcd34d}
   .badge.placed{background:#123227; color:#86efac}
 
-  /* ledger */
-  #ledgerList{font-size:.78rem}
-  .lrow{display:flex; justify-content:space-between; padding:6px 2px; border-bottom:1px dashed var(--line)}
-  .lrow .pos{color:var(--em)} .lrow .neg{color:#fca5a5}
-
   footer.actions{position:fixed; bottom:0; left:0; right:0; background:linear-gradient(transparent,var(--bg) 30%);
     padding:18px 12px 20px; max-width:440px; margin:0 auto}
-  footer.actions .grid{display:grid; grid-template-columns:1fr 1fr; gap:8px}
-  footer .btn.primary{grid-column:1 / -1; background:var(--sky); color:#06202f}
   .hint{font-size:.68rem; color:var(--dim); text-align:center; margin-top:8px; line-height:1.5}
   .topbtns{display:flex; gap:6px}
   .iconbtn{background:var(--panel); border:1px solid var(--line); color:var(--dim); border-radius:10px; padding:7px 9px; font-size:.9rem; cursor:pointer}
   .iconbtn.on{border-color:var(--emerald); color:var(--em)}
-  .unit{display:flex; background:var(--panel2); border:1px solid var(--line); border-radius:10px; padding:3px}
-  .unit button{border:none; background:transparent; color:var(--dim); font-weight:800; font-size:.78rem; padding:6px 9px; border-radius:8px; cursor:pointer}
-  .unit button.active{background:var(--sky); color:#06202f}
-  .unit input.unitin{width:58px; background:#0a1626; border:1px solid var(--line); color:var(--ink);
-    font-weight:800; font-size:.85rem; text-align:center; border-radius:8px; padding:7px 4px; outline:none}
-  .unit input.unitin:focus{border-color:var(--sky)}
-  .unit .psym{color:var(--dim); font-weight:800; font-size:.8rem; padding-right:3px}
-  .rowcard{background:var(--panel2); border:1px solid var(--line); border-radius:12px; padding:10px 12px; margin-top:10px}
-  .rowcard .rowh{display:flex; align-items:center; gap:6px; flex-wrap:wrap}
-  .rowcard .rowh .h{font-weight:900; font-size:1.02rem}
-  .rowcard .meta{font-size:.72rem; color:var(--dim); margin:3px 0 8px; display:flex; gap:6px; flex-wrap:wrap; align-items:center}
-  .toast{position:fixed; left:50%; transform:translateX(-50%); bottom:150px; background:#123; color:var(--ink);
+  .toast{position:fixed; left:50%; transform:translateX(-50%); bottom:130px; background:#123; color:var(--ink);
     border:1px solid var(--line); padding:10px 16px; border-radius:999px; font-size:.82rem; z-index:50; opacity:0; transition:opacity .25s}
   .toast.show{opacity:1}
-.pmark{position:absolute; right:14px; top:14px; writing-mode:vertical-rl; opacity:.25; font-size:.6rem; letter-spacing:3px; color:#6ee7b7; pointer-events:none}
-  body{position:relative}
   h3.sec{font-size:.68rem; text-transform:uppercase; letter-spacing:1.5px; color:var(--dim); margin:18px 2px 8px;
     display:flex; align-items:center; justify-content:space-between; gap:8px}
   h3.sec .btn{flex-shrink:0}
@@ -132,10 +96,6 @@
     <div class="datechip" id="dateChip"></div>
   </div>
   <div class="topbtns">
-    <div class="unit" title="Stake for every ladder number (pence)">
-      <input id="unitIn" class="unitin" inputmode="decimal" value="5" aria-label="Stake in pence">
-      <span class="psym">p</span>
-    </div>
     <button class="iconbtn" id="resultsBtnTop" onclick="toggleResults()" title="Evening review">📊</button>
     <button class="iconbtn" id="instBtn" style="display:none" onclick="doInstall()" title="Install app">⤓</button>
   </div>
@@ -143,155 +103,211 @@
 
 <div class="banner" id="banner"></div>
 
-<!-- HERO : next race + stake -->
+<!-- HERO : next race -->
 <div class="card" id="hero">
   <div class="row">
     <div class="label" id="heroLabel">Next race</div>
     <div class="countdown" id="countdown">--:--</div>
   </div>
   <div id="heroBody"></div>
-  <div id="heroActions"></div>
 </div>
 
-<!-- LADDER STATE -->
+<!-- ROLLING BANK -->
 <div class="card">
   <div class="cardhead">
-    <div class="label" style="margin:0">Ladder & bank</div>
-    <div class="headbtns">
-      <button class="btn ghost small" onclick="resetCycle()">⟲ New cycle</button>
-      <button class="btn ghost small" onclick="undo()" id="undoBtn">↩ Undo</button>
-      <button class="btn ghost small" onclick="editBank()">✎ Bank</button>
-    </div>
+    <div class="label" style="margin:0">Rolling bank</div>
+    <div class="chip" id="nextStakeChip"></div>
   </div>
   <div class="stats">
-    <div class="stat"><div class="label">Bank</div><div class="v" id="bankV"></div></div>
-    <div class="stat"><div class="label">Peak</div><div class="v gold" id="peakV"></div></div>
-    <div class="stat"><div class="label">Day P/L</div><div class="v" id="plV"></div></div>
+    <div class="stat"><div class="label">Bank</div><div class="v gold" id="bankV">—</div></div>
+    <div class="stat"><div class="label">Day P/L</div><div class="v" id="plV">—</div></div>
+    <div class="stat"><div class="label">Today W·P·L</div><div class="v" id="wplV">—</div></div>
   </div>
-  <div class="seq" id="seqV"></div>
 </div>
 
 <h3 class="sec">Today's selections</h3>
 <div id="timeline"></div>
 
-<h3 class="sec">Day ledger <button class="btn ghost small" onclick="copySummary()">⧉ Copy</button></h3>
-<div class="card"><div id="ledgerList"></div></div>
-
 <h3 class="sec">Evening review <button class="btn ghost small" onclick="toggleResults()" id="resultsBtn">📊 Show</button></h3>
 <div class="card" id="resultsCard" style="display:none"><div id="resultsBody"></div></div>
 
 <footer class="actions">
-  <div class="grid">
-    <button class="btn primary" id="fetchBtn" onclick="fetchData()">⟳ Fetch day's selections</button>
-    <button class="btn ghost" onclick="importJson()">⬆ Import JSON file</button>
-    <button class="btn ghost" onclick="resetDay()">✕ Reset day</button>
-  </div>
-  <div class="hint">Stake = first + last of the ladder &times; unit · any new bank peak resets the ladder to 1-2-2.<br>
-  🔥 = jockey 20%+ strike rate over the last 30 days (horseracing.net)<br>
-  © Dave Court · v18</div>
+  <button class="btn ghost" id="fetchBtn" onclick="fetchData(false)">⟳ Fetch today's selections</button>
+  <div class="hint">£10 start · every pick stakes <b>1% of the rolling bank</b> · win-only at SP — a WIN pays the price, anything else costs the stake, non-runners refunded.<br>
+  Results settle themselves every 30 minutes through the afternoon. 🔥 = jockey 20%+ strike rate, last 30 days (horseracing.net)<br>
+  © Dave Court · v19</div>
 </footer>
 
 <div class="toast" id="toast"></div>
-<input type="file" id="fileIn" accept=".json,application/json" style="display:none">
 
 <script>
-/* ================= state ================= */
-const LS = "jlapp_v2";
+/* ================= state (pure viewer — the laptop publishes the money) */
+let day = null;        // published day file: finals + morning bank hint
+let results = null;    // published results file: badges + walked money
+let deferredPrompt = null, cur = null, lastSeenDay = todayStr(), lastTry = 0;
 
-let S = load();
-let deferredPrompt = null, heroTimer = null, bannerTimer = null, cur = null,
-    lastSeenDay = todayStr(), lastTry = 0;
-
-function blank(){ return { unit:0.05, bank:10.00, peak:10.00, seq:[1,2,2], startBank:10.00, day:null, log:[], history:[] }; }
-function load(){ try{ const j=JSON.parse(localStorage.getItem(LS)); if(j&&j.seq){ if(j.day&&Array.isArray(j.day.races)) j.day.races=j.day.races.filter(r=>r.section!=="super6"); return j; } }catch(e){} return blank(); }
-function save(){ localStorage.setItem(LS, JSON.stringify(S)); }
-
+function todayStr(){ const d=new Date(); return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
 function r2(n){ return Math.round(n*100)/100; }
 function fmt(n){ return "£" + r2(n).toFixed(2); }
+function sgn(n){ return (n>=0?"+":"−") + "£" + Math.abs(r2(n)).toFixed(2); }
 function ord(n){ n=+n||0; const s=["th","st","nd","rd"], v=n%100; return n+(s[(v-20)%10]||s[v]||s[0]); }
-function todayStr(){ const d=new Date(); return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
-function stakeUnits(seq){ return seq.length>1 ? seq[0]+seq[seq.length-1] : seq[0]; }
-function stakeAmount(){ return stakeUnits(S.seq)*S.unit; }
 function epoch(date, t){ return new Date(`${date}T${t}:00`).getTime(); }
 
 function toast(msg){ const t=document.getElementById("toast"); t.textContent=msg; t.classList.add("show");
-  clearTimeout(bannerTimer); bannerTimer=setTimeout(()=>t.classList.remove("show"),2600); }
+  clearTimeout(window.__tt); window.__tt=setTimeout(()=>t.classList.remove("show"),2600); }
 
 function banner(msg, good){ const b=document.getElementById("banner");
   b.textContent=msg; b.className="banner show"+(good?" good":"");
   if(!good){ setTimeout(()=>{ if(b.textContent===msg) b.className="banner"; }, 6000); } }
 
-/* ================= selection day ================= */
-function adoptDay(j){
-  if(!j || !Array.isArray(j.finals) || !j.finals.length){ toast("That file has no selections."); return; }
-  const oldDay = S.day;
-  const sameDate = oldDay && oldDay.date===j.date;
-  if(sameDate && oldDay.races.some(r=>r.status!=="pending")){
-    if(!confirm("Apply the updated published list for "+j.date+"?\n\nYour results already entered are carried over — only NEW selections get added.")){
-      toast("Kept the current day"); return;
-    }
-  }
-  const rows = [].concat(j.finals || []);
-  const newDay = {
-    date: j.date, stamp: j.racemetrics_stamp || "", generated: j.generated || "",
-    startBank: S.bank,
-    races: rows.map(f => ({
-      race_id:f.race_id, time:f.time, course:f.course, horse:f.horse, trainer:f.trainer, jockey:f.jockey||"",
-      stars:f.stars||0, odds:f.odds||"", race:f.race||"", section:f.section||"main", lost_to:f.lost_to||"",
-      string:f.string||"", hot:f.hot_jockey||false, sr:f.jockey_sr||"",
-      dt:f.time, status:"pending", stake:null, ret:null
-    })).sort((a,b)=> epoch(j.date, a.time)-epoch(j.date, b.time))
-  };
-  newDay.races.forEach(r=> r.dtISO = `${j.date}T${r.time}:00`);
-  if(sameDate){
-    /* carry over every result already entered — a refresh can never wipe the day */
-    const key = r => r.time+"|"+r.course+"|"+r.horse;
-    const oldMap = new Map(oldDay.races.map(r=>[key(r), r]));
-    newDay.races.forEach(r=>{ const o = oldMap.get(key(r));
-      if(o){ r.status=o.status; r.stake=o.stake; r.ret=o.ret; } });
-  }
-  S.day = newDay;
-  save(); render();
-  fetchResults();   /* results may already exist for this date (re-adopt / stale day) */
-  const nbet = S.day.races.filter(r=>r.section==="main").length;
-  const outsiders = S.day.races.length - nbet;
-  const stale = j.date < todayStr();
-  banner(stale ? `⚠️ Loaded ${j.date} selections — that file is stale, import or fetch a fresh one.` :
-                 `✅ ${nbet} bets loaded for ${j.date} (+${outsiders} outsiders) (RaceMetrics ${j.racemetrics_stamp||""})`, !stale);
-}
-
-/* Pull today's shortlist in race order.
-   Tries data/<today>.json first (one file per day), then data/latest.json. */
+/* ================= published data ================= */
 function dataUrls(){ return ["data/"+todayStr()+".json?ts="+Date.now(), "data/latest.json?ts="+Date.now()]; }
 
 async function fetchData(silent){
   const btn=document.getElementById("fetchBtn");
   if(!silent) btn.textContent="⟳ Fetching…";
-  const problems=[];
+  let problem = "";
   for(const u of dataUrls()){
     try{
       const r=await fetch(u, {cache:"no-store"});
-      if(!r.ok){ problems.push(u.split("?")[0]+" → HTTP "+r.status); continue; }
+      if(!r.ok){ problem=u.split("?")[0]+" → HTTP "+r.status; continue; }
       const j=await r.json();
-      if(!j || !Array.isArray(j.finals) || !j.finals.length){ problems.push(u.split("?")[0]+" → empty"); continue; }
-      if(silent && j.date !== todayStr()){ problems.push("latest.json is for "+j.date); continue; }
-      adoptDay(j);
-      if(!silent) btn.textContent="⟳ Fetch day's selections";
+      if(!j || !Array.isArray(j.finals) || !j.finals.length){ problem=u.split("?")[0]+" → empty"; continue; }
+      if(j.date !== todayStr()){ problem="published list is for "+j.date; continue; }
+      day = j;
+      if(!silent){ btn.textContent="⟳ Fetch today's selections";
+        banner(`✅ ${mainPicks().length} picks loaded for ${j.date} (+${(j.finals.length-mainPicks().length)} strings) — RaceMetrics ${j.racemetrics_stamp||""}`, true); }
+      render();
+      fetchResults();
       return true;
-    }catch(e){ problems.push(u.split("?")[0]+" → "+(e.message||e)); }
+    }catch(e){ problem=u.split("?")[0]+" → "+(e.message||e); }
   }
   if(!silent){
-    banner("Could not fetch today's selections ("+problems[0]+"). The morning publish may not have run yet — try again later or import the JSON file instead.");
-    btn.textContent="⟳ Fetch day's selections";
-  } else if(S.day && S.day.date < todayStr()){
-    toast("Could not refresh — still showing "+S.day.date);
-  } else if(!S.day){
-    banner("No selections fetched yet ("+problems[0]+"). They publish with the morning shortlist — the app will keep checking.");
+    btn.textContent="⟳ Fetch today's selections";
+    banner("Could not fetch today's selections ("+problem+"). The 07:15 morning publish may not have run yet — try again later.");
+  } else if(Date.now() - lastTry > 0){
+    lastTry = Date.now();
   }
   return false;
 }
 
-/* ---- evening review: today's results, published from the laptop ---- */
+async function fetchResults(){
+  try{
+    const r = await fetch("data/results-"+todayStr()+".json?ts="+Date.now(), {cache:"no-store"});
+    if(!r.ok) return false;
+    const j = await r.json();
+    if(j.date !== todayStr()) return false;
+    const sig = JSON.stringify((j.picks||[]).map(p=>[p.time,p.horse,p.res,p.pos,p.stake]));
+    const old = results && results.__sig;
+    if(old === sig) return false;               /* nothing new */
+    j.__sig = sig;
+    results = j;
+    render();
+    return true;
+  }catch(e){ return false; }
+}
+
+/* pick with an official result yet? (money rows exist only for settled/pending bets) */
+function moneyOf(f){
+  if(!results || results.date !== (day && day.date)) return null;
+  return (results.money || {})[f.time+"|"+f.horse] || null;
+}
+function mainPicks(){ return day ? day.finals.filter(f=>f.section==="main") : []; }
+function nextRace(){
+  return mainPicks().find(f=>{ const m=moneyOf(f); return !m || m.res==="?"; });
+}
+
+/* ================= rendering ================= */
+function resBadge(m){
+  if(!m || m.res==="?") return null;
+  const price = m.sp ? " @ "+m.sp : "";
+  return ({WIN:["won","WON"+price],
+           PLACE:["placed","PLACE"+(m.pos?" "+ord(m.pos):"")+price],
+           UNPL:["lost","LOST"+price],
+           NR:["skip","NR"]}[m.res]) || null;
+}
+
+function render(){
+  document.getElementById("dateChip").textContent = day ? day.date : todayStr()+" · nothing loaded yet";
+
+  /* ---- bank card ---- */
+  const b = (results && results.bank) || (day && day.bank) || null;
+  const bankV=document.getElementById("bankV"), plV=document.getElementById("plV"),
+        wplV=document.getElementById("wplV"), nsC=document.getElementById("nextStakeChip");
+  if(b){
+    bankV.textContent = fmt(b.end ?? b.start);
+    const pl = (b.end ?? b.start) - b.start;
+    plV.textContent = sgn(pl);
+    plV.className = "v " + (pl>=0?"pos":"neg");
+    nsC.textContent = "next stake " + fmt(b.next_stake ?? r2((b.end ?? b.start)*0.01));
+  } else {
+    bankV.textContent="—"; plV.textContent="—"; plV.className="v"; nsC.textContent="";
+  }
+  const sc = results && results.score;
+  if(sc && sc.settled){
+    wplV.textContent = `${sc.won??0}·${sc.placed??0}·${sc.unplaced??0}`;
+    wplV.className = "v " + ((sc.won||0) >= (sc.unplaced||0) ? "pos" : "neg");
+  } else {
+    wplV.textContent="—"; wplV.className="v";
+  }
+
+  /* ---- hero: next pending race ---- */
+  const hero=document.getElementById("heroBody");
+  const nr=nextRace();
+  cur=nr;
+  if(nr){
+    const m = moneyOf(nr);
+    hero.innerHTML = `
+      <div class="course-line">${(nr.course||"").toUpperCase()} · ${(day&&day.date)||""}</div>
+      <h2>${nr.horse} <span class="stars">${"★".repeat(nr.stars||0)}</span></h2>
+      <div class="meta">
+        <span class="chip">${nr.odds||""}</span>
+        ${nr.hot_jockey?`<span class="chip hot">🔥 ${nr.jockey||""}</span>`:`<span>${[nr.trainer,nr.jockey].filter(Boolean).join(" / ")}</span>`}
+        ${m && m.stake!=null ? `<span class="chip money">planned stake ${fmt(m.stake)}</span>`
+          : (day && day.bank ? `<span class="chip money">planned stake ${fmt(day.bank.next_stake)}</span>` : "")}
+      </div>
+      ${nr.race?`<div class="meta" style="margin-top:6px">${nr.race}</div>`:""}`;
+  } else {
+    hero.innerHTML = day
+      ? `<div class="label" style="color:var(--dim)">All settled</div>
+         <h2 style="font-size:1.1rem">🎉 Every race has a result</h2>
+         <div class="meta">Badges below carry the official placings and money.</div>`
+      : `<div class="label" style="color:var(--dim)">No selections loaded</div>
+         <h2 style="font-size:1.1rem">Waiting for the morning publish</h2>
+         <div class="meta">The shortlist lands here after the 07:15 build — or tap ⟳ below.</div>`;
+  }
+
+  /* ---- timeline: picks and strings, race order ---- */
+  const money = {};
+  if(results && results.picks) results.picks.forEach(p=>{ money[p.time+"|"+p.horse]=p; });
+  const tl=document.getElementById("timeline");
+  tl.innerHTML = day ? day.finals.map(f=>{
+    const m = money[f.time+"|"+f.horse] || null;
+    const past = m && m.res!=="?";
+    const isNow = nr && nr===f;
+    const bd = resBadge(m);
+    const str = f.section==="watch" ? `<span class="chip watch">string</span>` : "";
+    let amt = "";
+    if(m && f.section==="main"){
+      if(m.res==="NR") amt = `<span class="chip">NR — stake returned</span>`;
+      else if(m.res==="?") amt = `<span class="chip money">planned stake ${fmt(m.stake)}</span>`;
+      else if(m.stake!=null){
+        const d = r2((m.ret||0) - m.stake);
+        amt = `<span class="chip money">${fmt(m.stake)} → ${fmt(m.ret||0)} (${sgn(d)}) · bank ${fmt(m.bank_after)}</span>`;
+      }
+    }
+    return `<div class="race ${past?"done":""} ${isNow?"now":""}">
+      <div class="t">${f.time}<small>${f.course}</small></div>
+      <div class="mid"><div class="h">${f.horse} <span class="stars">${"★".repeat(f.stars||0)}</span>${str}</div>
+        <div class="r">${f.trainer}${f.jockey?` / ${f.hot_jockey?"🔥 ":""}${f.jockey}`:""} · ${f.odds||""}</div>
+        ${amt?`<div class="r" style="margin-top:3px">${amt}</div>`:""}</div>
+      ${bd?`<div class="badge ${bd[0]}">${bd[1]}</div>`:""}</div>`;
+  }).join("") : `<div class="card" style="font-size:.82rem;color:var(--dim)">No selections fetched yet — tap ⟳ below, they publish after the 07:15 morning build.</div>`;
+
+  tick();
+}
+
+/* ================= evening review panel ================= */
 let resultsOpen=false;
 function toggleResults(){
   resultsOpen=!resultsOpen;
@@ -305,15 +321,12 @@ function toggleResults(){
 async function loadResults(){
   const body=document.getElementById("resultsBody");
   body.innerHTML=`<div style="padding:8px;color:var(--dim);font-size:.85rem">Loading today's results…</div>`;
-  try{
-    const r=await fetch("data/results-"+todayStr()+".json?ts="+Date.now(), {cache:"no-store"});
-    if(!r.ok) throw 0;
-    const d = await r.json();
-    renderResults(d, body);
-    applyResults(d);
-  }catch(e){
-    body.innerHTML=`<div style="padding:10px;color:var(--dim);font-size:.85rem">No results published for today yet.<br><small>Run <b>Evening Review</b> on the laptop after racing, then tap 📊 again.</small></div>`;
+  if(!results){ await fetchResults(); }
+  if(!results){
+    body.innerHTML=`<div style="padding:10px;color:var(--dim);font-size:.85rem">No results published for today yet.<br><small>They start landing once the first races are off — the laptop refreshes every 30 minutes.</small></div>`;
+    return;
   }
+  renderResults(results, body);
 }
 function renderResults(d, el){
   const s=d.score||{};
@@ -337,305 +350,43 @@ function renderResults(d, el){
     ${band("By Timeform stars", d.stars, b=>`<div>${"★".repeat(b.stars)} <span style="color:var(--dim)">n=${b.n} · W ${b.win_pct} · P+ ${b.place_pct}</span></div>`)}
     ${band("By odds", d.odds, b=>`<div>${b.label} <span style="color:var(--dim)">n=${b.n} · W ${b.win_pct} · P+ ${b.place_pct}</span></div>`)}
     ${band("By field size", d.fields, b=>`<div>${b.label} <span style="color:var(--dim)">n=${b.n} · W ${b.win_pct} · P+ ${b.place_pct}</span></div>`)}
-    <div class="label" style="margin:12px 0 4px">Every pick</div>
-    <div style="font-size:.8rem;line-height:1.85">${(d.picks||[]).map(p=>`
-      <div>${mark[p.res]||"?"} ${p.time} ${p.meeting} — <b>${p.horse}</b> ${"★".repeat(p.stars||0)} ${p.odds||""}
-        ${p.res==="?"?"":`<span style="color:var(--dim)">pos ${p.pos??"—"} · ${p.res}</span>`}</div>`).join("")}</div>
+    <div class="label" style="margin:12px 0 4px">Every pick — 1% of the bank, win-only at SP</div>
+    <div style="font-size:.8rem;line-height:1.85">${(d.picks||[]).map(p=>{
+      const cash = (p.res==="?"||p.res==="NR"||p.stake==null) ? "" :
+        ` <span style="color:var(--dim)">stake £${(+p.stake).toFixed(2)} → £${(+(p.ret||0)).toFixed(2)}${p.bank_after!=null?" · bank £"+(+p.bank_after).toFixed(2):""}</span>`;
+      return `<div>${mark[p.res]||"?"} ${p.time} ${p.meeting} — <b>${p.horse}</b> ${"★".repeat(p.stars||0)} ${p.odds||""}
+        ${p.res==="?"?"":`<span style="color:var(--dim)">pos ${p.pos??"—"} · ${p.res}</span>`}${cash}</div>`;}).join("")}</div>
     ${(d.outsiders&&d.outsiders.length)?`
-      <div class="label" style="margin:12px 0 4px">Outsiders — separate bets</div>
+      <div class="label" style="margin:12px 0 4px">Strings — not bet, reference only</div>
       <div style="font-size:.8rem;line-height:1.85">${d.outsiders.map(p=>`
         <div>${mark[p.res]||"?"} ${p.time} ${p.meeting} — <b>${p.horse}</b> ${"★".repeat(p.stars||0)} ${p.odds||""}${p.string?` <span style="color:var(--dim)">${p.string} string</span>`:""}
           ${p.res==="?"?"":`<span style="color:var(--dim)">pos ${p.pos??"—"} · ${p.res}</span>`}</div>`).join("")}</div>`:""}
-    ${(()=>{const os=d.outsider_score||d.strings; return os?`<div style="margin-top:10px;font-size:.78rem;color:var(--dim)">outsiders: ${os.settled} settled — won ${os.win_pct} · placed-or-better ${os.place_pct}</div>`:""})()}
+    ${(()=>{const os=d.outsider_score||d.strings; return os?`<div style="margin-top:10px;font-size:.78rem;color:var(--dim)">strings: ${os.settled} settled — won ${os.win_pct} · placed-or-better ${os.place_pct}</div>`:""})()}
     <div style="margin-top:8px;font-size:.68rem;color:var(--dim)">published ${(d.generated||"").replace("T"," ").slice(0,16)}</div>`;
 }
 
-/* ---- official results on the cards: win / place / lose badges ----
-   fetched quietly in the background once the evening review is published.
-   Races you've already processed keep YOUR badge — the official result only
-   fills the gaps, so the ladder money is never touched by it. */
-function applyResults(d){
-  if(!d || !S.day || d.date !== S.day.date) return;
-  const byKey = {};
-  for(const p of [...(d.picks||[]), ...(d.outsiders||[])]){
-    if(p.res && p.res !== "?") byKey[p.time+"|"+p.horse] = {res:p.res, pos:p.pos, sp:p.sp||p.odds||""};
-  }
-  const sig = JSON.stringify(byKey);
-  if(S.results && S.results.date === d.date && S.results.sig === sig) return;  /* nothing new */
-  S.results = {date: d.date, byKey, sig};
-  save(); render();
-}
-function resOf(r){
-  const R = S.results;
-  return (R && S.day && R.date === S.day.date) ? (R.byKey[r.time+"|"+r.horse] || null) : null;
-}
-/* official result badge: result + finishing position + the SP it returned at */
-function resBadge(off){
-  if(!off) return ["pending",""];
-  const price = off.sp ? " @ "+off.sp : "";
-  return ({WIN:["won","WON"+price],
-           PLACE:["placed","PLACE"+(off.pos?" "+ord(off.pos):"")+price],
-           UNPL:["lost","LOST"+price],
-           NR:["skip","NR"]}[off.res]) || ["pending",""];
-}
-async function fetchResults(){
-  if(!S.day) return;
+/* ================= keep-fresh loop ================= */
+async function refresh(){
+  await fetchResults();                       /* badges + money the moment they land */
+  if(!day || day.date !== todayStr()){ await fetchData(true); return; }
   try{
-    const r = await fetch("data/results-"+S.day.date+".json?ts="+Date.now(), {cache:"no-store"});
-    if(r.ok) applyResults(await r.json());
-  }catch(e){ /* no results published yet — cards stay as they are */ }
-}
-
-/* on open: refresh if nothing is loaded, the day in memory is from an earlier
-   date, or the published list has grown (string entries publish in race order) */
-async function autoRefresh(){
-  if(S.day && S.day.date === todayStr()){
-    try{
-      const r = await fetch(dataUrls()[0], {cache:"no-store"});
-      if(r.ok){
-        const j = await r.json();
-        /* adopt whenever the published list CHANGED — longer (strings finished
-           publishing) or shorter (yard cap / corrections removed rows) */
-        const count = Array.isArray(j.finals) ? j.finals.length : 0;
-        const changed = j && j.date===todayStr() && Array.isArray(j.finals) &&
-          (count !== S.day.races.length ||
-           (j.generated && S.day.generated && j.generated !== S.day.generated));
-        if(changed) adoptDay(j);
+    const r = await fetch(dataUrls()[0], {cache:"no-store"});
+    if(r.ok){
+      const j = await r.json();
+      if(j && j.date===todayStr() && Array.isArray(j.finals) &&
+         (j.finals.length !== day.finals.length ||
+          (j.generated && day.generated && j.generated !== day.generated))){
+        day = j; render();
       }
-    }catch(e){ /* offline — keep what we have */ }
-    return;
-  }
-  await fetchData(true);
-}
-/* keep checking while the app stays open: midnight rollover + retry before publish lands */
-async function publishWatch(){
-  fetchResults();   /* pick up the evening review the moment it lands */
-  const t = todayStr();
-  if(t !== lastSeenDay){ lastSeenDay = t; await autoRefresh(); return; }
-  if((!S.day || S.day.date < todayStr()) && Date.now() - lastTry > 15*60*1000){
-    lastTry = Date.now(); await fetchData(true);
-  }
-}
-
-function importJson(){ document.getElementById("fileIn").click(); }
-
-/* ================= ladder engine (original rules) ================= */
-function snapshot(){
-  S.history.push({
-    seq:[...S.seq], bank:S.bank, peak:S.peak, startBank:S.startBank,
-    log:JSON.parse(JSON.stringify(S.log)),
-    races:S.day ? S.day.races.map(r=>({status:r.status, stake:r.stake, ret:r.ret})) : null
-  });
-  if(S.history.length>60) S.history.shift();
-}
-function restore(s){
-  S.seq=s.seq; S.bank=s.bank; S.peak=s.peak; S.startBank=s.startBank; S.log=s.log;
-  if(s.races && S.day) s.races.forEach((x,i)=> Object.assign(S.day.races[i], x));
-}
-function processRace(race, ret){
-  ret = Math.max(0, +ret || 0);
-  snapshot();
-  /* the pick takes the race's full ladder stake — strings are never bet */
-  const rows = bettable().filter(r=>groupKey(r)===groupKey(race));
-  const n = rows.length;
-  freezeShares(rows, stakeAmount());      /* the race's ladder stake splits equally across its selections */
-  race.ret = ret;
-  S.bank = r2(S.bank - race.stake + ret);
-  race.status = ret > race.stake + 0.001 ? "won" : "lost";
-  const done = rows.every(r=>r.status!=="pending");
-  let settled=false, raceWon=false, tStake=0, tRet=0;
-  if(done){
-    tStake = r2(rows.reduce((s,r)=>s+(r.stake||0),0));
-    tRet   = r2(rows.reduce((s,r)=>s+(r.ret||0),0));
-    if(tStake>0){
-      if(S.bank > S.peak + 0.001){ S.peak=S.bank; S.seq=[1,2,2]; settled=true; }
-      else if(tRet > tStake + 0.001){ S.seq = S.seq.length<=2 ? [1,2,2] : S.seq.slice(1,-1); }
-      else { S.seq.push(stakeUnits(S.seq)); }
-      S.log.push({time:race.time, course:race.course,
-        horse:rows.map(r=>r.horse).join(" + "), stake:tStake, ret:tRet, bank:S.bank});
-      raceWon = tRet > tStake + 0.001;
     }
-  }
-  save(); render();
-  if(done && settled) banner(`🎉 New bank peak ${fmt(S.peak)} — ladder settled back to 1-2-2`, true);
-  else if(done && raceWon) banner(`✅ ${race.time} ${race.course} — race won ${fmt(tRet-tStake)}, ends scratched off`, true);
-}
-
-/* ================= install ================= */
-window.addEventListener("beforeinstallprompt", e=>{
-  e.preventDefault(); deferredPrompt=e; document.getElementById("instBtn").style.display="";
-});
-function doInstall(){ if(deferredPrompt){ deferredPrompt.prompt(); deferredPrompt=null; document.getElementById("instBtn").style.display="none"; } }
-
-/* ================= UI ================= */
-function setUnit(v){
-  const n = Math.min(Math.max(+v || 0.0001, 0.0001), 100); /* £0.01p .. £100 */
-  S.unit = n; save(); render();
-}
-/* one editable stake box (pence) — replaces the old 5p/10p buttons.
-   Type any stake: 5 = 5p, 10 = 10p, 15 = 15p, 50 = 50p, 1000 = £10 ... */
-function onUnitInput(){
-  const el = document.getElementById("unitIn");
-  const n = parseFloat(String(el.value).replace(/[^0-9.]/g, ""));
-  if(isNaN(n) || n <= 0) return;             /* ignore half-typed values */
-  setUnit(n / 100); applyUnitEditor();
-  toast("Stake unit set to " + +(n.toFixed(2)) + "p");
-}
-function applyUnitEditor(){
-  const el = document.getElementById("unitIn");
-  if(document.activeElement !== el) el.value = +((S.unit * 100).toFixed(2));
-}
-
-function editBank(){
-  const v = prompt("Adjust current bank (£):", S.bank.toFixed(2));
-  if(v===null) return; const n = +v; if(isNaN(n)) { toast("Not a number"); return; }
-  snapshot(); S.bank=r2(n); if(S.bank>S.peak){ S.peak=S.bank; S.seq=[1,2,2]; }
-  save(); render(); toast("Bank updated");
-}
-/* fresh cycle: bank, peak, day P/L and the ladder all start from zero again */
-function resetCycle(){
-  const v = prompt("Start a new cycle — what bank do you start from (£)?\nBank, peak, day P/L and the ladder reset; nothing else changes.", S.bank.toFixed(2));
-  if(v===null) return; const n = +v; if(isNaN(n)) { toast("Not a number"); return; }
-  snapshot(); S.bank=r2(n); S.peak=S.bank; S.startBank=S.bank; S.seq=[1,2,2]; S.log=[];
-  save(); render(); toast("New cycle started — good luck");
-}
-function undo(){
-  if(!S.history.length){ toast("Nothing to undo"); return; }
-  restore(S.history.pop()); save(); render(); toast("Undone");
-}
-function skipRace(race){ snapshot(); race.status="skip"; race.stake=0; race.ret=0;
-  save(); render(); toast(`${race.horse} skipped — ladder unchanged`); }
-function resetDay(){
-  if(!S.day){ toast("No day loaded"); return; }
-  if(!confirm("Reset the whole race day? Ladder goes back to 1-2-2 and every result is cleared.")) return;
-  snapshot(); const bank = S.bank; // keep bank continuity
-  S.day.races.forEach(r=>{ r.status="pending"; r.stake=null; r.ret=null; });
-  S.seq=[1,2,2]; S.log=[]; S.startBank=bank; save(); render(); toast("Day reset");
-}
-function copySummary(){
-  if(!S.day){ toast("No day loaded"); return; }
-  const lines=[`Jacob's Ladder ${S.day.date} — in-form trainers`];
-  let staked=0, returned=0;
-  S.log.forEach(l=>{ staked+=l.stake; returned+=l.ret;
-    lines.push(`${l.time} ${l.course} ${l.horse}: stake £${l.stake.toFixed(2)} → returned £${l.ret.toFixed(2)}`); });
-  lines.push(`Day P/L: ${fmt(S.bank-S.startBank)} (staked £${r2(staked).toFixed(2)}, returned £${r2(returned).toFixed(2)})`);
-  lines.push(`Bank now ${fmt(S.bank)} · peak ${fmt(S.peak)} · ladder ${S.seq.join("-")}`);
-  navigator.clipboard?.writeText(lines.join("\n")).then(()=>toast("Day summary copied")).catch(()=>toast("Copy failed"));
-}
-
-/* only picks (section "main") are bet — strings are reference-only */
-function bettable(){ return S.day ? S.day.races.filter(r=>r.section==="main") : []; }
-function nextRace(){ return bettable().find(r=>r.status==="pending"); }
-
-/* a race = every selection row sharing its race_id (the pick + its strings) */
-function groupKey(r){ return (r.race_id!=null ? "id"+r.race_id : "t"+r.time+"@"+r.course); }
-let heroGroup = [];
-/* each race's ladder stake splits equally across its selections */
-function freezeShares(rows, raceStake){
-  const open = rows.filter(r=>r.stake==null);
-  if(!open.length) return;
-  const fixed = r2(rows.filter(r=>r.stake!=null).reduce((s,r)=>s+r.stake,0));
-  const base = r2((raceStake - fixed) / open.length);
-  open.forEach((r,i)=>{ r.stake = (i===open.length-1) ? r2(raceStake - fixed - base*(open.length-1)) : base; });
-}
-function rowStakeOf(r){
-  if(r && r.stake!=null) return r.stake;
-  const rows = bettable().filter(x=>groupKey(x)===groupKey(r));
-  return rows.length ? r2(stakeAmount()/rows.length) : stakeAmount();
-}
-function rowCard(r,i){
-  const hot = /o'neill/i.test(r.trainer) || /p t foley/i.test(r.trainer);
-  const sec = r.section==="watch" ? `<span class="chip watch">outsider</span>` : "";
-  return `<div class="rowcard">
-    <div class="rowh"><span class="h">${r.horse}</span><span class="stars">${"★".repeat(r.stars)}</span>
-      <span class="chip">${r.odds}</span>${hot?`<span class="chip hot">HOT yard</span>`:""}${sec}</div>
-    <div class="meta"><span>${fmt(rowStakeOf(r))} on this horse</span>
-      <span>${r.trainer}${r.jockey?` / ${r.hot?"🔥 ":""}${r.jockey}`:""}</span></div>
-    <input class="ret" id="ret${i}" type="number" step="0.01" min="0" placeholder="Cash returned for ${r.horse} (£)">
-    <div class="btnrow">
-      <button class="btn green" onclick="processRace(heroGroup[${i}], +document.getElementById('ret${i}').value)">WON — enter return</button>
-      <button class="btn red" onclick="processRace(heroGroup[${i}], 0)">LOST</button>
-    </div>
-    <button class="btn ghost" style="margin-top:8px" onclick="skipRace(heroGroup[${i}])">Not running / skip this race</button>
-  </div>`;
-}
-
-function render(){
-  applyUnitEditor(); /* keep the stake box showing the saved stake on every redraw */
-  document.getElementById("dateChip").textContent = S.day ? S.day.date : todayStr()+" · no day loaded";
-  document.getElementById("bankV").textContent = fmt(S.bank);
-  document.getElementById("peakV").textContent = fmt(S.peak);
-  const pl = S.bank - S.startBank;
-  document.getElementById("plV").textContent = (pl>=0?"+":"−") + "£" + Math.abs(pl).toFixed(2);
-  document.getElementById("plV").className = "v " + (pl>=0?"pos":"neg");
-  document.getElementById("undoBtn").disabled = !S.history.length;
-
-  // ladder chips
-  const sv=document.getElementById("seqV");
-  sv.innerHTML = S.seq.map(n=>`<div class="n">${n}</div>`).join("") +
-    `<div class="arrow">→</div><div class="n next">${stakeUnits(S.seq)}</div>` +
-    `<span class="chip">${fmt(stakeAmount())} next</span>`;
-
-  const hero=document.getElementById("heroBody"), ha=document.getElementById("heroActions");
-  const nr=nextRace();
-  cur=nr;
-  heroGroup = nr ? bettable().filter(r=>groupKey(r)===groupKey(nr)) : [];
-  if(nr){
-    hero.innerHTML = `
-      <div class="course-line">${nr.course.toUpperCase()} · ${nr.time}</div>
-      <div class="stakebox"><div class="label" style="color:#a7f3d0">Place now — full race stake</div>
-        <div class="big">${fmt(stakeAmount())}</div>
-        <div style="font-size:.65rem;color:#a7f3d0;margin-top:4px">ladder ${S.seq.join("-")} × ${(S.unit*100)}p on ${nr.horse}</div></div>
-      ${heroGroup.map((r,i)=>rowCard(r,i)).join("")}`;
-    ha.innerHTML="";
-  } else {
-    hero.innerHTML = `<div class="label" style="color:var(--dim)">No race pending</div>
-      <h2 style="font-size:1.1rem">${S.day? "🎉 All races processed" : "No selections loaded"}</h2>
-      <div class="meta">${S.day? `Day P/L ${pl>=0?"+":""}${fmt(Math.abs(pl))}` : "Use Fetch below, or import the day's JSON file."}</div>`;
-    ha.innerHTML="";
-  }
-
-  // timeline — selections and outsiders together, one list in race order
-  const tl=document.getElementById("timeline");
-  tl.innerHTML = S.day ? S.day.races.map(r=>{
-    const past = r.status!=="pending";
-    const isNow = nr && nr===r;
-    /* your own badge wins once you've processed the race; otherwise the
-       official result (win / place / lose) shows as soon as it's published */
-    const off = resOf(r);
-    const b = r.status!=="pending" ? ({won:["won","WON"],lost:["lost","LOST"],skip:["skip","SKIPPED"],pending:["pending",""]}[r.status]||["pending",""])
-            : resBadge(off);
-    const sec = r.section==="watch" ? `<span class="chip watch">outsider</span>` : "";
-    let amt = "";
-    if((r.status==="won"||r.status==="lost") && r.ret!=null && r.stake!=null){
-      const d = r2(r.ret - r.stake);
-      amt = (d>=0?"+":"−")+"£"+Math.abs(d).toFixed(2);
-    }
-    return `<div class="race ${past?"done":""} ${isNow?"now":""}">
-      <div class="t">${r.time}<small>${r.course}</small></div>
-      <div class="mid"><div class="h">${r.horse} <span class="stars">${"★".repeat(r.stars)}</span>${sec}</div>
-        <div class="r">${r.trainer}${r.jockey?` / ${r.hot?"🔥 ":""}${r.jockey}`:""} · ${r.odds}</div>
-        ${past&&r.stake!=null?`<div class="r">stake ${fmt(r.stake)} → ret ${fmt(r.ret)}</div>`:""}</div>
-      ${b[1]?`<div class="badge ${b[0]}">${b[1]}${amt?" "+amt:""}</div>`:""}</div>`;
-  }).join("") : `<div class="card" style="font-size:.82rem;color:var(--dim)">Fetch the day's selections, or import <code>inform-shortlist-*.json</code> from the desktop pipeline.</div>`;
-
-  // ledger
-  const ll=document.getElementById("ledgerList");
-  ll.innerHTML = S.log.length ? S.log.map(l=>{
-    const d=l.ret-l.stake; const cls=d>=0?"pos":"neg";
-    return `<div class="lrow"><span>${l.time} ${l.course} — ${l.horse}</span>
-      <span class="${cls}">${d>=0?"+":""}${fmt(Math.abs(d))}</span></div>`;
-  }).join("") : `<div style="color:var(--dim)">No races processed yet.</div>`;
-
-  tick(); // immediate countdown refresh
+  }catch(e){ /* offline — keep what we have */ }
 }
 
 /* countdown ticker */
 function tick(){
   const el=document.getElementById("countdown");
-  const nr=nextRace();
-  if(!nr){ el.textContent=""; return; }
-  const diff = epoch(S.day.date, nr.time) - Date.now();
+  if(!cur || !day){ el.textContent=""; return; }
+  const diff = epoch(day.date, cur.time) - Date.now();
   if(diff<=0){ el.textContent="RACE OFF"; el.className="countdown off"; }
   else{
     el.className="countdown";
@@ -645,29 +396,21 @@ function tick(){
 }
 setInterval(tick, 1000);
 
-document.getElementById("fileIn").addEventListener("change", e=>{
-  const f=e.target.files[0]; if(!f) return;
-  f.text().then(t=>{ try{ adoptDay(JSON.parse(t)); }catch(err){ toast("Invalid JSON file"); } });
-  e.target.value="";
+/* midnight rollover */
+setInterval(async ()=>{
+  const t = todayStr();
+  if(t !== lastSeenDay){ lastSeenDay = t; day = null; results = null; await fetchData(true); fetchResults(); }
+}, 30000);
+
+/* ================= install ================= */
+window.addEventListener("beforeinstallprompt", e=>{
+  e.preventDefault(); deferredPrompt=e; document.getElementById("instBtn").style.display="";
 });
+function doInstall(){ if(deferredPrompt){ deferredPrompt.prompt(); deferredPrompt=null; document.getElementById("instBtn").style.display="none"; } }
 
-/* ---- never closes without consent while races are pending ---- */
-window.addEventListener("beforeunload", e=>{
-  if(S.day && bettable().some(r=>r.status==="pending")){
-    e.preventDefault(); e.returnValue = "Races still pending — close Jacob's Ladder?";
-    return e.returnValue;
-  }
-});
-
-/* stake box wiring */
-const uIn = document.getElementById("unitIn");
-uIn.addEventListener("change", onUnitInput);
-uIn.addEventListener("blur", applyUnitEditor);
-
-render();               /* draws immediately with the saved stake */
-autoRefresh();          /* fetch today's shortlist if absent/stale */
-fetchResults();         /* official win/place/lose badges if results are already out */
-setInterval(publishWatch, 60000);
+render();
+(async ()=>{ await fetchData(true); await fetchResults(); })();
+setInterval(refresh, 60000);
 
 if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js?v="+Date.now(), { updateViaCache: "none" }).catch(()=>{});
 </script>

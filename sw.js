@@ -1,5 +1,5 @@
 /* Jacob's Ladder Racing — service worker (app shell cache + fresh data) */
-const CACHE = "jlapp-v12";
+const CACHE = "jlapp-v13";
 const SHELL = ["./", "./index.html", "./manifest.webmanifest", "./icons/icon-192.png", "./icons/icon-512.png"];
 
 self.addEventListener("install", (e) => {
