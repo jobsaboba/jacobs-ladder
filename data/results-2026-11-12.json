@@ -1,6 +1,6 @@
 {
   "date": "2026-11-12",
-  "generated": "2026-11-12T16:00:09+00:00",
+  "generated": "2026-11-12T16:08:26+00:00",
   "score": {
     "picks": 7,
     "settled": 7,
@@ -8,6 +8,7 @@
     "placed": 1,
     "unplaced": 4,
     "nr": 0,
+    "void": 0,
     "pending": 0,
     "win_pct": 29,
     "place_pct": 43
