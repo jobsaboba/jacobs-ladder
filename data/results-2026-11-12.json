@@ -1,16 +1,16 @@
 {
   "date": "2026-11-12",
-  "generated": "2026-11-12T15:00:08+00:00",
+  "generated": "2026-11-12T15:30:08+00:00",
   "score": {
     "picks": 7,
-    "settled": 5,
+    "settled": 6,
     "won": 2,
     "placed": 1,
-    "unplaced": 2,
+    "unplaced": 3,
     "nr": 0,
-    "pending": 2,
-    "win_pct": 40,
-    "place_pct": 60
+    "pending": 1,
+    "win_pct": 33,
+    "place_pct": 50
   },
   "trainers": [
     {
@@ -57,6 +57,15 @@
       "p": 0,
       "u": 0,
       "n": 1
+    },
+    {
+      "name": "Lucinda Russell",
+      "w14": "21.3%",
+      "p14": "61.7%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
     }
   ],
   "stars": [
@@ -69,10 +78,10 @@
     },
     {
       "stars": 4,
-      "n": 2,
+      "n": 3,
       "w": 1,
-      "win_pct": "50%",
-      "place_pct": "100%"
+      "win_pct": "33%",
+      "place_pct": "67%"
     }
   ],
   "odds": [
@@ -85,19 +94,19 @@
     },
     {
       "label": "2/1–5/1",
-      "n": 3,
+      "n": 4,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "33%"
+      "place_pct": "25%"
     }
   ],
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 4,
+      "n": 5,
       "w": 2,
-      "win_pct": "50%",
-      "place_pct": "75%"
+      "win_pct": "40%",
+      "place_pct": "60%"
     },
     {
       "label": "mid (9–12)",
@@ -190,13 +199,13 @@
       "trainer": "L Russell & M Scudamore",
       "stars": 4,
       "odds": "7/1",
-      "sp": "7/1",
-      "sp_dec": 8.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "9/2",
+      "sp_dec": 5.5,
+      "pos": 8,
+      "res": "UNPL",
       "stake": 0.7,
-      "ret": null,
-      "bank_after": 69.72
+      "ret": 0.0,
+      "bank_after": 69.02
     },
     {
       "time": "15:36",
@@ -209,15 +218,15 @@
       "sp_dec": 6.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.7,
+      "stake": 0.69,
       "ret": null,
-      "bank_after": 69.72
+      "bank_after": 69.02
     }
   ],
   "strings": {
-    "settled": 6,
-    "win_pct": "0%",
-    "place_pct": "33%"
+    "settled": 7,
+    "win_pct": "14%",
+    "place_pct": "43%"
   },
   "outsiders": [
     {
@@ -312,23 +321,23 @@
       "string": "1st",
       "stars": 2,
       "odds": "50/1",
-      "sp": "50/1",
-      "sp_dec": 51.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "18/1",
+      "sp_dec": 19.0,
+      "pos": 1,
+      "res": "WIN",
       "lost_to": "Duke Otto"
     }
   ],
   "outsider_score": {
     "strings": 7,
-    "settled": 6,
-    "won": 0,
+    "settled": 7,
+    "won": 1,
     "placed": 2,
     "unplaced": 4,
     "nr": 0,
-    "pending": 1,
-    "win_pct": 0,
-    "place_pct": 33
+    "pending": 0,
+    "win_pct": 14,
+    "place_pct": 43
   },
   "super6": [
     {
@@ -377,26 +386,26 @@
       "trainer": "P J Flynn",
       "stars": 2,
       "odds": "50/1",
-      "sp": "50/1",
-      "sp_dec": 51.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "18/1",
+      "sp_dec": 19.0,
+      "pos": 1,
+      "res": "WIN",
       "score": 6
     }
   ],
   "super6_score": {
     "listed": 4,
-    "settled": 3,
-    "won": 0,
+    "settled": 4,
+    "won": 1,
     "placed": 1,
-    "win_pct": 0,
-    "place_pct": 33
+    "win_pct": 25,
+    "place_pct": 50
   },
   "bank": {
     "start": 68.89,
-    "end": 69.72,
-    "next_stake": 0.7,
+    "end": 69.02,
+    "next_stake": 0.69,
     "season_start": 10.0,
-    "season_end": 69.72
+    "season_end": 69.02
   }
 }
