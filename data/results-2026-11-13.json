@@ -1,6 +1,6 @@
 {
   "date": "2026-11-13",
-  "generated": "2026-11-13T16:30:14+00:00",
+  "generated": "2026-11-13T19:30:16+00:00",
   "score": {
     "picks": 7,
     "settled": 7,
@@ -221,9 +221,9 @@
     }
   ],
   "strings": {
-    "settled": 8,
-    "win_pct": "12%",
-    "place_pct": "25%"
+    "settled": 10,
+    "win_pct": "10%",
+    "place_pct": "20%"
   },
   "outsiders": [
     {
@@ -370,14 +370,14 @@
       "string": "1st",
       "stars": 3,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "15/2",
+      "sp_dec": 8.5,
+      "pos": 7,
+      "res": "UNPL",
       "lost_to": "Magna Gee Gee",
       "stake": 0.9,
-      "ret": null,
-      "bank_after": 90.07
+      "ret": 0.0,
+      "bank_after": 89.17
     },
     {
       "time": "19:00",
@@ -401,10 +401,10 @@
       "string": "2nd",
       "stars": 2,
       "odds": "25/1",
-      "sp": "25/1",
-      "sp_dec": 26.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "20/1",
+      "sp_dec": 21.0,
+      "pos": 13,
+      "res": "UNPL",
       "lost_to": "Magna Gee Gee"
     },
     {
@@ -420,9 +420,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Jeffnjoe",
-      "stake": 0.9,
+      "stake": 0.89,
       "ret": null,
-      "bank_after": 90.07
+      "bank_after": 89.17
     },
     {
       "time": "20:30",
@@ -437,9 +437,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Mothel Abbey",
-      "stake": 0.9,
+      "stake": 0.89,
       "ret": null,
-      "bank_after": 90.07
+      "bank_after": 89.17
     },
     {
       "time": "20:30",
@@ -454,21 +454,21 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Mothel Abbey",
-      "stake": 0.9,
+      "stake": 0.89,
       "ret": null,
-      "bank_after": 90.07
+      "bank_after": 89.17
     }
   ],
   "outsider_score": {
     "strings": 14,
-    "settled": 8,
+    "settled": 10,
     "won": 1,
     "placed": 1,
-    "unplaced": 6,
+    "unplaced": 8,
     "nr": 1,
-    "pending": 5,
-    "win_pct": 12,
-    "place_pct": 25
+    "pending": 3,
+    "win_pct": 10,
+    "place_pct": 20
   },
   "super6": [
     {
@@ -543,26 +543,26 @@
       "trainer": "P J Flynn",
       "stars": 3,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "15/2",
+      "sp_dec": 8.5,
+      "pos": 7,
+      "res": "UNPL",
       "score": 8
     }
   ],
   "super6_score": {
     "listed": 6,
-    "settled": 5,
+    "settled": 6,
     "won": 1,
     "placed": 1,
-    "win_pct": 20,
-    "place_pct": 40
+    "win_pct": 17,
+    "place_pct": 33
   },
   "bank": {
     "start": 94.18,
-    "end": 90.07,
-    "next_stake": 0.9,
+    "end": 89.17,
+    "next_stake": 0.89,
     "season_start": 10.0,
-    "season_end": 90.07
+    "season_end": 89.17
   }
 }
