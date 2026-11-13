@@ -251,9 +251,16 @@ function dayRows(){
   return rows;
 }
 function mainRows(){ return dayRows().filter(f=>f.section==="main"); }
+function isBetSel(f){
+  return f.section!=="watch" || (f.string||"").toLowerCase().startsWith("1st");
+}
 function nextRace(){
   const m = moneyMap();
-  return mainRows().find(f=>{ const x=m[f.time+"|"+f.horse]; return !x || x.res==="?"; });
+  return dayRows().find(f=>{
+    if(!isBetSel(f)) return false;         // 2nd/3rd strings aren't selections
+    const x = m[f.time+"|"+f.horse];
+    return !x || x.res==="?";
+  });
 }
 
 /* ================= rendering ================= */
@@ -320,7 +327,7 @@ function render(){
     const first = (f.string||"").toLowerCase().startsWith("1st");
     const str = (f.section==="watch" && !first) ? `<span class="chip watch">${f.string?esc(f.string)+" string":"string"}</span>` : "";
     let amt = "";
-    const isBet = f.section!=="watch" || (f.string||"").toLowerCase().startsWith("1st");
+    const isBet = isBetSel(f);
     if(m && isBet){
       if(m.res==="NR"||m.res==="VOID") amt = `<span class="chip">stake returned</span>`;
       else if(m.res==="?") amt = `<span class="chip money">planned stake ${fmt(m.stake)}</span>`;
