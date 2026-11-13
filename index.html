@@ -330,8 +330,7 @@ function render(){
     const isBet = isBetSel(f);
     if(m && isBet){
       if(m.res==="NR"||m.res==="VOID") amt = `<span class="chip">stake returned</span>`;
-      else if(m.res==="?") amt = `<span class="chip money">planned stake ${fmt(m.stake)}</span>`;
-      else if(m.stake!=null){
+      else if(m.res!=="?" && m.stake!=null){
         const d = r2((m.ret||0) - m.stake);
         amt = `<span class="chip money">${fmt(m.stake)} → ${fmt(m.ret||0)} (${sgn(d)}) · bank ${fmt(m.bank_after)}</span>`;
       }
