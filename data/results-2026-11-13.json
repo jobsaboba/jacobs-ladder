@@ -1,6 +1,6 @@
 {
   "date": "2026-11-13",
-  "generated": "2026-11-13T15:30:17+00:00",
+  "generated": "2026-11-13T16:00:15+00:00",
   "score": {
     "picks": 7,
     "settled": 7,
@@ -221,9 +221,9 @@
     }
   ],
   "strings": {
-    "settled": 4,
+    "settled": 5,
     "win_pct": "0%",
-    "place_pct": "25%"
+    "place_pct": "20%"
   },
   "outsiders": [
     {
@@ -302,8 +302,8 @@
       "string": "1st",
       "stars": 3,
       "odds": "12/1",
-      "sp": "12/1",
-      "sp_dec": 13.0,
+      "sp": "6/5",
+      "sp_dec": 2.2,
       "pos": 0,
       "res": "?",
       "lost_to": "Leave Her To Me",
@@ -319,14 +319,14 @@
       "string": "1st",
       "stars": 2,
       "odds": "25/1",
-      "sp": "25/1",
-      "sp_dec": 26.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "7/2",
+      "sp_dec": 4.5,
+      "pos": 5,
+      "res": "UNPL",
       "lost_to": "Iamcelestialgift",
       "stake": 0.92,
-      "ret": null,
-      "bank_after": 91.56
+      "ret": 0.0,
+      "bank_after": 90.64
     },
     {
       "time": "16:00",
@@ -341,9 +341,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Tuppence",
-      "stake": 0.92,
+      "stake": 0.91,
       "ret": null,
-      "bank_after": 91.56
+      "bank_after": 90.64
     },
     {
       "time": "16:00",
@@ -358,9 +358,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Tuppence",
-      "stake": 0.92,
+      "stake": 0.91,
       "ret": null,
-      "bank_after": 91.56
+      "bank_after": 90.64
     },
     {
       "time": "19:00",
@@ -375,9 +375,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Magna Gee Gee",
-      "stake": 0.92,
+      "stake": 0.91,
       "ret": null,
-      "bank_after": 91.56
+      "bank_after": 90.64
     },
     {
       "time": "19:00",
@@ -420,9 +420,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Jeffnjoe",
-      "stake": 0.92,
+      "stake": 0.91,
       "ret": null,
-      "bank_after": 91.56
+      "bank_after": 90.64
     },
     {
       "time": "20:30",
@@ -437,9 +437,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Mothel Abbey",
-      "stake": 0.92,
+      "stake": 0.91,
       "ret": null,
-      "bank_after": 91.56
+      "bank_after": 90.64
     },
     {
       "time": "20:30",
@@ -454,21 +454,21 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Mothel Abbey",
-      "stake": 0.92,
+      "stake": 0.91,
       "ret": null,
-      "bank_after": 91.56
+      "bank_after": 90.64
     }
   ],
   "outsider_score": {
     "strings": 14,
-    "settled": 4,
+    "settled": 5,
     "won": 0,
     "placed": 1,
-    "unplaced": 3,
+    "unplaced": 4,
     "nr": 1,
-    "pending": 9,
+    "pending": 8,
     "win_pct": 0,
-    "place_pct": 25
+    "place_pct": 20
   },
   "super6": [
     {
@@ -517,8 +517,8 @@
       "trainer": "D Killahena & G McPherson",
       "stars": 3,
       "odds": "12/1",
-      "sp": "12/1",
-      "sp_dec": 13.0,
+      "sp": "6/5",
+      "sp_dec": 2.2,
       "pos": 0,
       "res": "?",
       "score": 8
@@ -560,9 +560,9 @@
   },
   "bank": {
     "start": 94.18,
-    "end": 91.56,
-    "next_stake": 0.92,
+    "end": 90.64,
+    "next_stake": 0.91,
     "season_start": 10.0,
-    "season_end": 91.56
+    "season_end": 90.64
   }
 }
