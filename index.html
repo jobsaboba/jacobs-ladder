@@ -46,17 +46,12 @@
   .label{font-size:.65rem; color:var(--dim); text-transform:uppercase; letter-spacing:1.5px; margin-bottom:6px}
   .row{display:flex; justify-content:space-between; align-items:center; gap:8px}
 
-  /* hero (today only) */
-  #hero .course-line{font-size:.8rem; color:var(--sky); font-weight:700; letter-spacing:.5px}
-  #hero h2{margin:2px 0 4px; font-size:1.5rem; line-height:1.15}
-  .meta{font-size:.78rem; color:var(--dim); display:flex; gap:8px; flex-wrap:wrap; align-items:center}
-  .stars{color:var(--amber); letter-spacing:2px; font-size:.8rem}
+  /* hero (removed — the list is enough) */
   .chip{background:#1c2a44; border:1px solid var(--line); border-radius:999px; padding:2px 8px; font-size:.68rem; color:var(--dim)}
   .chip.hot{background:#052e1c; border-color:#10653f; color:var(--em); font-weight:700}
   .chip.watch{background:#2d2410; border-color:#6b5312; color:#fcd34d}
   .chip.money{background:#0a2740; border-color:#1d4d7a; color:var(--sky); font-weight:700}
-  .countdown{font-variant-numeric:tabular-nums; font-size:1.5rem; font-weight:800; color:var(--sky)}
-  .countdown.off{color:var(--red)}
+  .stars{color:var(--amber); letter-spacing:2px; font-size:.8rem}
   .btn{border:none; border-radius:12px; padding:13px; font-weight:800; font-size:.95rem; cursor:pointer; width:100%}
   .btn.ghost{background:var(--panel2); color:var(--dim); border:1px solid var(--line); font-weight:600}
   .btn.small{padding:8px 10px; font-size:.75rem; width:auto; border-radius:10px}
@@ -122,15 +117,6 @@
   </div>
 </div>
 
-<!-- HERO : next race (today only) -->
-<div class="card" id="hero" style="display:none">
-  <div class="row">
-    <div class="label">Next race</div>
-    <div class="countdown" id="countdown"></div>
-  </div>
-  <div id="heroBody"></div>
-</div>
-
 <h3 class="sec">Selections · stakes · returns</h3>
 <div id="timeline"></div>
 
@@ -154,7 +140,7 @@ let SEL = todayStr();      // the day on screen
 let day = null;            // data/<SEL>.json (finals + morning bank hint)
 let results = null;        // data/results-<SEL>.json (badges + walked money)
 const loaded = new Map();  // date → {day, results} — switch tabs without refetch
-let deferredPrompt = null, cur = null, lastSeenDay = todayStr();
+let deferredPrompt = null, lastSeenDay = todayStr();
 
 function todayStr(){ const d=new Date(); return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
 function r2(n){ return Math.round(n*100)/100; }
@@ -313,35 +299,8 @@ function render(){
     wplV.textContent="—"; wplV.className="v";
   }
 
-  /* ---- hero: next pending race, today only ---- */
-  const hero=document.getElementById("hero");
+  /* next pending race — highlights its row in today's list */
   const nr = isToday ? nextRace() : null;
-  cur = nr;
-  hero.style.display = isToday ? "" : "none";
-  if(isToday){
-    const heroBody=document.getElementById("heroBody");
-    if(nr){
-      const m = (moneyMap())[nr.time+"|"+nr.horse] || null;
-      heroBody.innerHTML = `
-        <div class="course-line">${esc((nr.course||"").toUpperCase())} · ${esc(SEL)}</div>
-        <h2>${esc(nr.horse)} <span class="stars">${"★".repeat(nr.stars||0)}</span></h2>
-        <div class="meta">
-          <span class="chip">${esc(nr.odds||"")}</span>
-          ${nr.hot_jockey?`<span class="chip hot">🔥 ${esc(nr.jockey||"")}</span>`:`<span>${esc([nr.trainer,nr.jockey].filter(Boolean).join(" / "))}</span>`}
-          ${m && m.stake!=null ? `<span class="chip money">planned stake ${fmt(m.stake)}</span>`
-            : (day && day.bank ? `<span class="chip money">planned stake ${fmt(day.bank.next_stake)}</span>` : "")}
-        </div>
-        ${nr.race?`<div class="meta" style="margin-top:6px">${esc(nr.race)}</div>`:""}`;
-    } else {
-      heroBody.innerHTML = day
-        ? `<div class="label" style="color:var(--dim)">All settled</div>
-           <h2 style="font-size:1.1rem">🎉 Every race has a result</h2>
-           <div class="meta">Badges below carry the official placings and money.</div>`
-        : `<div class="label" style="color:var(--dim)">Nothing loaded</div>
-           <h2 style="font-size:1.1rem">Waiting for the morning publish</h2>
-           <div class="meta">The shortlist lands here after the 07:15 build.</div>`;
-    }
-  }
 
   /* ---- timeline: picks and strings, race order ---- */
   const money = moneyMap();
@@ -387,20 +346,6 @@ async function watch(){
   if(day || results) await refreshDay(true);
   else await loadDay(t, true);
 }
-
-/* countdown ticker */
-function tick(){
-  const el=document.getElementById("countdown");
-  if(!cur || SEL !== todayStr() || !day){ el.textContent=""; return; }
-  const diff = epoch(SEL, cur.time) - Date.now();
-  if(diff<=0){ el.textContent="RACE OFF"; el.className="countdown off"; }
-  else{
-    el.className="countdown";
-    const h=Math.floor(diff/3600000), m=Math.floor(diff%3600000/60000), s=Math.floor(diff%60000/1000);
-    el.textContent = (h>0? h+":" : "") + String(m).padStart(2,"0")+":"+String(s).padStart(2,"0");
-  }
-}
-setInterval(tick, 1000);
 
 /* ================= install ================= */
 window.addEventListener("beforeinstallprompt", e=>{
