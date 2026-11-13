@@ -1,17 +1,17 @@
 {
   "date": "2026-11-13",
-  "generated": "2026-11-13T15:00:13+00:00",
+  "generated": "2026-11-13T15:30:17+00:00",
   "score": {
     "picks": 7,
-    "settled": 6,
+    "settled": 7,
     "won": 3,
     "placed": 2,
-    "unplaced": 1,
+    "unplaced": 2,
     "nr": 0,
     "void": 0,
-    "pending": 1,
-    "win_pct": 50,
-    "place_pct": 83
+    "pending": 0,
+    "win_pct": 43,
+    "place_pct": 71
   },
   "trainers": [
     {
@@ -40,6 +40,15 @@
       "p": 1,
       "u": 0,
       "n": 1
+    },
+    {
+      "name": "Jamie Snowden",
+      "w14": "42.3%",
+      "p14": "80.8%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
     }
   ],
   "stars": [
@@ -59,7 +68,7 @@
     },
     {
       "stars": 3,
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -82,19 +91,19 @@
     },
     {
       "label": "5/1–10/1",
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "100%"
+      "place_pct": "50%"
     }
   ],
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 5,
+      "n": 6,
       "w": 3,
-      "win_pct": "60%",
-      "place_pct": "80%"
+      "win_pct": "50%",
+      "place_pct": "67%"
     },
     {
       "label": "big (13+)",
@@ -204,17 +213,17 @@
       "odds": "6/1",
       "sp": "11/2",
       "sp_dec": 6.5,
-      "pos": 0,
-      "res": "?",
+      "pos": 6,
+      "res": "UNPL",
       "stake": 0.93,
-      "ret": null,
-      "bank_after": 93.41
+      "ret": 0.0,
+      "bank_after": 92.48
     }
   ],
   "strings": {
-    "settled": 3,
+    "settled": 4,
     "win_pct": "0%",
-    "place_pct": "0%"
+    "place_pct": "25%"
   },
   "outsiders": [
     {
@@ -276,14 +285,14 @@
       "string": "1st",
       "stars": 4,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "3/1",
+      "sp_dec": 4.0,
+      "pos": 2,
+      "res": "PLACE",
       "lost_to": "Promethean",
-      "stake": 0.93,
-      "ret": null,
-      "bank_after": 93.41
+      "stake": 0.92,
+      "ret": 0.0,
+      "bank_after": 91.56
     },
     {
       "time": "15:40",
@@ -298,9 +307,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Leave Her To Me",
-      "stake": 0.93,
+      "stake": 0.92,
       "ret": null,
-      "bank_after": 93.41
+      "bank_after": 91.56
     },
     {
       "time": "15:50",
@@ -315,9 +324,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Iamcelestialgift",
-      "stake": 0.93,
+      "stake": 0.92,
       "ret": null,
-      "bank_after": 93.41
+      "bank_after": 91.56
     },
     {
       "time": "16:00",
@@ -332,9 +341,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Tuppence",
-      "stake": 0.93,
+      "stake": 0.92,
       "ret": null,
-      "bank_after": 93.41
+      "bank_after": 91.56
     },
     {
       "time": "16:00",
@@ -349,9 +358,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Tuppence",
-      "stake": 0.93,
+      "stake": 0.92,
       "ret": null,
-      "bank_after": 93.41
+      "bank_after": 91.56
     },
     {
       "time": "19:00",
@@ -366,9 +375,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Magna Gee Gee",
-      "stake": 0.93,
+      "stake": 0.92,
       "ret": null,
-      "bank_after": 93.41
+      "bank_after": 91.56
     },
     {
       "time": "19:00",
@@ -411,9 +420,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Jeffnjoe",
-      "stake": 0.93,
+      "stake": 0.92,
       "ret": null,
-      "bank_after": 93.41
+      "bank_after": 91.56
     },
     {
       "time": "20:30",
@@ -428,9 +437,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Mothel Abbey",
-      "stake": 0.93,
+      "stake": 0.92,
       "ret": null,
-      "bank_after": 93.41
+      "bank_after": 91.56
     },
     {
       "time": "20:30",
@@ -445,21 +454,21 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Mothel Abbey",
-      "stake": 0.93,
+      "stake": 0.92,
       "ret": null,
-      "bank_after": 93.41
+      "bank_after": 91.56
     }
   ],
   "outsider_score": {
     "strings": 14,
-    "settled": 3,
+    "settled": 4,
     "won": 0,
-    "placed": 0,
+    "placed": 1,
     "unplaced": 3,
     "nr": 1,
-    "pending": 10,
+    "pending": 9,
     "win_pct": 0,
-    "place_pct": 0
+    "place_pct": 25
   },
   "super6": [
     {
@@ -495,10 +504,10 @@
       "trainer": "S England",
       "stars": 4,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "3/1",
+      "sp_dec": 4.0,
+      "pos": 2,
+      "res": "PLACE",
       "score": 10
     },
     {
@@ -543,17 +552,17 @@
   ],
   "super6_score": {
     "listed": 6,
-    "settled": 2,
+    "settled": 3,
     "won": 0,
-    "placed": 0,
+    "placed": 1,
     "win_pct": 0,
-    "place_pct": 0
+    "place_pct": 33
   },
   "bank": {
     "start": 94.18,
-    "end": 93.41,
-    "next_stake": 0.93,
+    "end": 91.56,
+    "next_stake": 0.92,
     "season_start": 10.0,
-    "season_end": 93.41
+    "season_end": 91.56
   }
 }
