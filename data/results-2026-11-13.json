@@ -1,19 +1,28 @@
 {
   "date": "2026-11-13",
-  "generated": "2026-11-13T13:00:15+00:00",
+  "generated": "2026-11-13T13:30:12+00:00",
   "score": {
     "picks": 7,
-    "settled": 1,
-    "won": 0,
-    "placed": 0,
+    "settled": 3,
+    "won": 1,
+    "placed": 1,
     "unplaced": 1,
     "nr": 0,
     "void": 0,
-    "pending": 6,
-    "win_pct": 0,
-    "place_pct": 0
+    "pending": 4,
+    "win_pct": 33,
+    "place_pct": 67
   },
   "trainers": [
+    {
+      "name": "Neil Mulholland",
+      "w14": "20.0%",
+      "p14": "64.0%",
+      "w": 1,
+      "p": 1,
+      "u": 0,
+      "n": 2
+    },
     {
       "name": "Sam England",
       "w14": "20.0%",
@@ -26,6 +35,20 @@
   ],
   "stars": [
     {
+      "stars": 5,
+      "n": 1,
+      "w": 1,
+      "win_pct": "100%",
+      "place_pct": "100%"
+    },
+    {
+      "stars": 4,
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "100%"
+    },
+    {
       "stars": 3,
       "n": 1,
       "w": 0,
@@ -35,20 +58,41 @@
   ],
   "odds": [
     {
+      "label": "evens–2/1",
+      "n": 1,
+      "w": 1,
+      "win_pct": "100%",
+      "place_pct": "100%"
+    },
+    {
       "label": "2/1–5/1",
       "n": 1,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
+    },
+    {
+      "label": "5/1–10/1",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "100%"
     }
   ],
   "fields": [
     {
       "label": "small (≤8)",
+      "n": 2,
+      "w": 1,
+      "win_pct": "50%",
+      "place_pct": "50%"
+    },
+    {
+      "label": "big (13+)",
       "n": 1,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "0%"
+      "place_pct": "100%"
     }
   ],
   "picks": [
@@ -76,11 +120,11 @@
       "odds": "5/4",
       "sp": "7/4",
       "sp_dec": 2.75,
-      "pos": 0,
-      "res": "?",
+      "pos": 1,
+      "res": "WIN",
       "stake": 0.92,
-      "ret": null,
-      "bank_after": 92.31
+      "ret": 2.75,
+      "bank_after": 94.14
     },
     {
       "time": "13:10",
@@ -89,13 +133,13 @@
       "trainer": "N P Mulholland",
       "stars": 4,
       "odds": "8/1",
-      "sp": "8/1",
-      "sp_dec": 9.0,
-      "pos": 0,
-      "res": "?",
-      "stake": 0.92,
-      "ret": null,
-      "bank_after": 92.31
+      "sp": "5/1",
+      "sp_dec": 6.0,
+      "pos": 2,
+      "res": "PLACE",
+      "stake": 0.94,
+      "ret": 0.0,
+      "bank_after": 93.2
     },
     {
       "time": "13:55",
@@ -110,7 +154,7 @@
       "res": "?",
       "stake": 0.92,
       "ret": null,
-      "bank_after": 92.31
+      "bank_after": 92.26
     },
     {
       "time": "14:30",
@@ -125,7 +169,7 @@
       "res": "?",
       "stake": 0.92,
       "ret": null,
-      "bank_after": 92.31
+      "bank_after": 92.26
     },
     {
       "time": "14:40",
@@ -140,7 +184,7 @@
       "res": "?",
       "stake": 0.92,
       "ret": null,
-      "bank_after": 92.31
+      "bank_after": 92.26
     },
     {
       "time": "14:55",
@@ -155,11 +199,11 @@
       "res": "?",
       "stake": 0.92,
       "ret": null,
-      "bank_after": 92.31
+      "bank_after": 92.26
     }
   ],
   "strings": {
-    "settled": 1,
+    "settled": 2,
     "win_pct": "0%",
     "place_pct": "0%"
   },
@@ -189,14 +233,14 @@
       "string": "1st",
       "stars": 2,
       "odds": "33/1",
-      "sp": "33/1",
-      "sp_dec": 34.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "25/1",
+      "sp_dec": 26.0,
+      "pos": 9,
+      "res": "UNPL",
       "lost_to": "Keno Black",
-      "stake": 0.92,
-      "ret": null,
-      "bank_after": 92.31
+      "stake": 0.94,
+      "ret": 0.0,
+      "bank_after": 92.26
     },
     {
       "time": "14:05",
@@ -213,7 +257,7 @@
       "lost_to": "The Bardman",
       "stake": 0.92,
       "ret": null,
-      "bank_after": 92.31
+      "bank_after": 92.26
     },
     {
       "time": "15:15",
@@ -230,7 +274,7 @@
       "lost_to": "Promethean",
       "stake": 0.92,
       "ret": null,
-      "bank_after": 92.31
+      "bank_after": 92.26
     },
     {
       "time": "15:40",
@@ -247,7 +291,7 @@
       "lost_to": "Leave Her To Me",
       "stake": 0.92,
       "ret": null,
-      "bank_after": 92.31
+      "bank_after": 92.26
     },
     {
       "time": "15:50",
@@ -264,7 +308,7 @@
       "lost_to": "Iamcelestialgift",
       "stake": 0.92,
       "ret": null,
-      "bank_after": 92.31
+      "bank_after": 92.26
     },
     {
       "time": "16:00",
@@ -281,7 +325,7 @@
       "lost_to": "Tuppence",
       "stake": 0.92,
       "ret": null,
-      "bank_after": 92.31
+      "bank_after": 92.26
     },
     {
       "time": "16:00",
@@ -298,7 +342,7 @@
       "lost_to": "Tuppence",
       "stake": 0.92,
       "ret": null,
-      "bank_after": 92.31
+      "bank_after": 92.26
     },
     {
       "time": "19:00",
@@ -315,7 +359,7 @@
       "lost_to": "Magna Gee Gee",
       "stake": 0.92,
       "ret": null,
-      "bank_after": 92.31
+      "bank_after": 92.26
     },
     {
       "time": "19:00",
@@ -360,7 +404,7 @@
       "lost_to": "Jeffnjoe",
       "stake": 0.92,
       "ret": null,
-      "bank_after": 92.31
+      "bank_after": 92.26
     },
     {
       "time": "20:30",
@@ -377,7 +421,7 @@
       "lost_to": "Mothel Abbey",
       "stake": 0.92,
       "ret": null,
-      "bank_after": 92.31
+      "bank_after": 92.26
     },
     {
       "time": "20:30",
@@ -394,17 +438,17 @@
       "lost_to": "Mothel Abbey",
       "stake": 0.92,
       "ret": null,
-      "bank_after": 92.31
+      "bank_after": 92.26
     }
   ],
   "outsider_score": {
     "strings": 14,
-    "settled": 1,
+    "settled": 2,
     "won": 0,
     "placed": 0,
-    "unplaced": 1,
+    "unplaced": 2,
     "nr": 1,
-    "pending": 12,
+    "pending": 11,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -498,9 +542,9 @@
   },
   "bank": {
     "start": 94.18,
-    "end": 92.31,
+    "end": 92.26,
     "next_stake": 0.92,
     "season_start": 10.0,
-    "season_end": 92.31
+    "season_end": 92.26
   }
 }
