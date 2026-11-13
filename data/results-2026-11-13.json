@@ -1,6 +1,6 @@
 {
   "date": "2026-11-13",
-  "generated": "2026-11-13T19:30:16+00:00",
+  "generated": "2026-11-13T20:00:14+00:00",
   "score": {
     "picks": 7,
     "settled": 7,
@@ -221,9 +221,9 @@
     }
   ],
   "strings": {
-    "settled": 10,
-    "win_pct": "10%",
-    "place_pct": "20%"
+    "settled": 11,
+    "win_pct": "9%",
+    "place_pct": "18%"
   },
   "outsiders": [
     {
@@ -415,14 +415,14 @@
       "string": "1st",
       "stars": 2,
       "odds": "25/1",
-      "sp": "25/1",
-      "sp_dec": 26.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "28/1",
+      "sp_dec": 29.0,
+      "pos": 6,
+      "res": "UNPL",
       "lost_to": "Jeffnjoe",
       "stake": 0.89,
-      "ret": null,
-      "bank_after": 89.17
+      "ret": 0.0,
+      "bank_after": 88.28
     },
     {
       "time": "20:30",
@@ -437,9 +437,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Mothel Abbey",
-      "stake": 0.89,
+      "stake": 0.88,
       "ret": null,
-      "bank_after": 89.17
+      "bank_after": 88.28
     },
     {
       "time": "20:30",
@@ -454,21 +454,21 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Mothel Abbey",
-      "stake": 0.89,
+      "stake": 0.88,
       "ret": null,
-      "bank_after": 89.17
+      "bank_after": 88.28
     }
   ],
   "outsider_score": {
     "strings": 14,
-    "settled": 10,
+    "settled": 11,
     "won": 1,
     "placed": 1,
-    "unplaced": 8,
+    "unplaced": 9,
     "nr": 1,
-    "pending": 3,
-    "win_pct": 10,
-    "place_pct": 20
+    "pending": 2,
+    "win_pct": 9,
+    "place_pct": 18
   },
   "super6": [
     {
@@ -560,9 +560,9 @@
   },
   "bank": {
     "start": 94.18,
-    "end": 89.17,
-    "next_stake": 0.89,
+    "end": 88.28,
+    "next_stake": 0.88,
     "season_start": 10.0,
-    "season_end": 89.17
+    "season_end": 88.28
   }
 }
