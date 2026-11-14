@@ -1,6 +1,6 @@
 {
   "date": "2026-11-14",
-  "generated": "2026-11-14T16:00:18+00:00",
+  "generated": "2026-11-14T16:30:17+00:00",
   "score": {
     "picks": 16,
     "settled": 12,
@@ -378,9 +378,9 @@
     }
   ],
   "strings": {
-    "settled": 12,
+    "settled": 13,
     "win_pct": "0%",
-    "place_pct": "33%"
+    "place_pct": "31%"
   },
   "outsiders": [
     {
@@ -634,26 +634,26 @@
       "string": "1st",
       "stars": 4,
       "odds": "12/1",
-      "sp": "12/1",
-      "sp_dec": 13.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "10/1",
+      "sp_dec": 11.0,
+      "pos": 8,
+      "res": "UNPL",
       "lost_to": "Gypsy Sky",
       "stake": 0.86,
-      "ret": null,
-      "bank_after": 86.05
+      "ret": 0.0,
+      "bank_after": 85.19
     }
   ],
   "outsider_score": {
     "strings": 16,
-    "settled": 12,
+    "settled": 13,
     "won": 0,
     "placed": 4,
-    "unplaced": 8,
+    "unplaced": 9,
     "nr": 3,
-    "pending": 1,
+    "pending": 0,
     "win_pct": 0,
-    "place_pct": 33
+    "place_pct": 31
   },
   "super6": [
     {
@@ -728,16 +728,16 @@
       "trainer": "D Killahena & G McPherson",
       "stars": 4,
       "odds": "12/1",
-      "sp": "12/1",
-      "sp_dec": 13.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "10/1",
+      "sp_dec": 11.0,
+      "pos": 8,
+      "res": "UNPL",
       "score": 10
     }
   ],
   "super6_score": {
     "listed": 6,
-    "settled": 3,
+    "settled": 4,
     "won": 0,
     "placed": 0,
     "win_pct": 0,
@@ -745,9 +745,9 @@
   },
   "bank": {
     "start": 86.52,
-    "end": 86.05,
-    "next_stake": 0.86,
+    "end": 85.19,
+    "next_stake": 0.85,
     "season_start": 10.0,
-    "season_end": 86.05
+    "season_end": 85.19
   }
 }
