@@ -1,19 +1,28 @@
 {
   "date": "2026-11-14",
-  "generated": "2026-11-14T15:30:17+00:00",
+  "generated": "2026-11-14T16:00:18+00:00",
   "score": {
     "picks": 16,
-    "settled": 11,
+    "settled": 12,
     "won": 3,
     "placed": 3,
-    "unplaced": 5,
+    "unplaced": 6,
     "nr": 4,
     "void": 0,
-    "pending": 1,
-    "win_pct": 27,
-    "place_pct": 55
+    "pending": 0,
+    "win_pct": 25,
+    "place_pct": 50
   },
   "trainers": [
+    {
+      "name": "Jamie and Josh Moore",
+      "w14": "22.2%",
+      "p14": "55.6%",
+      "w": 0,
+      "p": 1,
+      "u": 2,
+      "n": 3
+    },
     {
       "name": "Nicky Richards",
       "w14": "33.3%",
@@ -36,15 +45,6 @@
       "name": "Jamie Snowden",
       "w14": "42.3%",
       "p14": "80.8%",
-      "w": 0,
-      "p": 1,
-      "u": 1,
-      "n": 2
-    },
-    {
-      "name": "Jamie and Josh Moore",
-      "w14": "22.2%",
-      "p14": "55.6%",
       "w": 0,
       "p": 1,
       "u": 1,
@@ -81,10 +81,10 @@
   "stars": [
     {
       "stars": 5,
-      "n": 3,
+      "n": 4,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "33%"
+      "place_pct": "25%"
     },
     {
       "stars": 4,
@@ -111,10 +111,10 @@
     },
     {
       "label": "2/1–5/1",
-      "n": 5,
+      "n": 6,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "40%"
+      "place_pct": "33%"
     },
     {
       "label": "5/1–10/1",
@@ -141,10 +141,10 @@
     },
     {
       "label": "mid (9–12)",
-      "n": 2,
+      "n": 3,
       "w": 1,
-      "win_pct": "50%",
-      "place_pct": "100%"
+      "win_pct": "33%",
+      "place_pct": "67%"
     }
   ],
   "picks": [
@@ -368,19 +368,19 @@
       "trainer": "Jamie & Josh Moore",
       "stars": 5,
       "odds": "5/1",
-      "sp": "5/1",
-      "sp_dec": 6.0,
-      "pos": 0,
-      "res": "?",
-      "stake": 0.88,
-      "ret": null,
-      "bank_after": 87.8
+      "sp": "10/3",
+      "sp_dec": 4.333333333333334,
+      "pos": 6,
+      "res": "UNPL",
+      "stake": 0.87,
+      "ret": 0.0,
+      "bank_after": 86.05
     }
   ],
   "strings": {
-    "settled": 11,
+    "settled": 12,
     "win_pct": "0%",
-    "place_pct": "36%"
+    "place_pct": "33%"
   },
   "outsiders": [
     {
@@ -617,14 +617,14 @@
       "string": "1st",
       "stars": 3,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 4,
+      "res": "UNPL",
       "lost_to": "Grand Conqueror",
       "stake": 0.88,
-      "ret": null,
-      "bank_after": 87.8
+      "ret": 0.0,
+      "bank_after": 86.92
     },
     {
       "time": "16:00",
@@ -639,21 +639,21 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Gypsy Sky",
-      "stake": 0.88,
+      "stake": 0.86,
       "ret": null,
-      "bank_after": 87.8
+      "bank_after": 86.05
     }
   ],
   "outsider_score": {
     "strings": 16,
-    "settled": 11,
+    "settled": 12,
     "won": 0,
     "placed": 4,
-    "unplaced": 7,
+    "unplaced": 8,
     "nr": 3,
-    "pending": 2,
+    "pending": 1,
     "win_pct": 0,
-    "place_pct": 36
+    "place_pct": 33
   },
   "super6": [
     {
@@ -715,10 +715,10 @@
       "trainer": "C E Longsdon",
       "stars": 3,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 4,
+      "res": "UNPL",
       "score": 6
     },
     {
@@ -737,7 +737,7 @@
   ],
   "super6_score": {
     "listed": 6,
-    "settled": 2,
+    "settled": 3,
     "won": 0,
     "placed": 0,
     "win_pct": 0,
@@ -745,9 +745,9 @@
   },
   "bank": {
     "start": 86.52,
-    "end": 87.8,
-    "next_stake": 0.88,
+    "end": 86.05,
+    "next_stake": 0.86,
     "season_start": 10.0,
-    "season_end": 87.8
+    "season_end": 86.05
   }
 }
