@@ -1,17 +1,17 @@
 {
   "date": "2026-11-14",
-  "generated": "2026-11-14T14:00:16+00:00",
+  "generated": "2026-11-14T14:30:18+00:00",
   "score": {
     "picks": 16,
-    "settled": 4,
-    "won": 2,
-    "placed": 1,
+    "settled": 6,
+    "won": 3,
+    "placed": 2,
     "unplaced": 1,
     "nr": 4,
     "void": 0,
-    "pending": 8,
+    "pending": 6,
     "win_pct": 50,
-    "place_pct": 75
+    "place_pct": 83
   },
   "trainers": [
     {
@@ -49,6 +49,24 @@
       "p": 0,
       "u": 0,
       "n": 1
+    },
+    {
+      "name": "Paul Nolan",
+      "w14": "17.2%",
+      "p14": "34.5%",
+      "w": 1,
+      "p": 0,
+      "u": 0,
+      "n": 1
+    },
+    {
+      "name": "Jamie Snowden",
+      "w14": "42.3%",
+      "p14": "80.8%",
+      "w": 0,
+      "p": 1,
+      "u": 0,
+      "n": 1
     }
   ],
   "stars": [
@@ -61,16 +79,16 @@
     },
     {
       "stars": 4,
-      "n": 1,
-      "w": 1,
+      "n": 2,
+      "w": 2,
       "win_pct": "100%",
       "place_pct": "100%"
     },
     {
       "stars": 3,
-      "n": 1,
+      "n": 2,
       "w": 1,
-      "win_pct": "100%",
+      "win_pct": "50%",
       "place_pct": "100%"
     }
   ],
@@ -91,19 +109,33 @@
     },
     {
       "label": "5/1–10/1",
-      "n": 1,
-      "w": 1,
+      "n": 2,
+      "w": 2,
       "win_pct": "100%",
+      "place_pct": "100%"
+    },
+    {
+      "label": "10/1+",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
       "place_pct": "100%"
     }
   ],
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 4,
+      "n": 5,
       "w": 2,
-      "win_pct": "50%",
-      "place_pct": "75%"
+      "win_pct": "40%",
+      "place_pct": "80%"
+    },
+    {
+      "label": "mid (9–12)",
+      "n": 1,
+      "w": 1,
+      "win_pct": "100%",
+      "place_pct": "100%"
     }
   ],
   "picks": [
@@ -210,13 +242,13 @@
       "trainer": "P Nolan",
       "stars": 4,
       "odds": "11/2",
-      "sp": "11/2",
-      "sp_dec": 6.5,
-      "pos": 0,
-      "res": "?",
+      "sp": "17/2",
+      "sp_dec": 9.5,
+      "pos": 1,
+      "res": "WIN",
       "stake": 0.88,
-      "ret": null,
-      "bank_after": 88.49
+      "ret": 9.5,
+      "bank_after": 97.11
     },
     {
       "time": "14:20",
@@ -225,13 +257,13 @@
       "trainer": "Jamie Snowden",
       "stars": 3,
       "odds": "8/1",
-      "sp": "8/1",
-      "sp_dec": 9.0,
-      "pos": 0,
-      "res": "?",
-      "stake": 0.88,
-      "ret": null,
-      "bank_after": 88.49
+      "sp": "12/1",
+      "sp_dec": 13.0,
+      "pos": 3,
+      "res": "PLACE",
+      "stake": 0.97,
+      "ret": 0.0,
+      "bank_after": 96.14
     },
     {
       "time": "14:25",
@@ -240,13 +272,13 @@
       "trainer": "Jamie Snowden",
       "stars": 3,
       "odds": "11/4",
-      "sp": "11/4",
-      "sp_dec": 3.75,
+      "sp": "7/2",
+      "sp_dec": 4.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.88,
+      "stake": 0.95,
       "ret": null,
-      "bank_after": 88.49
+      "bank_after": 95.17
     },
     {
       "time": "14:35",
@@ -259,9 +291,9 @@
       "sp_dec": 6.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.88,
+      "stake": 0.95,
       "ret": null,
-      "bank_after": 88.49
+      "bank_after": 95.17
     },
     {
       "time": "15:00",
@@ -274,9 +306,9 @@
       "sp_dec": 6.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.88,
+      "stake": 0.95,
       "ret": null,
-      "bank_after": 88.49
+      "bank_after": 95.17
     },
     {
       "time": "15:05",
@@ -289,9 +321,9 @@
       "sp_dec": 3.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.88,
+      "stake": 0.95,
       "ret": null,
-      "bank_after": 88.49
+      "bank_after": 95.17
     },
     {
       "time": "15:10",
@@ -304,9 +336,9 @@
       "sp_dec": 6.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.88,
+      "stake": 0.95,
       "ret": null,
-      "bank_after": 88.49
+      "bank_after": 95.17
     },
     {
       "time": "15:30",
@@ -331,15 +363,15 @@
       "sp_dec": 6.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.88,
+      "stake": 0.95,
       "ret": null,
-      "bank_after": 88.49
+      "bank_after": 95.17
     }
   ],
   "strings": {
-    "settled": 7,
+    "settled": 8,
     "win_pct": "0%",
-    "place_pct": "43%"
+    "place_pct": "38%"
   },
   "outsiders": [
     {
@@ -479,7 +511,7 @@
       "odds": "16/1",
       "sp": "28/1",
       "sp_dec": 29.0,
-      "pos": 0,
+      "pos": 11,
       "res": "UNPL",
       "lost_to": "Savanna Storm",
       "stake": 0.83,
@@ -508,14 +540,14 @@
       "string": "1st",
       "stars": 2,
       "odds": "20/1",
-      "sp": "20/1",
-      "sp_dec": 21.0,
+      "sp": "15/2",
+      "sp_dec": 8.5,
       "pos": 0,
-      "res": "?",
+      "res": "UNPL",
       "lost_to": "Torneo",
-      "stake": 0.88,
-      "ret": null,
-      "bank_after": 88.49
+      "stake": 0.97,
+      "ret": 0.0,
+      "bank_after": 95.17
     },
     {
       "time": "14:55",
@@ -530,9 +562,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Ifiwerearichman",
-      "stake": 0.88,
+      "stake": 0.95,
       "ret": null,
-      "bank_after": 88.49
+      "bank_after": 95.17
     },
     {
       "time": "14:55",
@@ -547,9 +579,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Ifiwerearichman",
-      "stake": 0.88,
+      "stake": 0.95,
       "ret": null,
-      "bank_after": 88.49
+      "bank_after": 95.17
     },
     {
       "time": "15:05",
@@ -564,9 +596,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Centurion's Sister",
-      "stake": 0.88,
+      "stake": 0.95,
       "ret": null,
-      "bank_after": 88.49
+      "bank_after": 95.17
     },
     {
       "time": "15:30",
@@ -581,9 +613,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Grand Conqueror",
-      "stake": 0.88,
+      "stake": 0.95,
       "ret": null,
-      "bank_after": 88.49
+      "bank_after": 95.17
     },
     {
       "time": "16:00",
@@ -598,21 +630,21 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Gypsy Sky",
-      "stake": 0.88,
+      "stake": 0.95,
       "ret": null,
-      "bank_after": 88.49
+      "bank_after": 95.17
     }
   ],
   "outsider_score": {
     "strings": 16,
-    "settled": 7,
+    "settled": 8,
     "won": 0,
     "placed": 3,
-    "unplaced": 4,
+    "unplaced": 5,
     "nr": 3,
-    "pending": 6,
+    "pending": 5,
     "win_pct": 0,
-    "place_pct": 43
+    "place_pct": 38
   },
   "super6": [
     {
@@ -697,9 +729,9 @@
   "super6_score": null,
   "bank": {
     "start": 86.52,
-    "end": 88.49,
-    "next_stake": 0.88,
+    "end": 95.17,
+    "next_stake": 0.95,
     "season_start": 10.0,
-    "season_end": 88.49
+    "season_end": 95.17
   }
 }
