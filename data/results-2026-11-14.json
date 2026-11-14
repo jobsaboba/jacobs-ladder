@@ -1,17 +1,17 @@
 {
   "date": "2026-11-14",
-  "generated": "2026-11-14T13:00:19+00:00",
+  "generated": "2026-11-14T13:30:16+00:00",
   "score": {
     "picks": 16,
-    "settled": 1,
-    "won": 0,
+    "settled": 3,
+    "won": 1,
     "placed": 1,
-    "unplaced": 0,
+    "unplaced": 1,
     "nr": 4,
     "void": 0,
-    "pending": 11,
-    "win_pct": 0,
-    "place_pct": 100
+    "pending": 9,
+    "win_pct": 33,
+    "place_pct": 67
   },
   "trainers": [
     {
@@ -22,33 +22,65 @@
       "p": 1,
       "u": 0,
       "n": 1
+    },
+    {
+      "name": "Harry Derham",
+      "w14": "25.0%",
+      "p14": "45.0%",
+      "w": 1,
+      "p": 0,
+      "u": 0,
+      "n": 1
+    },
+    {
+      "name": "Lucinda Russell",
+      "w14": "21.7%",
+      "p14": "65.2%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
     }
   ],
   "stars": [
     {
       "stars": 5,
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
+      "place_pct": "50%"
+    },
+    {
+      "stars": 4,
+      "n": 1,
+      "w": 1,
+      "win_pct": "100%",
       "place_pct": "100%"
     }
   ],
   "odds": [
     {
-      "label": "2/1–5/1",
+      "label": "evens–2/1",
       "n": 1,
+      "w": 1,
+      "win_pct": "100%",
+      "place_pct": "100%"
+    },
+    {
+      "label": "2/1–5/1",
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "100%"
+      "place_pct": "50%"
     }
   ],
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 1,
-      "w": 0,
-      "win_pct": "0%",
-      "place_pct": "100%"
+      "n": 3,
+      "w": 1,
+      "win_pct": "33%",
+      "place_pct": "67%"
     }
   ],
   "picks": [
@@ -110,13 +142,13 @@
       "trainer": "Harry Derham",
       "stars": 4,
       "odds": "15/8",
-      "sp": "15/8",
-      "sp_dec": 2.875,
-      "pos": 0,
-      "res": "?",
-      "stake": 0.83,
-      "ret": null,
-      "bank_after": 83.09
+      "sp": "11/8",
+      "sp_dec": 2.375,
+      "pos": 1,
+      "res": "WIN",
+      "stake": 0.82,
+      "ret": 2.38,
+      "bank_after": 83.82
     },
     {
       "time": "13:20",
@@ -125,13 +157,13 @@
       "trainer": "L Russell & M Scudamore",
       "stars": 5,
       "odds": "5/1",
-      "sp": "5/1",
-      "sp_dec": 6.0,
-      "pos": 0,
-      "res": "?",
-      "stake": 0.83,
-      "ret": null,
-      "bank_after": 83.09
+      "sp": "2/1",
+      "sp_dec": 3.0,
+      "pos": 4,
+      "res": "UNPL",
+      "stake": 0.84,
+      "ret": 0.0,
+      "bank_after": 82.98
     },
     {
       "time": "13:50",
@@ -146,7 +178,7 @@
       "res": "?",
       "stake": 0.83,
       "ret": null,
-      "bank_after": 83.09
+      "bank_after": 82.98
     },
     {
       "time": "14:07",
@@ -161,7 +193,7 @@
       "res": "?",
       "stake": 0.83,
       "ret": null,
-      "bank_after": 83.09
+      "bank_after": 82.98
     },
     {
       "time": "14:20",
@@ -176,7 +208,7 @@
       "res": "?",
       "stake": 0.83,
       "ret": null,
-      "bank_after": 83.09
+      "bank_after": 82.98
     },
     {
       "time": "14:25",
@@ -191,7 +223,7 @@
       "res": "?",
       "stake": 0.83,
       "ret": null,
-      "bank_after": 83.09
+      "bank_after": 82.98
     },
     {
       "time": "14:35",
@@ -206,7 +238,7 @@
       "res": "?",
       "stake": 0.83,
       "ret": null,
-      "bank_after": 83.09
+      "bank_after": 82.98
     },
     {
       "time": "15:00",
@@ -221,7 +253,7 @@
       "res": "?",
       "stake": 0.83,
       "ret": null,
-      "bank_after": 83.09
+      "bank_after": 82.98
     },
     {
       "time": "15:05",
@@ -236,7 +268,7 @@
       "res": "?",
       "stake": 0.83,
       "ret": null,
-      "bank_after": 83.09
+      "bank_after": 82.98
     },
     {
       "time": "15:10",
@@ -251,7 +283,7 @@
       "res": "?",
       "stake": 0.83,
       "ret": null,
-      "bank_after": 83.09
+      "bank_after": 82.98
     },
     {
       "time": "15:30",
@@ -278,13 +310,13 @@
       "res": "?",
       "stake": 0.83,
       "ret": null,
-      "bank_after": 83.09
+      "bank_after": 82.98
     }
   ],
   "strings": {
-    "settled": 4,
+    "settled": 5,
     "win_pct": "0%",
-    "place_pct": "25%"
+    "place_pct": "40%"
   },
   "outsiders": [
     {
@@ -362,12 +394,12 @@
       "odds": "10/3",
       "sp": "4/1",
       "sp_dec": 5.0,
-      "pos": 0,
-      "res": "?",
+      "pos": 2,
+      "res": "PLACE",
       "lost_to": "Le Tiep's Sacre",
       "stake": 0.83,
-      "ret": null,
-      "bank_after": 83.09
+      "ret": 0.0,
+      "bank_after": 82.26
     },
     {
       "time": "13:10",
@@ -412,7 +444,7 @@
       "lost_to": "Savanna Storm",
       "stake": 0.83,
       "ret": null,
-      "bank_after": 83.09
+      "bank_after": 82.98
     },
     {
       "time": "13:50",
@@ -429,7 +461,7 @@
       "lost_to": "Savanna Storm",
       "stake": 0.83,
       "ret": null,
-      "bank_after": 83.09
+      "bank_after": 82.98
     },
     {
       "time": "14:00",
@@ -460,7 +492,7 @@
       "lost_to": "Torneo",
       "stake": 0.83,
       "ret": null,
-      "bank_after": 83.09
+      "bank_after": 82.98
     },
     {
       "time": "14:55",
@@ -477,7 +509,7 @@
       "lost_to": "Ifiwerearichman",
       "stake": 0.83,
       "ret": null,
-      "bank_after": 83.09
+      "bank_after": 82.98
     },
     {
       "time": "14:55",
@@ -494,7 +526,7 @@
       "lost_to": "Ifiwerearichman",
       "stake": 0.83,
       "ret": null,
-      "bank_after": 83.09
+      "bank_after": 82.98
     },
     {
       "time": "15:05",
@@ -511,7 +543,7 @@
       "lost_to": "Centurion's Sister",
       "stake": 0.83,
       "ret": null,
-      "bank_after": 83.09
+      "bank_after": 82.98
     },
     {
       "time": "15:30",
@@ -528,7 +560,7 @@
       "lost_to": "Grand Conqueror",
       "stake": 0.83,
       "ret": null,
-      "bank_after": 83.09
+      "bank_after": 82.98
     },
     {
       "time": "16:00",
@@ -545,19 +577,19 @@
       "lost_to": "Gypsy Sky",
       "stake": 0.83,
       "ret": null,
-      "bank_after": 83.09
+      "bank_after": 82.98
     }
   ],
   "outsider_score": {
     "strings": 16,
-    "settled": 4,
+    "settled": 5,
     "won": 0,
-    "placed": 1,
+    "placed": 2,
     "unplaced": 3,
     "nr": 3,
-    "pending": 9,
+    "pending": 8,
     "win_pct": 0,
-    "place_pct": 25
+    "place_pct": 40
   },
   "super6": [
     {
@@ -642,9 +674,9 @@
   "super6_score": null,
   "bank": {
     "start": 86.52,
-    "end": 83.09,
+    "end": 82.98,
     "next_stake": 0.83,
     "season_start": 10.0,
-    "season_end": 83.09
+    "season_end": 82.98
   }
 }
