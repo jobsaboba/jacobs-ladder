@@ -1,17 +1,17 @@
 {
   "date": "2026-11-15",
-  "generated": "2026-11-15T15:30:10+00:00",
+  "generated": "2026-11-15T16:00:10+00:00",
   "score": {
     "picks": 7,
-    "settled": 6,
+    "settled": 7,
     "won": 0,
-    "placed": 2,
+    "placed": 3,
     "unplaced": 4,
     "nr": 0,
     "void": 0,
-    "pending": 1,
+    "pending": 0,
     "win_pct": 0,
-    "place_pct": 33
+    "place_pct": 43
   },
   "trainers": [
     {
@@ -49,6 +49,15 @@
       "p": 0,
       "u": 1,
       "n": 1
+    },
+    {
+      "name": "Jamie Snowden",
+      "w14": "42.3%",
+      "p14": "76.9%",
+      "w": 0,
+      "p": 1,
+      "u": 0,
+      "n": 1
     }
   ],
   "stars": [
@@ -61,10 +70,10 @@
     },
     {
       "stars": 4,
-      "n": 4,
+      "n": 5,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "50%"
+      "place_pct": "60%"
     },
     {
       "stars": 3,
@@ -84,10 +93,10 @@
     },
     {
       "label": "2/1–5/1",
-      "n": 2,
+      "n": 3,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "50%"
+      "place_pct": "67%"
     },
     {
       "label": "5/1–10/1",
@@ -107,10 +116,10 @@
     },
     {
       "label": "mid (9–12)",
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "0%"
+      "place_pct": "50%"
     }
   ],
   "picks": [
@@ -211,19 +220,19 @@
       "trainer": "Jamie Snowden",
       "stars": 4,
       "odds": "10/3",
-      "sp": "10/3",
-      "sp_dec": 4.333333333333334,
-      "pos": 0,
-      "res": "?",
+      "sp": "9/2",
+      "sp_dec": 5.5,
+      "pos": 2,
+      "res": "PLACE",
       "stake": 0.76,
-      "ret": null,
-      "bank_after": 76.27
+      "ret": 0.0,
+      "bank_after": 75.51
     }
   ],
   "strings": {
-    "settled": 6,
+    "settled": 7,
     "win_pct": "0%",
-    "place_pct": "17%"
+    "place_pct": "14%"
   },
   "outsiders": [
     {
@@ -375,26 +384,26 @@
       "string": "1st",
       "stars": 2,
       "odds": "25/1",
-      "sp": "25/1",
-      "sp_dec": 26.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "50/1",
+      "sp_dec": 51.0,
+      "pos": 5,
+      "res": "UNPL",
       "lost_to": "Cameron De Fiacre",
       "stake": 0.76,
-      "ret": null,
-      "bank_after": 76.27
+      "ret": 0.0,
+      "bank_after": 74.75
     }
   ],
   "outsider_score": {
     "strings": 10,
-    "settled": 6,
+    "settled": 7,
     "won": 0,
     "placed": 1,
-    "unplaced": 5,
+    "unplaced": 6,
     "nr": 3,
-    "pending": 1,
+    "pending": 0,
     "win_pct": 0,
-    "place_pct": 17
+    "place_pct": 14
   },
   "super6": [
     {
@@ -447,9 +456,9 @@
   },
   "bank": {
     "start": 85.19,
-    "end": 76.27,
-    "next_stake": 0.76,
+    "end": 74.75,
+    "next_stake": 0.75,
     "season_start": 10.0,
-    "season_end": 76.27
+    "season_end": 74.75
   }
 }
