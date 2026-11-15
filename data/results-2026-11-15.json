@@ -1,6 +1,6 @@
 {
   "date": "2026-11-15",
-  "generated": "2026-11-15T13:00:10+00:00",
+  "generated": "2026-11-15T13:30:09+00:00",
   "score": {
     "picks": 7,
     "settled": 2,
@@ -68,7 +68,14 @@
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 2,
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
+    {
+      "label": "mid (9–12)",
+      "n": 1,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -112,8 +119,8 @@
       "trainer": "B Pauling",
       "stars": 4,
       "odds": "7/2",
-      "sp": "7/2",
-      "sp_dec": 4.5,
+      "sp": "17/2",
+      "sp_dec": 9.5,
       "pos": 0,
       "res": "?",
       "stake": 0.82,
@@ -214,7 +221,7 @@
       "odds": "100/1",
       "sp": "150/1",
       "sp_dec": 151.0,
-      "pos": 0,
+      "pos": 10,
       "res": "UNPL",
       "lost_to": "stablemate Mourne Crystal"
     },
@@ -228,7 +235,7 @@
       "odds": "100/1",
       "sp": "125/1",
       "sp_dec": 126.0,
-      "pos": 0,
+      "pos": 9,
       "res": "UNPL",
       "lost_to": "Mourne Crystal",
       "stake": 0.83,
@@ -246,7 +253,7 @@
       "sp": "11/1",
       "sp_dec": 12.0,
       "pos": 0,
-      "res": "?",
+      "res": "NR",
       "lost_to": "stablemate Four Springs"
     },
     {
@@ -352,8 +359,8 @@
     "won": 0,
     "placed": 0,
     "unplaced": 3,
-    "nr": 2,
-    "pending": 5,
+    "nr": 3,
+    "pending": 4,
     "win_pct": 0,
     "place_pct": 0
   },
