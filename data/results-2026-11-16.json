@@ -1,6 +1,6 @@
 {
   "date": "2026-11-16",
-  "generated": "2026-11-16T17:30:12+00:00",
+  "generated": "2026-11-16T18:00:09+00:00",
   "score": {
     "picks": 9,
     "settled": 6,
@@ -208,9 +208,9 @@
       "sp_dec": 4.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.78,
+      "stake": 0.77,
       "ret": null,
-      "bank_after": 78.33
+      "bank_after": 76.77
     },
     {
       "time": "20:00",
@@ -223,9 +223,9 @@
       "sp_dec": 4.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.78,
+      "stake": 0.77,
       "ret": null,
-      "bank_after": 78.33
+      "bank_after": 76.77
     },
     {
       "time": "20:30",
@@ -238,15 +238,15 @@
       "sp_dec": 2.625,
       "pos": 0,
       "res": "?",
-      "stake": 0.78,
+      "stake": 0.77,
       "ret": null,
-      "bank_after": 78.33
+      "bank_after": 76.77
     }
   ],
   "strings": {
-    "settled": 4,
+    "settled": 6,
     "win_pct": "0%",
-    "place_pct": "0%"
+    "place_pct": "17%"
   },
   "outsiders": [
     {
@@ -322,14 +322,14 @@
       "string": "1st",
       "stars": 3,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "33/1",
+      "sp_dec": 34.0,
+      "pos": 2,
+      "res": "PLACE",
       "lost_to": "Masai Land",
       "stake": 0.78,
-      "ret": null,
-      "bank_after": 78.33
+      "ret": 0.0,
+      "bank_after": 77.55
     },
     {
       "time": "17:30",
@@ -339,14 +339,14 @@
       "string": "1st",
       "stars": 2,
       "odds": "150/1",
-      "sp": "150/1",
-      "sp_dec": 151.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "250/1",
+      "sp_dec": 251.0,
+      "pos": 9,
+      "res": "UNPL",
       "lost_to": "Masai Land",
       "stake": 0.78,
-      "ret": null,
-      "bank_after": 78.33
+      "ret": 0.0,
+      "bank_after": 76.77
     },
     {
       "time": "18:30",
@@ -361,9 +361,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Rosenpur",
-      "stake": 0.78,
+      "stake": 0.77,
       "ret": null,
-      "bank_after": 78.33
+      "bank_after": 76.77
     },
     {
       "time": "20:00",
@@ -378,21 +378,21 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Sea The Light",
-      "stake": 0.78,
+      "stake": 0.77,
       "ret": null,
-      "bank_after": 78.33
+      "bank_after": 76.77
     }
   ],
   "outsider_score": {
     "strings": 8,
-    "settled": 4,
+    "settled": 6,
     "won": 0,
-    "placed": 0,
-    "unplaced": 4,
+    "placed": 1,
+    "unplaced": 5,
     "nr": 0,
-    "pending": 4,
+    "pending": 2,
     "win_pct": 0,
-    "place_pct": 0
+    "place_pct": 17
   },
   "super6": [
     {
@@ -415,10 +415,10 @@
       "trainer": "W J Haggas",
       "stars": 3,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "33/1",
+      "sp_dec": 34.0,
+      "pos": 2,
+      "res": "PLACE",
       "score": 8
     },
     {
@@ -450,17 +450,17 @@
   ],
   "super6_score": {
     "listed": 4,
-    "settled": 1,
+    "settled": 2,
     "won": 0,
-    "placed": 0,
+    "placed": 1,
     "win_pct": 0,
-    "place_pct": 0
+    "place_pct": 50
   },
   "bank": {
     "start": 74.75,
-    "end": 78.33,
-    "next_stake": 0.78,
+    "end": 76.77,
+    "next_stake": 0.77,
     "season_start": 10.0,
-    "season_end": 78.33
+    "season_end": 76.77
   }
 }
