@@ -1,16 +1,16 @@
 {
   "date": "2026-11-16",
-  "generated": "2026-11-16T13:00:09+00:00",
+  "generated": "2026-11-16T13:30:09+00:00",
   "score": {
     "picks": 9,
-    "settled": 1,
+    "settled": 2,
     "won": 1,
-    "placed": 0,
+    "placed": 1,
     "unplaced": 0,
     "nr": 0,
     "void": 0,
-    "pending": 8,
-    "win_pct": 100,
+    "pending": 7,
+    "win_pct": 50,
     "place_pct": 100
   },
   "trainers": [
@@ -22,14 +22,23 @@
       "p": 0,
       "u": 0,
       "n": 1
+    },
+    {
+      "name": "Jamie and Josh Moore",
+      "w14": "17.9%",
+      "p14": "53.6%",
+      "w": 0,
+      "p": 1,
+      "u": 0,
+      "n": 1
     }
   ],
   "stars": [
     {
       "stars": 4,
-      "n": 1,
+      "n": 2,
       "w": 1,
-      "win_pct": "100%",
+      "win_pct": "50%",
       "place_pct": "100%"
     }
   ],
@@ -40,6 +49,13 @@
       "w": 1,
       "win_pct": "100%",
       "place_pct": "100%"
+    },
+    {
+      "label": "2/1–5/1",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "100%"
     }
   ],
   "fields": [
@@ -48,6 +64,13 @@
       "n": 1,
       "w": 1,
       "win_pct": "100%",
+      "place_pct": "100%"
+    },
+    {
+      "label": "mid (9–12)",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
       "place_pct": "100%"
     }
   ],
@@ -74,13 +97,13 @@
       "trainer": "Jamie & Josh Moore",
       "stars": 4,
       "odds": "4/1",
-      "sp": "4/1",
-      "sp_dec": 5.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "9/2",
+      "sp_dec": 5.5,
+      "pos": 2,
+      "res": "PLACE",
       "stake": 0.77,
-      "ret": null,
-      "bank_after": 76.5
+      "ret": 0.0,
+      "bank_after": 75.73
     },
     {
       "time": "13:45",
@@ -93,9 +116,9 @@
       "sp_dec": 4.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.77,
+      "stake": 0.76,
       "ret": null,
-      "bank_after": 76.5
+      "bank_after": 75.73
     },
     {
       "time": "14:15",
@@ -108,9 +131,9 @@
       "sp_dec": 6.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.77,
+      "stake": 0.76,
       "ret": null,
-      "bank_after": 76.5
+      "bank_after": 75.73
     },
     {
       "time": "14:45",
@@ -123,9 +146,9 @@
       "sp_dec": 6.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.77,
+      "stake": 0.76,
       "ret": null,
-      "bank_after": 76.5
+      "bank_after": 75.73
     },
     {
       "time": "15:45",
@@ -138,9 +161,9 @@
       "sp_dec": 6.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.77,
+      "stake": 0.76,
       "ret": null,
-      "bank_after": 76.5
+      "bank_after": 75.73
     },
     {
       "time": "19:00",
@@ -153,9 +176,9 @@
       "sp_dec": 4.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.77,
+      "stake": 0.76,
       "ret": null,
-      "bank_after": 76.5
+      "bank_after": 75.73
     },
     {
       "time": "20:00",
@@ -168,9 +191,9 @@
       "sp_dec": 4.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.77,
+      "stake": 0.76,
       "ret": null,
-      "bank_after": 76.5
+      "bank_after": 75.73
     },
     {
       "time": "20:30",
@@ -183,12 +206,16 @@
       "sp_dec": 2.625,
       "pos": 0,
       "res": "?",
-      "stake": 0.77,
+      "stake": 0.76,
       "ret": null,
-      "bank_after": 76.5
+      "bank_after": 75.73
     }
   ],
-  "strings": null,
+  "strings": {
+    "settled": 1,
+    "win_pct": "0%",
+    "place_pct": "0%"
+  },
   "outsiders": [
     {
       "time": "13:15",
@@ -198,10 +225,10 @@
       "string": "2nd",
       "stars": 3,
       "odds": "20/1",
-      "sp": "20/1",
-      "sp_dec": 21.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "50/1",
+      "sp_dec": 51.0,
+      "pos": 9,
+      "res": "UNPL",
       "lost_to": "stablemate Rip Wheeler"
     },
     {
@@ -217,9 +244,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Tune In A Box",
-      "stake": 0.77,
+      "stake": 0.76,
       "ret": null,
-      "bank_after": 76.5
+      "bank_after": 75.73
     },
     {
       "time": "15:45",
@@ -234,9 +261,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Kotari",
-      "stake": 0.77,
+      "stake": 0.76,
       "ret": null,
-      "bank_after": 76.5
+      "bank_after": 75.73
     },
     {
       "time": "17:00",
@@ -251,9 +278,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Peacock's Way",
-      "stake": 0.77,
+      "stake": 0.76,
       "ret": null,
-      "bank_after": 76.5
+      "bank_after": 75.73
     },
     {
       "time": "17:30",
@@ -268,9 +295,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Masai Land",
-      "stake": 0.77,
+      "stake": 0.76,
       "ret": null,
-      "bank_after": 76.5
+      "bank_after": 75.73
     },
     {
       "time": "17:30",
@@ -285,9 +312,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Masai Land",
-      "stake": 0.77,
+      "stake": 0.76,
       "ret": null,
-      "bank_after": 76.5
+      "bank_after": 75.73
     },
     {
       "time": "18:30",
@@ -302,9 +329,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Rosenpur",
-      "stake": 0.77,
+      "stake": 0.76,
       "ret": null,
-      "bank_after": 76.5
+      "bank_after": 75.73
     },
     {
       "time": "20:00",
@@ -319,21 +346,21 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Sea The Light",
-      "stake": 0.77,
+      "stake": 0.76,
       "ret": null,
-      "bank_after": 76.5
+      "bank_after": 75.73
     }
   ],
   "outsider_score": {
     "strings": 8,
-    "settled": 0,
+    "settled": 1,
     "won": 0,
     "placed": 0,
-    "unplaced": 0,
+    "unplaced": 1,
     "nr": 0,
-    "pending": 8,
-    "win_pct": null,
-    "place_pct": null
+    "pending": 7,
+    "win_pct": 0,
+    "place_pct": 0
   },
   "super6": [
     {
@@ -392,9 +419,9 @@
   "super6_score": null,
   "bank": {
     "start": 74.75,
-    "end": 76.5,
-    "next_stake": 0.77,
+    "end": 75.73,
+    "next_stake": 0.76,
     "season_start": 10.0,
-    "season_end": 76.5
+    "season_end": 75.73
   }
 }
