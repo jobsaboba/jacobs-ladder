@@ -1,17 +1,17 @@
 {
   "date": "2026-11-16",
-  "generated": "2026-11-16T14:00:15+00:00",
+  "generated": "2026-11-16T14:30:09+00:00",
   "score": {
     "picks": 9,
-    "settled": 3,
+    "settled": 4,
     "won": 1,
     "placed": 1,
-    "unplaced": 1,
+    "unplaced": 2,
     "nr": 0,
     "void": 0,
-    "pending": 6,
-    "win_pct": 33,
-    "place_pct": 67
+    "pending": 5,
+    "win_pct": 25,
+    "place_pct": 50
   },
   "trainers": [
     {
@@ -31,15 +31,24 @@
       "p": 0,
       "u": 0,
       "n": 1
+    },
+    {
+      "name": "Tom Lacey",
+      "w14": "35.7%",
+      "p14": "85.7%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
     }
   ],
   "stars": [
     {
       "stars": 4,
-      "n": 3,
+      "n": 4,
       "w": 1,
-      "win_pct": "33%",
-      "place_pct": "67%"
+      "win_pct": "25%",
+      "place_pct": "50%"
     }
   ],
   "odds": [
@@ -59,7 +68,7 @@
     },
     {
       "label": "5/1–10/1",
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -68,10 +77,10 @@
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 2,
+      "n": 3,
       "w": 1,
-      "win_pct": "50%",
-      "place_pct": "50%"
+      "win_pct": "33%",
+      "place_pct": "33%"
     },
     {
       "label": "mid (9–12)",
@@ -134,13 +143,13 @@
       "trainer": "T Lacey",
       "stars": 4,
       "odds": "5/1",
-      "sp": "5/1",
-      "sp_dec": 6.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "11/2",
+      "sp_dec": 6.5,
+      "pos": 5,
+      "res": "UNPL",
       "stake": 0.75,
-      "ret": null,
-      "bank_after": 74.97
+      "ret": 0.0,
+      "bank_after": 74.22
     },
     {
       "time": "14:45",
@@ -153,9 +162,9 @@
       "sp_dec": 6.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.75,
+      "stake": 0.73,
       "ret": null,
-      "bank_after": 74.97
+      "bank_after": 73.47
     },
     {
       "time": "15:45",
@@ -168,9 +177,9 @@
       "sp_dec": 6.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.75,
+      "stake": 0.73,
       "ret": null,
-      "bank_after": 74.97
+      "bank_after": 73.47
     },
     {
       "time": "19:00",
@@ -183,9 +192,9 @@
       "sp_dec": 4.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.75,
+      "stake": 0.73,
       "ret": null,
-      "bank_after": 74.97
+      "bank_after": 73.47
     },
     {
       "time": "20:00",
@@ -198,9 +207,9 @@
       "sp_dec": 4.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.75,
+      "stake": 0.73,
       "ret": null,
-      "bank_after": 74.97
+      "bank_after": 73.47
     },
     {
       "time": "20:30",
@@ -213,13 +222,13 @@
       "sp_dec": 2.625,
       "pos": 0,
       "res": "?",
-      "stake": 0.75,
+      "stake": 0.73,
       "ret": null,
-      "bank_after": 74.97
+      "bank_after": 73.47
     }
   ],
   "strings": {
-    "settled": 1,
+    "settled": 2,
     "win_pct": "0%",
     "place_pct": "0%"
   },
@@ -246,14 +255,14 @@
       "string": "1st",
       "stars": 3,
       "odds": "3/1",
-      "sp": "3/1",
-      "sp_dec": 4.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "9/2",
+      "sp_dec": 5.5,
+      "pos": 4,
+      "res": "UNPL",
       "lost_to": "Tune In A Box",
       "stake": 0.75,
-      "ret": null,
-      "bank_after": 74.97
+      "ret": 0.0,
+      "bank_after": 73.47
     },
     {
       "time": "15:45",
@@ -268,9 +277,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Kotari",
-      "stake": 0.75,
+      "stake": 0.73,
       "ret": null,
-      "bank_after": 74.97
+      "bank_after": 73.47
     },
     {
       "time": "17:00",
@@ -285,9 +294,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Peacock's Way",
-      "stake": 0.75,
+      "stake": 0.73,
       "ret": null,
-      "bank_after": 74.97
+      "bank_after": 73.47
     },
     {
       "time": "17:30",
@@ -302,9 +311,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Masai Land",
-      "stake": 0.75,
+      "stake": 0.73,
       "ret": null,
-      "bank_after": 74.97
+      "bank_after": 73.47
     },
     {
       "time": "17:30",
@@ -319,9 +328,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Masai Land",
-      "stake": 0.75,
+      "stake": 0.73,
       "ret": null,
-      "bank_after": 74.97
+      "bank_after": 73.47
     },
     {
       "time": "18:30",
@@ -336,9 +345,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Rosenpur",
-      "stake": 0.75,
+      "stake": 0.73,
       "ret": null,
-      "bank_after": 74.97
+      "bank_after": 73.47
     },
     {
       "time": "20:00",
@@ -353,19 +362,19 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Sea The Light",
-      "stake": 0.75,
+      "stake": 0.73,
       "ret": null,
-      "bank_after": 74.97
+      "bank_after": 73.47
     }
   ],
   "outsider_score": {
     "strings": 8,
-    "settled": 1,
+    "settled": 2,
     "won": 0,
     "placed": 0,
-    "unplaced": 1,
+    "unplaced": 2,
     "nr": 0,
-    "pending": 7,
+    "pending": 6,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -377,10 +386,10 @@
       "trainer": "N P Mulholland",
       "stars": 3,
       "odds": "3/1",
-      "sp": "3/1",
-      "sp_dec": 4.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "9/2",
+      "sp_dec": 5.5,
+      "pos": 4,
+      "res": "UNPL",
       "score": 6
     },
     {
@@ -423,12 +432,19 @@
       "score": 6
     }
   ],
-  "super6_score": null,
+  "super6_score": {
+    "listed": 4,
+    "settled": 1,
+    "won": 0,
+    "placed": 0,
+    "win_pct": 0,
+    "place_pct": 0
+  },
   "bank": {
     "start": 74.75,
-    "end": 74.97,
-    "next_stake": 0.75,
+    "end": 73.47,
+    "next_stake": 0.73,
     "season_start": 10.0,
-    "season_end": 74.97
+    "season_end": 73.47
   }
 }
