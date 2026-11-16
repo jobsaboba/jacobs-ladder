@@ -1,17 +1,17 @@
 {
   "date": "2026-11-16",
-  "generated": "2026-11-16T19:30:10+00:00",
+  "generated": "2026-11-16T20:30:14+00:00",
   "score": {
     "picks": 9,
-    "settled": 7,
+    "settled": 8,
     "won": 2,
-    "placed": 2,
+    "placed": 3,
     "unplaced": 3,
     "nr": 0,
     "void": 0,
-    "pending": 2,
-    "win_pct": 29,
-    "place_pct": 57
+    "pending": 1,
+    "win_pct": 25,
+    "place_pct": 62
   },
   "trainers": [
     {
@@ -22,6 +22,15 @@
       "p": 1,
       "u": 2,
       "n": 3
+    },
+    {
+      "name": "John Butler",
+      "w14": "27.3%",
+      "p14": "54.5%",
+      "w": 0,
+      "p": 2,
+      "u": 0,
+      "n": 2
     },
     {
       "name": "Charlie Longsdon",
@@ -49,15 +58,6 @@
       "p": 0,
       "u": 0,
       "n": 1
-    },
-    {
-      "name": "John Butler",
-      "w14": "27.3%",
-      "p14": "54.5%",
-      "w": 0,
-      "p": 1,
-      "u": 0,
-      "n": 1
     }
   ],
   "stars": [
@@ -70,10 +70,10 @@
     },
     {
       "stars": 3,
-      "n": 3,
+      "n": 4,
       "w": 1,
-      "win_pct": "33%",
-      "place_pct": "67%"
+      "win_pct": "25%",
+      "place_pct": "75%"
     }
   ],
   "odds": [
@@ -93,10 +93,10 @@
     },
     {
       "label": "5/1–10/1",
-      "n": 3,
+      "n": 4,
       "w": 1,
-      "win_pct": "33%",
-      "place_pct": "33%"
+      "win_pct": "25%",
+      "place_pct": "50%"
     }
   ],
   "fields": [
@@ -109,7 +109,7 @@
     },
     {
       "label": "mid (9–12)",
-      "n": 2,
+      "n": 3,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "100%"
@@ -228,13 +228,13 @@
       "trainer": "J Butler",
       "stars": 3,
       "odds": "7/2",
-      "sp": "7/2",
-      "sp_dec": 4.5,
-      "pos": 0,
-      "res": "?",
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 3,
+      "res": "PLACE",
       "stake": 0.75,
-      "ret": null,
-      "bank_after": 75.24
+      "ret": 0.0,
+      "bank_after": 74.49
     },
     {
       "time": "20:30",
@@ -247,15 +247,15 @@
       "sp_dec": 2.625,
       "pos": 0,
       "res": "?",
-      "stake": 0.75,
+      "stake": 0.74,
       "ret": null,
-      "bank_after": 75.24
+      "bank_after": 73.74
     }
   ],
   "strings": {
-    "settled": 7,
+    "settled": 8,
     "win_pct": "0%",
-    "place_pct": "14%"
+    "place_pct": "25%"
   },
   "outsiders": [
     {
@@ -382,26 +382,26 @@
       "string": "1st",
       "stars": 3,
       "odds": "20/1",
-      "sp": "20/1",
-      "sp_dec": 21.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "14/1",
+      "sp_dec": 15.0,
+      "pos": 2,
+      "res": "PLACE",
       "lost_to": "Sea The Light",
       "stake": 0.75,
-      "ret": null,
-      "bank_after": 75.24
+      "ret": 0.0,
+      "bank_after": 73.74
     }
   ],
   "outsider_score": {
     "strings": 8,
-    "settled": 7,
+    "settled": 8,
     "won": 0,
-    "placed": 1,
+    "placed": 2,
     "unplaced": 6,
     "nr": 0,
-    "pending": 1,
+    "pending": 0,
     "win_pct": 0,
-    "place_pct": 14
+    "place_pct": 25
   },
   "super6": [
     {
@@ -450,26 +450,26 @@
       "trainer": "D M Simcock",
       "stars": 3,
       "odds": "20/1",
-      "sp": "20/1",
-      "sp_dec": 21.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "14/1",
+      "sp_dec": 15.0,
+      "pos": 2,
+      "res": "PLACE",
       "score": 6
     }
   ],
   "super6_score": {
     "listed": 4,
-    "settled": 3,
+    "settled": 4,
     "won": 0,
-    "placed": 1,
+    "placed": 2,
     "win_pct": 0,
-    "place_pct": 33
+    "place_pct": 50
   },
   "bank": {
     "start": 74.75,
-    "end": 75.24,
-    "next_stake": 0.75,
+    "end": 73.74,
+    "next_stake": 0.74,
     "season_start": 10.0,
-    "season_end": 75.24
+    "season_end": 73.74
   }
 }
