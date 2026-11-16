@@ -1,6 +1,6 @@
 {
   "date": "2026-11-16",
-  "generated": "2026-11-16T16:00:10+00:00",
+  "generated": "2026-11-16T17:30:12+00:00",
   "score": {
     "picks": 9,
     "settled": 6,
@@ -208,9 +208,9 @@
       "sp_dec": 4.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.79,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.12
+      "bank_after": 78.33
     },
     {
       "time": "20:00",
@@ -223,9 +223,9 @@
       "sp_dec": 4.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.79,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.12
+      "bank_after": 78.33
     },
     {
       "time": "20:30",
@@ -238,13 +238,13 @@
       "sp_dec": 2.625,
       "pos": 0,
       "res": "?",
-      "stake": 0.79,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.12
+      "bank_after": 78.33
     }
   ],
   "strings": {
-    "settled": 3,
+    "settled": 4,
     "win_pct": "0%",
     "place_pct": "0%"
   },
@@ -305,14 +305,14 @@
       "string": "1st",
       "stars": 1,
       "odds": "100/1",
-      "sp": "100/1",
-      "sp_dec": 101.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "250/1",
+      "sp_dec": 251.0,
+      "pos": 9,
+      "res": "UNPL",
       "lost_to": "Peacock's Way",
       "stake": 0.79,
-      "ret": null,
-      "bank_after": 79.12
+      "ret": 0.0,
+      "bank_after": 78.33
     },
     {
       "time": "17:30",
@@ -327,9 +327,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Masai Land",
-      "stake": 0.79,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.12
+      "bank_after": 78.33
     },
     {
       "time": "17:30",
@@ -344,9 +344,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Masai Land",
-      "stake": 0.79,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.12
+      "bank_after": 78.33
     },
     {
       "time": "18:30",
@@ -361,9 +361,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Rosenpur",
-      "stake": 0.79,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.12
+      "bank_after": 78.33
     },
     {
       "time": "20:00",
@@ -378,19 +378,19 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Sea The Light",
-      "stake": 0.79,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.12
+      "bank_after": 78.33
     }
   ],
   "outsider_score": {
     "strings": 8,
-    "settled": 3,
+    "settled": 4,
     "won": 0,
     "placed": 0,
-    "unplaced": 3,
+    "unplaced": 4,
     "nr": 0,
-    "pending": 5,
+    "pending": 4,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -458,9 +458,9 @@
   },
   "bank": {
     "start": 74.75,
-    "end": 79.12,
-    "next_stake": 0.79,
+    "end": 78.33,
+    "next_stake": 0.78,
     "season_start": 10.0,
-    "season_end": 79.12
+    "season_end": 78.33
   }
 }
