@@ -1,17 +1,17 @@
 {
   "date": "2026-11-16",
-  "generated": "2026-11-16T15:00:09+00:00",
+  "generated": "2026-11-16T16:00:10+00:00",
   "score": {
     "picks": 9,
-    "settled": 5,
+    "settled": 6,
     "won": 2,
     "placed": 1,
-    "unplaced": 2,
+    "unplaced": 3,
     "nr": 0,
     "void": 0,
-    "pending": 4,
-    "win_pct": 40,
-    "place_pct": 60
+    "pending": 3,
+    "win_pct": 33,
+    "place_pct": 50
   },
   "trainers": [
     {
@@ -20,8 +20,8 @@
       "p14": "53.6%",
       "w": 0,
       "p": 1,
-      "u": 1,
-      "n": 2
+      "u": 2,
+      "n": 3
     },
     {
       "name": "Charlie Longsdon",
@@ -61,10 +61,10 @@
     },
     {
       "stars": 3,
-      "n": 1,
+      "n": 2,
       "w": 1,
-      "win_pct": "100%",
-      "place_pct": "100%"
+      "win_pct": "50%",
+      "place_pct": "50%"
     }
   ],
   "odds": [
@@ -77,10 +77,10 @@
     },
     {
       "label": "2/1–5/1",
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "100%"
+      "place_pct": "50%"
     },
     {
       "label": "5/1–10/1",
@@ -93,10 +93,10 @@
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 4,
+      "n": 5,
       "w": 2,
-      "win_pct": "50%",
-      "place_pct": "50%"
+      "win_pct": "40%",
+      "place_pct": "40%"
     },
     {
       "label": "mid (9–12)",
@@ -189,13 +189,13 @@
       "trainer": "Jamie & Josh Moore",
       "stars": 3,
       "odds": "5/1",
-      "sp": "5/1",
-      "sp_dec": 6.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "3/1",
+      "sp_dec": 4.0,
+      "pos": 4,
+      "res": "UNPL",
       "stake": 0.81,
-      "ret": null,
-      "bank_after": 80.74
+      "ret": 0.0,
+      "bank_after": 79.93
     },
     {
       "time": "19:00",
@@ -208,9 +208,9 @@
       "sp_dec": 4.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.81,
+      "stake": 0.79,
       "ret": null,
-      "bank_after": 80.74
+      "bank_after": 79.12
     },
     {
       "time": "20:00",
@@ -223,9 +223,9 @@
       "sp_dec": 4.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.81,
+      "stake": 0.79,
       "ret": null,
-      "bank_after": 80.74
+      "bank_after": 79.12
     },
     {
       "time": "20:30",
@@ -238,13 +238,13 @@
       "sp_dec": 2.625,
       "pos": 0,
       "res": "?",
-      "stake": 0.81,
+      "stake": 0.79,
       "ret": null,
-      "bank_after": 80.74
+      "bank_after": 79.12
     }
   ],
   "strings": {
-    "settled": 2,
+    "settled": 3,
     "win_pct": "0%",
     "place_pct": "0%"
   },
@@ -290,12 +290,12 @@
       "odds": "10/1",
       "sp": "10/1",
       "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "pos": 7,
+      "res": "UNPL",
       "lost_to": "Kotari",
       "stake": 0.81,
-      "ret": null,
-      "bank_after": 80.74
+      "ret": 0.0,
+      "bank_after": 79.12
     },
     {
       "time": "17:00",
@@ -310,9 +310,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Peacock's Way",
-      "stake": 0.81,
+      "stake": 0.79,
       "ret": null,
-      "bank_after": 80.74
+      "bank_after": 79.12
     },
     {
       "time": "17:30",
@@ -327,9 +327,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Masai Land",
-      "stake": 0.81,
+      "stake": 0.79,
       "ret": null,
-      "bank_after": 80.74
+      "bank_after": 79.12
     },
     {
       "time": "17:30",
@@ -344,9 +344,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Masai Land",
-      "stake": 0.81,
+      "stake": 0.79,
       "ret": null,
-      "bank_after": 80.74
+      "bank_after": 79.12
     },
     {
       "time": "18:30",
@@ -361,9 +361,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Rosenpur",
-      "stake": 0.81,
+      "stake": 0.79,
       "ret": null,
-      "bank_after": 80.74
+      "bank_after": 79.12
     },
     {
       "time": "20:00",
@@ -378,19 +378,19 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Sea The Light",
-      "stake": 0.81,
+      "stake": 0.79,
       "ret": null,
-      "bank_after": 80.74
+      "bank_after": 79.12
     }
   ],
   "outsider_score": {
     "strings": 8,
-    "settled": 2,
+    "settled": 3,
     "won": 0,
     "placed": 0,
-    "unplaced": 2,
+    "unplaced": 3,
     "nr": 0,
-    "pending": 6,
+    "pending": 5,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -458,9 +458,9 @@
   },
   "bank": {
     "start": 74.75,
-    "end": 80.74,
-    "next_stake": 0.81,
+    "end": 79.12,
+    "next_stake": 0.79,
     "season_start": 10.0,
-    "season_end": 80.74
+    "season_end": 79.12
   }
 }
