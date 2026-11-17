@@ -1,6 +1,6 @@
 {
   "date": "2026-11-17",
-  "generated": "2026-11-17T13:00:07+00:00",
+  "generated": "2026-11-17T13:30:07+00:00",
   "score": {
     "picks": 5,
     "settled": 2,
@@ -199,8 +199,8 @@
       "string": "1st",
       "stars": 3,
       "odds": "16/1",
-      "sp": "16/1",
-      "sp_dec": 17.0,
+      "sp": "18/1",
+      "sp_dec": 19.0,
       "pos": 0,
       "res": "?",
       "lost_to": "Pedro The Poet",
