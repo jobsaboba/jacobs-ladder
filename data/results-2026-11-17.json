@@ -1,17 +1,17 @@
 {
   "date": "2026-11-17",
-  "generated": "2026-11-17T14:30:06+00:00",
+  "generated": "2026-11-17T15:00:08+00:00",
   "score": {
     "picks": 5,
-    "settled": 2,
+    "settled": 3,
     "won": 1,
-    "placed": 0,
+    "placed": 1,
     "unplaced": 1,
     "nr": 0,
     "void": 0,
-    "pending": 3,
-    "win_pct": 50,
-    "place_pct": 50
+    "pending": 2,
+    "win_pct": 33,
+    "place_pct": 67
   },
   "trainers": [
     {
@@ -19,9 +19,9 @@
       "w14": "30.0%",
       "p14": "65.0%",
       "w": 0,
-      "p": 0,
+      "p": 1,
       "u": 1,
-      "n": 1
+      "n": 2
     },
     {
       "name": "Paul Nolan",
@@ -40,9 +40,23 @@
       "w": 1,
       "win_pct": "50%",
       "place_pct": "50%"
+    },
+    {
+      "stars": 4,
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "100%"
     }
   ],
   "odds": [
+    {
+      "label": "evens–2/1",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "100%"
+    },
     {
       "label": "2/1–5/1",
       "n": 2,
@@ -54,10 +68,10 @@
   "fields": [
     {
       "label": "mid (9–12)",
-      "n": 2,
+      "n": 3,
       "w": 1,
-      "win_pct": "50%",
-      "place_pct": "50%"
+      "win_pct": "33%",
+      "place_pct": "67%"
     }
   ],
   "picks": [
@@ -100,11 +114,11 @@
       "odds": "10/3",
       "sp": "15/8",
       "sp_dec": 2.875,
-      "pos": 0,
-      "res": "?",
+      "pos": 4,
+      "res": "PLACE",
       "stake": 0.72,
-      "ret": null,
-      "bank_after": 72.35
+      "ret": 0.0,
+      "bank_after": 71.63
     },
     {
       "time": "15:50",
@@ -117,9 +131,9 @@
       "sp_dec": 2.875,
       "pos": 0,
       "res": "?",
-      "stake": 0.72,
+      "stake": 0.71,
       "ret": null,
-      "bank_after": 72.35
+      "bank_after": 70.91
     },
     {
       "time": "20:00",
@@ -132,15 +146,15 @@
       "sp_dec": 3.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.72,
+      "stake": 0.71,
       "ret": null,
-      "bank_after": 72.35
+      "bank_after": 70.91
     }
   ],
   "strings": {
-    "settled": 4,
+    "settled": 5,
     "win_pct": "0%",
-    "place_pct": "0%"
+    "place_pct": "20%"
   },
   "outsiders": [
     {
@@ -218,24 +232,24 @@
       "odds": "16/1",
       "sp": "20/1",
       "sp_dec": 21.0,
-      "pos": 0,
-      "res": "?",
+      "pos": 2,
+      "res": "PLACE",
       "lost_to": "Doyen Du Bar",
       "stake": 0.72,
-      "ret": null,
-      "bank_after": 72.35
+      "ret": 0.0,
+      "bank_after": 70.91
     }
   ],
   "outsider_score": {
     "strings": 5,
-    "settled": 4,
+    "settled": 5,
     "won": 0,
-    "placed": 0,
+    "placed": 1,
     "unplaced": 4,
     "nr": 0,
-    "pending": 1,
+    "pending": 0,
     "win_pct": 0,
-    "place_pct": 0
+    "place_pct": 20
   },
   "super6": [
     {
@@ -260,24 +274,24 @@
       "odds": "16/1",
       "sp": "20/1",
       "sp_dec": 21.0,
-      "pos": 0,
-      "res": "?",
+      "pos": 2,
+      "res": "PLACE",
       "score": 6
     }
   ],
   "super6_score": {
     "listed": 2,
-    "settled": 1,
+    "settled": 2,
     "won": 0,
-    "placed": 0,
+    "placed": 1,
     "win_pct": 0,
-    "place_pct": 0
+    "place_pct": 50
   },
   "bank": {
     "start": 73.0,
-    "end": 72.35,
-    "next_stake": 0.72,
+    "end": 70.91,
+    "next_stake": 0.71,
     "season_start": 10.0,
-    "season_end": 72.35
+    "season_end": 70.91
   }
 }
