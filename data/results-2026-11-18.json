@@ -1,17 +1,17 @@
 {
   "date": "2026-11-18",
-  "generated": "2026-11-18T18:00:16+00:00",
+  "generated": "2026-11-18T18:30:18+00:00",
   "score": {
     "picks": 11,
-    "settled": 7,
-    "won": 1,
+    "settled": 8,
+    "won": 2,
     "placed": 1,
     "unplaced": 5,
     "nr": 1,
     "void": 0,
-    "pending": 3,
-    "win_pct": 14,
-    "place_pct": 29
+    "pending": 2,
+    "win_pct": 25,
+    "place_pct": 38
   },
   "trainers": [
     {
@@ -49,15 +49,24 @@
       "p": 0,
       "u": 1,
       "n": 1
+    },
+    {
+      "name": "William Haggas",
+      "w14": "50.0%",
+      "p14": "75.0%",
+      "w": 1,
+      "p": 0,
+      "u": 0,
+      "n": 1
     }
   ],
   "stars": [
     {
       "stars": 5,
-      "n": 3,
-      "w": 0,
-      "win_pct": "0%",
-      "place_pct": "33%"
+      "n": 4,
+      "w": 1,
+      "win_pct": "25%",
+      "place_pct": "50%"
     },
     {
       "stars": 4,
@@ -77,8 +86,8 @@
   "odds": [
     {
       "label": "evens–2/1",
-      "n": 1,
-      "w": 1,
+      "n": 2,
+      "w": 2,
       "win_pct": "100%",
       "place_pct": "100%"
     },
@@ -114,10 +123,10 @@
     },
     {
       "label": "mid (9–12)",
-      "n": 4,
-      "w": 0,
-      "win_pct": "0%",
-      "place_pct": "0%"
+      "n": 5,
+      "w": 1,
+      "win_pct": "20%",
+      "place_pct": "20%"
     }
   ],
   "picks": [
@@ -245,13 +254,13 @@
       "trainer": "W J Haggas",
       "stars": 5,
       "odds": "7/2",
-      "sp": "7/2",
-      "sp_dec": 4.5,
-      "pos": 0,
-      "res": "?",
+      "sp": "6/4",
+      "sp_dec": 2.5,
+      "pos": 1,
+      "res": "WIN",
       "stake": 0.64,
-      "ret": null,
-      "bank_after": 64.13
+      "ret": 2.5,
+      "bank_after": 65.99
     },
     {
       "time": "19:00",
@@ -264,9 +273,9 @@
       "sp_dec": 5.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.64,
+      "stake": 0.65,
       "ret": null,
-      "bank_after": 64.13
+      "bank_after": 65.35
     },
     {
       "time": "20:30",
@@ -279,15 +288,15 @@
       "sp_dec": 4.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.64,
+      "stake": 0.65,
       "ret": null,
-      "bank_after": 64.13
+      "bank_after": 65.35
     }
   ],
   "strings": {
-    "settled": 13,
-    "win_pct": "8%",
-    "place_pct": "23%"
+    "settled": 14,
+    "win_pct": "7%",
+    "place_pct": "21%"
   },
   "outsiders": [
     {
@@ -527,14 +536,14 @@
       "string": "1st",
       "stars": 3,
       "odds": "16/1",
-      "sp": "16/1",
-      "sp_dec": 17.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "10/1",
+      "sp_dec": 11.0,
+      "pos": 4,
+      "res": "UNPL",
       "lost_to": "Divine Rhythm",
       "stake": 0.64,
-      "ret": null,
-      "bank_after": 64.13
+      "ret": 0.0,
+      "bank_after": 65.35
     },
     {
       "time": "19:00",
@@ -549,21 +558,21 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Palladas",
-      "stake": 0.64,
+      "stake": 0.65,
       "ret": null,
-      "bank_after": 64.13
+      "bank_after": 65.35
     }
   ],
   "outsider_score": {
     "strings": 16,
-    "settled": 13,
+    "settled": 14,
     "won": 1,
     "placed": 2,
-    "unplaced": 10,
+    "unplaced": 11,
     "nr": 1,
-    "pending": 2,
-    "win_pct": 8,
-    "place_pct": 23
+    "pending": 1,
+    "win_pct": 7,
+    "place_pct": 21
   },
   "super6": [
     {
@@ -655,9 +664,9 @@
   },
   "bank": {
     "start": 69.5,
-    "end": 64.13,
-    "next_stake": 0.64,
+    "end": 65.35,
+    "next_stake": 0.65,
     "season_start": 10.0,
-    "season_end": 64.13
+    "season_end": 65.35
   }
 }
