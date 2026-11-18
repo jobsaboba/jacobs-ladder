@@ -1,19 +1,28 @@
 {
   "date": "2026-11-18",
-  "generated": "2026-11-18T14:30:26+00:00",
+  "generated": "2026-11-18T15:00:12+00:00",
   "score": {
     "picks": 11,
-    "settled": 3,
+    "settled": 4,
     "won": 1,
-    "placed": 0,
+    "placed": 1,
     "unplaced": 2,
     "nr": 1,
     "void": 0,
-    "pending": 7,
-    "win_pct": 33,
-    "place_pct": 33
+    "pending": 6,
+    "win_pct": 25,
+    "place_pct": 50
   },
   "trainers": [
+    {
+      "name": "Lucinda Russell",
+      "w14": "24.3%",
+      "p14": "64.9%",
+      "w": 1,
+      "p": 1,
+      "u": 0,
+      "n": 2
+    },
     {
       "name": "Mickey Bowen",
       "w14": "27.8%",
@@ -21,15 +30,6 @@
       "w": 0,
       "p": 0,
       "u": 1,
-      "n": 1
-    },
-    {
-      "name": "Lucinda Russell",
-      "w14": "24.3%",
-      "p14": "64.9%",
-      "w": 1,
-      "p": 0,
-      "u": 0,
       "n": 1
     },
     {
@@ -45,10 +45,10 @@
   "stars": [
     {
       "stars": 5,
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "0%"
+      "place_pct": "50%"
     },
     {
       "stars": 4,
@@ -68,10 +68,10 @@
     },
     {
       "label": "2/1–5/1",
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "0%"
+      "place_pct": "50%"
     },
     {
       "label": "5/1–10/1",
@@ -84,10 +84,10 @@
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 2,
+      "n": 3,
       "w": 1,
-      "win_pct": "50%",
-      "place_pct": "50%"
+      "win_pct": "33%",
+      "place_pct": "67%"
     },
     {
       "label": "mid (9–12)",
@@ -150,13 +150,13 @@
       "trainer": "L Russell & M Scudamore",
       "stars": 5,
       "odds": "9/4",
-      "sp": "9/4",
-      "sp_dec": 3.25,
-      "pos": 0,
-      "res": "?",
+      "sp": "5/2",
+      "sp_dec": 3.5,
+      "pos": 2,
+      "res": "PLACE",
       "stake": 0.66,
-      "ret": null,
-      "bank_after": 66.25
+      "ret": 0.0,
+      "bank_after": 65.59
     },
     {
       "time": "14:48",
@@ -181,9 +181,9 @@
       "sp_dec": 8.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.66,
+      "stake": 0.68,
       "ret": null,
-      "bank_after": 66.25
+      "bank_after": 68.11
     },
     {
       "time": "15:18",
@@ -196,9 +196,9 @@
       "sp_dec": 3.25,
       "pos": 0,
       "res": "?",
-      "stake": 0.66,
+      "stake": 0.68,
       "ret": null,
-      "bank_after": 66.25
+      "bank_after": 68.11
     },
     {
       "time": "15:48",
@@ -211,9 +211,9 @@
       "sp_dec": 4.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.66,
+      "stake": 0.68,
       "ret": null,
-      "bank_after": 66.25
+      "bank_after": 68.11
     },
     {
       "time": "18:00",
@@ -226,9 +226,9 @@
       "sp_dec": 4.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.66,
+      "stake": 0.68,
       "ret": null,
-      "bank_after": 66.25
+      "bank_after": 68.11
     },
     {
       "time": "19:00",
@@ -241,9 +241,9 @@
       "sp_dec": 5.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.66,
+      "stake": 0.68,
       "ret": null,
-      "bank_after": 66.25
+      "bank_after": 68.11
     },
     {
       "time": "20:30",
@@ -256,15 +256,15 @@
       "sp_dec": 4.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.66,
+      "stake": 0.68,
       "ret": null,
-      "bank_after": 66.25
+      "bank_after": 68.11
     }
   ],
   "strings": {
-    "settled": 5,
-    "win_pct": "0%",
-    "place_pct": "20%"
+    "settled": 9,
+    "win_pct": "11%",
+    "place_pct": "22%"
   },
   "outsiders": [
     {
@@ -374,14 +374,14 @@
       "string": "1st",
       "stars": 4,
       "odds": "2/1",
-      "sp": "2/1",
-      "sp_dec": 3.0,
+      "sp": "11/2",
+      "sp_dec": 6.5,
       "pos": 0,
-      "res": "?",
+      "res": "UNPL",
       "lost_to": "Wal Buck's",
       "stake": 0.66,
-      "ret": null,
-      "bank_after": 66.25
+      "ret": 0.0,
+      "bank_after": 64.93
     },
     {
       "time": "14:38",
@@ -391,14 +391,14 @@
       "string": "1st",
       "stars": 3,
       "odds": "11/2",
-      "sp": "11/2",
-      "sp_dec": 6.5,
-      "pos": 0,
-      "res": "?",
+      "sp": "7/2",
+      "sp_dec": 4.5,
+      "pos": 1,
+      "res": "WIN",
       "lost_to": "Wal Buck's",
       "stake": 0.66,
-      "ret": null,
-      "bank_after": 66.25
+      "ret": 4.5,
+      "bank_after": 68.11
     },
     {
       "time": "14:38",
@@ -408,14 +408,14 @@
       "string": "1st",
       "stars": 3,
       "odds": "11/2",
-      "sp": "11/2",
-      "sp_dec": 6.5,
-      "pos": 0,
-      "res": "?",
+      "sp": "3/1",
+      "sp_dec": 4.0,
+      "pos": 3,
+      "res": "UNPL",
       "lost_to": "Wal Buck's",
       "stake": 0.66,
-      "ret": null,
-      "bank_after": 66.25
+      "ret": 0.0,
+      "bank_after": 64.27
     },
     {
       "time": "14:38",
@@ -425,10 +425,10 @@
       "string": "2nd",
       "stars": 3,
       "odds": "15/2",
-      "sp": "15/2",
-      "sp_dec": 8.5,
+      "sp": "12/1",
+      "sp_dec": 13.0,
       "pos": 0,
-      "res": "?",
+      "res": "UNPL",
       "lost_to": "stablemate Wal Buck's"
     },
     {
@@ -444,9 +444,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Wispit Twob",
-      "stake": 0.66,
+      "stake": 0.68,
       "ret": null,
-      "bank_after": 66.25
+      "bank_after": 68.11
     },
     {
       "time": "15:18",
@@ -475,9 +475,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Manssoor",
-      "stake": 0.66,
+      "stake": 0.68,
       "ret": null,
-      "bank_after": 66.25
+      "bank_after": 68.11
     },
     {
       "time": "17:30",
@@ -492,9 +492,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Conciliate",
-      "stake": 0.66,
+      "stake": 0.68,
       "ret": null,
-      "bank_after": 66.25
+      "bank_after": 68.11
     },
     {
       "time": "18:00",
@@ -509,9 +509,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Divine Rhythm",
-      "stake": 0.66,
+      "stake": 0.68,
       "ret": null,
-      "bank_after": 66.25
+      "bank_after": 68.11
     },
     {
       "time": "19:00",
@@ -526,21 +526,21 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Palladas",
-      "stake": 0.66,
+      "stake": 0.68,
       "ret": null,
-      "bank_after": 66.25
+      "bank_after": 68.11
     }
   ],
   "outsider_score": {
     "strings": 16,
-    "settled": 5,
-    "won": 0,
+    "settled": 9,
+    "won": 1,
     "placed": 1,
-    "unplaced": 4,
+    "unplaced": 7,
     "nr": 1,
-    "pending": 10,
-    "win_pct": 0,
-    "place_pct": 20
+    "pending": 6,
+    "win_pct": 11,
+    "place_pct": 22
   },
   "super6": [
     {
@@ -576,10 +576,10 @@
       "trainer": "A King",
       "stars": 4,
       "odds": "2/1",
-      "sp": "2/1",
-      "sp_dec": 3.0,
+      "sp": "11/2",
+      "sp_dec": 6.5,
       "pos": 0,
-      "res": "?",
+      "res": "UNPL",
       "score": 8
     },
     {
@@ -624,17 +624,17 @@
   ],
   "super6_score": {
     "listed": 6,
-    "settled": 2,
+    "settled": 3,
     "won": 0,
     "placed": 1,
     "win_pct": 0,
-    "place_pct": 50
+    "place_pct": 33
   },
   "bank": {
     "start": 69.5,
-    "end": 66.25,
-    "next_stake": 0.66,
+    "end": 68.11,
+    "next_stake": 0.68,
     "season_start": 10.0,
-    "season_end": 66.25
+    "season_end": 68.11
   }
 }
