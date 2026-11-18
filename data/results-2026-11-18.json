@@ -1,6 +1,6 @@
 {
   "date": "2026-11-18",
-  "generated": "2026-11-18T16:00:16+00:00",
+  "generated": "2026-11-18T16:30:16+00:00",
   "score": {
     "picks": 11,
     "settled": 7,
@@ -251,7 +251,7 @@
       "res": "?",
       "stake": 0.65,
       "ret": null,
-      "bank_after": 65.43
+      "bank_after": 64.78
     },
     {
       "time": "19:00",
@@ -266,7 +266,7 @@
       "res": "?",
       "stake": 0.65,
       "ret": null,
-      "bank_after": 65.43
+      "bank_after": 64.78
     },
     {
       "time": "20:30",
@@ -281,13 +281,13 @@
       "res": "?",
       "stake": 0.65,
       "ret": null,
-      "bank_after": 65.43
+      "bank_after": 64.78
     }
   ],
   "strings": {
-    "settled": 11,
-    "win_pct": "9%",
-    "place_pct": "27%"
+    "settled": 12,
+    "win_pct": "8%",
+    "place_pct": "25%"
   },
   "outsiders": [
     {
@@ -496,11 +496,11 @@
       "sp": "16/1",
       "sp_dec": 17.0,
       "pos": 0,
-      "res": "?",
+      "res": "UNPL",
       "lost_to": "Manssoor",
       "stake": 0.65,
-      "ret": null,
-      "bank_after": 65.43
+      "ret": 0.0,
+      "bank_after": 64.78
     },
     {
       "time": "17:30",
@@ -517,7 +517,7 @@
       "lost_to": "Conciliate",
       "stake": 0.65,
       "ret": null,
-      "bank_after": 65.43
+      "bank_after": 64.78
     },
     {
       "time": "18:00",
@@ -534,7 +534,7 @@
       "lost_to": "Divine Rhythm",
       "stake": 0.65,
       "ret": null,
-      "bank_after": 65.43
+      "bank_after": 64.78
     },
     {
       "time": "19:00",
@@ -551,19 +551,19 @@
       "lost_to": "Palladas",
       "stake": 0.65,
       "ret": null,
-      "bank_after": 65.43
+      "bank_after": 64.78
     }
   ],
   "outsider_score": {
     "strings": 16,
-    "settled": 11,
+    "settled": 12,
     "won": 1,
     "placed": 2,
-    "unplaced": 8,
+    "unplaced": 9,
     "nr": 1,
-    "pending": 4,
-    "win_pct": 9,
-    "place_pct": 27
+    "pending": 3,
+    "win_pct": 8,
+    "place_pct": 25
   },
   "super6": [
     {
@@ -628,7 +628,7 @@
       "sp": "16/1",
       "sp_dec": 17.0,
       "pos": 0,
-      "res": "?",
+      "res": "UNPL",
       "score": 6
     },
     {
@@ -647,17 +647,17 @@
   ],
   "super6_score": {
     "listed": 6,
-    "settled": 4,
+    "settled": 5,
     "won": 0,
     "placed": 2,
     "win_pct": 0,
-    "place_pct": 50
+    "place_pct": 40
   },
   "bank": {
     "start": 69.5,
-    "end": 65.43,
+    "end": 64.78,
     "next_stake": 0.65,
     "season_start": 10.0,
-    "season_end": 65.43
+    "season_end": 64.78
   }
 }
