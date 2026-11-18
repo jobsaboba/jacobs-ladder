@@ -1,17 +1,17 @@
 {
   "date": "2026-11-18",
-  "generated": "2026-11-18T14:00:19+00:00",
+  "generated": "2026-11-18T14:30:26+00:00",
   "score": {
     "picks": 11,
-    "settled": 2,
+    "settled": 3,
     "won": 1,
     "placed": 0,
-    "unplaced": 1,
+    "unplaced": 2,
     "nr": 1,
     "void": 0,
-    "pending": 8,
-    "win_pct": 50,
-    "place_pct": 50
+    "pending": 7,
+    "win_pct": 33,
+    "place_pct": 33
   },
   "trainers": [
     {
@@ -31,9 +31,25 @@
       "p": 0,
       "u": 0,
       "n": 1
+    },
+    {
+      "name": "Tom Lacey",
+      "w14": "38.5%",
+      "p14": "76.9%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
     }
   ],
   "stars": [
+    {
+      "stars": 5,
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
     {
       "stars": 4,
       "n": 2,
@@ -51,6 +67,13 @@
       "place_pct": "100%"
     },
     {
+      "label": "2/1–5/1",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
+    {
       "label": "5/1–10/1",
       "n": 1,
       "w": 0,
@@ -65,6 +88,13 @@
       "w": 1,
       "win_pct": "50%",
       "place_pct": "50%"
+    },
+    {
+      "label": "mid (9–12)",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
     }
   ],
   "picks": [
@@ -105,13 +135,13 @@
       "trainer": "T Lacey",
       "stars": 5,
       "odds": "4/1",
-      "sp": "4/1",
-      "sp_dec": 5.0,
-      "pos": 0,
-      "res": "?",
-      "stake": 0.69,
-      "ret": null,
-      "bank_after": 68.98
+      "sp": "11/4",
+      "sp_dec": 3.75,
+      "pos": 6,
+      "res": "UNPL",
+      "stake": 0.68,
+      "ret": 0.0,
+      "bank_after": 67.61
     },
     {
       "time": "14:38",
@@ -124,9 +154,9 @@
       "sp_dec": 3.25,
       "pos": 0,
       "res": "?",
-      "stake": 0.69,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 68.98
+      "bank_after": 66.25
     },
     {
       "time": "14:48",
@@ -151,9 +181,9 @@
       "sp_dec": 8.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.69,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 68.98
+      "bank_after": 66.25
     },
     {
       "time": "15:18",
@@ -166,9 +196,9 @@
       "sp_dec": 3.25,
       "pos": 0,
       "res": "?",
-      "stake": 0.69,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 68.98
+      "bank_after": 66.25
     },
     {
       "time": "15:48",
@@ -181,9 +211,9 @@
       "sp_dec": 4.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.69,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 68.98
+      "bank_after": 66.25
     },
     {
       "time": "18:00",
@@ -196,9 +226,9 @@
       "sp_dec": 4.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.69,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 68.98
+      "bank_after": 66.25
     },
     {
       "time": "19:00",
@@ -211,9 +241,9 @@
       "sp_dec": 5.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.69,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 68.98
+      "bank_after": 66.25
     },
     {
       "time": "20:30",
@@ -226,15 +256,15 @@
       "sp_dec": 4.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.69,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 68.98
+      "bank_after": 66.25
     }
   ],
   "strings": {
-    "settled": 2,
+    "settled": 5,
     "win_pct": "0%",
-    "place_pct": "0%"
+    "place_pct": "20%"
   },
   "outsiders": [
     {
@@ -293,14 +323,14 @@
       "string": "1st",
       "stars": 3,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "25/1",
+      "sp_dec": 26.0,
+      "pos": 3,
+      "res": "PLACE",
       "lost_to": "Bella Cheval",
       "stake": 0.69,
-      "ret": null,
-      "bank_after": 68.98
+      "ret": 0.0,
+      "bank_after": 68.29
     },
     {
       "time": "14:18",
@@ -310,14 +340,14 @@
       "string": "1st",
       "stars": 2,
       "odds": "14/1",
-      "sp": "14/1",
-      "sp_dec": 15.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "12/1",
+      "sp_dec": 13.0,
+      "pos": 4,
+      "res": "UNPL",
       "lost_to": "Wannabe",
-      "stake": 0.69,
-      "ret": null,
-      "bank_after": 68.98
+      "stake": 0.68,
+      "ret": 0.0,
+      "bank_after": 66.93
     },
     {
       "time": "14:18",
@@ -327,14 +357,14 @@
       "string": "1st",
       "stars": 2,
       "odds": "14/1",
-      "sp": "14/1",
-      "sp_dec": 15.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "25/1",
+      "sp_dec": 26.0,
+      "pos": 7,
+      "res": "UNPL",
       "lost_to": "Wannabe",
-      "stake": 0.69,
-      "ret": null,
-      "bank_after": 68.98
+      "stake": 0.68,
+      "ret": 0.0,
+      "bank_after": 66.25
     },
     {
       "time": "14:38",
@@ -349,9 +379,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Wal Buck's",
-      "stake": 0.69,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 68.98
+      "bank_after": 66.25
     },
     {
       "time": "14:38",
@@ -366,9 +396,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Wal Buck's",
-      "stake": 0.69,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 68.98
+      "bank_after": 66.25
     },
     {
       "time": "14:38",
@@ -383,9 +413,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Wal Buck's",
-      "stake": 0.69,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 68.98
+      "bank_after": 66.25
     },
     {
       "time": "14:38",
@@ -414,9 +444,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Wispit Twob",
-      "stake": 0.69,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 68.98
+      "bank_after": 66.25
     },
     {
       "time": "15:18",
@@ -445,9 +475,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Manssoor",
-      "stake": 0.69,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 68.98
+      "bank_after": 66.25
     },
     {
       "time": "17:30",
@@ -462,9 +492,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Conciliate",
-      "stake": 0.69,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 68.98
+      "bank_after": 66.25
     },
     {
       "time": "18:00",
@@ -479,9 +509,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Divine Rhythm",
-      "stake": 0.69,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 68.98
+      "bank_after": 66.25
     },
     {
       "time": "19:00",
@@ -496,21 +526,21 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Palladas",
-      "stake": 0.69,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 68.98
+      "bank_after": 66.25
     }
   ],
   "outsider_score": {
     "strings": 16,
-    "settled": 2,
+    "settled": 5,
     "won": 0,
-    "placed": 0,
-    "unplaced": 2,
+    "placed": 1,
+    "unplaced": 4,
     "nr": 1,
-    "pending": 13,
+    "pending": 10,
     "win_pct": 0,
-    "place_pct": 0
+    "place_pct": 20
   },
   "super6": [
     {
@@ -533,10 +563,10 @@
       "trainer": "N Meade",
       "stars": 3,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "25/1",
+      "sp_dec": 26.0,
+      "pos": 3,
+      "res": "PLACE",
       "score": 8
     },
     {
@@ -594,17 +624,17 @@
   ],
   "super6_score": {
     "listed": 6,
-    "settled": 1,
+    "settled": 2,
     "won": 0,
-    "placed": 0,
+    "placed": 1,
     "win_pct": 0,
-    "place_pct": 0
+    "place_pct": 50
   },
   "bank": {
     "start": 69.5,
-    "end": 68.98,
-    "next_stake": 0.69,
+    "end": 66.25,
+    "next_stake": 0.66,
     "season_start": 10.0,
-    "season_end": 68.98
+    "season_end": 66.25
   }
 }
