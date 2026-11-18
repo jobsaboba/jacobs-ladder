@@ -1,6 +1,6 @@
 {
   "date": "2026-11-18",
-  "generated": "2026-11-18T13:30:15+00:00",
+  "generated": "2026-11-18T14:00:19+00:00",
   "score": {
     "picks": 11,
     "settled": 2,
@@ -109,9 +109,9 @@
       "sp_dec": 5.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.7,
+      "stake": 0.69,
       "ret": null,
-      "bank_after": 69.68
+      "bank_after": 68.98
     },
     {
       "time": "14:38",
@@ -124,9 +124,9 @@
       "sp_dec": 3.25,
       "pos": 0,
       "res": "?",
-      "stake": 0.7,
+      "stake": 0.69,
       "ret": null,
-      "bank_after": 69.68
+      "bank_after": 68.98
     },
     {
       "time": "14:48",
@@ -151,9 +151,9 @@
       "sp_dec": 8.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.7,
+      "stake": 0.69,
       "ret": null,
-      "bank_after": 69.68
+      "bank_after": 68.98
     },
     {
       "time": "15:18",
@@ -166,9 +166,9 @@
       "sp_dec": 3.25,
       "pos": 0,
       "res": "?",
-      "stake": 0.7,
+      "stake": 0.69,
       "ret": null,
-      "bank_after": 69.68
+      "bank_after": 68.98
     },
     {
       "time": "15:48",
@@ -181,9 +181,9 @@
       "sp_dec": 4.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.7,
+      "stake": 0.69,
       "ret": null,
-      "bank_after": 69.68
+      "bank_after": 68.98
     },
     {
       "time": "18:00",
@@ -196,9 +196,9 @@
       "sp_dec": 4.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.7,
+      "stake": 0.69,
       "ret": null,
-      "bank_after": 69.68
+      "bank_after": 68.98
     },
     {
       "time": "19:00",
@@ -211,9 +211,9 @@
       "sp_dec": 5.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.7,
+      "stake": 0.69,
       "ret": null,
-      "bank_after": 69.68
+      "bank_after": 68.98
     },
     {
       "time": "20:30",
@@ -226,13 +226,13 @@
       "sp_dec": 4.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.7,
+      "stake": 0.69,
       "ret": null,
-      "bank_after": 69.68
+      "bank_after": 68.98
     }
   ],
   "strings": {
-    "settled": 1,
+    "settled": 2,
     "win_pct": "0%",
     "place_pct": "0%"
   },
@@ -262,14 +262,14 @@
       "string": "1st",
       "stars": 4,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 9,
+      "res": "UNPL",
       "lost_to": "Wind Your Neck In",
       "stake": 0.7,
-      "ret": null,
-      "bank_after": 69.68
+      "ret": 0.0,
+      "bank_after": 68.98
     },
     {
       "time": "13:48",
@@ -298,9 +298,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Bella Cheval",
-      "stake": 0.7,
+      "stake": 0.69,
       "ret": null,
-      "bank_after": 69.68
+      "bank_after": 68.98
     },
     {
       "time": "14:18",
@@ -315,9 +315,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Wannabe",
-      "stake": 0.7,
+      "stake": 0.69,
       "ret": null,
-      "bank_after": 69.68
+      "bank_after": 68.98
     },
     {
       "time": "14:18",
@@ -332,9 +332,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Wannabe",
-      "stake": 0.7,
+      "stake": 0.69,
       "ret": null,
-      "bank_after": 69.68
+      "bank_after": 68.98
     },
     {
       "time": "14:38",
@@ -349,9 +349,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Wal Buck's",
-      "stake": 0.7,
+      "stake": 0.69,
       "ret": null,
-      "bank_after": 69.68
+      "bank_after": 68.98
     },
     {
       "time": "14:38",
@@ -366,9 +366,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Wal Buck's",
-      "stake": 0.7,
+      "stake": 0.69,
       "ret": null,
-      "bank_after": 69.68
+      "bank_after": 68.98
     },
     {
       "time": "14:38",
@@ -383,9 +383,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Wal Buck's",
-      "stake": 0.7,
+      "stake": 0.69,
       "ret": null,
-      "bank_after": 69.68
+      "bank_after": 68.98
     },
     {
       "time": "14:38",
@@ -414,9 +414,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Wispit Twob",
-      "stake": 0.7,
+      "stake": 0.69,
       "ret": null,
-      "bank_after": 69.68
+      "bank_after": 68.98
     },
     {
       "time": "15:18",
@@ -445,9 +445,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Manssoor",
-      "stake": 0.7,
+      "stake": 0.69,
       "ret": null,
-      "bank_after": 69.68
+      "bank_after": 68.98
     },
     {
       "time": "17:30",
@@ -462,9 +462,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Conciliate",
-      "stake": 0.7,
+      "stake": 0.69,
       "ret": null,
-      "bank_after": 69.68
+      "bank_after": 68.98
     },
     {
       "time": "18:00",
@@ -479,9 +479,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Divine Rhythm",
-      "stake": 0.7,
+      "stake": 0.69,
       "ret": null,
-      "bank_after": 69.68
+      "bank_after": 68.98
     },
     {
       "time": "19:00",
@@ -496,19 +496,19 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Palladas",
-      "stake": 0.7,
+      "stake": 0.69,
       "ret": null,
-      "bank_after": 69.68
+      "bank_after": 68.98
     }
   ],
   "outsider_score": {
     "strings": 16,
-    "settled": 1,
+    "settled": 2,
     "won": 0,
     "placed": 0,
-    "unplaced": 1,
+    "unplaced": 2,
     "nr": 1,
-    "pending": 14,
+    "pending": 13,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -520,10 +520,10 @@
       "trainer": "S England",
       "stars": 4,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 9,
+      "res": "UNPL",
       "score": 11
     },
     {
@@ -592,12 +592,19 @@
       "score": 8
     }
   ],
-  "super6_score": null,
+  "super6_score": {
+    "listed": 6,
+    "settled": 1,
+    "won": 0,
+    "placed": 0,
+    "win_pct": 0,
+    "place_pct": 0
+  },
   "bank": {
     "start": 69.5,
-    "end": 69.68,
-    "next_stake": 0.7,
+    "end": 68.98,
+    "next_stake": 0.69,
     "season_start": 10.0,
-    "season_end": 69.68
+    "season_end": 68.98
   }
 }
