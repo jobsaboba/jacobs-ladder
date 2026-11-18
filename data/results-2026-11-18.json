@@ -1,17 +1,17 @@
 {
   "date": "2026-11-18",
-  "generated": "2026-11-18T15:30:14+00:00",
+  "generated": "2026-11-18T16:00:16+00:00",
   "score": {
     "picks": 11,
-    "settled": 6,
+    "settled": 7,
     "won": 1,
     "placed": 1,
-    "unplaced": 4,
+    "unplaced": 5,
     "nr": 1,
     "void": 0,
-    "pending": 4,
-    "win_pct": 17,
-    "place_pct": 33
+    "pending": 3,
+    "win_pct": 14,
+    "place_pct": 29
   },
   "trainers": [
     {
@@ -29,8 +29,8 @@
       "p14": "66.7%",
       "w": 0,
       "p": 0,
-      "u": 1,
-      "n": 1
+      "u": 2,
+      "n": 2
     },
     {
       "name": "Tom Lacey",
@@ -54,10 +54,10 @@
   "stars": [
     {
       "stars": 5,
-      "n": 2,
+      "n": 3,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "50%"
+      "place_pct": "33%"
     },
     {
       "stars": 4,
@@ -91,7 +91,7 @@
     },
     {
       "label": "5/1–10/1",
-      "n": 2,
+      "n": 3,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -114,7 +114,7 @@
     },
     {
       "label": "mid (9–12)",
-      "n": 3,
+      "n": 4,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -230,13 +230,13 @@
       "trainer": "M Bowen",
       "stars": 5,
       "odds": "7/2",
-      "sp": "7/2",
-      "sp_dec": 4.5,
-      "pos": 0,
-      "res": "?",
+      "sp": "8/1",
+      "sp_dec": 9.0,
+      "pos": 8,
+      "res": "UNPL",
       "stake": 0.66,
-      "ret": null,
-      "bank_after": 66.09
+      "ret": 0.0,
+      "bank_after": 65.43
     },
     {
       "time": "18:00",
@@ -249,9 +249,9 @@
       "sp_dec": 4.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.66,
+      "stake": 0.65,
       "ret": null,
-      "bank_after": 66.09
+      "bank_after": 65.43
     },
     {
       "time": "19:00",
@@ -264,9 +264,9 @@
       "sp_dec": 5.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.66,
+      "stake": 0.65,
       "ret": null,
-      "bank_after": 66.09
+      "bank_after": 65.43
     },
     {
       "time": "20:30",
@@ -279,9 +279,9 @@
       "sp_dec": 4.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.66,
+      "stake": 0.65,
       "ret": null,
-      "bank_after": 66.09
+      "bank_after": 65.43
     }
   ],
   "strings": {
@@ -498,9 +498,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Manssoor",
-      "stake": 0.66,
+      "stake": 0.65,
       "ret": null,
-      "bank_after": 66.09
+      "bank_after": 65.43
     },
     {
       "time": "17:30",
@@ -515,9 +515,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Conciliate",
-      "stake": 0.66,
+      "stake": 0.65,
       "ret": null,
-      "bank_after": 66.09
+      "bank_after": 65.43
     },
     {
       "time": "18:00",
@@ -532,9 +532,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Divine Rhythm",
-      "stake": 0.66,
+      "stake": 0.65,
       "ret": null,
-      "bank_after": 66.09
+      "bank_after": 65.43
     },
     {
       "time": "19:00",
@@ -549,9 +549,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Palladas",
-      "stake": 0.66,
+      "stake": 0.65,
       "ret": null,
-      "bank_after": 66.09
+      "bank_after": 65.43
     }
   ],
   "outsider_score": {
@@ -655,9 +655,9 @@
   },
   "bank": {
     "start": 69.5,
-    "end": 66.09,
-    "next_stake": 0.66,
+    "end": 65.43,
+    "next_stake": 0.65,
     "season_start": 10.0,
-    "season_end": 66.09
+    "season_end": 65.43
   }
 }
