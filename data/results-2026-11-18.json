@@ -1,6 +1,6 @@
 {
   "date": "2026-11-18",
-  "generated": "2026-11-18T17:00:15+00:00",
+  "generated": "2026-11-18T18:00:16+00:00",
   "score": {
     "picks": 11,
     "settled": 7,
@@ -249,9 +249,9 @@
       "sp_dec": 4.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.65,
+      "stake": 0.64,
       "ret": null,
-      "bank_after": 64.78
+      "bank_after": 64.13
     },
     {
       "time": "19:00",
@@ -264,9 +264,9 @@
       "sp_dec": 5.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.65,
+      "stake": 0.64,
       "ret": null,
-      "bank_after": 64.78
+      "bank_after": 64.13
     },
     {
       "time": "20:30",
@@ -279,15 +279,15 @@
       "sp_dec": 4.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.65,
+      "stake": 0.64,
       "ret": null,
-      "bank_after": 64.78
+      "bank_after": 64.13
     }
   ],
   "strings": {
-    "settled": 12,
+    "settled": 13,
     "win_pct": "8%",
-    "place_pct": "25%"
+    "place_pct": "23%"
   },
   "outsiders": [
     {
@@ -510,14 +510,14 @@
       "string": "1st",
       "stars": 2,
       "odds": "25/1",
-      "sp": "25/1",
-      "sp_dec": 26.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "4/1",
+      "sp_dec": 5.0,
+      "pos": 4,
+      "res": "UNPL",
       "lost_to": "Conciliate",
       "stake": 0.65,
-      "ret": null,
-      "bank_after": 64.78
+      "ret": 0.0,
+      "bank_after": 64.13
     },
     {
       "time": "18:00",
@@ -532,9 +532,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Divine Rhythm",
-      "stake": 0.65,
+      "stake": 0.64,
       "ret": null,
-      "bank_after": 64.78
+      "bank_after": 64.13
     },
     {
       "time": "19:00",
@@ -549,21 +549,21 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Palladas",
-      "stake": 0.65,
+      "stake": 0.64,
       "ret": null,
-      "bank_after": 64.78
+      "bank_after": 64.13
     }
   ],
   "outsider_score": {
     "strings": 16,
-    "settled": 12,
+    "settled": 13,
     "won": 1,
     "placed": 2,
-    "unplaced": 9,
+    "unplaced": 10,
     "nr": 1,
-    "pending": 3,
+    "pending": 2,
     "win_pct": 8,
-    "place_pct": 25
+    "place_pct": 23
   },
   "super6": [
     {
@@ -655,9 +655,9 @@
   },
   "bank": {
     "start": 69.5,
-    "end": 64.78,
-    "next_stake": 0.65,
+    "end": 64.13,
+    "next_stake": 0.64,
     "season_start": 10.0,
-    "season_end": 64.78
+    "season_end": 64.13
   }
 }
