@@ -1,17 +1,17 @@
 {
   "date": "2026-11-18",
-  "generated": "2026-11-18T15:00:12+00:00",
+  "generated": "2026-11-18T15:30:14+00:00",
   "score": {
     "picks": 11,
-    "settled": 4,
+    "settled": 6,
     "won": 1,
     "placed": 1,
-    "unplaced": 2,
+    "unplaced": 4,
     "nr": 1,
     "void": 0,
-    "pending": 6,
-    "win_pct": 25,
-    "place_pct": 50
+    "pending": 4,
+    "win_pct": 17,
+    "place_pct": 33
   },
   "trainers": [
     {
@@ -20,8 +20,8 @@
       "p14": "64.9%",
       "w": 1,
       "p": 1,
-      "u": 0,
-      "n": 2
+      "u": 1,
+      "n": 3
     },
     {
       "name": "Mickey Bowen",
@@ -40,6 +40,15 @@
       "p": 0,
       "u": 1,
       "n": 1
+    },
+    {
+      "name": "Martin Keighley",
+      "w14": "23.1%",
+      "p14": "46.2%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
     }
   ],
   "stars": [
@@ -52,10 +61,17 @@
     },
     {
       "stars": 4,
-      "n": 2,
+      "n": 3,
       "w": 1,
-      "win_pct": "50%",
-      "place_pct": "50%"
+      "win_pct": "33%",
+      "place_pct": "33%"
+    },
+    {
+      "stars": 3,
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
     }
   ],
   "odds": [
@@ -75,6 +91,13 @@
     },
     {
       "label": "5/1–10/1",
+      "n": 2,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
+    {
+      "label": "10/1+",
       "n": 1,
       "w": 0,
       "win_pct": "0%",
@@ -91,7 +114,7 @@
     },
     {
       "label": "mid (9–12)",
-      "n": 1,
+      "n": 3,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -179,11 +202,11 @@
       "odds": "7/1",
       "sp": "7/1",
       "sp_dec": 8.0,
-      "pos": 0,
-      "res": "?",
+      "pos": 4,
+      "res": "UNPL",
       "stake": 0.68,
-      "ret": null,
-      "bank_after": 68.11
+      "ret": 0.0,
+      "bank_after": 67.43
     },
     {
       "time": "15:18",
@@ -192,13 +215,13 @@
       "trainer": "M Keighley",
       "stars": 4,
       "odds": "9/4",
-      "sp": "9/4",
-      "sp_dec": 3.25,
-      "pos": 0,
-      "res": "?",
-      "stake": 0.68,
-      "ret": null,
-      "bank_after": 68.11
+      "sp": "14/1",
+      "sp_dec": 15.0,
+      "pos": 6,
+      "res": "UNPL",
+      "stake": 0.67,
+      "ret": 0.0,
+      "bank_after": 66.76
     },
     {
       "time": "15:48",
@@ -211,9 +234,9 @@
       "sp_dec": 4.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.68,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 68.11
+      "bank_after": 66.09
     },
     {
       "time": "18:00",
@@ -226,9 +249,9 @@
       "sp_dec": 4.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.68,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 68.11
+      "bank_after": 66.09
     },
     {
       "time": "19:00",
@@ -241,9 +264,9 @@
       "sp_dec": 5.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.68,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 68.11
+      "bank_after": 66.09
     },
     {
       "time": "20:30",
@@ -256,15 +279,15 @@
       "sp_dec": 4.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.68,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 68.11
+      "bank_after": 66.09
     }
   ],
   "strings": {
-    "settled": 9,
-    "win_pct": "11%",
-    "place_pct": "22%"
+    "settled": 11,
+    "win_pct": "9%",
+    "place_pct": "27%"
   },
   "outsiders": [
     {
@@ -439,14 +462,14 @@
       "string": "1st",
       "stars": 4,
       "odds": "8/1",
-      "sp": "8/1",
-      "sp_dec": 9.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "4/6",
+      "sp_dec": 1.6666666666666665,
+      "pos": 2,
+      "res": "PLACE",
       "lost_to": "Wispit Twob",
-      "stake": 0.68,
-      "ret": null,
-      "bank_after": 68.11
+      "stake": 0.67,
+      "ret": 0.0,
+      "bank_after": 66.09
     },
     {
       "time": "15:18",
@@ -456,10 +479,10 @@
       "string": "2nd",
       "stars": 3,
       "odds": "12/1",
-      "sp": "12/1",
-      "sp_dec": 13.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "22/1",
+      "sp_dec": 23.0,
+      "pos": 5,
+      "res": "UNPL",
       "lost_to": "Wispit Twob"
     },
     {
@@ -475,9 +498,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Manssoor",
-      "stake": 0.68,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 68.11
+      "bank_after": 66.09
     },
     {
       "time": "17:30",
@@ -492,9 +515,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Conciliate",
-      "stake": 0.68,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 68.11
+      "bank_after": 66.09
     },
     {
       "time": "18:00",
@@ -509,9 +532,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Divine Rhythm",
-      "stake": 0.68,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 68.11
+      "bank_after": 66.09
     },
     {
       "time": "19:00",
@@ -526,21 +549,21 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Palladas",
-      "stake": 0.68,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 68.11
+      "bank_after": 66.09
     }
   ],
   "outsider_score": {
     "strings": 16,
-    "settled": 9,
+    "settled": 11,
     "won": 1,
-    "placed": 1,
-    "unplaced": 7,
+    "placed": 2,
+    "unplaced": 8,
     "nr": 1,
-    "pending": 6,
-    "win_pct": 11,
-    "place_pct": 22
+    "pending": 4,
+    "win_pct": 9,
+    "place_pct": 27
   },
   "super6": [
     {
@@ -589,10 +612,10 @@
       "trainer": "N P Mulholland",
       "stars": 4,
       "odds": "8/1",
-      "sp": "8/1",
-      "sp_dec": 9.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "4/6",
+      "sp_dec": 1.6666666666666665,
+      "pos": 2,
+      "res": "PLACE",
       "score": 8
     },
     {
@@ -624,17 +647,17 @@
   ],
   "super6_score": {
     "listed": 6,
-    "settled": 3,
+    "settled": 4,
     "won": 0,
-    "placed": 1,
+    "placed": 2,
     "win_pct": 0,
-    "place_pct": 33
+    "place_pct": 50
   },
   "bank": {
     "start": 69.5,
-    "end": 68.11,
-    "next_stake": 0.68,
+    "end": 66.09,
+    "next_stake": 0.66,
     "season_start": 10.0,
-    "season_end": 68.11
+    "season_end": 66.09
   }
 }
