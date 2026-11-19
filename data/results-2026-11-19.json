@@ -1,17 +1,17 @@
 {
   "date": "2026-11-19",
-  "generated": "2026-11-19T18:00:10+00:00",
+  "generated": "2026-11-19T18:30:08+00:00",
   "score": {
     "picks": 7,
-    "settled": 6,
-    "won": 1,
+    "settled": 7,
+    "won": 2,
     "placed": 3,
     "unplaced": 2,
     "nr": 0,
     "void": 0,
-    "pending": 1,
-    "win_pct": 17,
-    "place_pct": 67
+    "pending": 0,
+    "win_pct": 29,
+    "place_pct": 71
   },
   "trainers": [
     {
@@ -40,15 +40,24 @@
       "p": 0,
       "u": 1,
       "n": 1
+    },
+    {
+      "name": "Jennie Candlish",
+      "w14": "15.0%",
+      "p14": "65.0%",
+      "w": 1,
+      "p": 0,
+      "u": 0,
+      "n": 1
     }
   ],
   "stars": [
     {
       "stars": 5,
-      "n": 3,
-      "w": 1,
-      "win_pct": "33%",
-      "place_pct": "67%"
+      "n": 4,
+      "w": 2,
+      "win_pct": "50%",
+      "place_pct": "75%"
     },
     {
       "stars": 4,
@@ -72,6 +81,13 @@
       "w": 0,
       "win_pct": "0%",
       "place_pct": "50%"
+    },
+    {
+      "label": "2/1–5/1",
+      "n": 1,
+      "w": 1,
+      "win_pct": "100%",
+      "place_pct": "100%"
     },
     {
       "label": "5/1–10/1",
@@ -98,10 +114,10 @@
     },
     {
       "label": "big (13+)",
-      "n": 3,
-      "w": 0,
-      "win_pct": "0%",
-      "place_pct": "67%"
+      "n": 4,
+      "w": 1,
+      "win_pct": "25%",
+      "place_pct": "75%"
     }
   ],
   "picks": [
@@ -202,13 +218,13 @@
       "trainer": "J Candlish",
       "stars": 5,
       "odds": "6/1",
-      "sp": "6/1",
-      "sp_dec": 7.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "5/2",
+      "sp_dec": 3.5,
+      "pos": 1,
+      "res": "WIN",
       "stake": 0.65,
-      "ret": null,
-      "bank_after": 65.48
+      "ret": 3.5,
+      "bank_after": 68.33
     }
   ],
   "strings": {
@@ -422,9 +438,9 @@
   },
   "bank": {
     "start": 66.26,
-    "end": 65.48,
-    "next_stake": 0.65,
+    "end": 68.33,
+    "next_stake": 0.68,
     "season_start": 10.0,
-    "season_end": 65.48
+    "season_end": 68.33
   }
 }
