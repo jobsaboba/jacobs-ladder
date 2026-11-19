@@ -1,0 +1,416 @@
+{
+  "date": "2026-11-19",
+  "generated": "2026-11-19T13:00:09+00:00",
+  "score": {
+    "picks": 7,
+    "settled": 3,
+    "won": 0,
+    "placed": 2,
+    "unplaced": 1,
+    "nr": 0,
+    "void": 0,
+    "pending": 4,
+    "win_pct": 0,
+    "place_pct": 67
+  },
+  "trainers": [
+    {
+      "name": "Harry Derham",
+      "w14": "25.0%",
+      "p14": "75.0%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
+    },
+    {
+      "name": "Alan King",
+      "w14": "16.7%",
+      "p14": "83.3%",
+      "w": 0,
+      "p": 1,
+      "u": 0,
+      "n": 1
+    },
+    {
+      "name": "Paul Nicholls",
+      "w14": "19.0%",
+      "p14": "52.4%",
+      "w": 0,
+      "p": 1,
+      "u": 0,
+      "n": 1
+    }
+  ],
+  "stars": [
+    {
+      "stars": 5,
+      "n": 2,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "50%"
+    },
+    {
+      "stars": 3,
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "100%"
+    }
+  ],
+  "odds": [
+    {
+      "label": "evens–2/1",
+      "n": 2,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "50%"
+    },
+    {
+      "label": "10/1+",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "100%"
+    }
+  ],
+  "fields": [
+    {
+      "label": "small (≤8)",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
+    {
+      "label": "big (13+)",
+      "n": 2,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "100%"
+    }
+  ],
+  "picks": [
+    {
+      "time": "11:27",
+      "meeting": "Warwick",
+      "horse": "Leslie's Pride",
+      "trainer": "Harry Derham",
+      "stars": 5,
+      "odds": "7/4",
+      "sp": "5/6",
+      "sp_dec": 1.8333333333333335,
+      "pos": 3,
+      "res": "UNPL",
+      "stake": 0.66,
+      "ret": 0.0,
+      "bank_after": 65.6
+    },
+    {
+      "time": "11:57",
+      "meeting": "Warwick",
+      "horse": "Friendly Glance",
+      "trainer": "A King",
+      "stars": 5,
+      "odds": "3/1",
+      "sp": "7/4",
+      "sp_dec": 2.75,
+      "pos": 2,
+      "res": "PLACE",
+      "stake": 0.65,
+      "ret": 0.0,
+      "bank_after": 64.29
+    },
+    {
+      "time": "12:27",
+      "meeting": "Warwick",
+      "horse": "Roximan",
+      "trainer": "P F Nicholls",
+      "stars": 3,
+      "odds": "7/1",
+      "sp": "28/1",
+      "sp_dec": 29.0,
+      "pos": 3,
+      "res": "PLACE",
+      "stake": 0.64,
+      "ret": 0.0,
+      "bank_after": 63.0
+    },
+    {
+      "time": "13:02",
+      "meeting": "Warwick",
+      "horse": "Emiko",
+      "trainer": "A King",
+      "stars": 4,
+      "odds": "6/1",
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 0,
+      "res": "?",
+      "stake": 0.62,
+      "ret": null,
+      "bank_after": 62.36
+    },
+    {
+      "time": "13:37",
+      "meeting": "Warwick",
+      "horse": "Knappers Hill",
+      "trainer": "P F Nicholls",
+      "stars": 5,
+      "odds": "6/1",
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 0,
+      "res": "?",
+      "stake": 0.62,
+      "ret": null,
+      "bank_after": 62.36
+    },
+    {
+      "time": "15:17",
+      "meeting": "Warwick",
+      "horse": "Ellie Marie",
+      "trainer": "P F Nicholls",
+      "stars": 3,
+      "odds": "11/2",
+      "sp": "11/2",
+      "sp_dec": 6.5,
+      "pos": 0,
+      "res": "?",
+      "stake": 0.62,
+      "ret": null,
+      "bank_after": 62.36
+    },
+    {
+      "time": "18:10",
+      "meeting": "Newcastle",
+      "horse": "Frankies Dream",
+      "trainer": "J Candlish",
+      "stars": 5,
+      "odds": "6/1",
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 0,
+      "res": "?",
+      "stake": 0.62,
+      "ret": null,
+      "bank_after": 62.36
+    }
+  ],
+  "strings": {
+    "settled": 3,
+    "win_pct": "0%",
+    "place_pct": "0%"
+  },
+  "outsiders": [
+    {
+      "time": "11:27",
+      "meeting": "Warwick",
+      "horse": "Noble Fleur",
+      "trainer": "M Keighley",
+      "string": "1st",
+      "stars": 3,
+      "odds": "9/2",
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 2,
+      "res": "UNPL",
+      "lost_to": "Leslie's Pride",
+      "stake": 0.66,
+      "ret": 0.0,
+      "bank_after": 64.94
+    },
+    {
+      "time": "11:57",
+      "meeting": "Warwick",
+      "horse": "Artaban",
+      "trainer": "P F Nicholls",
+      "string": "1st",
+      "stars": 3,
+      "odds": "7/1",
+      "sp": "33/1",
+      "sp_dec": 34.0,
+      "pos": 11,
+      "res": "UNPL",
+      "lost_to": "Friendly Glance",
+      "stake": 0.65,
+      "ret": 0.0,
+      "bank_after": 63.64
+    },
+    {
+      "time": "12:27",
+      "meeting": "Warwick",
+      "horse": "Wannabe Sporty",
+      "trainer": "M Keighley",
+      "string": "1st",
+      "stars": 2,
+      "odds": "100/1",
+      "sp": "150/1",
+      "sp_dec": 151.0,
+      "pos": 13,
+      "res": "UNPL",
+      "lost_to": "Roximan",
+      "stake": 0.64,
+      "ret": 0.0,
+      "bank_after": 62.36
+    },
+    {
+      "time": "13:37",
+      "meeting": "Warwick",
+      "horse": "Nocte Volatus",
+      "trainer": "T Lacey",
+      "string": "1st",
+      "stars": 4,
+      "odds": "11/2",
+      "sp": "11/2",
+      "sp_dec": 6.5,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "Knappers Hill",
+      "stake": 0.62,
+      "ret": null,
+      "bank_after": 62.36
+    },
+    {
+      "time": "13:37",
+      "meeting": "Warwick",
+      "horse": "Pounding Poet",
+      "trainer": "T Lacey",
+      "string": "2nd",
+      "stars": 4,
+      "odds": "6/1",
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "Knappers Hill"
+    },
+    {
+      "time": "15:17",
+      "meeting": "Warwick",
+      "horse": "Agreymiracleseeker",
+      "trainer": "A King",
+      "string": "1st",
+      "stars": 3,
+      "odds": "10/1",
+      "sp": "10/1",
+      "sp_dec": 11.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "Ellie Marie",
+      "stake": 0.62,
+      "ret": null,
+      "bank_after": 62.36
+    },
+    {
+      "time": "17:40",
+      "meeting": "Newcastle",
+      "horse": "Hot Moonstone",
+      "trainer": "J Candlish",
+      "string": "1st",
+      "stars": 2,
+      "odds": "14/1",
+      "sp": "14/1",
+      "sp_dec": 15.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "Hot Moonstone",
+      "stake": 0.62,
+      "ret": null,
+      "bank_after": 62.36
+    }
+  ],
+  "outsider_score": {
+    "strings": 7,
+    "settled": 3,
+    "won": 0,
+    "placed": 0,
+    "unplaced": 3,
+    "nr": 0,
+    "pending": 4,
+    "win_pct": 0,
+    "place_pct": 0
+  },
+  "super6": [
+    {
+      "time": "11:27",
+      "meeting": "Warwick",
+      "horse": "Noble Fleur",
+      "trainer": "M Keighley",
+      "stars": 3,
+      "odds": "9/2",
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 2,
+      "res": "UNPL",
+      "score": 7
+    },
+    {
+      "time": "11:57",
+      "meeting": "Warwick",
+      "horse": "Artaban",
+      "trainer": "P F Nicholls",
+      "stars": 3,
+      "odds": "7/1",
+      "sp": "33/1",
+      "sp_dec": 34.0,
+      "pos": 11,
+      "res": "UNPL",
+      "score": 6
+    },
+    {
+      "time": "13:37",
+      "meeting": "Warwick",
+      "horse": "Nocte Volatus",
+      "trainer": "T Lacey",
+      "stars": 4,
+      "odds": "11/2",
+      "sp": "11/2",
+      "sp_dec": 6.5,
+      "pos": 0,
+      "res": "?",
+      "score": 8
+    },
+    {
+      "time": "15:17",
+      "meeting": "Warwick",
+      "horse": "Agreymiracleseeker",
+      "trainer": "A King",
+      "stars": 3,
+      "odds": "10/1",
+      "sp": "10/1",
+      "sp_dec": 11.0,
+      "pos": 0,
+      "res": "?",
+      "score": 6
+    },
+    {
+      "time": "17:40",
+      "meeting": "Newcastle",
+      "horse": "Hot Moonstone",
+      "trainer": "J Candlish",
+      "stars": 2,
+      "odds": "14/1",
+      "sp": "14/1",
+      "sp_dec": 15.0,
+      "pos": 0,
+      "res": "?",
+      "score": 6
+    }
+  ],
+  "super6_score": {
+    "listed": 5,
+    "settled": 2,
+    "won": 0,
+    "placed": 0,
+    "win_pct": 0,
+    "place_pct": 0
+  },
+  "bank": {
+    "start": 66.26,
+    "end": 62.36,
+    "next_stake": 0.62,
+    "season_start": 10.0,
+    "season_end": 62.36
+  }
+}
