@@ -1,6 +1,6 @@
 {
   "date": "2026-11-20",
-  "generated": "2026-11-20T18:30:14+00:00",
+  "generated": "2026-11-20T19:00:14+00:00",
   "score": {
     "picks": 9,
     "settled": 7,
@@ -244,13 +244,13 @@
       "sp_dec": 8.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.72,
+      "stake": 0.7,
       "ret": null,
-      "bank_after": 71.71
+      "bank_after": 70.27
     }
   ],
   "strings": {
-    "settled": 4,
+    "settled": 6,
     "win_pct": "0%",
     "place_pct": "0%"
   },
@@ -359,14 +359,14 @@
       "string": "1st",
       "stars": 3,
       "odds": "12/1",
-      "sp": "12/1",
-      "sp_dec": 13.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "9/2",
+      "sp_dec": 5.5,
+      "pos": 8,
+      "res": "UNPL",
       "lost_to": "Sovereign Jazz",
       "stake": 0.72,
-      "ret": null,
-      "bank_after": 71.71
+      "ret": 0.0,
+      "bank_after": 70.99
     },
     {
       "time": "18:45",
@@ -376,24 +376,24 @@
       "string": "1st",
       "stars": 2,
       "odds": "20/1",
-      "sp": "20/1",
-      "sp_dec": 21.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "66/1",
+      "sp_dec": 67.0,
+      "pos": 9,
+      "res": "UNPL",
       "lost_to": "Sovereign Jazz",
       "stake": 0.72,
-      "ret": null,
-      "bank_after": 71.71
+      "ret": 0.0,
+      "bank_after": 70.27
     }
   ],
   "outsider_score": {
     "strings": 8,
-    "settled": 4,
+    "settled": 6,
     "won": 0,
     "placed": 0,
-    "unplaced": 4,
+    "unplaced": 6,
     "nr": 2,
-    "pending": 2,
+    "pending": 0,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -444,16 +444,16 @@
       "trainer": "N Meade",
       "stars": 3,
       "odds": "12/1",
-      "sp": "12/1",
-      "sp_dec": 13.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "9/2",
+      "sp_dec": 5.5,
+      "pos": 8,
+      "res": "UNPL",
       "score": 9
     }
   ],
   "super6_score": {
     "listed": 4,
-    "settled": 3,
+    "settled": 4,
     "won": 0,
     "placed": 0,
     "win_pct": 0,
@@ -461,9 +461,9 @@
   },
   "bank": {
     "start": 68.33,
-    "end": 71.71,
-    "next_stake": 0.72,
+    "end": 70.27,
+    "next_stake": 0.7,
     "season_start": 10.0,
-    "season_end": 71.71
+    "season_end": 70.27
   }
 }
