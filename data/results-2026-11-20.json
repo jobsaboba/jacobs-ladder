@@ -1,6 +1,6 @@
 {
   "date": "2026-11-20",
-  "generated": "2026-11-20T13:00:13+00:00",
+  "generated": "2026-11-20T14:00:14+00:00",
   "score": {
     "picks": 9,
     "settled": 2,
@@ -131,13 +131,13 @@
       "trainer": "L Russell & M Scudamore",
       "stars": 5,
       "odds": "10/3",
-      "sp": "10/3",
-      "sp_dec": 4.333333333333334,
+      "sp": "9/4",
+      "sp_dec": 3.25,
       "pos": 0,
       "res": "?",
-      "stake": 0.73,
+      "stake": 0.72,
       "ret": null,
-      "bank_after": 73.16
+      "bank_after": 72.43
     },
     {
       "time": "14:07",
@@ -150,9 +150,9 @@
       "sp_dec": 5.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.73,
+      "stake": 0.72,
       "ret": null,
-      "bank_after": 73.16
+      "bank_after": 72.43
     },
     {
       "time": "14:30",
@@ -165,9 +165,9 @@
       "sp_dec": 6.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.73,
+      "stake": 0.72,
       "ret": null,
-      "bank_after": 73.16
+      "bank_after": 72.43
     },
     {
       "time": "17:30",
@@ -180,9 +180,9 @@
       "sp_dec": 9.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.73,
+      "stake": 0.72,
       "ret": null,
-      "bank_after": 73.16
+      "bank_after": 72.43
     },
     {
       "time": "18:00",
@@ -195,9 +195,9 @@
       "sp_dec": 1.7272727272727273,
       "pos": 0,
       "res": "?",
-      "stake": 0.73,
+      "stake": 0.72,
       "ret": null,
-      "bank_after": 73.16
+      "bank_after": 72.43
     },
     {
       "time": "20:00",
@@ -210,13 +210,13 @@
       "sp_dec": 8.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.73,
+      "stake": 0.72,
       "ret": null,
-      "bank_after": 73.16
+      "bank_after": 72.43
     }
   ],
   "strings": {
-    "settled": 1,
+    "settled": 2,
     "win_pct": "0%",
     "place_pct": "0%"
   },
@@ -274,14 +274,14 @@
       "string": "1st",
       "stars": 2,
       "odds": "14/1",
-      "sp": "14/1",
-      "sp_dec": 15.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "8/1",
+      "sp_dec": 9.0,
+      "pos": 4,
+      "res": "UNPL",
       "lost_to": "Loulou Madrik",
       "stake": 0.73,
-      "ret": null,
-      "bank_after": 73.16
+      "ret": 0.0,
+      "bank_after": 72.43
     },
     {
       "time": "14:07",
@@ -296,9 +296,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Better Off Alone",
-      "stake": 0.73,
+      "stake": 0.72,
       "ret": null,
-      "bank_after": 73.16
+      "bank_after": 72.43
     },
     {
       "time": "18:15",
@@ -313,9 +313,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Arryaaf",
-      "stake": 0.73,
+      "stake": 0.72,
       "ret": null,
-      "bank_after": 73.16
+      "bank_after": 72.43
     },
     {
       "time": "18:45",
@@ -330,9 +330,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Sovereign Jazz",
-      "stake": 0.73,
+      "stake": 0.72,
       "ret": null,
-      "bank_after": 73.16
+      "bank_after": 72.43
     },
     {
       "time": "18:45",
@@ -347,19 +347,19 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Sovereign Jazz",
-      "stake": 0.73,
+      "stake": 0.72,
       "ret": null,
-      "bank_after": 73.16
+      "bank_after": 72.43
     }
   ],
   "outsider_score": {
     "strings": 8,
-    "settled": 1,
+    "settled": 2,
     "won": 0,
     "placed": 0,
-    "unplaced": 1,
+    "unplaced": 2,
     "nr": 2,
-    "pending": 5,
+    "pending": 4,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -371,10 +371,10 @@
       "trainer": "M Walford",
       "stars": 2,
       "odds": "14/1",
-      "sp": "14/1",
-      "sp_dec": 15.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "8/1",
+      "sp_dec": 9.0,
+      "pos": 4,
+      "res": "UNPL",
       "score": 6
     },
     {
@@ -417,12 +417,19 @@
       "score": 9
     }
   ],
-  "super6_score": null,
+  "super6_score": {
+    "listed": 4,
+    "settled": 1,
+    "won": 0,
+    "placed": 0,
+    "win_pct": 0,
+    "place_pct": 0
+  },
   "bank": {
     "start": 68.33,
-    "end": 73.16,
-    "next_stake": 0.73,
+    "end": 72.43,
+    "next_stake": 0.72,
     "season_start": 10.0,
-    "season_end": 73.16
+    "season_end": 72.43
   }
 }
