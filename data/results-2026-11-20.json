@@ -1,17 +1,17 @@
 {
   "date": "2026-11-20",
-  "generated": "2026-11-20T18:00:12+00:00",
+  "generated": "2026-11-20T18:30:14+00:00",
   "score": {
     "picks": 9,
-    "settled": 6,
+    "settled": 7,
     "won": 2,
-    "placed": 2,
+    "placed": 3,
     "unplaced": 2,
     "nr": 1,
     "void": 0,
-    "pending": 2,
-    "win_pct": 33,
-    "place_pct": 67
+    "pending": 1,
+    "win_pct": 29,
+    "place_pct": 71
   },
   "trainers": [
     {
@@ -21,6 +21,15 @@
       "w": 1,
       "p": 0,
       "u": 1,
+      "n": 2
+    },
+    {
+      "name": "John Gosden",
+      "w14": "30.8%",
+      "p14": "53.8%",
+      "w": 0,
+      "p": 2,
+      "u": 0,
       "n": 2
     },
     {
@@ -49,24 +58,15 @@
       "p": 1,
       "u": 0,
       "n": 1
-    },
-    {
-      "name": "John Gosden",
-      "w14": "30.8%",
-      "p14": "53.8%",
-      "w": 0,
-      "p": 1,
-      "u": 0,
-      "n": 1
     }
   ],
   "stars": [
     {
       "stars": 5,
-      "n": 3,
+      "n": 4,
       "w": 1,
-      "win_pct": "33%",
-      "place_pct": "33%"
+      "win_pct": "25%",
+      "place_pct": "50%"
     },
     {
       "stars": 4,
@@ -79,10 +79,10 @@
   "odds": [
     {
       "label": "evens–2/1",
-      "n": 2,
+      "n": 3,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "50%"
+      "place_pct": "67%"
     },
     {
       "label": "2/1–5/1",
@@ -109,9 +109,9 @@
     },
     {
       "label": "mid (9–12)",
-      "n": 3,
+      "n": 4,
       "w": 1,
-      "win_pct": "33%",
+      "win_pct": "25%",
       "place_pct": "100%"
     }
   ],
@@ -227,11 +227,11 @@
       "odds": "8/11",
       "sp": "8/11",
       "sp_dec": 1.7272727272727273,
-      "pos": 0,
-      "res": "?",
+      "pos": 2,
+      "res": "PLACE",
       "stake": 0.73,
-      "ret": null,
-      "bank_after": 73.16
+      "ret": 0.0,
+      "bank_after": 72.43
     },
     {
       "time": "20:00",
@@ -244,13 +244,13 @@
       "sp_dec": 8.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.73,
+      "stake": 0.72,
       "ret": null,
-      "bank_after": 73.16
+      "bank_after": 71.71
     }
   ],
   "strings": {
-    "settled": 3,
+    "settled": 4,
     "win_pct": "0%",
     "place_pct": "0%"
   },
@@ -342,14 +342,14 @@
       "string": "1st",
       "stars": 2,
       "odds": "16/1",
-      "sp": "16/1",
-      "sp_dec": 17.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "50/1",
+      "sp_dec": 51.0,
+      "pos": 11,
+      "res": "UNPL",
       "lost_to": "Arryaaf",
-      "stake": 0.73,
-      "ret": null,
-      "bank_after": 73.16
+      "stake": 0.72,
+      "ret": 0.0,
+      "bank_after": 71.71
     },
     {
       "time": "18:45",
@@ -364,9 +364,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Sovereign Jazz",
-      "stake": 0.73,
+      "stake": 0.72,
       "ret": null,
-      "bank_after": 73.16
+      "bank_after": 71.71
     },
     {
       "time": "18:45",
@@ -381,19 +381,19 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Sovereign Jazz",
-      "stake": 0.73,
+      "stake": 0.72,
       "ret": null,
-      "bank_after": 73.16
+      "bank_after": 71.71
     }
   ],
   "outsider_score": {
     "strings": 8,
-    "settled": 3,
+    "settled": 4,
     "won": 0,
     "placed": 0,
-    "unplaced": 3,
+    "unplaced": 4,
     "nr": 2,
-    "pending": 3,
+    "pending": 2,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -431,10 +431,10 @@
       "trainer": "D Marnane",
       "stars": 2,
       "odds": "16/1",
-      "sp": "16/1",
-      "sp_dec": 17.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "50/1",
+      "sp_dec": 51.0,
+      "pos": 11,
+      "res": "UNPL",
       "score": 6
     },
     {
@@ -453,7 +453,7 @@
   ],
   "super6_score": {
     "listed": 4,
-    "settled": 2,
+    "settled": 3,
     "won": 0,
     "placed": 0,
     "win_pct": 0,
@@ -461,9 +461,9 @@
   },
   "bank": {
     "start": 68.33,
-    "end": 73.16,
-    "next_stake": 0.73,
+    "end": 71.71,
+    "next_stake": 0.72,
     "season_start": 10.0,
-    "season_end": 73.16
+    "season_end": 71.71
   }
 }
