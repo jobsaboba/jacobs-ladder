@@ -1,16 +1,16 @@
 {
   "date": "2026-11-20",
-  "generated": "2026-11-20T14:00:14+00:00",
+  "generated": "2026-11-20T14:30:13+00:00",
   "score": {
     "picks": 9,
-    "settled": 2,
+    "settled": 4,
     "won": 1,
-    "placed": 0,
-    "unplaced": 1,
+    "placed": 1,
+    "unplaced": 2,
     "nr": 1,
     "void": 0,
-    "pending": 6,
-    "win_pct": 50,
+    "pending": 4,
+    "win_pct": 25,
     "place_pct": 50
   },
   "trainers": [
@@ -31,21 +31,39 @@
       "p": 0,
       "u": 1,
       "n": 1
+    },
+    {
+      "name": "Lucinda Russell",
+      "w14": "22.0%",
+      "p14": "58.5%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
+    },
+    {
+      "name": "Martin Keighley",
+      "w14": "27.3%",
+      "p14": "54.5%",
+      "w": 0,
+      "p": 1,
+      "u": 0,
+      "n": 1
     }
   ],
   "stars": [
     {
       "stars": 5,
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
     },
     {
       "stars": 4,
-      "n": 1,
+      "n": 2,
       "w": 1,
-      "win_pct": "100%",
+      "win_pct": "50%",
       "place_pct": "100%"
     }
   ],
@@ -58,6 +76,13 @@
       "place_pct": "0%"
     },
     {
+      "label": "2/1–5/1",
+      "n": 2,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "50%"
+    },
+    {
       "label": "5/1–10/1",
       "n": 1,
       "w": 1,
@@ -68,16 +93,16 @@
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
     },
     {
       "label": "mid (9–12)",
-      "n": 1,
+      "n": 2,
       "w": 1,
-      "win_pct": "100%",
+      "win_pct": "50%",
       "place_pct": "100%"
     }
   ],
@@ -133,11 +158,11 @@
       "odds": "10/3",
       "sp": "9/4",
       "sp_dec": 3.25,
-      "pos": 0,
-      "res": "?",
+      "pos": 4,
+      "res": "UNPL",
       "stake": 0.72,
-      "ret": null,
-      "bank_after": 72.43
+      "ret": 0.0,
+      "bank_after": 71.71
     },
     {
       "time": "14:07",
@@ -146,13 +171,13 @@
       "trainer": "M Keighley",
       "stars": 4,
       "odds": "4/1",
-      "sp": "4/1",
-      "sp_dec": 5.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "3/1",
+      "sp_dec": 4.0,
+      "pos": 3,
+      "res": "PLACE",
       "stake": 0.72,
-      "ret": null,
-      "bank_after": 72.43
+      "ret": 0.0,
+      "bank_after": 70.99
     },
     {
       "time": "14:30",
@@ -165,9 +190,9 @@
       "sp_dec": 6.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.72,
+      "stake": 0.7,
       "ret": null,
-      "bank_after": 72.43
+      "bank_after": 70.27
     },
     {
       "time": "17:30",
@@ -180,9 +205,9 @@
       "sp_dec": 9.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.72,
+      "stake": 0.7,
       "ret": null,
-      "bank_after": 72.43
+      "bank_after": 70.27
     },
     {
       "time": "18:00",
@@ -195,9 +220,9 @@
       "sp_dec": 1.7272727272727273,
       "pos": 0,
       "res": "?",
-      "stake": 0.72,
+      "stake": 0.7,
       "ret": null,
-      "bank_after": 72.43
+      "bank_after": 70.27
     },
     {
       "time": "20:00",
@@ -210,13 +235,13 @@
       "sp_dec": 8.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.72,
+      "stake": 0.7,
       "ret": null,
-      "bank_after": 72.43
+      "bank_after": 70.27
     }
   ],
   "strings": {
-    "settled": 2,
+    "settled": 3,
     "win_pct": "0%",
     "place_pct": "0%"
   },
@@ -291,14 +316,14 @@
       "string": "1st",
       "stars": 4,
       "odds": "6/1",
-      "sp": "6/1",
-      "sp_dec": 7.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "9/2",
+      "sp_dec": 5.5,
+      "pos": 8,
+      "res": "UNPL",
       "lost_to": "Better Off Alone",
       "stake": 0.72,
-      "ret": null,
-      "bank_after": 72.43
+      "ret": 0.0,
+      "bank_after": 70.27
     },
     {
       "time": "18:15",
@@ -313,9 +338,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Arryaaf",
-      "stake": 0.72,
+      "stake": 0.7,
       "ret": null,
-      "bank_after": 72.43
+      "bank_after": 70.27
     },
     {
       "time": "18:45",
@@ -330,9 +355,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Sovereign Jazz",
-      "stake": 0.72,
+      "stake": 0.7,
       "ret": null,
-      "bank_after": 72.43
+      "bank_after": 70.27
     },
     {
       "time": "18:45",
@@ -347,19 +372,19 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Sovereign Jazz",
-      "stake": 0.72,
+      "stake": 0.7,
       "ret": null,
-      "bank_after": 72.43
+      "bank_after": 70.27
     }
   ],
   "outsider_score": {
     "strings": 8,
-    "settled": 2,
+    "settled": 3,
     "won": 0,
     "placed": 0,
-    "unplaced": 2,
+    "unplaced": 3,
     "nr": 2,
-    "pending": 4,
+    "pending": 3,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -384,10 +409,10 @@
       "trainer": "N P Mulholland",
       "stars": 4,
       "odds": "6/1",
-      "sp": "6/1",
-      "sp_dec": 7.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "9/2",
+      "sp_dec": 5.5,
+      "pos": 8,
+      "res": "UNPL",
       "score": 8
     },
     {
@@ -419,7 +444,7 @@
   ],
   "super6_score": {
     "listed": 4,
-    "settled": 1,
+    "settled": 2,
     "won": 0,
     "placed": 0,
     "win_pct": 0,
@@ -427,9 +452,9 @@
   },
   "bank": {
     "start": 68.33,
-    "end": 72.43,
-    "next_stake": 0.72,
+    "end": 70.27,
+    "next_stake": 0.7,
     "season_start": 10.0,
-    "season_end": 72.43
+    "season_end": 70.27
   }
 }
