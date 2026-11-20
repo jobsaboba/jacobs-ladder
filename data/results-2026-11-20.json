@@ -1,17 +1,17 @@
 {
   "date": "2026-11-20",
-  "generated": "2026-11-20T19:00:14+00:00",
+  "generated": "2026-11-20T20:30:16+00:00",
   "score": {
     "picks": 9,
-    "settled": 7,
+    "settled": 8,
     "won": 2,
     "placed": 3,
-    "unplaced": 2,
+    "unplaced": 3,
     "nr": 1,
     "void": 0,
-    "pending": 1,
-    "win_pct": 29,
-    "place_pct": 71
+    "pending": 0,
+    "win_pct": 25,
+    "place_pct": 62
   },
   "trainers": [
     {
@@ -58,6 +58,15 @@
       "p": 1,
       "u": 0,
       "n": 1
+    },
+    {
+      "name": "Jennie Candlish",
+      "w14": "15.0%",
+      "p14": "65.0%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
     }
   ],
   "stars": [
@@ -74,6 +83,13 @@
       "w": 1,
       "win_pct": "33%",
       "place_pct": "100%"
+    },
+    {
+      "stars": 3,
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
     }
   ],
   "odds": [
@@ -97,6 +113,13 @@
       "w": 1,
       "win_pct": "100%",
       "place_pct": "100%"
+    },
+    {
+      "label": "10/1+",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
     }
   ],
   "fields": [
@@ -113,6 +136,13 @@
       "w": 1,
       "win_pct": "25%",
       "place_pct": "100%"
+    },
+    {
+      "label": "big (13+)",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
     }
   ],
   "picks": [
@@ -240,13 +270,13 @@
       "trainer": "J Candlish",
       "stars": 3,
       "odds": "7/1",
-      "sp": "7/1",
-      "sp_dec": 8.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "14/1",
+      "sp_dec": 15.0,
+      "pos": 11,
+      "res": "UNPL",
       "stake": 0.7,
-      "ret": null,
-      "bank_after": 70.27
+      "ret": 0.0,
+      "bank_after": 69.57
     }
   ],
   "strings": {
@@ -461,9 +491,9 @@
   },
   "bank": {
     "start": 68.33,
-    "end": 70.27,
+    "end": 69.57,
     "next_stake": 0.7,
     "season_start": 10.0,
-    "season_end": 70.27
+    "season_end": 69.57
   }
 }
