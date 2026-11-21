@@ -1,17 +1,17 @@
 {
   "date": "2026-11-21",
-  "generated": "2026-11-21T16:30:20+00:00",
+  "generated": "2026-11-21T17:00:22+00:00",
   "score": {
     "picks": 13,
-    "settled": 11,
-    "won": 3,
+    "settled": 12,
+    "won": 4,
     "placed": 1,
     "unplaced": 7,
     "nr": 0,
     "void": 0,
-    "pending": 2,
-    "win_pct": 27,
-    "place_pct": 36
+    "pending": 1,
+    "win_pct": 33,
+    "place_pct": 42
   },
   "trainers": [
     {
@@ -76,14 +76,23 @@
       "p": 0,
       "u": 0,
       "n": 1
+    },
+    {
+      "name": "Jennie Candlish",
+      "w14": "14.3%",
+      "p14": "66.7%",
+      "w": 1,
+      "p": 0,
+      "u": 0,
+      "n": 1
     }
   ],
   "stars": [
     {
       "stars": 5,
-      "n": 2,
-      "w": 1,
-      "win_pct": "50%",
+      "n": 3,
+      "w": 2,
+      "win_pct": "67%",
       "place_pct": "100%"
     },
     {
@@ -111,10 +120,10 @@
     },
     {
       "label": "2/1–5/1",
-      "n": 6,
-      "w": 1,
-      "win_pct": "17%",
-      "place_pct": "33%"
+      "n": 7,
+      "w": 2,
+      "win_pct": "29%",
+      "place_pct": "43%"
     },
     {
       "label": "5/1–10/1",
@@ -134,8 +143,8 @@
     },
     {
       "label": "mid (9–12)",
-      "n": 1,
-      "w": 1,
+      "n": 2,
+      "w": 2,
       "win_pct": "100%",
       "place_pct": "100%"
     }
@@ -313,13 +322,13 @@
       "trainer": "J Candlish",
       "stars": 5,
       "odds": "3/1",
-      "sp": "3/1",
-      "sp_dec": 4.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "2/1",
+      "sp_dec": 3.0,
+      "pos": 1,
+      "res": "WIN",
       "stake": 0.59,
-      "ret": null,
-      "bank_after": 59.05
+      "ret": 3.0,
+      "bank_after": 61.46
     },
     {
       "time": "17:00",
@@ -332,13 +341,13 @@
       "sp_dec": 2.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.59,
+      "stake": 0.61,
       "ret": null,
-      "bank_after": 59.05
+      "bank_after": 60.87
     }
   ],
   "strings": {
-    "settled": 19,
+    "settled": 20,
     "win_pct": "0%",
     "place_pct": "0%"
   },
@@ -708,14 +717,14 @@
       "string": "1st",
       "stars": 3,
       "odds": "8/1",
-      "sp": "8/1",
-      "sp_dec": 9.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "11/2",
+      "sp_dec": 6.5,
+      "pos": 7,
+      "res": "UNPL",
       "lost_to": "Eagle Storm",
       "stake": 0.59,
-      "ret": null,
-      "bank_after": 59.05
+      "ret": 0.0,
+      "bank_after": 60.87
     },
     {
       "time": "17:00",
@@ -730,19 +739,19 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Cornichon",
-      "stake": 0.59,
+      "stake": 0.61,
       "ret": null,
-      "bank_after": 59.05
+      "bank_after": 60.87
     }
   ],
   "outsider_score": {
     "strings": 23,
-    "settled": 19,
+    "settled": 20,
     "won": 0,
     "placed": 0,
-    "unplaced": 19,
+    "unplaced": 20,
     "nr": 0,
-    "pending": 4,
+    "pending": 3,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -836,9 +845,9 @@
   },
   "bank": {
     "start": 69.57,
-    "end": 59.05,
-    "next_stake": 0.59,
+    "end": 60.87,
+    "next_stake": 0.61,
     "season_start": 10.0,
-    "season_end": 59.05
+    "season_end": 60.87
   }
 }
