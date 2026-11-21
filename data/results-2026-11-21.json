@@ -1,17 +1,17 @@
 {
   "date": "2026-11-21",
-  "generated": "2026-11-21T17:00:22+00:00",
+  "generated": "2026-11-21T17:30:20+00:00",
   "score": {
     "picks": 13,
-    "settled": 12,
-    "won": 4,
+    "settled": 13,
+    "won": 5,
     "placed": 1,
     "unplaced": 7,
     "nr": 0,
     "void": 0,
-    "pending": 1,
-    "win_pct": 33,
-    "place_pct": 42
+    "pending": 0,
+    "win_pct": 38,
+    "place_pct": 46
   },
   "trainers": [
     {
@@ -85,14 +85,23 @@
       "p": 0,
       "u": 0,
       "n": 1
+    },
+    {
+      "name": "Roger Varian",
+      "w14": "50.0%",
+      "p14": "62.5%",
+      "w": 1,
+      "p": 0,
+      "u": 0,
+      "n": 1
     }
   ],
   "stars": [
     {
       "stars": 5,
-      "n": 3,
-      "w": 2,
-      "win_pct": "67%",
+      "n": 4,
+      "w": 3,
+      "win_pct": "75%",
       "place_pct": "100%"
     },
     {
@@ -113,10 +122,10 @@
   "odds": [
     {
       "label": "evens–2/1",
-      "n": 3,
-      "w": 2,
-      "win_pct": "67%",
-      "place_pct": "67%"
+      "n": 4,
+      "w": 3,
+      "win_pct": "75%",
+      "place_pct": "75%"
     },
     {
       "label": "2/1–5/1",
@@ -136,10 +145,10 @@
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 10,
-      "w": 2,
-      "win_pct": "20%",
-      "place_pct": "30%"
+      "n": 11,
+      "w": 3,
+      "win_pct": "27%",
+      "place_pct": "36%"
     },
     {
       "label": "mid (9–12)",
@@ -337,19 +346,19 @@
       "trainer": "R Varian",
       "stars": 5,
       "odds": "6/4",
-      "sp": "6/4",
-      "sp_dec": 2.5,
-      "pos": 0,
-      "res": "?",
+      "sp": "2/9",
+      "sp_dec": 1.2222222222222223,
+      "pos": 1,
+      "res": "WIN",
       "stake": 0.61,
-      "ret": null,
-      "bank_after": 60.87
+      "ret": 1.22,
+      "bank_after": 61.48
     }
   ],
   "strings": {
-    "settled": 20,
+    "settled": 21,
     "win_pct": "0%",
-    "place_pct": "0%"
+    "place_pct": "5%"
   },
   "outsiders": [
     {
@@ -734,26 +743,26 @@
       "string": "1st",
       "stars": 3,
       "odds": "6/1",
-      "sp": "6/1",
-      "sp_dec": 7.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "16/1",
+      "sp_dec": 17.0,
+      "pos": 2,
+      "res": "PLACE",
       "lost_to": "Cornichon",
       "stake": 0.61,
-      "ret": null,
+      "ret": 0.0,
       "bank_after": 60.87
     }
   ],
   "outsider_score": {
     "strings": 23,
-    "settled": 20,
+    "settled": 21,
     "won": 0,
-    "placed": 0,
+    "placed": 1,
     "unplaced": 20,
     "nr": 0,
-    "pending": 3,
+    "pending": 2,
     "win_pct": 0,
-    "place_pct": 0
+    "place_pct": 5
   },
   "super6": [
     {
@@ -828,20 +837,20 @@
       "trainer": "B Haslam",
       "stars": 3,
       "odds": "6/1",
-      "sp": "6/1",
-      "sp_dec": 7.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "16/1",
+      "sp_dec": 17.0,
+      "pos": 2,
+      "res": "PLACE",
       "score": 6
     }
   ],
   "super6_score": {
     "listed": 6,
-    "settled": 5,
+    "settled": 6,
     "won": 0,
-    "placed": 0,
+    "placed": 1,
     "win_pct": 0,
-    "place_pct": 0
+    "place_pct": 17
   },
   "bank": {
     "start": 69.57,
