@@ -1,6 +1,6 @@
 {
   "date": "2026-11-21",
-  "generated": "2026-11-21T16:00:23+00:00",
+  "generated": "2026-11-21T16:30:20+00:00",
   "score": {
     "picks": 13,
     "settled": 11,
@@ -317,9 +317,9 @@
       "sp_dec": 4.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.6,
+      "stake": 0.59,
       "ret": null,
-      "bank_after": 60.25
+      "bank_after": 59.05
     },
     {
       "time": "17:00",
@@ -332,13 +332,13 @@
       "sp_dec": 2.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.6,
+      "stake": 0.59,
       "ret": null,
-      "bank_after": 60.25
+      "bank_after": 59.05
     }
   ],
   "strings": {
-    "settled": 17,
+    "settled": 19,
     "win_pct": "0%",
     "place_pct": "0%"
   },
@@ -676,12 +676,12 @@
       "odds": "10/1",
       "sp": "15/2",
       "sp_dec": 8.5,
-      "pos": 0,
-      "res": "?",
+      "pos": 5,
+      "res": "UNPL",
       "lost_to": "Le Grand Retour",
       "stake": 0.6,
-      "ret": null,
-      "bank_after": 60.25
+      "ret": 0.0,
+      "bank_after": 59.65
     },
     {
       "time": "16:00",
@@ -691,14 +691,14 @@
       "string": "1st",
       "stars": 3,
       "odds": "20/1",
-      "sp": "20/1",
-      "sp_dec": 21.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "22/1",
+      "sp_dec": 23.0,
+      "pos": 5,
+      "res": "UNPL",
       "lost_to": "Obsidian Bay",
       "stake": 0.6,
-      "ret": null,
-      "bank_after": 60.25
+      "ret": 0.0,
+      "bank_after": 59.05
     },
     {
       "time": "16:30",
@@ -713,9 +713,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Eagle Storm",
-      "stake": 0.6,
+      "stake": 0.59,
       "ret": null,
-      "bank_after": 60.25
+      "bank_after": 59.05
     },
     {
       "time": "17:00",
@@ -730,19 +730,19 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Cornichon",
-      "stake": 0.6,
+      "stake": 0.59,
       "ret": null,
-      "bank_after": 60.25
+      "bank_after": 59.05
     }
   ],
   "outsider_score": {
     "strings": 23,
-    "settled": 17,
+    "settled": 19,
     "won": 0,
     "placed": 0,
-    "unplaced": 17,
+    "unplaced": 19,
     "nr": 0,
-    "pending": 6,
+    "pending": 4,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -836,9 +836,9 @@
   },
   "bank": {
     "start": 69.57,
-    "end": 60.25,
-    "next_stake": 0.6,
+    "end": 59.05,
+    "next_stake": 0.59,
     "season_start": 10.0,
-    "season_end": 60.25
+    "season_end": 59.05
   }
 }
