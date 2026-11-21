@@ -1,6 +1,6 @@
 {
   "date": "2026-11-21",
-  "generated": "2026-11-21T17:30:20+00:00",
+  "generated": "2026-11-21T19:00:20+00:00",
   "score": {
     "picks": 13,
     "settled": 13,
@@ -660,7 +660,7 @@
       "odds": "",
       "sp": "",
       "sp_dec": null,
-      "pos": 0,
+      "pos": null,
       "res": "?",
       "lost_to": "Jujubella",
       "stake": 0.57,
@@ -677,7 +677,7 @@
       "odds": "",
       "sp": "",
       "sp_dec": null,
-      "pos": 0,
+      "pos": null,
       "res": "?",
       "lost_to": "Jujubella",
       "stake": 0.57,
