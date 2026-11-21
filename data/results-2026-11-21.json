@@ -1,17 +1,17 @@
 {
   "date": "2026-11-21",
-  "generated": "2026-11-21T15:00:21+00:00",
+  "generated": "2026-11-21T15:30:19+00:00",
   "score": {
     "picks": 13,
-    "settled": 8,
+    "settled": 9,
     "won": 2,
     "placed": 0,
-    "unplaced": 6,
+    "unplaced": 7,
     "nr": 0,
     "void": 0,
-    "pending": 5,
-    "win_pct": 25,
-    "place_pct": 25
+    "pending": 4,
+    "win_pct": 22,
+    "place_pct": 22
   },
   "trainers": [
     {
@@ -22,6 +22,15 @@
       "p": 0,
       "u": 3,
       "n": 3
+    },
+    {
+      "name": "Noel Meade",
+      "w14": "27.3%",
+      "p14": "63.6%",
+      "w": 1,
+      "p": 0,
+      "u": 1,
+      "n": 2
     },
     {
       "name": "Henry De Bromhead",
@@ -39,15 +48,6 @@
       "w": 0,
       "p": 0,
       "u": 1,
-      "n": 1
-    },
-    {
-      "name": "Noel Meade",
-      "w14": "27.3%",
-      "p14": "63.6%",
-      "w": 1,
-      "p": 0,
-      "u": 0,
       "n": 1
     },
     {
@@ -79,10 +79,10 @@
     },
     {
       "stars": 4,
-      "n": 5,
+      "n": 6,
       "w": 1,
-      "win_pct": "20%",
-      "place_pct": "20%"
+      "win_pct": "17%",
+      "place_pct": "17%"
     },
     {
       "stars": 3,
@@ -102,7 +102,7 @@
     },
     {
       "label": "2/1–5/1",
-      "n": 3,
+      "n": 4,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -118,10 +118,10 @@
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 8,
+      "n": 9,
       "w": 2,
-      "win_pct": "25%",
-      "place_pct": "25%"
+      "win_pct": "22%",
+      "place_pct": "22%"
     }
   ],
   "picks": [
@@ -252,13 +252,13 @@
       "trainer": "N Meade",
       "stars": 4,
       "odds": "11/4",
-      "sp": "11/4",
-      "sp_dec": 3.75,
-      "pos": 0,
-      "res": "?",
+      "sp": "7/2",
+      "sp_dec": 4.5,
+      "pos": 5,
+      "res": "UNPL",
       "stake": 0.59,
-      "ret": null,
-      "bank_after": 59.39
+      "ret": 0.0,
+      "bank_after": 58.8
     },
     {
       "time": "15:35",
@@ -271,9 +271,9 @@
       "sp_dec": 3.75,
       "pos": 0,
       "res": "?",
-      "stake": 0.59,
+      "stake": 0.58,
       "ret": null,
-      "bank_after": 59.39
+      "bank_after": 57.63
     },
     {
       "time": "15:40",
@@ -286,9 +286,9 @@
       "sp_dec": 8.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.59,
+      "stake": 0.58,
       "ret": null,
-      "bank_after": 59.39
+      "bank_after": 57.63
     },
     {
       "time": "16:30",
@@ -301,9 +301,9 @@
       "sp_dec": 4.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.59,
+      "stake": 0.58,
       "ret": null,
-      "bank_after": 59.39
+      "bank_after": 57.63
     },
     {
       "time": "17:00",
@@ -316,13 +316,13 @@
       "sp_dec": 2.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.59,
+      "stake": 0.58,
       "ret": null,
-      "bank_after": 59.39
+      "bank_after": 57.63
     }
   ],
   "strings": {
-    "settled": 14,
+    "settled": 16,
     "win_pct": "0%",
     "place_pct": "0%"
   },
@@ -573,14 +573,14 @@
       "string": "1st",
       "stars": 3,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
+      "sp": "9/2",
+      "sp_dec": 5.5,
       "pos": 0,
-      "res": "?",
+      "res": "UNPL",
       "lost_to": "Affordale Fury",
       "stake": 0.59,
-      "ret": null,
-      "bank_after": 59.39
+      "ret": 0.0,
+      "bank_after": 58.21
     },
     {
       "time": "15:18",
@@ -590,14 +590,14 @@
       "string": "1st",
       "stars": 2,
       "odds": "12/1",
-      "sp": "12/1",
-      "sp_dec": 13.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "16/1",
+      "sp_dec": 17.0,
+      "pos": 4,
+      "res": "UNPL",
       "lost_to": "Gabriel's Getaway",
-      "stake": 0.59,
-      "ret": null,
-      "bank_after": 59.39
+      "stake": 0.58,
+      "ret": 0.0,
+      "bank_after": 57.63
     },
     {
       "time": "15:23",
@@ -607,14 +607,14 @@
       "string": "1st",
       "stars": 4,
       "odds": "33/1",
-      "sp": "33/1",
-      "sp_dec": 34.0,
+      "sp": "28/1",
+      "sp_dec": 29.0,
       "pos": 0,
       "res": "?",
       "lost_to": "Tangara Bay",
-      "stake": 0.59,
+      "stake": 0.58,
       "ret": null,
-      "bank_after": 59.39
+      "bank_after": 57.63
     },
     {
       "time": "15:30",
@@ -629,9 +629,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Jujubella",
-      "stake": 0.59,
+      "stake": 0.58,
       "ret": null,
-      "bank_after": 59.39
+      "bank_after": 57.63
     },
     {
       "time": "15:30",
@@ -646,9 +646,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Jujubella",
-      "stake": 0.59,
+      "stake": 0.58,
       "ret": null,
-      "bank_after": 59.39
+      "bank_after": 57.63
     },
     {
       "time": "15:53",
@@ -663,9 +663,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Le Grand Retour",
-      "stake": 0.59,
+      "stake": 0.58,
       "ret": null,
-      "bank_after": 59.39
+      "bank_after": 57.63
     },
     {
       "time": "16:00",
@@ -680,9 +680,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Obsidian Bay",
-      "stake": 0.59,
+      "stake": 0.58,
       "ret": null,
-      "bank_after": 59.39
+      "bank_after": 57.63
     },
     {
       "time": "16:30",
@@ -697,9 +697,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Eagle Storm",
-      "stake": 0.59,
+      "stake": 0.58,
       "ret": null,
-      "bank_after": 59.39
+      "bank_after": 57.63
     },
     {
       "time": "17:00",
@@ -714,19 +714,19 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Cornichon",
-      "stake": 0.59,
+      "stake": 0.58,
       "ret": null,
-      "bank_after": 59.39
+      "bank_after": 57.63
     }
   ],
   "outsider_score": {
     "strings": 23,
-    "settled": 14,
+    "settled": 16,
     "won": 0,
     "placed": 0,
-    "unplaced": 14,
+    "unplaced": 16,
     "nr": 0,
-    "pending": 9,
+    "pending": 7,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -790,8 +790,8 @@
       "trainer": "Peter Fahey",
       "stars": 4,
       "odds": "33/1",
-      "sp": "33/1",
-      "sp_dec": 34.0,
+      "sp": "28/1",
+      "sp_dec": 29.0,
       "pos": 0,
       "res": "?",
       "score": 10
@@ -820,9 +820,9 @@
   },
   "bank": {
     "start": 69.57,
-    "end": 59.39,
-    "next_stake": 0.59,
+    "end": 57.63,
+    "next_stake": 0.58,
     "season_start": 10.0,
-    "season_end": 59.39
+    "season_end": 57.63
   }
 }
