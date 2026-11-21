@@ -1,19 +1,28 @@
 {
   "date": "2026-11-21",
-  "generated": "2026-11-21T13:00:20+00:00",
+  "generated": "2026-11-21T13:30:19+00:00",
   "score": {
     "picks": 13,
-    "settled": 1,
+    "settled": 4,
     "won": 1,
     "placed": 0,
-    "unplaced": 0,
+    "unplaced": 3,
     "nr": 0,
     "void": 0,
-    "pending": 12,
-    "win_pct": 100,
-    "place_pct": 100
+    "pending": 9,
+    "win_pct": 25,
+    "place_pct": 25
   },
   "trainers": [
+    {
+      "name": "Nigel Twiston-Davies",
+      "w14": "19.4%",
+      "p14": "71.0%",
+      "w": 0,
+      "p": 0,
+      "u": 2,
+      "n": 2
+    },
     {
       "name": "Henry De Bromhead",
       "w14": "21.1%",
@@ -21,6 +30,15 @@
       "w": 1,
       "p": 0,
       "u": 0,
+      "n": 1
+    },
+    {
+      "name": "Paul Nolan",
+      "w14": "23.1%",
+      "p14": "38.5%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
       "n": 1
     }
   ],
@@ -31,24 +49,52 @@
       "w": 1,
       "win_pct": "100%",
       "place_pct": "100%"
+    },
+    {
+      "stars": 4,
+      "n": 2,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
+    {
+      "stars": 3,
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
     }
   ],
   "odds": [
     {
       "label": "evens–2/1",
-      "n": 1,
+      "n": 2,
       "w": 1,
-      "win_pct": "100%",
-      "place_pct": "100%"
+      "win_pct": "50%",
+      "place_pct": "50%"
+    },
+    {
+      "label": "2/1–5/1",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
+    {
+      "label": "5/1–10/1",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
     }
   ],
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 1,
+      "n": 4,
       "w": 1,
-      "win_pct": "100%",
-      "place_pct": "100%"
+      "win_pct": "25%",
+      "place_pct": "25%"
     }
   ],
   "picks": [
@@ -76,11 +122,11 @@
       "odds": "8/1",
       "sp": "6/4",
       "sp_dec": 2.5,
-      "pos": 0,
-      "res": "?",
+      "pos": 3,
+      "res": "UNPL",
       "stake": 0.66,
-      "ret": null,
-      "bank_after": 65.58
+      "ret": 0.0,
+      "bank_after": 64.92
     },
     {
       "time": "13:03",
@@ -89,13 +135,13 @@
       "trainer": "P Nolan",
       "stars": 4,
       "odds": "3/1",
-      "sp": "3/1",
-      "sp_dec": 4.0,
-      "pos": 0,
-      "res": "?",
-      "stake": 0.66,
-      "ret": null,
-      "bank_after": 65.58
+      "sp": "4/1",
+      "sp_dec": 5.0,
+      "pos": 7,
+      "res": "UNPL",
+      "stake": 0.65,
+      "ret": 0.0,
+      "bank_after": 64.27
     },
     {
       "time": "13:15",
@@ -104,13 +150,13 @@
       "trainer": "N & W Twiston-Davies",
       "stars": 4,
       "odds": "6/1",
-      "sp": "6/1",
-      "sp_dec": 7.0,
-      "pos": 0,
-      "res": "?",
-      "stake": 0.66,
-      "ret": null,
-      "bank_after": 65.58
+      "sp": "7/1",
+      "sp_dec": 8.0,
+      "pos": 5,
+      "res": "UNPL",
+      "stake": 0.64,
+      "ret": 0.0,
+      "bank_after": 62.98
     },
     {
       "time": "13:38",
@@ -123,9 +169,9 @@
       "sp_dec": 5.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.66,
+      "stake": 0.62,
       "ret": null,
-      "bank_after": 65.58
+      "bank_after": 62.34
     },
     {
       "time": "13:50",
@@ -138,9 +184,9 @@
       "sp_dec": 6.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.66,
+      "stake": 0.62,
       "ret": null,
-      "bank_after": 65.58
+      "bank_after": 62.34
     },
     {
       "time": "14:05",
@@ -153,9 +199,9 @@
       "sp_dec": 9.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.66,
+      "stake": 0.62,
       "ret": null,
-      "bank_after": 65.58
+      "bank_after": 62.34
     },
     {
       "time": "14:40",
@@ -168,9 +214,9 @@
       "sp_dec": 9.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.66,
+      "stake": 0.62,
       "ret": null,
-      "bank_after": 65.58
+      "bank_after": 62.34
     },
     {
       "time": "15:00",
@@ -183,9 +229,9 @@
       "sp_dec": 3.75,
       "pos": 0,
       "res": "?",
-      "stake": 0.66,
+      "stake": 0.62,
       "ret": null,
-      "bank_after": 65.58
+      "bank_after": 62.34
     },
     {
       "time": "15:35",
@@ -198,9 +244,9 @@
       "sp_dec": 3.75,
       "pos": 0,
       "res": "?",
-      "stake": 0.66,
+      "stake": 0.62,
       "ret": null,
-      "bank_after": 65.58
+      "bank_after": 62.34
     },
     {
       "time": "15:40",
@@ -213,9 +259,9 @@
       "sp_dec": 8.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.66,
+      "stake": 0.62,
       "ret": null,
-      "bank_after": 65.58
+      "bank_after": 62.34
     },
     {
       "time": "16:30",
@@ -228,9 +274,9 @@
       "sp_dec": 4.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.66,
+      "stake": 0.62,
       "ret": null,
-      "bank_after": 65.58
+      "bank_after": 62.34
     },
     {
       "time": "17:00",
@@ -243,13 +289,13 @@
       "sp_dec": 2.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.66,
+      "stake": 0.62,
       "ret": null,
-      "bank_after": 65.58
+      "bank_after": 62.34
     }
   ],
   "strings": {
-    "settled": 7,
+    "settled": 9,
     "win_pct": "0%",
     "place_pct": "0%"
   },
@@ -381,14 +427,14 @@
       "string": "1st",
       "stars": 3,
       "odds": "7/1",
-      "sp": "7/1",
-      "sp_dec": 8.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "22/1",
+      "sp_dec": 23.0,
+      "pos": 6,
+      "res": "UNPL",
       "lost_to": "The Big Clubman",
-      "stake": 0.66,
-      "ret": null,
-      "bank_after": 65.58
+      "stake": 0.65,
+      "ret": 0.0,
+      "bank_after": 63.62
     },
     {
       "time": "13:15",
@@ -400,12 +446,12 @@
       "odds": "16/1",
       "sp": "16/1",
       "sp_dec": 17.0,
-      "pos": 0,
-      "res": "?",
+      "pos": 8,
+      "res": "UNPL",
       "lost_to": "Saint Jeannais",
-      "stake": 0.66,
-      "ret": null,
-      "bank_after": 65.58
+      "stake": 0.64,
+      "ret": 0.0,
+      "bank_after": 62.34
     },
     {
       "time": "13:38",
@@ -420,9 +466,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Letos",
-      "stake": 0.66,
+      "stake": 0.62,
       "ret": null,
-      "bank_after": 65.58
+      "bank_after": 62.34
     },
     {
       "time": "13:58",
@@ -437,9 +483,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Pergamon",
-      "stake": 0.66,
+      "stake": 0.62,
       "ret": null,
-      "bank_after": 65.58
+      "bank_after": 62.34
     },
     {
       "time": "14:10",
@@ -454,9 +500,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Blake",
-      "stake": 0.66,
+      "stake": 0.62,
       "ret": null,
-      "bank_after": 65.58
+      "bank_after": 62.34
     },
     {
       "time": "14:25",
@@ -471,9 +517,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "The Egyptian Ginge",
-      "stake": 0.66,
+      "stake": 0.62,
       "ret": null,
-      "bank_after": 65.58
+      "bank_after": 62.34
     },
     {
       "time": "14:25",
@@ -488,9 +534,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "The Egyptian Ginge",
-      "stake": 0.66,
+      "stake": 0.62,
       "ret": null,
-      "bank_after": 65.58
+      "bank_after": 62.34
     },
     {
       "time": "15:00",
@@ -505,9 +551,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Affordale Fury",
-      "stake": 0.66,
+      "stake": 0.62,
       "ret": null,
-      "bank_after": 65.58
+      "bank_after": 62.34
     },
     {
       "time": "15:18",
@@ -522,9 +568,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Gabriel's Getaway",
-      "stake": 0.66,
+      "stake": 0.62,
       "ret": null,
-      "bank_after": 65.58
+      "bank_after": 62.34
     },
     {
       "time": "15:23",
@@ -539,9 +585,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Tangara Bay",
-      "stake": 0.66,
+      "stake": 0.62,
       "ret": null,
-      "bank_after": 65.58
+      "bank_after": 62.34
     },
     {
       "time": "15:30",
@@ -556,9 +602,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Jujubella",
-      "stake": 0.66,
+      "stake": 0.62,
       "ret": null,
-      "bank_after": 65.58
+      "bank_after": 62.34
     },
     {
       "time": "15:30",
@@ -573,9 +619,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Jujubella",
-      "stake": 0.66,
+      "stake": 0.62,
       "ret": null,
-      "bank_after": 65.58
+      "bank_after": 62.34
     },
     {
       "time": "15:53",
@@ -590,9 +636,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Le Grand Retour",
-      "stake": 0.66,
+      "stake": 0.62,
       "ret": null,
-      "bank_after": 65.58
+      "bank_after": 62.34
     },
     {
       "time": "16:00",
@@ -607,9 +653,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Obsidian Bay",
-      "stake": 0.66,
+      "stake": 0.62,
       "ret": null,
-      "bank_after": 65.58
+      "bank_after": 62.34
     },
     {
       "time": "16:30",
@@ -624,9 +670,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Eagle Storm",
-      "stake": 0.66,
+      "stake": 0.62,
       "ret": null,
-      "bank_after": 65.58
+      "bank_after": 62.34
     },
     {
       "time": "17:00",
@@ -641,19 +687,19 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Cornichon",
-      "stake": 0.66,
+      "stake": 0.62,
       "ret": null,
-      "bank_after": 65.58
+      "bank_after": 62.34
     }
   ],
   "outsider_score": {
     "strings": 23,
-    "settled": 7,
+    "settled": 9,
     "won": 0,
     "placed": 0,
-    "unplaced": 7,
+    "unplaced": 9,
     "nr": 0,
-    "pending": 16,
+    "pending": 14,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -747,9 +793,9 @@
   },
   "bank": {
     "start": 69.57,
-    "end": 65.58,
-    "next_stake": 0.66,
+    "end": 62.34,
+    "next_stake": 0.62,
     "season_start": 10.0,
-    "season_end": 65.58
+    "season_end": 62.34
   }
 }
