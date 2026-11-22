@@ -1,0 +1,418 @@
+{
+  "date": "2026-11-22",
+  "generated": "2026-11-22T13:00:36+00:00",
+  "score": {
+    "picks": 8,
+    "settled": 3,
+    "won": 0,
+    "placed": 0,
+    "unplaced": 3,
+    "nr": 0,
+    "void": 1,
+    "pending": 4,
+    "win_pct": 0,
+    "place_pct": 0
+  },
+  "trainers": [
+    {
+      "name": "Roger Varian",
+      "w14": "60.0%",
+      "p14": "80.0%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
+    },
+    {
+      "name": "Warren Greatrex",
+      "w14": "29.4%",
+      "p14": "41.2%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
+    },
+    {
+      "name": "Paul Nolan",
+      "w14": "25.0%",
+      "p14": "33.3%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
+    }
+  ],
+  "stars": [
+    {
+      "stars": 5,
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
+    {
+      "stars": 4,
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
+    {
+      "stars": 3,
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    }
+  ],
+  "odds": [
+    {
+      "label": "evens–2/1",
+      "n": 2,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
+    {
+      "label": "10/1+",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    }
+  ],
+  "fields": [
+    {
+      "label": "small (≤8)",
+      "n": 2,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
+    {
+      "label": "mid (9–12)",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    }
+  ],
+  "picks": [
+    {
+      "time": "11:55",
+      "meeting": "Lingfield",
+      "horse": "Arkat",
+      "trainer": "R Varian",
+      "stars": 5,
+      "odds": "3/1",
+      "sp": "11/8",
+      "sp_dec": 2.375,
+      "pos": 4,
+      "res": "UNPL",
+      "stake": 0.61,
+      "ret": 0.0,
+      "bank_after": 60.26
+    },
+    {
+      "time": "12:37",
+      "meeting": "Exeter",
+      "horse": "Naturaouse",
+      "trainer": "W Greatrex",
+      "stars": 4,
+      "odds": "5/2",
+      "sp": "13/8",
+      "sp_dec": 2.625,
+      "pos": 5,
+      "res": "UNPL",
+      "stake": 0.59,
+      "ret": 0.0,
+      "bank_after": 58.46
+    },
+    {
+      "time": "12:49",
+      "meeting": "Cork",
+      "horse": "Bergomi",
+      "trainer": "P Nolan",
+      "stars": 3,
+      "odds": "8/1",
+      "sp": "12/1",
+      "sp_dec": 13.0,
+      "pos": 0,
+      "res": "UNPL",
+      "stake": 0.58,
+      "ret": 0.0,
+      "bank_after": 57.88
+    },
+    {
+      "time": "14:37",
+      "meeting": "Exeter",
+      "horse": "He Knows Better",
+      "trainer": "W Greatrex",
+      "stars": 4,
+      "odds": "5/1",
+      "sp": "5/1",
+      "sp_dec": 6.0,
+      "pos": 0,
+      "res": "?",
+      "stake": 0.58,
+      "ret": null,
+      "bank_after": 57.88
+    },
+    {
+      "time": "14:43",
+      "meeting": "Fakenham",
+      "horse": "Mr Mackay",
+      "trainer": "N & W Twiston-Davies",
+      "stars": 5,
+      "odds": "6/4",
+      "sp": "6/4",
+      "sp_dec": 2.5,
+      "pos": 0,
+      "res": "VOID"
+    },
+    {
+      "time": "14:49",
+      "meeting": "Cork",
+      "horse": "Gin Tonic",
+      "trainer": "P Nolan",
+      "stars": 3,
+      "odds": "15/2",
+      "sp": "15/2",
+      "sp_dec": 8.5,
+      "pos": 0,
+      "res": "?",
+      "stake": 0.58,
+      "ret": null,
+      "bank_after": 57.88
+    },
+    {
+      "time": "15:25",
+      "meeting": "Lingfield",
+      "horse": "Noble Grace",
+      "trainer": "W Greatrex",
+      "stars": 3,
+      "odds": "9/2",
+      "sp": "9/2",
+      "sp_dec": 5.5,
+      "pos": 0,
+      "res": "?",
+      "stake": 0.58,
+      "ret": null,
+      "bank_after": 57.88
+    },
+    {
+      "time": "15:49",
+      "meeting": "Cork",
+      "horse": "King Of The Greys",
+      "trainer": "Peter Fahey",
+      "stars": 4,
+      "odds": "9/2",
+      "sp": "9/2",
+      "sp_dec": 5.5,
+      "pos": 0,
+      "res": "?",
+      "stake": 0.58,
+      "ret": null,
+      "bank_after": 57.88
+    }
+  ],
+  "strings": {
+    "settled": 2,
+    "win_pct": "0%",
+    "place_pct": "50%"
+  },
+  "outsiders": [
+    {
+      "time": "11:55",
+      "meeting": "Lingfield",
+      "horse": "Rey De Vega",
+      "trainer": "G Boughey",
+      "string": "1st",
+      "stars": 3,
+      "odds": "6/1",
+      "sp": "17/2",
+      "sp_dec": 9.5,
+      "pos": 2,
+      "res": "PLACE",
+      "lost_to": "Arkat",
+      "stake": 0.61,
+      "ret": 0.0,
+      "bank_after": 59.65
+    },
+    {
+      "time": "12:30",
+      "meeting": "Punchestown",
+      "horse": "Beechwood Road",
+      "trainer": "Peter Fahey",
+      "string": "1st",
+      "stars": 2,
+      "odds": "33/1",
+      "sp": "16/1",
+      "sp_dec": 17.0,
+      "pos": 7,
+      "res": "UNPL",
+      "lost_to": "Beechwood Road",
+      "stake": 0.6,
+      "ret": 0.0,
+      "bank_after": 59.05
+    },
+    {
+      "time": "13:25",
+      "meeting": "Lingfield",
+      "horse": "Gilet",
+      "trainer": "W Greatrex",
+      "string": "1st",
+      "stars": 3,
+      "odds": "10/1",
+      "sp": "10/1",
+      "sp_dec": 11.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "Gilet",
+      "stake": 0.58,
+      "ret": null,
+      "bank_after": 57.88
+    },
+    {
+      "time": "14:13",
+      "meeting": "Fakenham",
+      "horse": "I Am The Moon",
+      "trainer": "N & W Twiston-Davies",
+      "string": "1st",
+      "stars": 2,
+      "odds": "12/1",
+      "sp": "12/1",
+      "sp_dec": 13.0,
+      "pos": 0,
+      "res": "VOID",
+      "lost_to": "I Am The Moon"
+    },
+    {
+      "time": "14:19",
+      "meeting": "Cork",
+      "horse": "I Am Lorenzo",
+      "trainer": "P Nolan",
+      "string": "1st",
+      "stars": 2,
+      "odds": "33/1",
+      "sp": "33/1",
+      "sp_dec": 34.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "I Am Lorenzo",
+      "stake": 0.58,
+      "ret": null,
+      "bank_after": 57.88
+    },
+    {
+      "time": "15:30",
+      "meeting": "Punchestown",
+      "horse": "Doctor Grimwig",
+      "trainer": "N Meade",
+      "string": "1st",
+      "stars": 3,
+      "odds": "10/1",
+      "sp": "10/1",
+      "sp_dec": 11.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "Doctor Grimwig",
+      "stake": 0.58,
+      "ret": null,
+      "bank_after": 57.88
+    }
+  ],
+  "outsider_score": {
+    "strings": 6,
+    "settled": 2,
+    "won": 0,
+    "placed": 1,
+    "unplaced": 1,
+    "nr": 0,
+    "pending": 4,
+    "win_pct": 0,
+    "place_pct": 50
+  },
+  "super6": [
+    {
+      "time": "11:55",
+      "meeting": "Lingfield",
+      "horse": "Rey De Vega",
+      "trainer": "G Boughey",
+      "stars": 3,
+      "odds": "6/1",
+      "sp": "17/2",
+      "sp_dec": 9.5,
+      "pos": 2,
+      "res": "PLACE",
+      "score": 7
+    },
+    {
+      "time": "12:30",
+      "meeting": "Punchestown",
+      "horse": "Beechwood Road",
+      "trainer": "Peter Fahey",
+      "stars": 2,
+      "odds": "33/1",
+      "sp": "16/1",
+      "sp_dec": 17.0,
+      "pos": 7,
+      "res": "UNPL",
+      "score": 6
+    },
+    {
+      "time": "13:25",
+      "meeting": "Lingfield",
+      "horse": "Gilet",
+      "trainer": "W Greatrex",
+      "stars": 3,
+      "odds": "10/1",
+      "sp": "10/1",
+      "sp_dec": 11.0,
+      "pos": 0,
+      "res": "?",
+      "score": 8
+    },
+    {
+      "time": "14:13",
+      "meeting": "Fakenham",
+      "horse": "I Am The Moon",
+      "trainer": "N & W Twiston-Davies",
+      "stars": 2,
+      "odds": "12/1",
+      "sp": "12/1",
+      "sp_dec": 13.0,
+      "pos": 0,
+      "res": "VOID",
+      "score": 6
+    },
+    {
+      "time": "15:30",
+      "meeting": "Punchestown",
+      "horse": "Doctor Grimwig",
+      "trainer": "N Meade",
+      "stars": 3,
+      "odds": "10/1",
+      "sp": "10/1",
+      "sp_dec": 11.0,
+      "pos": 0,
+      "res": "?",
+      "score": 8
+    }
+  ],
+  "super6_score": {
+    "listed": 5,
+    "settled": 2,
+    "won": 0,
+    "placed": 1,
+    "win_pct": 0,
+    "place_pct": 50
+  },
+  "bank": {
+    "start": 60.87,
+    "end": 57.88,
+    "next_stake": 0.58,
+    "season_start": 10.0,
+    "season_end": 57.88
+  }
+}
