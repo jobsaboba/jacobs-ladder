@@ -1,6 +1,6 @@
 {
   "date": "2026-11-22",
-  "generated": "2026-11-22T14:00:40+00:00",
+  "generated": "2026-11-22T14:30:39+00:00",
   "score": {
     "picks": 8,
     "settled": 3,
@@ -163,7 +163,7 @@
       "res": "?",
       "stake": 0.57,
       "ret": null,
-      "bank_after": 57.3
+      "bank_after": 56.73
     },
     {
       "time": "14:43",
@@ -190,7 +190,7 @@
       "res": "?",
       "stake": 0.57,
       "ret": null,
-      "bank_after": 57.3
+      "bank_after": 56.73
     },
     {
       "time": "15:25",
@@ -205,7 +205,7 @@
       "res": "?",
       "stake": 0.57,
       "ret": null,
-      "bank_after": 57.3
+      "bank_after": 56.73
     },
     {
       "time": "15:49",
@@ -220,13 +220,13 @@
       "res": "?",
       "stake": 0.57,
       "ret": null,
-      "bank_after": 57.3
+      "bank_after": 56.73
     }
   ],
   "strings": {
-    "settled": 3,
+    "settled": 4,
     "win_pct": "0%",
-    "place_pct": "33%"
+    "place_pct": "25%"
   },
   "outsiders": [
     {
@@ -302,14 +302,14 @@
       "string": "1st",
       "stars": 2,
       "odds": "33/1",
-      "sp": "33/1",
-      "sp_dec": 34.0,
+      "sp": "12/1",
+      "sp_dec": 13.0,
       "pos": 0,
-      "res": "?",
+      "res": "UNPL",
       "lost_to": "I Am Lorenzo",
       "stake": 0.57,
-      "ret": null,
-      "bank_after": 57.3
+      "ret": 0.0,
+      "bank_after": 56.73
     },
     {
       "time": "15:30",
@@ -326,19 +326,19 @@
       "lost_to": "Doctor Grimwig",
       "stake": 0.57,
       "ret": null,
-      "bank_after": 57.3
+      "bank_after": 56.73
     }
   ],
   "outsider_score": {
     "strings": 6,
-    "settled": 3,
+    "settled": 4,
     "won": 0,
     "placed": 1,
-    "unplaced": 2,
+    "unplaced": 3,
     "nr": 0,
-    "pending": 3,
+    "pending": 2,
     "win_pct": 0,
-    "place_pct": 33
+    "place_pct": 25
   },
   "super6": [
     {
@@ -417,9 +417,9 @@
   },
   "bank": {
     "start": 60.87,
-    "end": 57.3,
+    "end": 56.73,
     "next_stake": 0.57,
     "season_start": 10.0,
-    "season_end": 57.3
+    "season_end": 56.73
   }
 }
