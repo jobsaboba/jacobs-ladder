@@ -1,6 +1,6 @@
 {
   "date": "2026-11-22",
-  "generated": "2026-11-22T15:00:33+00:00",
+  "generated": "2026-11-22T15:30:40+00:00",
   "score": {
     "picks": 8,
     "settled": 5,
@@ -91,17 +91,17 @@
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 3,
-      "w": 1,
-      "win_pct": "33%",
-      "place_pct": "33%"
-    },
-    {
-      "label": "mid (9–12)",
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
+    },
+    {
+      "label": "mid (9–12)",
+      "n": 2,
+      "w": 1,
+      "win_pct": "50%",
+      "place_pct": "50%"
     },
     {
       "label": "big (13+)",
