@@ -1,6 +1,6 @@
 {
   "date": "2026-11-23",
-  "generated": "2026-11-23T13:30:32+00:00",
+  "generated": "2026-11-23T14:00:36+00:00",
   "score": {
     "picks": 9,
     "settled": 1,
@@ -219,8 +219,8 @@
       "string": "1st",
       "stars": 3,
       "odds": "12/1",
-      "sp": "12/1",
-      "sp_dec": 13.0,
+      "sp": "2/1",
+      "sp_dec": 3.0,
       "pos": 0,
       "res": "?",
       "lost_to": "Marsiac",
@@ -428,8 +428,8 @@
       "trainer": "K Bailey & M Nicholls",
       "stars": 3,
       "odds": "12/1",
-      "sp": "12/1",
-      "sp_dec": 13.0,
+      "sp": "2/1",
+      "sp_dec": 3.0,
       "pos": 0,
       "res": "?",
       "score": 9
