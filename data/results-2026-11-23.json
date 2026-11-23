@@ -1,17 +1,17 @@
 {
   "date": "2026-11-23",
-  "generated": "2026-11-23T18:00:35+00:00",
+  "generated": "2026-11-23T18:30:36+00:00",
   "score": {
     "picks": 9,
-    "settled": 7,
+    "settled": 8,
     "won": 3,
     "placed": 0,
-    "unplaced": 4,
+    "unplaced": 5,
     "nr": 0,
     "void": 0,
-    "pending": 2,
-    "win_pct": 43,
-    "place_pct": 43
+    "pending": 1,
+    "win_pct": 38,
+    "place_pct": 38
   },
   "trainers": [
     {
@@ -58,6 +58,15 @@
       "p": 0,
       "u": 0,
       "n": 1
+    },
+    {
+      "name": "Ben Haslam",
+      "w14": "37.5%",
+      "p14": "75.0%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
     }
   ],
   "stars": [
@@ -77,7 +86,7 @@
     },
     {
       "stars": 3,
-      "n": 3,
+      "n": 4,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -107,7 +116,7 @@
     },
     {
       "label": "10/1+",
-      "n": 2,
+      "n": 3,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -116,10 +125,10 @@
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 2,
+      "n": 3,
       "w": 1,
-      "win_pct": "50%",
-      "place_pct": "50%"
+      "win_pct": "33%",
+      "place_pct": "33%"
     },
     {
       "label": "mid (9–12)",
@@ -242,13 +251,13 @@
       "trainer": "B Haslam",
       "stars": 3,
       "odds": "8/1",
-      "sp": "8/1",
-      "sp_dec": 9.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "28/1",
+      "sp_dec": 29.0,
+      "pos": 8,
+      "res": "UNPL",
       "stake": 0.9,
-      "ret": null,
-      "bank_after": 90.39
+      "ret": 0.0,
+      "bank_after": 89.49
     },
     {
       "time": "18:30",
@@ -261,9 +270,9 @@
       "sp_dec": 7.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.9,
+      "stake": 0.89,
       "ret": null,
-      "bank_after": 90.39
+      "bank_after": 89.49
     }
   ],
   "strings": {
@@ -469,9 +478,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Jez Bomb",
-      "stake": 0.9,
+      "stake": 0.89,
       "ret": null,
-      "bank_after": 90.39
+      "bank_after": 89.49
     }
   ],
   "outsider_score": {
@@ -575,9 +584,9 @@
   },
   "bank": {
     "start": 70.44,
-    "end": 90.39,
-    "next_stake": 0.9,
+    "end": 89.49,
+    "next_stake": 0.89,
     "season_start": 10.0,
-    "season_end": 90.39
+    "season_end": 89.49
   }
 }
