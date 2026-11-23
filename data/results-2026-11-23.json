@@ -1,6 +1,6 @@
 {
   "date": "2026-11-23",
-  "generated": "2026-11-23T14:14:09+00:00",
+  "generated": "2026-11-23T14:30:34+00:00",
   "score": {
     "picks": 9,
     "settled": 1,
@@ -74,8 +74,8 @@
       "trainer": "K Bailey & M Nicholls",
       "stars": 5,
       "odds": "10/3",
-      "sp": "10/3",
-      "sp_dec": 4.333333333333334,
+      "sp": "7/4",
+      "sp_dec": 2.75,
       "pos": 0,
       "res": "?",
       "stake": 0.71,
