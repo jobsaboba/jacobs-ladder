@@ -1,6 +1,6 @@
 {
   "date": "2026-11-23",
-  "generated": "2026-11-23T14:00:36+00:00",
+  "generated": "2026-11-23T14:14:09+00:00",
   "score": {
     "picks": 9,
     "settled": 1,
@@ -78,9 +78,9 @@
       "sp_dec": 4.333333333333334,
       "pos": 0,
       "res": "?",
-      "stake": 0.69,
+      "stake": 0.71,
       "ret": null,
-      "bank_after": 69.04
+      "bank_after": 71.35
     },
     {
       "time": "15:17",
@@ -93,9 +93,9 @@
       "sp_dec": 8.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.69,
+      "stake": 0.71,
       "ret": null,
-      "bank_after": 69.04
+      "bank_after": 71.35
     },
     {
       "time": "15:23",
@@ -108,9 +108,9 @@
       "sp_dec": 7.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.69,
+      "stake": 0.71,
       "ret": null,
-      "bank_after": 69.04
+      "bank_after": 71.35
     },
     {
       "time": "16:05",
@@ -123,9 +123,9 @@
       "sp_dec": 3.25,
       "pos": 0,
       "res": "?",
-      "stake": 0.69,
+      "stake": 0.71,
       "ret": null,
-      "bank_after": 69.04
+      "bank_after": 71.35
     },
     {
       "time": "16:40",
@@ -138,9 +138,9 @@
       "sp_dec": 2.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.69,
+      "stake": 0.71,
       "ret": null,
-      "bank_after": 69.04
+      "bank_after": 71.35
     },
     {
       "time": "17:15",
@@ -153,9 +153,9 @@
       "sp_dec": 6.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.69,
+      "stake": 0.71,
       "ret": null,
-      "bank_after": 69.04
+      "bank_after": 71.35
     },
     {
       "time": "18:15",
@@ -168,9 +168,9 @@
       "sp_dec": 9.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.69,
+      "stake": 0.71,
       "ret": null,
-      "bank_after": 69.04
+      "bank_after": 71.35
     },
     {
       "time": "18:30",
@@ -183,14 +183,14 @@
       "sp_dec": 7.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.69,
+      "stake": 0.71,
       "ret": null,
-      "bank_after": 69.04
+      "bank_after": 71.35
     }
   ],
   "strings": {
-    "settled": 1,
-    "win_pct": "0%",
+    "settled": 2,
+    "win_pct": "50%",
     "place_pct": "100%"
   },
   "outsiders": [
@@ -221,12 +221,12 @@
       "odds": "12/1",
       "sp": "2/1",
       "sp_dec": 3.0,
-      "pos": 0,
-      "res": "?",
+      "pos": 1,
+      "res": "WIN",
       "lost_to": "Marsiac",
       "stake": 0.69,
-      "ret": null,
-      "bank_after": 69.04
+      "ret": 3.0,
+      "bank_after": 71.35
     },
     {
       "time": "14:42",
@@ -241,9 +241,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Play It Again",
-      "stake": 0.69,
+      "stake": 0.71,
       "ret": null,
-      "bank_after": 69.04
+      "bank_after": 71.35
     },
     {
       "time": "15:05",
@@ -258,9 +258,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "El Rio",
-      "stake": 0.69,
+      "stake": 0.71,
       "ret": null,
-      "bank_after": 69.04
+      "bank_after": 71.35
     },
     {
       "time": "16:05",
@@ -275,9 +275,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Good Bye Girl",
-      "stake": 0.69,
+      "stake": 0.71,
       "ret": null,
-      "bank_after": 69.04
+      "bank_after": 71.35
     },
     {
       "time": "16:40",
@@ -292,9 +292,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Dowman",
-      "stake": 0.69,
+      "stake": 0.71,
       "ret": null,
-      "bank_after": 69.04
+      "bank_after": 71.35
     },
     {
       "time": "17:15",
@@ -309,9 +309,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Bintbossom",
-      "stake": 0.69,
+      "stake": 0.71,
       "ret": null,
-      "bank_after": 69.04
+      "bank_after": 71.35
     },
     {
       "time": "17:30",
@@ -326,9 +326,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Incandescence",
-      "stake": 0.69,
+      "stake": 0.71,
       "ret": null,
-      "bank_after": 69.04
+      "bank_after": 71.35
     },
     {
       "time": "17:30",
@@ -357,9 +357,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Moonstone Boy",
-      "stake": 0.69,
+      "stake": 0.71,
       "ret": null,
-      "bank_after": 69.04
+      "bank_after": 71.35
     },
     {
       "time": "17:45",
@@ -374,9 +374,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Moonstone Boy",
-      "stake": 0.69,
+      "stake": 0.71,
       "ret": null,
-      "bank_after": 69.04
+      "bank_after": 71.35
     },
     {
       "time": "20:00",
@@ -391,20 +391,20 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Jez Bomb",
-      "stake": 0.69,
+      "stake": 0.71,
       "ret": null,
-      "bank_after": 69.04
+      "bank_after": 71.35
     }
   ],
   "outsider_score": {
     "strings": 12,
-    "settled": 1,
-    "won": 0,
+    "settled": 2,
+    "won": 1,
     "placed": 1,
     "unplaced": 0,
     "nr": 0,
-    "pending": 11,
-    "win_pct": 0,
+    "pending": 10,
+    "win_pct": 50,
     "place_pct": 100
   },
   "super6": [
@@ -430,8 +430,8 @@
       "odds": "12/1",
       "sp": "2/1",
       "sp_dec": 3.0,
-      "pos": 0,
-      "res": "?",
+      "pos": 1,
+      "res": "WIN",
       "score": 9
     },
     {
@@ -489,17 +489,17 @@
   ],
   "super6_score": {
     "listed": 6,
-    "settled": 1,
-    "won": 0,
+    "settled": 2,
+    "won": 1,
     "placed": 1,
-    "win_pct": 0,
+    "win_pct": 50,
     "place_pct": 100
   },
   "bank": {
     "start": 70.44,
-    "end": 69.04,
-    "next_stake": 0.69,
+    "end": 71.35,
+    "next_stake": 0.71,
     "season_start": 10.0,
-    "season_end": 69.04
+    "season_end": 71.35
   }
 }
