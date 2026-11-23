@@ -1,17 +1,17 @@
 {
   "date": "2026-11-23",
-  "generated": "2026-11-23T18:30:36+00:00",
+  "generated": "2026-11-23T19:00:35+00:00",
   "score": {
     "picks": 9,
-    "settled": 8,
+    "settled": 9,
     "won": 3,
     "placed": 0,
-    "unplaced": 5,
+    "unplaced": 6,
     "nr": 0,
     "void": 0,
-    "pending": 1,
-    "win_pct": 38,
-    "place_pct": 38
+    "pending": 0,
+    "win_pct": 33,
+    "place_pct": 33
   },
   "trainers": [
     {
@@ -67,6 +67,15 @@
       "p": 0,
       "u": 1,
       "n": 1
+    },
+    {
+      "name": "Sam England",
+      "w14": "20.0%",
+      "p14": "44.0%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
     }
   ],
   "stars": [
@@ -79,10 +88,10 @@
     },
     {
       "stars": 4,
-      "n": 2,
+      "n": 3,
       "w": 1,
-      "win_pct": "50%",
-      "place_pct": "50%"
+      "win_pct": "33%",
+      "place_pct": "33%"
     },
     {
       "stars": 3,
@@ -116,7 +125,7 @@
     },
     {
       "label": "10/1+",
-      "n": 3,
+      "n": 4,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -132,10 +141,10 @@
     },
     {
       "label": "mid (9–12)",
-      "n": 5,
+      "n": 6,
       "w": 2,
-      "win_pct": "40%",
-      "place_pct": "40%"
+      "win_pct": "33%",
+      "place_pct": "33%"
     }
   ],
   "picks": [
@@ -266,13 +275,13 @@
       "trainer": "S England",
       "stars": 4,
       "odds": "6/1",
-      "sp": "6/1",
-      "sp_dec": 7.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "16/1",
+      "sp_dec": 17.0,
+      "pos": 10,
+      "res": "UNPL",
       "stake": 0.89,
-      "ret": null,
-      "bank_after": 89.49
+      "ret": 0.0,
+      "bank_after": 88.6
     }
   ],
   "strings": {
@@ -480,7 +489,7 @@
       "lost_to": "Jez Bomb",
       "stake": 0.89,
       "ret": null,
-      "bank_after": 89.49
+      "bank_after": 88.6
     }
   ],
   "outsider_score": {
@@ -584,9 +593,9 @@
   },
   "bank": {
     "start": 70.44,
-    "end": 89.49,
+    "end": 88.6,
     "next_stake": 0.89,
     "season_start": 10.0,
-    "season_end": 89.49
+    "season_end": 88.6
   }
 }
