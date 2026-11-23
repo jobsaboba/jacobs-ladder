@@ -1,17 +1,17 @@
 {
   "date": "2026-11-23",
-  "generated": "2026-11-23T17:00:37+00:00",
+  "generated": "2026-11-23T17:30:40+00:00",
   "score": {
     "picks": 9,
-    "settled": 6,
-    "won": 2,
+    "settled": 7,
+    "won": 3,
     "placed": 0,
     "unplaced": 4,
     "nr": 0,
     "void": 0,
-    "pending": 3,
-    "win_pct": 33,
-    "place_pct": 33
+    "pending": 2,
+    "win_pct": 43,
+    "place_pct": 43
   },
   "trainers": [
     {
@@ -49,6 +49,15 @@
       "p": 0,
       "u": 1,
       "n": 1
+    },
+    {
+      "name": "Roger Varian",
+      "w14": "66.7%",
+      "p14": "83.3%",
+      "w": 1,
+      "p": 0,
+      "u": 0,
+      "n": 1
     }
   ],
   "stars": [
@@ -61,10 +70,10 @@
     },
     {
       "stars": 4,
-      "n": 1,
-      "w": 0,
-      "win_pct": "0%",
-      "place_pct": "0%"
+      "n": 2,
+      "w": 1,
+      "win_pct": "50%",
+      "place_pct": "50%"
     },
     {
       "stars": 3,
@@ -91,10 +100,10 @@
     },
     {
       "label": "5/1–10/1",
-      "n": 1,
-      "w": 0,
-      "win_pct": "0%",
-      "place_pct": "0%"
+      "n": 2,
+      "w": 1,
+      "win_pct": "50%",
+      "place_pct": "50%"
     },
     {
       "label": "10/1+",
@@ -114,10 +123,10 @@
     },
     {
       "label": "mid (9–12)",
-      "n": 4,
-      "w": 1,
-      "win_pct": "25%",
-      "place_pct": "25%"
+      "n": 5,
+      "w": 2,
+      "win_pct": "40%",
+      "place_pct": "40%"
     }
   ],
   "picks": [
@@ -218,13 +227,13 @@
       "trainer": "R Varian",
       "stars": 4,
       "odds": "11/2",
-      "sp": "11/2",
-      "sp_dec": 6.5,
-      "pos": 0,
-      "res": "?",
+      "sp": "15/2",
+      "sp_dec": 8.5,
+      "pos": 1,
+      "res": "WIN",
       "stake": 0.86,
-      "ret": null,
-      "bank_after": 86.38
+      "ret": 8.5,
+      "bank_after": 94.02
     },
     {
       "time": "18:15",
@@ -237,9 +246,9 @@
       "sp_dec": 9.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.86,
+      "stake": 0.93,
       "ret": null,
-      "bank_after": 86.38
+      "bank_after": 93.16
     },
     {
       "time": "18:30",
@@ -252,15 +261,15 @@
       "sp_dec": 7.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.86,
+      "stake": 0.93,
       "ret": null,
-      "bank_after": 86.38
+      "bank_after": 93.16
     }
   ],
   "strings": {
-    "settled": 6,
-    "win_pct": "33%",
-    "place_pct": "50%"
+    "settled": 7,
+    "win_pct": "29%",
+    "place_pct": "43%"
   },
   "outsiders": [
     {
@@ -373,14 +382,14 @@
       "string": "1st",
       "stars": 3,
       "odds": "6/1",
-      "sp": "6/1",
-      "sp_dec": 7.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "8/1",
+      "sp_dec": 9.0,
+      "pos": 8,
+      "res": "UNPL",
       "lost_to": "Bintbossom",
       "stake": 0.86,
-      "ret": null,
-      "bank_after": 86.38
+      "ret": 0.0,
+      "bank_after": 93.16
     },
     {
       "time": "17:30",
@@ -395,9 +404,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Incandescence",
-      "stake": 0.86,
+      "stake": 0.93,
       "ret": null,
-      "bank_after": 86.38
+      "bank_after": 93.16
     },
     {
       "time": "17:30",
@@ -426,9 +435,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Moonstone Boy",
-      "stake": 0.86,
+      "stake": 0.93,
       "ret": null,
-      "bank_after": 86.38
+      "bank_after": 93.16
     },
     {
       "time": "17:45",
@@ -443,9 +452,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Moonstone Boy",
-      "stake": 0.86,
+      "stake": 0.93,
       "ret": null,
-      "bank_after": 86.38
+      "bank_after": 93.16
     },
     {
       "time": "20:00",
@@ -460,21 +469,21 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Jez Bomb",
-      "stake": 0.86,
+      "stake": 0.93,
       "ret": null,
-      "bank_after": 86.38
+      "bank_after": 93.16
     }
   ],
   "outsider_score": {
     "strings": 12,
-    "settled": 6,
+    "settled": 7,
     "won": 2,
     "placed": 1,
-    "unplaced": 3,
+    "unplaced": 4,
     "nr": 0,
-    "pending": 6,
-    "win_pct": 33,
-    "place_pct": 50
+    "pending": 5,
+    "win_pct": 29,
+    "place_pct": 43
   },
   "super6": [
     {
@@ -536,10 +545,10 @@
       "trainer": "G Boughey",
       "stars": 3,
       "odds": "6/1",
-      "sp": "6/1",
-      "sp_dec": 7.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "8/1",
+      "sp_dec": 9.0,
+      "pos": 8,
+      "res": "UNPL",
       "score": 7
     },
     {
@@ -558,17 +567,17 @@
   ],
   "super6_score": {
     "listed": 6,
-    "settled": 4,
+    "settled": 5,
     "won": 1,
     "placed": 1,
-    "win_pct": 25,
-    "place_pct": 50
+    "win_pct": 20,
+    "place_pct": 40
   },
   "bank": {
     "start": 70.44,
-    "end": 86.38,
-    "next_stake": 0.86,
+    "end": 93.16,
+    "next_stake": 0.93,
     "season_start": 10.0,
-    "season_end": 86.38
+    "season_end": 93.16
   }
 }
