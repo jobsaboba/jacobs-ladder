@@ -1,6 +1,6 @@
 {
   "date": "2026-11-23",
-  "generated": "2026-11-23T17:30:40+00:00",
+  "generated": "2026-11-23T18:00:35+00:00",
   "score": {
     "picks": 9,
     "settled": 7,
@@ -246,9 +246,9 @@
       "sp_dec": 9.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.93,
+      "stake": 0.9,
       "ret": null,
-      "bank_after": 93.16
+      "bank_after": 90.39
     },
     {
       "time": "18:30",
@@ -261,15 +261,15 @@
       "sp_dec": 7.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.93,
+      "stake": 0.9,
       "ret": null,
-      "bank_after": 93.16
+      "bank_after": 90.39
     }
   ],
   "strings": {
-    "settled": 7,
-    "win_pct": "29%",
-    "place_pct": "43%"
+    "settled": 11,
+    "win_pct": "18%",
+    "place_pct": "27%"
   },
   "outsiders": [
     {
@@ -399,14 +399,14 @@
       "string": "1st",
       "stars": 2,
       "odds": "14/1",
-      "sp": "14/1",
-      "sp_dec": 15.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "11/1",
+      "sp_dec": 12.0,
+      "pos": 11,
+      "res": "UNPL",
       "lost_to": "Incandescence",
       "stake": 0.93,
-      "ret": null,
-      "bank_after": 93.16
+      "ret": 0.0,
+      "bank_after": 92.23
     },
     {
       "time": "17:30",
@@ -416,10 +416,10 @@
       "string": "2nd",
       "stars": 2,
       "odds": "14/1",
-      "sp": "14/1",
-      "sp_dec": 15.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "50/1",
+      "sp_dec": 51.0,
+      "pos": 10,
+      "res": "UNPL",
       "lost_to": "Incandescence"
     },
     {
@@ -430,14 +430,14 @@
       "string": "1st",
       "stars": 2,
       "odds": "12/1",
-      "sp": "12/1",
-      "sp_dec": 13.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "17/2",
+      "sp_dec": 9.5,
+      "pos": 4,
+      "res": "UNPL",
       "lost_to": "Moonstone Boy",
-      "stake": 0.93,
-      "ret": null,
-      "bank_after": 93.16
+      "stake": 0.92,
+      "ret": 0.0,
+      "bank_after": 90.39
     },
     {
       "time": "17:45",
@@ -447,14 +447,14 @@
       "string": "1st",
       "stars": 2,
       "odds": "16/1",
-      "sp": "16/1",
-      "sp_dec": 17.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "20/1",
+      "sp_dec": 21.0,
+      "pos": 8,
+      "res": "UNPL",
       "lost_to": "Moonstone Boy",
-      "stake": 0.93,
-      "ret": null,
-      "bank_after": 93.16
+      "stake": 0.92,
+      "ret": 0.0,
+      "bank_after": 91.31
     },
     {
       "time": "20:00",
@@ -469,21 +469,21 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Jez Bomb",
-      "stake": 0.93,
+      "stake": 0.9,
       "ret": null,
-      "bank_after": 93.16
+      "bank_after": 90.39
     }
   ],
   "outsider_score": {
     "strings": 12,
-    "settled": 7,
+    "settled": 11,
     "won": 2,
     "placed": 1,
-    "unplaced": 4,
+    "unplaced": 8,
     "nr": 0,
-    "pending": 5,
-    "win_pct": 29,
-    "place_pct": 43
+    "pending": 1,
+    "win_pct": 18,
+    "place_pct": 27
   },
   "super6": [
     {
@@ -575,9 +575,9 @@
   },
   "bank": {
     "start": 70.44,
-    "end": 93.16,
-    "next_stake": 0.93,
+    "end": 90.39,
+    "next_stake": 0.9,
     "season_start": 10.0,
-    "season_end": 93.16
+    "season_end": 90.39
   }
 }
