@@ -1,17 +1,17 @@
 {
   "date": "2026-11-24",
-  "generated": "2026-11-24T16:00:42+00:00",
+  "generated": "2026-11-24T18:00:36+00:00",
   "score": {
     "picks": 10,
-    "settled": 5,
+    "settled": 6,
     "won": 2,
-    "placed": 0,
+    "placed": 1,
     "unplaced": 3,
     "nr": 2,
     "void": 0,
-    "pending": 3,
-    "win_pct": 40,
-    "place_pct": 40
+    "pending": 2,
+    "win_pct": 33,
+    "place_pct": 50
   },
   "trainers": [
     {
@@ -58,15 +58,24 @@
       "p": 0,
       "u": 0,
       "n": 1
+    },
+    {
+      "name": "Charlie Appleby",
+      "w14": "60.0%",
+      "p14": "100.0%",
+      "w": 0,
+      "p": 1,
+      "u": 0,
+      "n": 1
     }
   ],
   "stars": [
     {
       "stars": 5,
-      "n": 2,
+      "n": 3,
       "w": 1,
-      "win_pct": "50%",
-      "place_pct": "50%"
+      "win_pct": "33%",
+      "place_pct": "67%"
     },
     {
       "stars": 3,
@@ -79,9 +88,9 @@
   "odds": [
     {
       "label": "evens–2/1",
-      "n": 1,
+      "n": 2,
       "w": 1,
-      "win_pct": "100%",
+      "win_pct": "50%",
       "place_pct": "100%"
     },
     {
@@ -116,10 +125,10 @@
     },
     {
       "label": "mid (9–12)",
-      "n": 3,
+      "n": 4,
       "w": 1,
-      "win_pct": "33%",
-      "place_pct": "33%"
+      "win_pct": "25%",
+      "place_pct": "50%"
     },
     {
       "label": "big (13+)",
@@ -236,13 +245,13 @@
       "trainer": "C Appleby",
       "stars": 5,
       "odds": "10/11",
-      "sp": "10/11",
-      "sp_dec": 1.9090909090909092,
-      "pos": 0,
-      "res": "?",
+      "sp": "1/2",
+      "sp_dec": 1.5,
+      "pos": 2,
+      "res": "PLACE",
       "stake": 0.87,
-      "ret": null,
-      "bank_after": 87.47
+      "ret": 0.0,
+      "bank_after": 86.6
     },
     {
       "time": "18:00",
@@ -257,7 +266,7 @@
       "res": "?",
       "stake": 0.87,
       "ret": null,
-      "bank_after": 87.47
+      "bank_after": 86.6
     },
     {
       "time": "19:30",
@@ -272,7 +281,7 @@
       "res": "?",
       "stake": 0.87,
       "ret": null,
-      "bank_after": 87.47
+      "bank_after": 86.6
     }
   ],
   "strings": {
@@ -528,9 +537,9 @@
   },
   "bank": {
     "start": 87.71,
-    "end": 87.47,
+    "end": 86.6,
     "next_stake": 0.87,
     "season_start": 10.0,
-    "season_end": 87.47
+    "season_end": 86.6
   }
 }
