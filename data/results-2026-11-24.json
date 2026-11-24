@@ -1,15 +1,15 @@
 {
   "date": "2026-11-24",
-  "generated": "2026-11-24T13:00:36+00:00",
+  "generated": "2026-11-24T13:30:33+00:00",
   "score": {
     "picks": 10,
-    "settled": 1,
+    "settled": 2,
     "won": 0,
     "placed": 0,
-    "unplaced": 1,
+    "unplaced": 2,
     "nr": 1,
     "void": 0,
-    "pending": 8,
+    "pending": 7,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -22,9 +22,25 @@
       "p": 0,
       "u": 1,
       "n": 1
+    },
+    {
+      "name": "Nigel Twiston-Davies",
+      "w14": "15.4%",
+      "p14": "61.5%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
     }
   ],
   "stars": [
+    {
+      "stars": 5,
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
     {
       "stars": 3,
       "n": 1,
@@ -36,13 +52,20 @@
   "odds": [
     {
       "label": "2/1–5/1",
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
     }
   ],
   "fields": [
+    {
+      "label": "mid (9–12)",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
     {
       "label": "big (13+)",
       "n": 1,
@@ -88,11 +111,11 @@
       "odds": "7/2",
       "sp": "7/2",
       "sp_dec": 4.5,
-      "pos": 0,
-      "res": "?",
+      "pos": 4,
+      "res": "UNPL",
       "stake": 0.86,
-      "ret": null,
-      "bank_after": 85.95
+      "ret": 0.0,
+      "bank_after": 85.09
     },
     {
       "time": "13:38",
@@ -105,9 +128,9 @@
       "sp_dec": 3.25,
       "pos": 0,
       "res": "?",
-      "stake": 0.86,
+      "stake": 0.83,
       "ret": null,
-      "bank_after": 85.95
+      "bank_after": 82.56
     },
     {
       "time": "14:26",
@@ -120,9 +143,9 @@
       "sp_dec": 9.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.86,
+      "stake": 0.83,
       "ret": null,
-      "bank_after": 85.95
+      "bank_after": 82.56
     },
     {
       "time": "14:56",
@@ -135,9 +158,9 @@
       "sp_dec": 9.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.86,
+      "stake": 0.83,
       "ret": null,
-      "bank_after": 85.95
+      "bank_after": 82.56
     },
     {
       "time": "15:26",
@@ -150,9 +173,9 @@
       "sp_dec": 3.75,
       "pos": 0,
       "res": "?",
-      "stake": 0.86,
+      "stake": 0.83,
       "ret": null,
-      "bank_after": 85.95
+      "bank_after": 82.56
     },
     {
       "time": "17:30",
@@ -165,9 +188,9 @@
       "sp_dec": 1.9090909090909092,
       "pos": 0,
       "res": "?",
-      "stake": 0.86,
+      "stake": 0.83,
       "ret": null,
-      "bank_after": 85.95
+      "bank_after": 82.56
     },
     {
       "time": "18:00",
@@ -180,9 +203,9 @@
       "sp_dec": 6.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.86,
+      "stake": 0.83,
       "ret": null,
-      "bank_after": 85.95
+      "bank_after": 82.56
     },
     {
       "time": "19:30",
@@ -195,13 +218,13 @@
       "sp_dec": 6.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.86,
+      "stake": 0.83,
       "ret": null,
-      "bank_after": 85.95
+      "bank_after": 82.56
     }
   ],
   "strings": {
-    "settled": 1,
+    "settled": 4,
     "win_pct": "0%",
     "place_pct": "0%"
   },
@@ -233,12 +256,12 @@
       "odds": "100/1",
       "sp": "125/1",
       "sp_dec": 126.0,
-      "pos": 0,
-      "res": "?",
+      "pos": 7,
+      "res": "UNPL",
       "lost_to": "Beau De Maine",
       "stake": 0.86,
-      "ret": null,
-      "bank_after": 85.95
+      "ret": 0.0,
+      "bank_after": 84.23
     },
     {
       "time": "13:08",
@@ -248,14 +271,14 @@
       "string": "1st",
       "stars": 2,
       "odds": "25/1",
-      "sp": "25/1",
-      "sp_dec": 26.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "16/1",
+      "sp_dec": 17.0,
+      "pos": 6,
+      "res": "UNPL",
       "lost_to": "Ventura Power",
-      "stake": 0.86,
-      "ret": null,
-      "bank_after": 85.95
+      "stake": 0.84,
+      "ret": 0.0,
+      "bank_after": 83.39
     },
     {
       "time": "13:15",
@@ -265,14 +288,14 @@
       "string": "1st",
       "stars": 2,
       "odds": "16/1",
-      "sp": "16/1",
-      "sp_dec": 17.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "25/1",
+      "sp_dec": 26.0,
+      "pos": 5,
+      "res": "UNPL",
       "lost_to": "Whelkeen View",
-      "stake": 0.86,
-      "ret": null,
-      "bank_after": 85.95
+      "stake": 0.83,
+      "ret": 0.0,
+      "bank_after": 82.56
     },
     {
       "time": "13:26",
@@ -282,14 +305,14 @@
       "string": "1st",
       "stars": 2,
       "odds": "20/1",
-      "sp": "20/1",
-      "sp_dec": 21.0,
+      "sp": "40/1",
+      "sp_dec": 41.0,
       "pos": 0,
       "res": "?",
       "lost_to": "Yafaarr",
-      "stake": 0.86,
+      "stake": 0.83,
       "ret": null,
-      "bank_after": 85.95
+      "bank_after": 82.56
     },
     {
       "time": "13:56",
@@ -304,9 +327,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Gaelic Glow",
-      "stake": 0.86,
+      "stake": 0.83,
       "ret": null,
-      "bank_after": 85.95
+      "bank_after": 82.56
     },
     {
       "time": "14:08",
@@ -321,9 +344,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Dandy G Boy",
-      "stake": 0.86,
+      "stake": 0.83,
       "ret": null,
-      "bank_after": 85.95
+      "bank_after": 82.56
     },
     {
       "time": "14:15",
@@ -338,9 +361,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Madame Masque",
-      "stake": 0.86,
+      "stake": 0.83,
       "ret": null,
-      "bank_after": 85.95
+      "bank_after": 82.56
     },
     {
       "time": "14:45",
@@ -355,9 +378,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Glenary Prince",
-      "stake": 0.86,
+      "stake": 0.83,
       "ret": null,
-      "bank_after": 85.95
+      "bank_after": 82.56
     },
     {
       "time": "15:23",
@@ -386,19 +409,19 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Wild Goose",
-      "stake": 0.86,
+      "stake": 0.83,
       "ret": null,
-      "bank_after": 85.95
+      "bank_after": 82.56
     }
   ],
   "outsider_score": {
     "strings": 11,
-    "settled": 1,
+    "settled": 4,
     "won": 0,
     "placed": 0,
-    "unplaced": 1,
+    "unplaced": 4,
     "nr": 0,
-    "pending": 10,
+    "pending": 7,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -446,9 +469,9 @@
   "super6_score": null,
   "bank": {
     "start": 87.71,
-    "end": 85.95,
-    "next_stake": 0.86,
+    "end": 82.56,
+    "next_stake": 0.83,
     "season_start": 10.0,
-    "season_end": 85.95
+    "season_end": 82.56
   }
 }
