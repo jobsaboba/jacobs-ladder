@@ -1,15 +1,15 @@
 {
   "date": "2026-11-24",
-  "generated": "2026-11-24T14:30:33+00:00",
+  "generated": "2026-11-24T15:00:33+00:00",
   "score": {
     "picks": 10,
-    "settled": 2,
+    "settled": 3,
     "won": 0,
     "placed": 0,
-    "unplaced": 2,
+    "unplaced": 3,
     "nr": 2,
     "void": 0,
-    "pending": 6,
+    "pending": 5,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -31,6 +31,15 @@
       "p": 0,
       "u": 1,
       "n": 1
+    },
+    {
+      "name": "Warren Greatrex",
+      "w14": "30.0%",
+      "p14": "45.0%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
     }
   ],
   "stars": [
@@ -43,7 +52,7 @@
     },
     {
       "stars": 3,
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -56,12 +65,19 @@
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
+    },
+    {
+      "label": "10/1+",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
     }
   ],
   "fields": [
     {
       "label": "mid (9–12)",
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -138,11 +154,11 @@
       "odds": "8/1",
       "sp": "12/1",
       "sp_dec": 13.0,
-      "pos": 0,
-      "res": "?",
+      "pos": 7,
+      "res": "UNPL",
       "stake": 0.79,
-      "ret": null,
-      "bank_after": 79.3
+      "ret": 0.0,
+      "bank_after": 78.51
     },
     {
       "time": "14:56",
@@ -151,13 +167,13 @@
       "trainer": "S England",
       "stars": 3,
       "odds": "8/1",
-      "sp": "8/1",
-      "sp_dec": 9.0,
+      "sp": "17/2",
+      "sp_dec": 9.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.79,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.3
+      "bank_after": 77.72
     },
     {
       "time": "15:26",
@@ -170,9 +186,9 @@
       "sp_dec": 3.75,
       "pos": 0,
       "res": "?",
-      "stake": 0.79,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.3
+      "bank_after": 77.72
     },
     {
       "time": "17:30",
@@ -185,9 +201,9 @@
       "sp_dec": 1.9090909090909092,
       "pos": 0,
       "res": "?",
-      "stake": 0.79,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.3
+      "bank_after": 77.72
     },
     {
       "time": "18:00",
@@ -200,9 +216,9 @@
       "sp_dec": 6.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.79,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.3
+      "bank_after": 77.72
     },
     {
       "time": "19:30",
@@ -215,15 +231,15 @@
       "sp_dec": 6.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.79,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.3
+      "bank_after": 77.72
     }
   ],
   "strings": {
-    "settled": 8,
+    "settled": 9,
     "win_pct": "0%",
-    "place_pct": "0%"
+    "place_pct": "11%"
   },
   "outsiders": [
     {
@@ -370,14 +386,14 @@
       "string": "1st",
       "stars": 3,
       "odds": "16/1",
-      "sp": "16/1",
-      "sp_dec": 17.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "17/2",
+      "sp_dec": 9.5,
+      "pos": 2,
+      "res": "PLACE",
       "lost_to": "Glenary Prince",
       "stake": 0.79,
-      "ret": null,
-      "bank_after": 79.3
+      "ret": 0.0,
+      "bank_after": 77.72
     },
     {
       "time": "15:23",
@@ -406,21 +422,21 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Wild Goose",
-      "stake": 0.79,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.3
+      "bank_after": 77.72
     }
   ],
   "outsider_score": {
     "strings": 11,
-    "settled": 8,
+    "settled": 9,
     "won": 0,
-    "placed": 0,
+    "placed": 1,
     "unplaced": 8,
     "nr": 0,
-    "pending": 3,
+    "pending": 2,
     "win_pct": 0,
-    "place_pct": 0
+    "place_pct": 11
   },
   "super6": [
     {
@@ -456,26 +472,26 @@
       "trainer": "H De Bromhead",
       "stars": 3,
       "odds": "16/1",
-      "sp": "16/1",
-      "sp_dec": 17.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "17/2",
+      "sp_dec": 9.5,
+      "pos": 2,
+      "res": "PLACE",
       "score": 8
     }
   ],
   "super6_score": {
     "listed": 3,
-    "settled": 2,
+    "settled": 3,
     "won": 0,
-    "placed": 0,
+    "placed": 1,
     "win_pct": 0,
-    "place_pct": 0
+    "place_pct": 33
   },
   "bank": {
     "start": 87.71,
-    "end": 79.3,
-    "next_stake": 0.79,
+    "end": 77.72,
+    "next_stake": 0.78,
     "season_start": 10.0,
-    "season_end": 79.3
+    "season_end": 77.72
   }
 }
