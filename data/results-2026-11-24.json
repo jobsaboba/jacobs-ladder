@@ -1,17 +1,17 @@
 {
   "date": "2026-11-24",
-  "generated": "2026-11-24T15:00:33+00:00",
+  "generated": "2026-11-24T15:30:34+00:00",
   "score": {
     "picks": 10,
-    "settled": 3,
-    "won": 0,
+    "settled": 4,
+    "won": 1,
     "placed": 0,
     "unplaced": 3,
     "nr": 2,
     "void": 0,
-    "pending": 5,
-    "win_pct": 0,
-    "place_pct": 0
+    "pending": 4,
+    "win_pct": 25,
+    "place_pct": 25
   },
   "trainers": [
     {
@@ -40,6 +40,15 @@
       "p": 0,
       "u": 1,
       "n": 1
+    },
+    {
+      "name": "Sam England",
+      "w14": "22.7%",
+      "p14": "50.0%",
+      "w": 1,
+      "p": 0,
+      "u": 0,
+      "n": 1
     }
   ],
   "stars": [
@@ -52,10 +61,10 @@
     },
     {
       "stars": 3,
-      "n": 2,
-      "w": 0,
-      "win_pct": "0%",
-      "place_pct": "0%"
+      "n": 3,
+      "w": 1,
+      "win_pct": "33%",
+      "place_pct": "33%"
     }
   ],
   "odds": [
@@ -65,6 +74,13 @@
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
+    },
+    {
+      "label": "5/1–10/1",
+      "n": 1,
+      "w": 1,
+      "win_pct": "100%",
+      "place_pct": "100%"
     },
     {
       "label": "10/1+",
@@ -77,10 +93,10 @@
   "fields": [
     {
       "label": "mid (9–12)",
-      "n": 2,
-      "w": 0,
-      "win_pct": "0%",
-      "place_pct": "0%"
+      "n": 3,
+      "w": 1,
+      "win_pct": "33%",
+      "place_pct": "33%"
     },
     {
       "label": "big (13+)",
@@ -169,11 +185,11 @@
       "odds": "8/1",
       "sp": "17/2",
       "sp_dec": 9.5,
-      "pos": 0,
-      "res": "?",
+      "pos": 1,
+      "res": "WIN",
       "stake": 0.78,
-      "ret": null,
-      "bank_after": 77.72
+      "ret": 9.5,
+      "bank_after": 86.44
     },
     {
       "time": "15:26",
@@ -182,13 +198,13 @@
       "trainer": "K Bailey & M Nicholls",
       "stars": 5,
       "odds": "11/4",
-      "sp": "11/4",
-      "sp_dec": 3.75,
+      "sp": "7/4",
+      "sp_dec": 2.75,
       "pos": 0,
       "res": "?",
-      "stake": 0.78,
+      "stake": 0.86,
       "ret": null,
-      "bank_after": 77.72
+      "bank_after": 86.44
     },
     {
       "time": "17:30",
@@ -201,9 +217,9 @@
       "sp_dec": 1.9090909090909092,
       "pos": 0,
       "res": "?",
-      "stake": 0.78,
+      "stake": 0.86,
       "ret": null,
-      "bank_after": 77.72
+      "bank_after": 86.44
     },
     {
       "time": "18:00",
@@ -216,9 +232,9 @@
       "sp_dec": 6.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.78,
+      "stake": 0.86,
       "ret": null,
-      "bank_after": 77.72
+      "bank_after": 86.44
     },
     {
       "time": "19:30",
@@ -231,9 +247,9 @@
       "sp_dec": 6.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.78,
+      "stake": 0.86,
       "ret": null,
-      "bank_after": 77.72
+      "bank_after": 86.44
     }
   ],
   "strings": {
@@ -417,14 +433,14 @@
       "string": "1st",
       "stars": 3,
       "odds": "16/1",
-      "sp": "16/1",
-      "sp_dec": 17.0,
+      "sp": "18/1",
+      "sp_dec": 19.0,
       "pos": 0,
       "res": "?",
       "lost_to": "Wild Goose",
-      "stake": 0.78,
+      "stake": 0.86,
       "ret": null,
-      "bank_after": 77.72
+      "bank_after": 86.44
     }
   ],
   "outsider_score": {
@@ -489,9 +505,9 @@
   },
   "bank": {
     "start": 87.71,
-    "end": 77.72,
-    "next_stake": 0.78,
+    "end": 86.44,
+    "next_stake": 0.86,
     "season_start": 10.0,
-    "season_end": 77.72
+    "season_end": 86.44
   }
 }
