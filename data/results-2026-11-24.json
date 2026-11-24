@@ -1,19 +1,28 @@
 {
   "date": "2026-11-24",
-  "generated": "2026-11-24T18:00:36+00:00",
+  "generated": "2026-11-24T18:30:42+00:00",
   "score": {
     "picks": 10,
-    "settled": 6,
+    "settled": 7,
     "won": 2,
-    "placed": 1,
+    "placed": 2,
     "unplaced": 3,
     "nr": 2,
     "void": 0,
-    "pending": 2,
-    "win_pct": 33,
-    "place_pct": 50
+    "pending": 1,
+    "win_pct": 29,
+    "place_pct": 57
   },
   "trainers": [
+    {
+      "name": "Charlie Appleby",
+      "w14": "60.0%",
+      "p14": "100.0%",
+      "w": 0,
+      "p": 2,
+      "u": 0,
+      "n": 2
+    },
     {
       "name": "Henry De Bromhead",
       "w14": "21.4%",
@@ -58,15 +67,6 @@
       "p": 0,
       "u": 0,
       "n": 1
-    },
-    {
-      "name": "Charlie Appleby",
-      "w14": "60.0%",
-      "p14": "100.0%",
-      "w": 0,
-      "p": 1,
-      "u": 0,
-      "n": 1
     }
   ],
   "stars": [
@@ -79,10 +79,10 @@
     },
     {
       "stars": 3,
-      "n": 3,
+      "n": 4,
       "w": 1,
-      "win_pct": "33%",
-      "place_pct": "33%"
+      "win_pct": "25%",
+      "place_pct": "50%"
     }
   ],
   "odds": [
@@ -95,10 +95,10 @@
     },
     {
       "label": "2/1–5/1",
-      "n": 2,
+      "n": 3,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "0%"
+      "place_pct": "33%"
     },
     {
       "label": "5/1–10/1",
@@ -118,9 +118,9 @@
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 1,
+      "n": 2,
       "w": 1,
-      "win_pct": "100%",
+      "win_pct": "50%",
       "place_pct": "100%"
     },
     {
@@ -260,13 +260,13 @@
       "trainer": "C Appleby",
       "stars": 3,
       "odds": "5/1",
-      "sp": "5/1",
-      "sp_dec": 6.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "11/4",
+      "sp_dec": 3.75,
+      "pos": 2,
+      "res": "PLACE",
       "stake": 0.87,
-      "ret": null,
-      "bank_after": 86.6
+      "ret": 0.0,
+      "bank_after": 85.73
     },
     {
       "time": "19:30",
@@ -279,9 +279,9 @@
       "sp_dec": 6.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.87,
+      "stake": 0.86,
       "ret": null,
-      "bank_after": 86.6
+      "bank_after": 85.73
     }
   ],
   "strings": {
@@ -537,9 +537,9 @@
   },
   "bank": {
     "start": 87.71,
-    "end": 86.6,
-    "next_stake": 0.87,
+    "end": 85.73,
+    "next_stake": 0.86,
     "season_start": 10.0,
-    "season_end": 86.6
+    "season_end": 85.73
   }
 }
