@@ -1,6 +1,6 @@
 {
   "date": "2026-11-25",
-  "generated": "2026-11-25T19:30:39+00:00",
+  "generated": "2026-11-25T20:00:57+00:00",
   "score": {
     "picks": 15,
     "settled": 15,
@@ -409,7 +409,7 @@
     }
   ],
   "strings": {
-    "settled": 12,
+    "settled": 13,
     "win_pct": "0%",
     "place_pct": "0%"
   },
@@ -654,24 +654,24 @@
       "string": "1st",
       "stars": 2,
       "odds": "12/1",
-      "sp": "12/1",
-      "sp_dec": 13.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "20/1",
+      "sp_dec": 21.0,
+      "pos": 14,
+      "res": "UNPL",
       "lost_to": "Forever Penywern",
       "stake": 0.73,
-      "ret": null,
-      "bank_after": 73.31
+      "ret": 0.0,
+      "bank_after": 72.58
     }
   ],
   "outsider_score": {
     "strings": 15,
-    "settled": 12,
+    "settled": 13,
     "won": 0,
     "placed": 0,
-    "unplaced": 12,
+    "unplaced": 13,
     "nr": 2,
-    "pending": 1,
+    "pending": 0,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -748,16 +748,16 @@
       "trainer": "W Greatrex",
       "stars": 2,
       "odds": "12/1",
-      "sp": "12/1",
-      "sp_dec": 13.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "20/1",
+      "sp_dec": 21.0,
+      "pos": 14,
+      "res": "UNPL",
       "score": 6
     }
   ],
   "super6_score": {
     "listed": 6,
-    "settled": 5,
+    "settled": 6,
     "won": 0,
     "placed": 0,
     "win_pct": 0,
@@ -765,9 +765,9 @@
   },
   "bank": {
     "start": 84.87,
-    "end": 73.31,
+    "end": 72.58,
     "next_stake": 0.73,
     "season_start": 10.0,
-    "season_end": 73.31
+    "season_end": 72.58
   }
 }
