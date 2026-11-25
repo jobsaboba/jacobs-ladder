@@ -1,17 +1,17 @@
 {
   "date": "2026-11-25",
-  "generated": "2026-11-25T15:01:02+00:00",
+  "generated": "2026-11-25T15:30:44+00:00",
   "score": {
     "picks": 15,
-    "settled": 6,
+    "settled": 8,
     "won": 2,
-    "placed": 3,
-    "unplaced": 1,
+    "placed": 4,
+    "unplaced": 2,
     "nr": 0,
     "void": 0,
-    "pending": 9,
-    "win_pct": 33,
-    "place_pct": 83
+    "pending": 7,
+    "win_pct": 25,
+    "place_pct": 75
   },
   "trainers": [
     {
@@ -67,6 +67,24 @@
       "p": 1,
       "u": 0,
       "n": 1
+    },
+    {
+      "name": "Kevin Foy",
+      "w14": "42.9%",
+      "p14": "85.7%",
+      "w": 0,
+      "p": 1,
+      "u": 0,
+      "n": 1
+    },
+    {
+      "name": "Henry Daly",
+      "w14": "18.8%",
+      "p14": "75.0%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
     }
   ],
   "stars": [
@@ -86,10 +104,10 @@
     },
     {
       "stars": 3,
-      "n": 1,
+      "n": 3,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "0%"
+      "place_pct": "33%"
     }
   ],
   "odds": [
@@ -102,17 +120,17 @@
     },
     {
       "label": "2/1–5/1",
-      "n": 2,
+      "n": 3,
       "w": 2,
-      "win_pct": "100%",
+      "win_pct": "67%",
       "place_pct": "100%"
     },
     {
       "label": "5/1–10/1",
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "100%"
+      "place_pct": "50%"
     },
     {
       "label": "10/1+",
@@ -125,17 +143,17 @@
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 2,
+      "n": 3,
       "w": 1,
-      "win_pct": "50%",
+      "win_pct": "33%",
       "place_pct": "100%"
     },
     {
       "label": "mid (9–12)",
-      "n": 2,
+      "n": 3,
       "w": 1,
-      "win_pct": "50%",
-      "place_pct": "100%"
+      "win_pct": "33%",
+      "place_pct": "67%"
     },
     {
       "label": "big (13+)",
@@ -245,11 +263,11 @@
       "odds": "3/1",
       "sp": "3/1",
       "sp_dec": 4.0,
-      "pos": 0,
-      "res": "?",
+      "pos": 3,
+      "res": "PLACE",
       "stake": 0.84,
-      "ret": null,
-      "bank_after": 83.75
+      "ret": 0.0,
+      "bank_after": 82.91
     },
     {
       "time": "15:07",
@@ -258,13 +276,13 @@
       "trainer": "H D Daly",
       "stars": 3,
       "odds": "7/1",
-      "sp": "7/1",
-      "sp_dec": 8.0,
-      "pos": 0,
-      "res": "?",
-      "stake": 0.84,
-      "ret": null,
-      "bank_after": 83.75
+      "sp": "8/1",
+      "sp_dec": 9.0,
+      "pos": 4,
+      "res": "UNPL",
+      "stake": 0.82,
+      "ret": 0.0,
+      "bank_after": 81.26
     },
     {
       "time": "15:25",
@@ -273,13 +291,13 @@
       "trainer": "G Boughey",
       "stars": 3,
       "odds": "6/1",
-      "sp": "6/1",
-      "sp_dec": 7.0,
+      "sp": "2/1",
+      "sp_dec": 3.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.84,
+      "stake": 0.81,
       "ret": null,
-      "bank_after": 83.75
+      "bank_after": 81.26
     },
     {
       "time": "15:31",
@@ -292,9 +310,9 @@
       "sp_dec": 4.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.84,
+      "stake": 0.81,
       "ret": null,
-      "bank_after": 83.75
+      "bank_after": 81.26
     },
     {
       "time": "15:55",
@@ -307,9 +325,9 @@
       "sp_dec": 9.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.84,
+      "stake": 0.81,
       "ret": null,
-      "bank_after": 83.75
+      "bank_after": 81.26
     },
     {
       "time": "16:20",
@@ -322,9 +340,9 @@
       "sp_dec": 2.2,
       "pos": 0,
       "res": "?",
-      "stake": 0.84,
+      "stake": 0.81,
       "ret": null,
-      "bank_after": 83.75
+      "bank_after": 81.26
     },
     {
       "time": "16:25",
@@ -337,9 +355,9 @@
       "sp_dec": 5.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.84,
+      "stake": 0.81,
       "ret": null,
-      "bank_after": 83.75
+      "bank_after": 81.26
     },
     {
       "time": "17:20",
@@ -352,9 +370,9 @@
       "sp_dec": 2.25,
       "pos": 0,
       "res": "?",
-      "stake": 0.84,
+      "stake": 0.81,
       "ret": null,
-      "bank_after": 83.75
+      "bank_after": 81.26
     },
     {
       "time": "19:00",
@@ -367,13 +385,13 @@
       "sp_dec": 2.25,
       "pos": 0,
       "res": "?",
-      "stake": 0.84,
+      "stake": 0.81,
       "ret": null,
-      "bank_after": 83.75
+      "bank_after": 81.26
     }
   ],
   "strings": {
-    "settled": 6,
+    "settled": 7,
     "win_pct": "0%",
     "place_pct": "0%"
   },
@@ -502,14 +520,14 @@
       "string": "1st",
       "stars": 2,
       "odds": "12/1",
-      "sp": "12/1",
-      "sp_dec": 13.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "66/1",
+      "sp_dec": 67.0,
+      "pos": 5,
+      "res": "UNPL",
       "lost_to": "Beauxvarus",
-      "stake": 0.84,
-      "ret": null,
-      "bank_after": 83.75
+      "stake": 0.83,
+      "ret": 0.0,
+      "bank_after": 82.08
     },
     {
       "time": "15:01",
@@ -538,9 +556,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Mcmurray",
-      "stake": 0.84,
+      "stake": 0.81,
       "ret": null,
-      "bank_after": 83.75
+      "bank_after": 81.26
     },
     {
       "time": "15:55",
@@ -555,9 +573,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Mcmurray",
-      "stake": 0.84,
+      "stake": 0.81,
       "ret": null,
-      "bank_after": 83.75
+      "bank_after": 81.26
     },
     {
       "time": "16:06",
@@ -572,9 +590,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Comfort Line",
-      "stake": 0.84,
+      "stake": 0.81,
       "ret": null,
-      "bank_after": 83.75
+      "bank_after": 81.26
     },
     {
       "time": "16:40",
@@ -589,9 +607,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Exquisite Acclaim",
-      "stake": 0.84,
+      "stake": 0.81,
       "ret": null,
-      "bank_after": 83.75
+      "bank_after": 81.26
     },
     {
       "time": "18:25",
@@ -606,9 +624,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Starakova",
-      "stake": 0.84,
+      "stake": 0.81,
       "ret": null,
-      "bank_after": 83.75
+      "bank_after": 81.26
     },
     {
       "time": "19:30",
@@ -623,19 +641,19 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Forever Penywern",
-      "stake": 0.84,
+      "stake": 0.81,
       "ret": null,
-      "bank_after": 83.75
+      "bank_after": 81.26
     }
   ],
   "outsider_score": {
     "strings": 15,
-    "settled": 6,
+    "settled": 7,
     "won": 0,
     "placed": 0,
-    "unplaced": 6,
+    "unplaced": 7,
     "nr": 2,
-    "pending": 7,
+    "pending": 6,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -673,10 +691,10 @@
       "trainer": "H De Bromhead",
       "stars": 2,
       "odds": "12/1",
-      "sp": "12/1",
-      "sp_dec": 13.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "66/1",
+      "sp_dec": 67.0,
+      "pos": 5,
+      "res": "UNPL",
       "score": 6
     },
     {
@@ -721,7 +739,7 @@
   ],
   "super6_score": {
     "listed": 6,
-    "settled": 2,
+    "settled": 3,
     "won": 0,
     "placed": 0,
     "win_pct": 0,
@@ -729,9 +747,9 @@
   },
   "bank": {
     "start": 84.87,
-    "end": 83.75,
-    "next_stake": 0.84,
+    "end": 81.26,
+    "next_stake": 0.81,
     "season_start": 10.0,
-    "season_end": 83.75
+    "season_end": 81.26
   }
 }
