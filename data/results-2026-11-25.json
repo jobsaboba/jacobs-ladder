@@ -1,6 +1,6 @@
 {
   "date": "2026-11-25",
-  "generated": "2026-11-25T18:30:41+00:00",
+  "generated": "2026-11-25T19:00:40+00:00",
   "score": {
     "picks": 15,
     "settled": 14,
@@ -403,13 +403,13 @@
       "sp_dec": 2.25,
       "pos": 0,
       "res": "?",
-      "stake": 0.75,
+      "stake": 0.74,
       "ret": null,
-      "bank_after": 74.8
+      "bank_after": 74.05
     }
   ],
   "strings": {
-    "settled": 11,
+    "settled": 12,
     "win_pct": "0%",
     "place_pct": "0%"
   },
@@ -639,12 +639,12 @@
       "odds": "16/1",
       "sp": "25/1",
       "sp_dec": 26.0,
-      "pos": 0,
-      "res": "?",
+      "pos": 11,
+      "res": "UNPL",
       "lost_to": "Starakova",
       "stake": 0.75,
-      "ret": null,
-      "bank_after": 74.8
+      "ret": 0.0,
+      "bank_after": 74.05
     },
     {
       "time": "19:30",
@@ -659,19 +659,19 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Forever Penywern",
-      "stake": 0.75,
+      "stake": 0.74,
       "ret": null,
-      "bank_after": 74.8
+      "bank_after": 74.05
     }
   ],
   "outsider_score": {
     "strings": 15,
-    "settled": 11,
+    "settled": 12,
     "won": 0,
     "placed": 0,
-    "unplaced": 11,
+    "unplaced": 12,
     "nr": 2,
-    "pending": 2,
+    "pending": 1,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -765,9 +765,9 @@
   },
   "bank": {
     "start": 84.87,
-    "end": 74.8,
-    "next_stake": 0.75,
+    "end": 74.05,
+    "next_stake": 0.74,
     "season_start": 10.0,
-    "season_end": 74.8
+    "season_end": 74.05
   }
 }
