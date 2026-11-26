@@ -1,0 +1,419 @@
+{
+  "date": "2026-11-26",
+  "generated": "2026-11-26T13:00:32+00:00",
+  "score": {
+    "picks": 8,
+    "settled": 2,
+    "won": 0,
+    "placed": 2,
+    "unplaced": 0,
+    "nr": 1,
+    "void": 0,
+    "pending": 5,
+    "win_pct": 0,
+    "place_pct": 100
+  },
+  "trainers": [
+    {
+      "name": "Noel Meade",
+      "w14": "21.4%",
+      "p14": "50.0%",
+      "w": 0,
+      "p": 1,
+      "u": 0,
+      "n": 1
+    },
+    {
+      "name": "Henry De Bromhead",
+      "w14": "20.9%",
+      "p14": "53.5%",
+      "w": 0,
+      "p": 1,
+      "u": 0,
+      "n": 1
+    }
+  ],
+  "stars": [
+    {
+      "stars": 5,
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "100%"
+    },
+    {
+      "stars": 4,
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "100%"
+    }
+  ],
+  "odds": [
+    {
+      "label": "2/1–5/1",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "100%"
+    },
+    {
+      "label": "10/1+",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "100%"
+    }
+  ],
+  "fields": [
+    {
+      "label": "small (≤8)",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "100%"
+    },
+    {
+      "label": "mid (9–12)",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "100%"
+    }
+  ],
+  "picks": [
+    {
+      "time": "12:11",
+      "meeting": "Thurles",
+      "horse": "Mickey Cohen",
+      "trainer": "N Meade",
+      "stars": 4,
+      "odds": "5/1",
+      "sp": "10/1",
+      "sp_dec": 11.0,
+      "pos": 2,
+      "res": "PLACE",
+      "stake": 0.73,
+      "ret": 0.0,
+      "bank_after": 71.85
+    },
+    {
+      "time": "12:46",
+      "meeting": "Thurles",
+      "horse": "Monty's Star",
+      "trainer": "H De Bromhead",
+      "stars": 5,
+      "odds": "9/4",
+      "sp": "7/2",
+      "sp_dec": 4.5,
+      "pos": 2,
+      "res": "PLACE",
+      "stake": 0.81,
+      "ret": 0.0,
+      "bank_after": 79.82
+    },
+    {
+      "time": "13:21",
+      "meeting": "Thurles",
+      "horse": "Give It A Crack",
+      "trainer": "H De Bromhead",
+      "stars": 5,
+      "odds": "5/1",
+      "sp": "5/1",
+      "sp_dec": 6.0,
+      "pos": 0,
+      "res": "?",
+      "stake": 0.8,
+      "ret": null,
+      "bank_after": 79.82
+    },
+    {
+      "time": "13:56",
+      "meeting": "Thurles",
+      "horse": "Maxminelli",
+      "trainer": "H De Bromhead",
+      "stars": 3,
+      "odds": "3/1",
+      "sp": "3/1",
+      "sp_dec": 4.0,
+      "pos": 0,
+      "res": "?",
+      "stake": 0.8,
+      "ret": null,
+      "bank_after": 79.82
+    },
+    {
+      "time": "14:05",
+      "meeting": "Taunton",
+      "horse": "Electric Eddy",
+      "trainer": "N & W Twiston-Davies",
+      "stars": 3,
+      "odds": "5/2",
+      "sp": "5/2",
+      "sp_dec": 3.5,
+      "pos": 0,
+      "res": "?",
+      "stake": 0.8,
+      "ret": null,
+      "bank_after": 79.82
+    },
+    {
+      "time": "14:57",
+      "meeting": "Lingfield",
+      "horse": "Milou Du Chenet",
+      "trainer": "W Greatrex",
+      "stars": 4,
+      "odds": "7/2",
+      "sp": "7/2",
+      "sp_dec": 4.5,
+      "pos": 0,
+      "res": "?",
+      "stake": 0.8,
+      "ret": null,
+      "bank_after": 79.82
+    },
+    {
+      "time": "17:30",
+      "meeting": "Chelmsford City",
+      "horse": "Sprinting Speed",
+      "trainer": "J Candlish",
+      "stars": 3,
+      "odds": "6/1",
+      "sp": "6/1",
+      "sp_dec": 7.0,
+      "pos": 0,
+      "res": "NR"
+    },
+    {
+      "time": "18:00",
+      "meeting": "Chelmsford City",
+      "horse": "Dowman",
+      "trainer": "G Boughey",
+      "stars": 4,
+      "odds": "6/4",
+      "sp": "6/4",
+      "sp_dec": 2.5,
+      "pos": 0,
+      "res": "?",
+      "stake": 0.8,
+      "ret": null,
+      "bank_after": 79.82
+    }
+  ],
+  "strings": {
+    "settled": 1,
+    "win_pct": "100%",
+    "place_pct": "100%"
+  },
+  "outsiders": [
+    {
+      "time": "12:29",
+      "meeting": "Market Rasen",
+      "horse": "Grand Scheme",
+      "trainer": "S England",
+      "string": "1st",
+      "stars": 3,
+      "odds": "14/1",
+      "sp": "17/2",
+      "sp_dec": 9.5,
+      "pos": 1,
+      "res": "WIN",
+      "lost_to": "Grand Scheme",
+      "stake": 0.72,
+      "ret": 9.5,
+      "bank_after": 80.63
+    },
+    {
+      "time": "12:55",
+      "meeting": "Taunton",
+      "horse": "C'Est Pour Moi",
+      "trainer": "N & W Twiston-Davies",
+      "string": "1st",
+      "stars": 2,
+      "odds": "13/2",
+      "sp": "8/1",
+      "sp_dec": 9.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "C'Est Pour Moi",
+      "stake": 0.8,
+      "ret": null,
+      "bank_after": 79.82
+    },
+    {
+      "time": "13:56",
+      "meeting": "Thurles",
+      "horse": "Belle Nuit",
+      "trainer": "P Nolan",
+      "string": "1st",
+      "stars": 3,
+      "odds": "8/1",
+      "sp": "8/1",
+      "sp_dec": 9.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "Maxminelli",
+      "stake": 0.8,
+      "ret": null,
+      "bank_after": 79.82
+    },
+    {
+      "time": "15:06",
+      "meeting": "Thurles",
+      "horse": "Sonic Invader",
+      "trainer": "N Meade",
+      "string": "1st",
+      "stars": 2,
+      "odds": "25/1",
+      "sp": "25/1",
+      "sp_dec": 26.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "Sonic Invader",
+      "stake": 0.8,
+      "ret": null,
+      "bank_after": 79.82
+    },
+    {
+      "time": "15:39",
+      "meeting": "Thurles",
+      "horse": "Nirisque",
+      "trainer": "H De Bromhead",
+      "string": "1st",
+      "stars": 2,
+      "odds": "25/1",
+      "sp": "25/1",
+      "sp_dec": 26.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "Nirisque",
+      "stake": 0.8,
+      "ret": null,
+      "bank_after": 79.82
+    },
+    {
+      "time": "16:30",
+      "meeting": "Chelmsford City",
+      "horse": "Implied Volatility",
+      "trainer": "J Candlish",
+      "string": "1st",
+      "stars": 2,
+      "odds": "33/1",
+      "sp": "33/1",
+      "sp_dec": 34.0,
+      "pos": 0,
+      "res": "NR",
+      "lost_to": "Implied Volatility"
+    },
+    {
+      "time": "18:00",
+      "meeting": "Chelmsford City",
+      "horse": "Sioux Moon",
+      "trainer": "C Fellowes",
+      "string": "1st",
+      "stars": 3,
+      "odds": "8/1",
+      "sp": "8/1",
+      "sp_dec": 9.0,
+      "pos": 0,
+      "res": "?",
+      "lost_to": "Dowman",
+      "stake": 0.8,
+      "ret": null,
+      "bank_after": 79.82
+    }
+  ],
+  "outsider_score": {
+    "strings": 7,
+    "settled": 1,
+    "won": 1,
+    "placed": 0,
+    "unplaced": 0,
+    "nr": 1,
+    "pending": 5,
+    "win_pct": 100,
+    "place_pct": 100
+  },
+  "super6": [
+    {
+      "time": "12:29",
+      "meeting": "Market Rasen",
+      "horse": "Grand Scheme",
+      "trainer": "S England",
+      "stars": 3,
+      "odds": "14/1",
+      "sp": "17/2",
+      "sp_dec": 9.5,
+      "pos": 1,
+      "res": "WIN",
+      "score": 9
+    },
+    {
+      "time": "12:55",
+      "meeting": "Taunton",
+      "horse": "C'Est Pour Moi",
+      "trainer": "N & W Twiston-Davies",
+      "stars": 2,
+      "odds": "13/2",
+      "sp": "8/1",
+      "sp_dec": 9.0,
+      "pos": 0,
+      "res": "?",
+      "score": 6
+    },
+    {
+      "time": "13:56",
+      "meeting": "Thurles",
+      "horse": "Belle Nuit",
+      "trainer": "P Nolan",
+      "stars": 3,
+      "odds": "8/1",
+      "sp": "8/1",
+      "sp_dec": 9.0,
+      "pos": 0,
+      "res": "?",
+      "score": 6
+    },
+    {
+      "time": "15:06",
+      "meeting": "Thurles",
+      "horse": "Sonic Invader",
+      "trainer": "N Meade",
+      "stars": 2,
+      "odds": "25/1",
+      "sp": "25/1",
+      "sp_dec": 26.0,
+      "pos": 0,
+      "res": "?",
+      "score": 6
+    },
+    {
+      "time": "18:00",
+      "meeting": "Chelmsford City",
+      "horse": "Sioux Moon",
+      "trainer": "C Fellowes",
+      "stars": 3,
+      "odds": "8/1",
+      "sp": "8/1",
+      "sp_dec": 9.0,
+      "pos": 0,
+      "res": "?",
+      "score": 6
+    }
+  ],
+  "super6_score": {
+    "listed": 5,
+    "settled": 1,
+    "won": 1,
+    "placed": 0,
+    "win_pct": 100,
+    "place_pct": 100
+  },
+  "bank": {
+    "start": 72.58,
+    "end": 79.82,
+    "next_stake": 0.8,
+    "season_start": 10.0,
+    "season_end": 79.82
+  }
+}
