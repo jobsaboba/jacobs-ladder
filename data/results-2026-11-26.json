@@ -1,32 +1,32 @@
 {
   "date": "2026-11-26",
-  "generated": "2026-11-26T13:00:32+00:00",
+  "generated": "2026-11-26T13:30:34+00:00",
   "score": {
     "picks": 8,
-    "settled": 2,
+    "settled": 3,
     "won": 0,
     "placed": 2,
-    "unplaced": 0,
+    "unplaced": 1,
     "nr": 1,
     "void": 0,
-    "pending": 5,
+    "pending": 4,
     "win_pct": 0,
-    "place_pct": 100
+    "place_pct": 67
   },
   "trainers": [
-    {
-      "name": "Noel Meade",
-      "w14": "21.4%",
-      "p14": "50.0%",
-      "w": 0,
-      "p": 1,
-      "u": 0,
-      "n": 1
-    },
     {
       "name": "Henry De Bromhead",
       "w14": "20.9%",
       "p14": "53.5%",
+      "w": 0,
+      "p": 1,
+      "u": 1,
+      "n": 2
+    },
+    {
+      "name": "Noel Meade",
+      "w14": "21.4%",
+      "p14": "50.0%",
       "w": 0,
       "p": 1,
       "u": 0,
@@ -36,10 +36,10 @@
   "stars": [
     {
       "stars": 5,
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "100%"
+      "place_pct": "50%"
     },
     {
       "stars": 4,
@@ -58,6 +58,13 @@
       "place_pct": "100%"
     },
     {
+      "label": "5/1–10/1",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "0%"
+    },
+    {
       "label": "10/1+",
       "n": 1,
       "w": 0,
@@ -68,10 +75,10 @@
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "100%"
+      "place_pct": "50%"
     },
     {
       "label": "mid (9–12)",
@@ -119,13 +126,13 @@
       "trainer": "H De Bromhead",
       "stars": 5,
       "odds": "5/1",
-      "sp": "5/1",
-      "sp_dec": 6.0,
+      "sp": "15/2",
+      "sp_dec": 8.5,
       "pos": 0,
-      "res": "?",
-      "stake": 0.8,
-      "ret": null,
-      "bank_after": 79.82
+      "res": "UNPL",
+      "stake": 0.79,
+      "ret": 0.0,
+      "bank_after": 78.23
     },
     {
       "time": "13:56",
@@ -138,9 +145,9 @@
       "sp_dec": 4.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.8,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.82
+      "bank_after": 78.23
     },
     {
       "time": "14:05",
@@ -153,9 +160,9 @@
       "sp_dec": 3.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.8,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.82
+      "bank_after": 78.23
     },
     {
       "time": "14:57",
@@ -168,9 +175,9 @@
       "sp_dec": 4.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.8,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.82
+      "bank_after": 78.23
     },
     {
       "time": "17:30",
@@ -195,15 +202,15 @@
       "sp_dec": 2.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.8,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.82
+      "bank_after": 78.23
     }
   ],
   "strings": {
-    "settled": 1,
-    "win_pct": "100%",
-    "place_pct": "100%"
+    "settled": 2,
+    "win_pct": "50%",
+    "place_pct": "50%"
   },
   "outsiders": [
     {
@@ -233,12 +240,12 @@
       "odds": "13/2",
       "sp": "8/1",
       "sp_dec": 9.0,
-      "pos": 0,
-      "res": "?",
+      "pos": 6,
+      "res": "UNPL",
       "lost_to": "C'Est Pour Moi",
       "stake": 0.8,
-      "ret": null,
-      "bank_after": 79.82
+      "ret": 0.0,
+      "bank_after": 79.02
     },
     {
       "time": "13:56",
@@ -253,9 +260,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Maxminelli",
-      "stake": 0.8,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.82
+      "bank_after": 78.23
     },
     {
       "time": "15:06",
@@ -270,9 +277,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Sonic Invader",
-      "stake": 0.8,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.82
+      "bank_after": 78.23
     },
     {
       "time": "15:39",
@@ -287,9 +294,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Nirisque",
-      "stake": 0.8,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.82
+      "bank_after": 78.23
     },
     {
       "time": "16:30",
@@ -318,21 +325,21 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Dowman",
-      "stake": 0.8,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.82
+      "bank_after": 78.23
     }
   ],
   "outsider_score": {
     "strings": 7,
-    "settled": 1,
+    "settled": 2,
     "won": 1,
     "placed": 0,
-    "unplaced": 0,
+    "unplaced": 1,
     "nr": 1,
-    "pending": 5,
-    "win_pct": 100,
-    "place_pct": 100
+    "pending": 4,
+    "win_pct": 50,
+    "place_pct": 50
   },
   "super6": [
     {
@@ -357,8 +364,8 @@
       "odds": "13/2",
       "sp": "8/1",
       "sp_dec": 9.0,
-      "pos": 0,
-      "res": "?",
+      "pos": 6,
+      "res": "UNPL",
       "score": 6
     },
     {
@@ -403,17 +410,17 @@
   ],
   "super6_score": {
     "listed": 5,
-    "settled": 1,
+    "settled": 2,
     "won": 1,
     "placed": 0,
-    "win_pct": 100,
-    "place_pct": 100
+    "win_pct": 50,
+    "place_pct": 50
   },
   "bank": {
     "start": 72.58,
-    "end": 79.82,
-    "next_stake": 0.8,
+    "end": 78.23,
+    "next_stake": 0.78,
     "season_start": 10.0,
-    "season_end": 79.82
+    "season_end": 78.23
   }
 }
