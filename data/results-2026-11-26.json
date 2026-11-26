@@ -1,6 +1,6 @@
 {
   "date": "2026-11-26",
-  "generated": "2026-11-26T15:30:37+00:00",
+  "generated": "2026-11-26T16:00:31+00:00",
   "score": {
     "picks": 8,
     "settled": 6,
@@ -241,15 +241,15 @@
       "sp_dec": 2.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.76,
+      "stake": 0.75,
       "ret": null,
-      "bank_after": 75.81
+      "bank_after": 75.05
     }
   ],
   "strings": {
-    "settled": 4,
-    "win_pct": "25%",
-    "place_pct": "25%"
+    "settled": 5,
+    "win_pct": "20%",
+    "place_pct": "20%"
   },
   "outsiders": [
     {
@@ -328,14 +328,14 @@
       "string": "1st",
       "stars": 2,
       "odds": "25/1",
-      "sp": "25/1",
-      "sp_dec": 26.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "33/1",
+      "sp_dec": 34.0,
+      "pos": 11,
+      "res": "UNPL",
       "lost_to": "Nirisque",
       "stake": 0.76,
-      "ret": null,
-      "bank_after": 75.81
+      "ret": 0.0,
+      "bank_after": 75.05
     },
     {
       "time": "16:30",
@@ -364,21 +364,21 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Dowman",
-      "stake": 0.76,
+      "stake": 0.75,
       "ret": null,
-      "bank_after": 75.81
+      "bank_after": 75.05
     }
   ],
   "outsider_score": {
     "strings": 7,
-    "settled": 4,
+    "settled": 5,
     "won": 1,
     "placed": 0,
-    "unplaced": 3,
+    "unplaced": 4,
     "nr": 1,
-    "pending": 2,
-    "win_pct": 25,
-    "place_pct": 25
+    "pending": 1,
+    "win_pct": 20,
+    "place_pct": 20
   },
   "super6": [
     {
@@ -457,9 +457,9 @@
   },
   "bank": {
     "start": 72.58,
-    "end": 75.81,
-    "next_stake": 0.76,
+    "end": 75.05,
+    "next_stake": 0.75,
     "season_start": 10.0,
-    "season_end": 75.81
+    "season_end": 75.05
   }
 }
