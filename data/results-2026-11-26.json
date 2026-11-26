@@ -1,17 +1,17 @@
 {
   "date": "2026-11-26",
-  "generated": "2026-11-26T15:00:32+00:00",
+  "generated": "2026-11-26T15:30:37+00:00",
   "score": {
     "picks": 8,
-    "settled": 5,
-    "won": 0,
+    "settled": 6,
+    "won": 1,
     "placed": 3,
     "unplaced": 2,
     "nr": 1,
     "void": 0,
-    "pending": 2,
-    "win_pct": 0,
-    "place_pct": 60
+    "pending": 1,
+    "win_pct": 17,
+    "place_pct": 67
   },
   "trainers": [
     {
@@ -40,6 +40,15 @@
       "p": 1,
       "u": 0,
       "n": 1
+    },
+    {
+      "name": "Warren Greatrex",
+      "w14": "25.0%",
+      "p14": "37.5%",
+      "w": 1,
+      "p": 0,
+      "u": 0,
+      "n": 1
     }
   ],
   "stars": [
@@ -52,9 +61,9 @@
     },
     {
       "stars": 4,
-      "n": 1,
-      "w": 0,
-      "win_pct": "0%",
+      "n": 2,
+      "w": 1,
+      "win_pct": "50%",
       "place_pct": "100%"
     },
     {
@@ -66,6 +75,13 @@
     }
   ],
   "odds": [
+    {
+      "label": "evens–2/1",
+      "n": 1,
+      "w": 1,
+      "win_pct": "100%",
+      "place_pct": "100%"
+    },
     {
       "label": "2/1–5/1",
       "n": 2,
@@ -91,9 +107,9 @@
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 2,
-      "w": 0,
-      "win_pct": "0%",
+      "n": 3,
+      "w": 1,
+      "win_pct": "33%",
       "place_pct": "100%"
     },
     {
@@ -196,11 +212,11 @@
       "odds": "7/2",
       "sp": "4/9",
       "sp_dec": 1.4444444444444444,
-      "pos": 0,
-      "res": "?",
+      "pos": 1,
+      "res": "WIN",
       "stake": 0.76,
-      "ret": null,
-      "bank_after": 75.9
+      "ret": 1.44,
+      "bank_after": 76.58
     },
     {
       "time": "17:30",
@@ -227,13 +243,13 @@
       "res": "?",
       "stake": 0.76,
       "ret": null,
-      "bank_after": 75.9
+      "bank_after": 75.81
     }
   ],
   "strings": {
-    "settled": 3,
-    "win_pct": "33%",
-    "place_pct": "33%"
+    "settled": 4,
+    "win_pct": "25%",
+    "place_pct": "25%"
   },
   "outsiders": [
     {
@@ -295,14 +311,14 @@
       "string": "1st",
       "stars": 2,
       "odds": "25/1",
-      "sp": "25/1",
-      "sp_dec": 26.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "66/1",
+      "sp_dec": 67.0,
+      "pos": 10,
+      "res": "UNPL",
       "lost_to": "Sonic Invader",
-      "stake": 0.76,
-      "ret": null,
-      "bank_after": 75.9
+      "stake": 0.77,
+      "ret": 0.0,
+      "bank_after": 75.81
     },
     {
       "time": "15:39",
@@ -319,7 +335,7 @@
       "lost_to": "Nirisque",
       "stake": 0.76,
       "ret": null,
-      "bank_after": 75.9
+      "bank_after": 75.81
     },
     {
       "time": "16:30",
@@ -350,19 +366,19 @@
       "lost_to": "Dowman",
       "stake": 0.76,
       "ret": null,
-      "bank_after": 75.9
+      "bank_after": 75.81
     }
   ],
   "outsider_score": {
     "strings": 7,
-    "settled": 3,
+    "settled": 4,
     "won": 1,
     "placed": 0,
-    "unplaced": 2,
+    "unplaced": 3,
     "nr": 1,
-    "pending": 3,
-    "win_pct": 33,
-    "place_pct": 33
+    "pending": 2,
+    "win_pct": 25,
+    "place_pct": 25
   },
   "super6": [
     {
@@ -411,10 +427,10 @@
       "trainer": "N Meade",
       "stars": 2,
       "odds": "25/1",
-      "sp": "25/1",
-      "sp_dec": 26.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "66/1",
+      "sp_dec": 67.0,
+      "pos": 10,
+      "res": "UNPL",
       "score": 6
     },
     {
@@ -433,17 +449,17 @@
   ],
   "super6_score": {
     "listed": 5,
-    "settled": 3,
+    "settled": 4,
     "won": 1,
     "placed": 0,
-    "win_pct": 33,
-    "place_pct": 33
+    "win_pct": 25,
+    "place_pct": 25
   },
   "bank": {
     "start": 72.58,
-    "end": 75.9,
+    "end": 75.81,
     "next_stake": 0.76,
     "season_start": 10.0,
-    "season_end": 75.9
+    "season_end": 75.81
   }
 }
