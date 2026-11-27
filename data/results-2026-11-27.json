@@ -1,17 +1,17 @@
 {
   "date": "2026-11-27",
-  "generated": "2026-11-27T18:30:13+00:00",
+  "generated": "2026-11-27T19:00:15+00:00",
   "score": {
     "picks": 9,
-    "settled": 6,
+    "settled": 7,
     "won": 0,
-    "placed": 0,
+    "placed": 1,
     "unplaced": 6,
     "nr": 0,
     "void": 0,
-    "pending": 3,
+    "pending": 2,
     "win_pct": 0,
-    "place_pct": 0
+    "place_pct": 14
   },
   "trainers": [
     {
@@ -28,9 +28,9 @@
       "w14": "21.9%",
       "p14": "40.6%",
       "w": 0,
-      "p": 0,
+      "p": 1,
       "u": 1,
-      "n": 1
+      "n": 2
     },
     {
       "name": "Simon Crisford",
@@ -68,10 +68,10 @@
     },
     {
       "stars": 3,
-      "n": 2,
+      "n": 3,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "0%"
+      "place_pct": "33%"
     }
   ],
   "odds": [
@@ -88,6 +88,13 @@
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
+    },
+    {
+      "label": "5/1–10/1",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "100%"
     }
   ],
   "fields": [
@@ -104,6 +111,13 @@
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
+    },
+    {
+      "label": "big (13+)",
+      "n": 1,
+      "w": 0,
+      "win_pct": "0%",
+      "place_pct": "100%"
     }
   ],
   "picks": [
@@ -204,13 +218,13 @@
       "trainer": "S England",
       "stars": 3,
       "odds": "4/1",
-      "sp": "4/1",
-      "sp_dec": 5.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "11/2",
+      "sp_dec": 6.5,
+      "pos": 2,
+      "res": "PLACE",
       "stake": 0.68,
-      "ret": null,
-      "bank_after": 67.83
+      "ret": 0.0,
+      "bank_after": 67.15
     },
     {
       "time": "19:30",
@@ -223,9 +237,9 @@
       "sp_dec": 9.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.68,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 67.83
+      "bank_after": 66.47
     },
     {
       "time": "20:30",
@@ -238,15 +252,15 @@
       "sp_dec": 7.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.68,
+      "stake": 0.66,
       "ret": null,
-      "bank_after": 67.83
+      "bank_after": 66.47
     }
   ],
   "strings": {
-    "settled": 6,
+    "settled": 7,
     "win_pct": "0%",
-    "place_pct": "17%"
+    "place_pct": "14%"
   },
   "outsiders": [
     {
@@ -373,26 +387,26 @@
       "string": "1st",
       "stars": 3,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "13/2",
+      "sp_dec": 7.5,
+      "pos": 5,
+      "res": "UNPL",
       "lost_to": "It's A Love Thing",
       "stake": 0.68,
-      "ret": null,
-      "bank_after": 67.83
+      "ret": 0.0,
+      "bank_after": 66.47
     }
   ],
   "outsider_score": {
     "strings": 8,
-    "settled": 6,
+    "settled": 7,
     "won": 0,
     "placed": 1,
-    "unplaced": 5,
+    "unplaced": 6,
     "nr": 1,
-    "pending": 1,
+    "pending": 0,
     "win_pct": 0,
-    "place_pct": 17
+    "place_pct": 14
   },
   "super6": [
     {
@@ -445,9 +459,9 @@
   },
   "bank": {
     "start": 76.55,
-    "end": 67.83,
-    "next_stake": 0.68,
+    "end": 66.47,
+    "next_stake": 0.66,
     "season_start": 10.0,
-    "season_end": 67.83
+    "season_end": 66.47
   }
 }
