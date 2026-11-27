@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "generated": "2026-11-27T13:00:15+00:00",
+  "generated": "2026-11-27T15:00:13+00:00",
   "score": {
     "picks": 9,
     "settled": 3,
@@ -138,9 +138,9 @@
       "sp_dec": 4.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.74,
+      "stake": 0.72,
       "ret": null,
-      "bank_after": 73.53
+      "bank_after": 72.05
     },
     {
       "time": "17:15",
@@ -153,9 +153,9 @@
       "sp_dec": 2.75,
       "pos": 0,
       "res": "?",
-      "stake": 0.74,
+      "stake": 0.72,
       "ret": null,
-      "bank_after": 73.53
+      "bank_after": 72.05
     },
     {
       "time": "17:45",
@@ -168,9 +168,9 @@
       "sp_dec": 4.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.74,
+      "stake": 0.72,
       "ret": null,
-      "bank_after": 73.53
+      "bank_after": 72.05
     },
     {
       "time": "18:45",
@@ -183,9 +183,9 @@
       "sp_dec": 5.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.74,
+      "stake": 0.72,
       "ret": null,
-      "bank_after": 73.53
+      "bank_after": 72.05
     },
     {
       "time": "19:30",
@@ -198,9 +198,9 @@
       "sp_dec": 9.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.74,
+      "stake": 0.72,
       "ret": null,
-      "bank_after": 73.53
+      "bank_after": 72.05
     },
     {
       "time": "20:30",
@@ -213,15 +213,15 @@
       "sp_dec": 7.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.74,
+      "stake": 0.72,
       "ret": null,
-      "bank_after": 73.53
+      "bank_after": 72.05
     }
   ],
   "strings": {
-    "settled": 1,
+    "settled": 3,
     "win_pct": "0%",
-    "place_pct": "0%"
+    "place_pct": "33%"
   },
   "outsiders": [
     {
@@ -249,14 +249,14 @@
       "string": "1st",
       "stars": 3,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "25/1",
+      "sp_dec": 26.0,
+      "pos": 3,
+      "res": "PLACE",
       "lost_to": "Partisan Hero",
       "stake": 0.74,
-      "ret": null,
-      "bank_after": 73.53
+      "ret": 0.0,
+      "bank_after": 72.05
     },
     {
       "time": "14:40",
@@ -266,14 +266,14 @@
       "string": "1st",
       "stars": 1,
       "odds": "33/1",
-      "sp": "33/1",
-      "sp_dec": 34.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "66/1",
+      "sp_dec": 67.0,
+      "pos": 7,
+      "res": "UNPL",
       "lost_to": "Partisan Hero",
       "stake": 0.74,
-      "ret": null,
-      "bank_after": 73.53
+      "ret": 0.0,
+      "bank_after": 72.79
     },
     {
       "time": "15:15",
@@ -288,9 +288,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Spinning Wheel",
-      "stake": 0.74,
+      "stake": 0.72,
       "ret": null,
-      "bank_after": 73.53
+      "bank_after": 72.05
     },
     {
       "time": "16:15",
@@ -319,9 +319,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Graceful Gracie",
-      "stake": 0.74,
+      "stake": 0.72,
       "ret": null,
-      "bank_after": 73.53
+      "bank_after": 72.05
     },
     {
       "time": "18:15",
@@ -336,9 +336,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Star Of Jupiter",
-      "stake": 0.74,
+      "stake": 0.72,
       "ret": null,
-      "bank_after": 73.53
+      "bank_after": 72.05
     },
     {
       "time": "18:45",
@@ -353,21 +353,21 @@
       "pos": 0,
       "res": "?",
       "lost_to": "It's A Love Thing",
-      "stake": 0.74,
+      "stake": 0.72,
       "ret": null,
-      "bank_after": 73.53
+      "bank_after": 72.05
     }
   ],
   "outsider_score": {
     "strings": 8,
-    "settled": 1,
+    "settled": 3,
     "won": 0,
-    "placed": 0,
-    "unplaced": 1,
+    "placed": 1,
+    "unplaced": 2,
     "nr": 1,
-    "pending": 6,
+    "pending": 4,
     "win_pct": 0,
-    "place_pct": 0
+    "place_pct": 33
   },
   "super6": [
     {
@@ -377,10 +377,10 @@
       "trainer": "D Loughnane",
       "stars": 3,
       "odds": "10/1",
-      "sp": "10/1",
-      "sp_dec": 11.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "25/1",
+      "sp_dec": 26.0,
+      "pos": 3,
+      "res": "PLACE",
       "score": 8
     },
     {
@@ -410,12 +410,19 @@
       "score": 8
     }
   ],
-  "super6_score": null,
+  "super6_score": {
+    "listed": 3,
+    "settled": 1,
+    "won": 0,
+    "placed": 1,
+    "win_pct": 0,
+    "place_pct": 100
+  },
   "bank": {
     "start": 76.55,
-    "end": 73.53,
-    "next_stake": 0.74,
+    "end": 72.05,
+    "next_stake": 0.72,
     "season_start": 10.0,
-    "season_end": 73.53
+    "season_end": 72.05
   }
 }
