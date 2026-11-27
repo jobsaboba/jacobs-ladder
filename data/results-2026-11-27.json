@@ -1,17 +1,17 @@
 {
   "date": "2026-11-27",
-  "generated": "2026-11-27T19:00:15+00:00",
+  "generated": "2026-11-27T20:00:14+00:00",
   "score": {
     "picks": 9,
-    "settled": 7,
+    "settled": 8,
     "won": 0,
-    "placed": 1,
+    "placed": 2,
     "unplaced": 6,
     "nr": 0,
     "void": 0,
-    "pending": 2,
+    "pending": 1,
     "win_pct": 0,
-    "place_pct": 14
+    "place_pct": 25
   },
   "trainers": [
     {
@@ -49,6 +49,15 @@
       "p": 0,
       "u": 1,
       "n": 1
+    },
+    {
+      "name": "Noel Meade",
+      "w14": "20.0%",
+      "p14": "46.7%",
+      "w": 0,
+      "p": 1,
+      "u": 0,
+      "n": 1
     }
   ],
   "stars": [
@@ -61,10 +70,10 @@
     },
     {
       "stars": 4,
-      "n": 3,
+      "n": 4,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "0%"
+      "place_pct": "25%"
     },
     {
       "stars": 3,
@@ -84,10 +93,10 @@
     },
     {
       "label": "2/1–5/1",
-      "n": 5,
+      "n": 6,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "0%"
+      "place_pct": "17%"
     },
     {
       "label": "5/1–10/1",
@@ -107,10 +116,10 @@
     },
     {
       "label": "mid (9–12)",
-      "n": 3,
+      "n": 4,
       "w": 0,
       "win_pct": "0%",
-      "place_pct": "0%"
+      "place_pct": "25%"
     },
     {
       "label": "big (13+)",
@@ -233,13 +242,13 @@
       "trainer": "N Meade",
       "stars": 4,
       "odds": "8/1",
-      "sp": "8/1",
-      "sp_dec": 9.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "3/1",
+      "sp_dec": 4.0,
+      "pos": 3,
+      "res": "PLACE",
       "stake": 0.66,
-      "ret": null,
-      "bank_after": 66.47
+      "ret": 0.0,
+      "bank_after": 65.81
     },
     {
       "time": "20:30",
@@ -254,7 +263,7 @@
       "res": "?",
       "stake": 0.66,
       "ret": null,
-      "bank_after": 66.47
+      "bank_after": 65.81
     }
   ],
   "strings": {
@@ -459,9 +468,9 @@
   },
   "bank": {
     "start": 76.55,
-    "end": 66.47,
+    "end": 65.81,
     "next_stake": 0.66,
     "season_start": 10.0,
-    "season_end": 66.47
+    "season_end": 65.81
   }
 }
