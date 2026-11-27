@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "generated": "2026-11-27T16:00:15+00:00",
+  "generated": "2026-11-27T17:00:15+00:00",
   "score": {
     "picks": 9,
     "settled": 4,
@@ -153,9 +153,9 @@
       "sp_dec": 2.75,
       "pos": 0,
       "res": "?",
-      "stake": 0.71,
+      "stake": 0.7,
       "ret": null,
-      "bank_after": 70.62
+      "bank_after": 69.91
     },
     {
       "time": "17:45",
@@ -168,9 +168,9 @@
       "sp_dec": 4.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.71,
+      "stake": 0.7,
       "ret": null,
-      "bank_after": 70.62
+      "bank_after": 69.91
     },
     {
       "time": "18:45",
@@ -183,9 +183,9 @@
       "sp_dec": 5.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.71,
+      "stake": 0.7,
       "ret": null,
-      "bank_after": 70.62
+      "bank_after": 69.91
     },
     {
       "time": "19:30",
@@ -198,9 +198,9 @@
       "sp_dec": 9.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.71,
+      "stake": 0.7,
       "ret": null,
-      "bank_after": 70.62
+      "bank_after": 69.91
     },
     {
       "time": "20:30",
@@ -213,15 +213,15 @@
       "sp_dec": 7.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.71,
+      "stake": 0.7,
       "ret": null,
-      "bank_after": 70.62
+      "bank_after": 69.91
     }
   ],
   "strings": {
-    "settled": 4,
+    "settled": 5,
     "win_pct": "0%",
-    "place_pct": "25%"
+    "place_pct": "20%"
   },
   "outsiders": [
     {
@@ -314,14 +314,14 @@
       "string": "1st",
       "stars": 1,
       "odds": "50/1",
-      "sp": "50/1",
-      "sp_dec": 51.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "125/1",
+      "sp_dec": 126.0,
+      "pos": 10,
+      "res": "UNPL",
       "lost_to": "Graceful Gracie",
       "stake": 0.71,
-      "ret": null,
-      "bank_after": 70.62
+      "ret": 0.0,
+      "bank_after": 69.91
     },
     {
       "time": "18:15",
@@ -336,9 +336,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Star Of Jupiter",
-      "stake": 0.71,
+      "stake": 0.7,
       "ret": null,
-      "bank_after": 70.62
+      "bank_after": 69.91
     },
     {
       "time": "18:45",
@@ -353,21 +353,21 @@
       "pos": 0,
       "res": "?",
       "lost_to": "It's A Love Thing",
-      "stake": 0.71,
+      "stake": 0.7,
       "ret": null,
-      "bank_after": 70.62
+      "bank_after": 69.91
     }
   ],
   "outsider_score": {
     "strings": 8,
-    "settled": 4,
+    "settled": 5,
     "won": 0,
     "placed": 1,
-    "unplaced": 3,
+    "unplaced": 4,
     "nr": 1,
-    "pending": 3,
+    "pending": 2,
     "win_pct": 0,
-    "place_pct": 25
+    "place_pct": 20
   },
   "super6": [
     {
@@ -420,9 +420,9 @@
   },
   "bank": {
     "start": 76.55,
-    "end": 70.62,
-    "next_stake": 0.71,
+    "end": 69.91,
+    "next_stake": 0.7,
     "season_start": 10.0,
-    "season_end": 70.62
+    "season_end": 69.91
   }
 }
