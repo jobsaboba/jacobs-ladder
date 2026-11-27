@@ -1,15 +1,15 @@
 {
   "date": "2026-11-27",
-  "generated": "2026-11-27T17:30:28+00:00",
+  "generated": "2026-11-27T18:00:14+00:00",
   "score": {
     "picks": 9,
-    "settled": 5,
+    "settled": 6,
     "won": 0,
     "placed": 0,
-    "unplaced": 5,
+    "unplaced": 6,
     "nr": 0,
     "void": 0,
-    "pending": 4,
+    "pending": 3,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -40,6 +40,15 @@
       "p": 0,
       "u": 1,
       "n": 1
+    },
+    {
+      "name": "David Loughnane",
+      "w14": "25.0%",
+      "p14": "50.0%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
     }
   ],
   "stars": [
@@ -52,7 +61,7 @@
     },
     {
       "stars": 4,
-      "n": 2,
+      "n": 3,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -75,7 +84,7 @@
     },
     {
       "label": "2/1–5/1",
-      "n": 4,
+      "n": 5,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -84,7 +93,7 @@
   "fields": [
     {
       "label": "small (≤8)",
-      "n": 2,
+      "n": 3,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -180,13 +189,13 @@
       "trainer": "D M Loughnane",
       "stars": 4,
       "odds": "3/1",
-      "sp": "3/1",
-      "sp_dec": 4.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "9/2",
+      "sp_dec": 5.5,
+      "pos": 3,
+      "res": "UNPL",
       "stake": 0.69,
-      "ret": null,
-      "bank_after": 69.21
+      "ret": 0.0,
+      "bank_after": 68.52
     },
     {
       "time": "18:45",
@@ -201,7 +210,7 @@
       "res": "?",
       "stake": 0.69,
       "ret": null,
-      "bank_after": 69.21
+      "bank_after": 68.52
     },
     {
       "time": "19:30",
@@ -216,7 +225,7 @@
       "res": "?",
       "stake": 0.69,
       "ret": null,
-      "bank_after": 69.21
+      "bank_after": 68.52
     },
     {
       "time": "20:30",
@@ -231,7 +240,7 @@
       "res": "?",
       "stake": 0.69,
       "ret": null,
-      "bank_after": 69.21
+      "bank_after": 68.52
     }
   ],
   "strings": {
@@ -354,7 +363,7 @@
       "lost_to": "Star Of Jupiter",
       "stake": 0.69,
       "ret": null,
-      "bank_after": 69.21
+      "bank_after": 68.52
     },
     {
       "time": "18:45",
@@ -371,7 +380,7 @@
       "lost_to": "It's A Love Thing",
       "stake": 0.69,
       "ret": null,
-      "bank_after": 69.21
+      "bank_after": 68.52
     }
   ],
   "outsider_score": {
@@ -436,9 +445,9 @@
   },
   "bank": {
     "start": 76.55,
-    "end": 69.21,
+    "end": 68.52,
     "next_stake": 0.69,
     "season_start": 10.0,
-    "season_end": 69.21
+    "season_end": 68.52
   }
 }
