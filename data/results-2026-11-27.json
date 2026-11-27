@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "generated": "2026-11-27T18:00:14+00:00",
+  "generated": "2026-11-27T18:30:13+00:00",
   "score": {
     "picks": 9,
     "settled": 6,
@@ -208,9 +208,9 @@
       "sp_dec": 5.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.69,
+      "stake": 0.68,
       "ret": null,
-      "bank_after": 68.52
+      "bank_after": 67.83
     },
     {
       "time": "19:30",
@@ -223,9 +223,9 @@
       "sp_dec": 9.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.69,
+      "stake": 0.68,
       "ret": null,
-      "bank_after": 68.52
+      "bank_after": 67.83
     },
     {
       "time": "20:30",
@@ -238,15 +238,15 @@
       "sp_dec": 7.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.69,
+      "stake": 0.68,
       "ret": null,
-      "bank_after": 68.52
+      "bank_after": 67.83
     }
   ],
   "strings": {
-    "settled": 5,
+    "settled": 6,
     "win_pct": "0%",
-    "place_pct": "20%"
+    "place_pct": "17%"
   },
   "outsiders": [
     {
@@ -356,14 +356,14 @@
       "string": "1st",
       "stars": 3,
       "odds": "12/1",
-      "sp": "12/1",
-      "sp_dec": 13.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "16/1",
+      "sp_dec": 17.0,
+      "pos": 4,
+      "res": "UNPL",
       "lost_to": "Star Of Jupiter",
       "stake": 0.69,
-      "ret": null,
-      "bank_after": 68.52
+      "ret": 0.0,
+      "bank_after": 67.83
     },
     {
       "time": "18:45",
@@ -378,21 +378,21 @@
       "pos": 0,
       "res": "?",
       "lost_to": "It's A Love Thing",
-      "stake": 0.69,
+      "stake": 0.68,
       "ret": null,
-      "bank_after": 68.52
+      "bank_after": 67.83
     }
   ],
   "outsider_score": {
     "strings": 8,
-    "settled": 5,
+    "settled": 6,
     "won": 0,
     "placed": 1,
-    "unplaced": 4,
+    "unplaced": 5,
     "nr": 1,
-    "pending": 2,
+    "pending": 1,
     "win_pct": 0,
-    "place_pct": 20
+    "place_pct": 17
   },
   "super6": [
     {
@@ -445,9 +445,9 @@
   },
   "bank": {
     "start": 76.55,
-    "end": 68.52,
-    "next_stake": 0.69,
+    "end": 67.83,
+    "next_stake": 0.68,
     "season_start": 10.0,
-    "season_end": 68.52
+    "season_end": 67.83
   }
 }
