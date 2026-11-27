@@ -1,15 +1,15 @@
 {
   "date": "2026-11-27",
-  "generated": "2026-11-27T15:30:17+00:00",
+  "generated": "2026-11-27T16:00:15+00:00",
   "score": {
     "picks": 9,
-    "settled": 3,
+    "settled": 4,
     "won": 0,
     "placed": 0,
-    "unplaced": 3,
+    "unplaced": 4,
     "nr": 0,
     "void": 0,
-    "pending": 6,
+    "pending": 5,
     "win_pct": 0,
     "place_pct": 0
   },
@@ -20,8 +20,8 @@
       "p14": "65.0%",
       "w": 0,
       "p": 0,
-      "u": 2,
-      "n": 2
+      "u": 3,
+      "n": 3
     },
     {
       "name": "Sam England",
@@ -36,7 +36,7 @@
   "stars": [
     {
       "stars": 4,
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -59,7 +59,7 @@
     },
     {
       "label": "2/1–5/1",
-      "n": 2,
+      "n": 3,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -75,7 +75,7 @@
     },
     {
       "label": "mid (9–12)",
-      "n": 1,
+      "n": 2,
       "w": 0,
       "win_pct": "0%",
       "place_pct": "0%"
@@ -134,13 +134,13 @@
       "trainer": "N & W Twiston-Davies",
       "stars": 4,
       "odds": "7/2",
-      "sp": "7/2",
-      "sp_dec": 4.5,
-      "pos": 0,
-      "res": "?",
+      "sp": "2/1",
+      "sp_dec": 3.0,
+      "pos": 8,
+      "res": "UNPL",
       "stake": 0.71,
-      "ret": null,
-      "bank_after": 71.33
+      "ret": 0.0,
+      "bank_after": 70.62
     },
     {
       "time": "17:15",
@@ -155,7 +155,7 @@
       "res": "?",
       "stake": 0.71,
       "ret": null,
-      "bank_after": 71.33
+      "bank_after": 70.62
     },
     {
       "time": "17:45",
@@ -170,7 +170,7 @@
       "res": "?",
       "stake": 0.71,
       "ret": null,
-      "bank_after": 71.33
+      "bank_after": 70.62
     },
     {
       "time": "18:45",
@@ -185,7 +185,7 @@
       "res": "?",
       "stake": 0.71,
       "ret": null,
-      "bank_after": 71.33
+      "bank_after": 70.62
     },
     {
       "time": "19:30",
@@ -200,7 +200,7 @@
       "res": "?",
       "stake": 0.71,
       "ret": null,
-      "bank_after": 71.33
+      "bank_after": 70.62
     },
     {
       "time": "20:30",
@@ -215,7 +215,7 @@
       "res": "?",
       "stake": 0.71,
       "ret": null,
-      "bank_after": 71.33
+      "bank_after": 70.62
     }
   ],
   "strings": {
@@ -321,7 +321,7 @@
       "lost_to": "Graceful Gracie",
       "stake": 0.71,
       "ret": null,
-      "bank_after": 71.33
+      "bank_after": 70.62
     },
     {
       "time": "18:15",
@@ -338,7 +338,7 @@
       "lost_to": "Star Of Jupiter",
       "stake": 0.71,
       "ret": null,
-      "bank_after": 71.33
+      "bank_after": 70.62
     },
     {
       "time": "18:45",
@@ -355,7 +355,7 @@
       "lost_to": "It's A Love Thing",
       "stake": 0.71,
       "ret": null,
-      "bank_after": 71.33
+      "bank_after": 70.62
     }
   ],
   "outsider_score": {
@@ -420,9 +420,9 @@
   },
   "bank": {
     "start": 76.55,
-    "end": 71.33,
+    "end": 70.62,
     "next_stake": 0.71,
     "season_start": 10.0,
-    "season_end": 71.33
+    "season_end": 70.62
   }
 }
