@@ -1,19 +1,28 @@
 {
   "date": "2026-11-28",
-  "generated": "2026-11-28T13:30:19+00:00",
+  "generated": "2026-11-28T14:00:20+00:00",
   "score": {
     "picks": 12,
-    "settled": 5,
-    "won": 3,
+    "settled": 6,
+    "won": 4,
     "placed": 1,
     "unplaced": 1,
     "nr": 0,
     "void": 0,
-    "pending": 7,
-    "win_pct": 60,
-    "place_pct": 80
+    "pending": 6,
+    "win_pct": 67,
+    "place_pct": 83
   },
   "trainers": [
+    {
+      "name": "Joe Tizzard",
+      "w14": "23.3%",
+      "p14": "60.0%",
+      "w": 1,
+      "p": 1,
+      "u": 0,
+      "n": 2
+    },
     {
       "name": "Henry Daly",
       "w14": "23.1%",
@@ -29,15 +38,6 @@
       "p14": "34.5%",
       "w": 1,
       "p": 0,
-      "u": 0,
-      "n": 1
-    },
-    {
-      "name": "Joe Tizzard",
-      "w14": "23.3%",
-      "p14": "60.0%",
-      "w": 0,
-      "p": 1,
       "u": 0,
       "n": 1
     },
@@ -61,10 +61,10 @@
     },
     {
       "stars": 4,
-      "n": 3,
-      "w": 2,
-      "win_pct": "67%",
-      "place_pct": "67%"
+      "n": 4,
+      "w": 3,
+      "win_pct": "75%",
+      "place_pct": "75%"
     }
   ],
   "odds": [
@@ -77,10 +77,10 @@
     },
     {
       "label": "2/1–5/1",
-      "n": 2,
-      "w": 1,
-      "win_pct": "50%",
-      "place_pct": "50%"
+      "n": 3,
+      "w": 2,
+      "win_pct": "67%",
+      "place_pct": "67%"
     }
   ],
   "fields": [
@@ -93,9 +93,9 @@
     },
     {
       "label": "mid (9–12)",
-      "n": 1,
-      "w": 0,
-      "win_pct": "0%",
+      "n": 2,
+      "w": 1,
+      "win_pct": "50%",
       "place_pct": "100%"
     },
     {
@@ -191,11 +191,11 @@
       "odds": "8/1",
       "sp": "9/2",
       "sp_dec": 5.5,
-      "pos": 0,
-      "res": "?",
+      "pos": 1,
+      "res": "WIN",
       "stake": 0.79,
-      "ret": null,
-      "bank_after": 79.01
+      "ret": 5.5,
+      "bank_after": 83.72
     },
     {
       "time": "14:00",
@@ -208,9 +208,9 @@
       "sp_dec": 2.2,
       "pos": 0,
       "res": "?",
-      "stake": 0.79,
+      "stake": 0.84,
       "ret": null,
-      "bank_after": 79.01
+      "bank_after": 83.72
     },
     {
       "time": "14:05",
@@ -223,9 +223,9 @@
       "sp_dec": 9.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.79,
+      "stake": 0.84,
       "ret": null,
-      "bank_after": 79.01
+      "bank_after": 83.72
     },
     {
       "time": "15:18",
@@ -238,9 +238,9 @@
       "sp_dec": 7.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.79,
+      "stake": 0.84,
       "ret": null,
-      "bank_after": 79.01
+      "bank_after": 83.72
     },
     {
       "time": "17:00",
@@ -253,9 +253,9 @@
       "sp_dec": 5.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.79,
+      "stake": 0.84,
       "ret": null,
-      "bank_after": 79.01
+      "bank_after": 83.72
     },
     {
       "time": "18:30",
@@ -268,9 +268,9 @@
       "sp_dec": 5.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.79,
+      "stake": 0.84,
       "ret": null,
-      "bank_after": 79.01
+      "bank_after": 83.72
     },
     {
       "time": "19:00",
@@ -283,9 +283,9 @@
       "sp_dec": 6.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.79,
+      "stake": 0.84,
       "ret": null,
-      "bank_after": 79.01
+      "bank_after": 83.72
     }
   ],
   "strings": null,
@@ -303,9 +303,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "White Noise",
-      "stake": 0.79,
+      "stake": 0.84,
       "ret": null,
-      "bank_after": 79.01
+      "bank_after": 83.72
     },
     {
       "time": "15:13",
@@ -320,9 +320,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Harwa",
-      "stake": 0.79,
+      "stake": 0.84,
       "ret": null,
-      "bank_after": 79.01
+      "bank_after": 83.72
     },
     {
       "time": "15:25",
@@ -337,9 +337,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Laganhill",
-      "stake": 0.79,
+      "stake": 0.84,
       "ret": null,
-      "bank_after": 79.01
+      "bank_after": 83.72
     },
     {
       "time": "15:38",
@@ -354,9 +354,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Jour D'Evasion",
-      "stake": 0.79,
+      "stake": 0.84,
       "ret": null,
-      "bank_after": 79.01
+      "bank_after": 83.72
     },
     {
       "time": "17:00",
@@ -385,9 +385,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Arthur Carrot",
-      "stake": 0.79,
+      "stake": 0.84,
       "ret": null,
-      "bank_after": 79.01
+      "bank_after": 83.72
     },
     {
       "time": "17:30",
@@ -402,9 +402,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Electric Avenue",
-      "stake": 0.79,
+      "stake": 0.84,
       "ret": null,
-      "bank_after": 79.01
+      "bank_after": 83.72
     },
     {
       "time": "19:00",
@@ -419,9 +419,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Palms Oasis",
-      "stake": 0.79,
+      "stake": 0.84,
       "ret": null,
-      "bank_after": 79.01
+      "bank_after": 83.72
     },
     {
       "time": "19:00",
@@ -436,9 +436,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Palms Oasis",
-      "stake": 0.79,
+      "stake": 0.84,
       "ret": null,
-      "bank_after": 79.01
+      "bank_after": 83.72
     },
     {
       "time": "19:00",
@@ -453,9 +453,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Palms Oasis",
-      "stake": 0.79,
+      "stake": 0.84,
       "ret": null,
-      "bank_after": 79.01
+      "bank_after": 83.72
     },
     {
       "time": "20:00",
@@ -470,9 +470,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Alligator Alley",
-      "stake": 0.79,
+      "stake": 0.84,
       "ret": null,
-      "bank_after": 79.01
+      "bank_after": 83.72
     },
     {
       "time": "20:30",
@@ -487,9 +487,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Orchard Keeper",
-      "stake": 0.79,
+      "stake": 0.84,
       "ret": null,
-      "bank_after": 79.01
+      "bank_after": 83.72
     },
     {
       "time": "20:30",
@@ -504,9 +504,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Orchard Keeper",
-      "stake": 0.79,
+      "stake": 0.84,
       "ret": null,
-      "bank_after": 79.01
+      "bank_after": 83.72
     }
   ],
   "outsider_score": {
@@ -590,9 +590,9 @@
   "super6_score": null,
   "bank": {
     "start": 74.15,
-    "end": 79.01,
-    "next_stake": 0.79,
+    "end": 83.72,
+    "next_stake": 0.84,
     "season_start": 10.0,
-    "season_end": 79.01
+    "season_end": 83.72
   }
 }
