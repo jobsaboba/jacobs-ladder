@@ -1,17 +1,17 @@
 {
   "date": "2026-11-28",
-  "generated": "2026-11-28T16:00:20+00:00",
+  "generated": "2026-11-28T17:30:20+00:00",
   "score": {
     "picks": 12,
-    "settled": 9,
+    "settled": 10,
     "won": 5,
     "placed": 2,
-    "unplaced": 2,
+    "unplaced": 3,
     "nr": 0,
     "void": 0,
-    "pending": 3,
-    "win_pct": 56,
-    "place_pct": 78
+    "pending": 2,
+    "win_pct": 50,
+    "place_pct": 70
   },
   "trainers": [
     {
@@ -58,15 +58,24 @@
       "p": 0,
       "u": 1,
       "n": 1
+    },
+    {
+      "name": "George Boughey",
+      "w14": "28.0%",
+      "p14": "56.0%",
+      "w": 0,
+      "p": 0,
+      "u": 1,
+      "n": 1
     }
   ],
   "stars": [
     {
       "stars": 5,
-      "n": 3,
+      "n": 4,
       "w": 2,
-      "win_pct": "67%",
-      "place_pct": "100%"
+      "win_pct": "50%",
+      "place_pct": "75%"
     },
     {
       "stars": 4,
@@ -93,10 +102,10 @@
     },
     {
       "label": "2/1–5/1",
-      "n": 3,
+      "n": 4,
       "w": 2,
-      "win_pct": "67%",
-      "place_pct": "67%"
+      "win_pct": "50%",
+      "place_pct": "50%"
     },
     {
       "label": "10/1+",
@@ -116,10 +125,10 @@
     },
     {
       "label": "mid (9–12)",
-      "n": 2,
+      "n": 3,
       "w": 1,
-      "win_pct": "50%",
-      "place_pct": "100%"
+      "win_pct": "33%",
+      "place_pct": "67%"
     },
     {
       "label": "big (13+)",
@@ -272,13 +281,13 @@
       "trainer": "G Boughey",
       "stars": 5,
       "odds": "4/1",
-      "sp": "4/1",
-      "sp_dec": 5.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "3/1",
+      "sp_dec": 4.0,
+      "pos": 9,
+      "res": "UNPL",
       "stake": 0.8,
-      "ret": null,
-      "bank_after": 79.91
+      "ret": 0.0,
+      "bank_after": 79.11
     },
     {
       "time": "18:30",
@@ -291,9 +300,9 @@
       "sp_dec": 5.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.8,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.91
+      "bank_after": 78.31
     },
     {
       "time": "19:00",
@@ -306,15 +315,15 @@
       "sp_dec": 6.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.8,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.91
+      "bank_after": 78.31
     }
   ],
   "strings": {
-    "settled": 4,
+    "settled": 6,
     "win_pct": "0%",
-    "place_pct": "50%"
+    "place_pct": "33%"
   },
   "outsiders": [
     {
@@ -393,10 +402,10 @@
       "string": "2nd",
       "stars": 4,
       "odds": "5/1",
-      "sp": "5/1",
-      "sp_dec": 6.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "3/1",
+      "sp_dec": 4.0,
+      "pos": 10,
+      "res": "UNPL",
       "lost_to": "stablemate Arthur Carrot"
     },
     {
@@ -407,14 +416,14 @@
       "string": "1st",
       "stars": 2,
       "odds": "25/1",
-      "sp": "25/1",
-      "sp_dec": 26.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "50/1",
+      "sp_dec": 51.0,
+      "pos": 12,
+      "res": "UNPL",
       "lost_to": "Arthur Carrot",
       "stake": 0.8,
-      "ret": null,
-      "bank_after": 79.91
+      "ret": 0.0,
+      "bank_after": 78.31
     },
     {
       "time": "17:30",
@@ -429,9 +438,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Electric Avenue",
-      "stake": 0.8,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.91
+      "bank_after": 78.31
     },
     {
       "time": "19:00",
@@ -446,9 +455,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Palms Oasis",
-      "stake": 0.8,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.91
+      "bank_after": 78.31
     },
     {
       "time": "19:00",
@@ -463,9 +472,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Palms Oasis",
-      "stake": 0.8,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.91
+      "bank_after": 78.31
     },
     {
       "time": "19:00",
@@ -480,9 +489,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Palms Oasis",
-      "stake": 0.8,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.91
+      "bank_after": 78.31
     },
     {
       "time": "20:00",
@@ -497,9 +506,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Alligator Alley",
-      "stake": 0.8,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.91
+      "bank_after": 78.31
     },
     {
       "time": "20:30",
@@ -514,9 +523,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Orchard Keeper",
-      "stake": 0.8,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.91
+      "bank_after": 78.31
     },
     {
       "time": "20:30",
@@ -531,21 +540,21 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Orchard Keeper",
-      "stake": 0.8,
+      "stake": 0.78,
       "ret": null,
-      "bank_after": 79.91
+      "bank_after": 78.31
     }
   ],
   "outsider_score": {
     "strings": 13,
-    "settled": 4,
+    "settled": 6,
     "won": 0,
     "placed": 2,
-    "unplaced": 2,
+    "unplaced": 4,
     "nr": 0,
-    "pending": 9,
+    "pending": 7,
     "win_pct": 0,
-    "place_pct": 50
+    "place_pct": 33
   },
   "super6": [
     {
@@ -624,9 +633,9 @@
   },
   "bank": {
     "start": 74.15,
-    "end": 79.91,
-    "next_stake": 0.8,
+    "end": 78.31,
+    "next_stake": 0.78,
     "season_start": 10.0,
-    "season_end": 79.91
+    "season_end": 78.31
   }
 }
