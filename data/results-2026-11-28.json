@@ -1,6 +1,6 @@
 {
   "date": "2026-11-28",
-  "generated": "2026-11-28T15:30:18+00:00",
+  "generated": "2026-11-28T16:00:20+00:00",
   "score": {
     "picks": 12,
     "settled": 9,
@@ -276,9 +276,9 @@
       "sp_dec": 5.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.82,
+      "stake": 0.8,
       "ret": null,
-      "bank_after": 81.54
+      "bank_after": 79.91
     },
     {
       "time": "18:30",
@@ -291,9 +291,9 @@
       "sp_dec": 5.5,
       "pos": 0,
       "res": "?",
-      "stake": 0.82,
+      "stake": 0.8,
       "ret": null,
-      "bank_after": 81.54
+      "bank_after": 79.91
     },
     {
       "time": "19:00",
@@ -306,13 +306,13 @@
       "sp_dec": 6.0,
       "pos": 0,
       "res": "?",
-      "stake": 0.82,
+      "stake": 0.8,
       "ret": null,
-      "bank_after": 81.54
+      "bank_after": 79.91
     }
   ],
   "strings": {
-    "settled": 2,
+    "settled": 4,
     "win_pct": "0%",
     "place_pct": "50%"
   },
@@ -362,11 +362,11 @@
       "sp": "11/2",
       "sp_dec": 6.5,
       "pos": 0,
-      "res": "?",
+      "res": "UNPL",
       "lost_to": "Laganhill",
       "stake": 0.82,
-      "ret": null,
-      "bank_after": 81.54
+      "ret": 0.0,
+      "bank_after": 80.72
     },
     {
       "time": "15:38",
@@ -376,14 +376,14 @@
       "string": "1st",
       "stars": 2,
       "odds": "16/1",
-      "sp": "16/1",
-      "sp_dec": 17.0,
-      "pos": 0,
-      "res": "?",
+      "sp": "18/1",
+      "sp_dec": 19.0,
+      "pos": 3,
+      "res": "PLACE",
       "lost_to": "Jour D'Evasion",
-      "stake": 0.82,
-      "ret": null,
-      "bank_after": 81.54
+      "stake": 0.81,
+      "ret": 0.0,
+      "bank_after": 79.91
     },
     {
       "time": "17:00",
@@ -412,9 +412,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Arthur Carrot",
-      "stake": 0.82,
+      "stake": 0.8,
       "ret": null,
-      "bank_after": 81.54
+      "bank_after": 79.91
     },
     {
       "time": "17:30",
@@ -429,9 +429,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Electric Avenue",
-      "stake": 0.82,
+      "stake": 0.8,
       "ret": null,
-      "bank_after": 81.54
+      "bank_after": 79.91
     },
     {
       "time": "19:00",
@@ -446,9 +446,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Palms Oasis",
-      "stake": 0.82,
+      "stake": 0.8,
       "ret": null,
-      "bank_after": 81.54
+      "bank_after": 79.91
     },
     {
       "time": "19:00",
@@ -463,9 +463,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Palms Oasis",
-      "stake": 0.82,
+      "stake": 0.8,
       "ret": null,
-      "bank_after": 81.54
+      "bank_after": 79.91
     },
     {
       "time": "19:00",
@@ -480,9 +480,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Palms Oasis",
-      "stake": 0.82,
+      "stake": 0.8,
       "ret": null,
-      "bank_after": 81.54
+      "bank_after": 79.91
     },
     {
       "time": "20:00",
@@ -497,9 +497,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Alligator Alley",
-      "stake": 0.82,
+      "stake": 0.8,
       "ret": null,
-      "bank_after": 81.54
+      "bank_after": 79.91
     },
     {
       "time": "20:30",
@@ -514,9 +514,9 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Orchard Keeper",
-      "stake": 0.82,
+      "stake": 0.8,
       "ret": null,
-      "bank_after": 81.54
+      "bank_after": 79.91
     },
     {
       "time": "20:30",
@@ -531,19 +531,19 @@
       "pos": 0,
       "res": "?",
       "lost_to": "Orchard Keeper",
-      "stake": 0.82,
+      "stake": 0.8,
       "ret": null,
-      "bank_after": 81.54
+      "bank_after": 79.91
     }
   ],
   "outsider_score": {
     "strings": 13,
-    "settled": 2,
+    "settled": 4,
     "won": 0,
-    "placed": 1,
-    "unplaced": 1,
+    "placed": 2,
+    "unplaced": 2,
     "nr": 0,
-    "pending": 11,
+    "pending": 9,
     "win_pct": 0,
     "place_pct": 50
   },
@@ -584,7 +584,7 @@
       "sp": "11/2",
       "sp_dec": 6.5,
       "pos": 0,
-      "res": "?",
+      "res": "UNPL",
       "score": 6
     },
     {
@@ -616,17 +616,17 @@
   ],
   "super6_score": {
     "listed": 5,
-    "settled": 2,
+    "settled": 3,
     "won": 0,
     "placed": 1,
     "win_pct": 0,
-    "place_pct": 50
+    "place_pct": 33
   },
   "bank": {
     "start": 74.15,
-    "end": 81.54,
-    "next_stake": 0.82,
+    "end": 79.91,
+    "next_stake": 0.8,
     "season_start": 10.0,
-    "season_end": 81.54
+    "season_end": 79.91
   }
 }
